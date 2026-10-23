@@ -16,6 +16,7 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Protocol, TypeVar
 
+import httpx
 from pydantic import BaseModel, ValidationError
 from sqlalchemy.orm import Session
 
@@ -29,7 +30,9 @@ T = TypeVar("T", bound=BaseModel)
 # USD per million tokens (input, output). Estimates used for budgeting, not billing.
 PRICING: dict[str, tuple[float, float]] = {
     "gemini-2.5-flash": (0.30, 2.50),
-    "gemini-3.5-flash": (0.30, 2.50),  # unverified estimate; check the price sheet
+    "gemini-3.5-flash": (0.30, 2.50),
+    "gemini-3.1-flash-lite": (0.10, 0.40),  # unverified estimates
+    "gemini-3.5-flash-lite": (0.10, 0.40),  # unverified estimate; check the price sheet
 }
 
 
@@ -144,7 +147,7 @@ class GeminiClient:
                 last = exc
                 if attempt >= 2:
                     raise LLMError(f"model returned invalid {schema.__name__}: {exc}") from exc
-            except (errors.APIError, TimeoutError, ConnectionError) as exc:
+            except (errors.APIError, httpx.TransportError, TimeoutError, ConnectionError) as exc:
                 code = getattr(exc, "code", None)
                 if code == 429 and _retry_after_seconds(exc) > 120:
                     raise QuotaExhausted(f"Gemini quota exhausted: {str(exc)[:300]}") from exc

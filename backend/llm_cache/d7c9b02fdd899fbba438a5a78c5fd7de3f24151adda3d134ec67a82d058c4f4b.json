@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.001989,
+  "input_tokens": 863,
+  "latency_ms": 10143,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 692,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\": \"Robert Underwood\", \"policy_number\": \"POL-STD-963480\", \"incident_date\": \"2026-09-08\", \"reported_date\": \"2026-10-22\", \"incident_type\": \"Multi-vehicle Collision\", \"incident_location\": \"9299 Park Avenue, Rockford, IL\", \"vehicle_make\": \"Saab\", \"vehicle_model\": \"93\", \"vehicle_year\": 2024, \"police_report_number\": \"PR-IL-2026-71183\", \"total_amount\": \"8830.00\", \"itemized_damages\": [{\"description\": \"Quarter panel\", \"amount\": \"2141.00\"}, {\"description\": \"Rear body panel\", \"amount\": \"2025.00\"}, {\"description\": \"Tail lamp assembly\", \"amount\": \"1078.00\"}, {\"description\": \"Rear bumper cover\", \"amount\": \"1378.00\"}, {\"description\": \"Paint and materials\", \"amount\": \"2208.00\"}], \"evidence\": [{\"field\": \"claimant_name\", \"document\": \"claim_form.pdf\", \"quote\": \"Claimant name: Robert Underwood\"}, {\"field\": \"policy_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Policy number: POL-STD-963480\"}, {\"field\": \"incident_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date of loss: September 8, 2026\"}, {\"field\": \"reported_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date reported: 10/22/2026\"}, {\"field\": \"incident_type\", \"document\": \"claim_form.pdf\", \"quote\": \"Type of incident: Multi-vehicle Collision\"}, {\"field\": \"incident_location\", \"document\": \"claim_form.pdf\", \"quote\": \"Location of loss: 9299 Park Avenue, Rockford, IL\"}, {\"field\": \"vehicle_make\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2024 Saab 93\"}, {\"field\": \"vehicle_model\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2024 Saab 93\"}, {\"field\": \"vehicle_year\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2024 Saab 93\"}, {\"field\": \"police_report_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Police report number: PR-IL-2026-71183\"}, {\"field\": \"total_amount\", \"document\": \"claim_form.pdf\", \"quote\": \"Total amount claimed: $8,830.00\"}, {\"field\": \"itemized_damages\", \"document\": \"repair_estimate.pdf\", \"quote\": \"Quarter panel: $2,141.00\"}]}"
+}

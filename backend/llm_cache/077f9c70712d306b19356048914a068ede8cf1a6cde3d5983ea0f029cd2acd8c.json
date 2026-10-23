@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.001651,
+  "input_tokens": 861,
+  "latency_ms": 12510,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 557,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\":\"Megan Reyes\",\"policy_number\":\"POL-PLUS-698361\",\"incident_date\":\"2026-03-23\",\"reported_date\":\"2026-03-31\",\"incident_type\":\"Multi-vehicle Collision\",\"incident_location\":\"1706 Park Avenue, Rockford, IL\",\"vehicle_make\":\"Honda\",\"vehicle_model\":\"CRV\",\"vehicle_year\":2018,\"police_report_number\":\"PR-IL-2026-99842\",\"total_amount\":\"7770.00\",\"itemized_damages\":[{\"description\":\"Front door panel\",\"amount\":\"2812.00\"},{\"description\":\"Side mirror\",\"amount\":\"841.00\"},{\"description\":\"Door glass\",\"amount\":\"1486.00\"},{\"description\":\"Paint and materials\",\"amount\":\"2631.00\"}],\"evidence\":[{\"field\":\"claimant_name\",\"document\":\"claim_form.pdf\",\"quote\":\"Claimant name: Megan Reyes\"},{\"field\":\"policy_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Policy number: POL-PLUS-698361\"},{\"field\":\"incident_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date of loss: March 23, 2026\"},{\"field\":\"reported_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date reported: 2026-03-31\"},{\"field\":\"incident_type\",\"document\":\"claim_form.pdf\",\"quote\":\"Type of incident: Multi-vehicle Collision\"},{\"field\":\"incident_location\",\"document\":\"claim_form.pdf\",\"quote\":\"Location of loss: 1706 Park Avenue, Rockford, IL\"},{\"field\":\"vehicle_make\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2018 Honda CRV\"},{\"field\":\"vehicle_model\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2018 Honda CRV\"},{\"field\":\"vehicle_year\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2018 Honda CRV\"},{\"field\":\"police_report_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Police report number: PR-IL-2026-99842\"},{\"field\":\"total_amount\",\"document\":\"claim_form.pdf\",\"quote\":\"Total amount claimed: $7,770.00\"},{\"field\":\"itemized_damages\",\"document\":\"repair_estimate.pdf\",\"quote\":\"Front door panel: $2,812.00\"}]}"
+}

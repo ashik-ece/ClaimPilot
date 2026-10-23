@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 
 from app.pipeline.extraction import extract_claim
-from app.pipeline.llm import get_llm_client
+from app.pipeline.llm import LLMError, QuotaExhausted, get_llm_client
 from app.pipeline.ocr import PageText, read_pdf
 
 DATA = Path(__file__).resolve().parents[3] / "eval" / "data"
@@ -35,7 +35,14 @@ def main() -> None:
         for doc in meta["documents"]:
             path = DATA / "documents" / claim_id / doc["filename"]
             pages += read_pdf(path.read_bytes(), doc["filename"])
-        result = extract_claim(pages, client, vision=args.vision)
+        try:
+            result = extract_claim(pages, client, vision=args.vision)
+        except QuotaExhausted:
+            print(f"quota exhausted at {claim_id}; rerun later to resume from cache", flush=True)
+            break
+        except LLMError as exc:
+            print(claim_id, "FAILED", str(exc)[:150], flush=True)
+            continue
         total_cost += result.cost_usd
         preds[claim_id] = {
             "fields": result.fields,

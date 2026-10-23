@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.002364,
+  "input_tokens": 3215,
+  "latency_ms": 25031,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 560,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\":\"Megan Zimmerman\",\"policy_number\":\"POL-BASIC-897132\",\"incident_date\":\"2026-02-04\",\"reported_date\":\"2026-02-10\",\"incident_type\":\"Multi-vehicle Collision\",\"incident_location\":\"5619 River Road, Naperville, IL\",\"vehicle_make\":\"Honda\",\"vehicle_model\":\"CRV\",\"vehicle_year\":2008,\"police_report_number\":\"PR-IL-2026-70558\",\"total_amount\":\"7050.00\",\"itemized_damages\":[{\"description\":\"Front door panel\",\"amount\":\"2888.00\"},{\"description\":\"Rocker panel\",\"amount\":\"1498.00\"},{\"description\":\"Paint and materials\",\"amount\":\"1480.00\"},{\"description\":\"Shop supplies\",\"amount\":\"1184.00\"}],\"evidence\":[{\"field\":\"claimant_name\",\"document\":\"claim_form.pdf\",\"quote\":\"Claimant name: Megan Zimmerman\"},{\"field\":\"policy_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Policy number: POL-BASIC-897132\"},{\"field\":\"incident_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date of loss: February 4, 2026\"},{\"field\":\"reported_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date reported: 2026-02-10\"},{\"field\":\"incident_type\",\"document\":\"claim_form.pdf\",\"quote\":\"Type of incident: Multi-vehicle Collision\"},{\"field\":\"incident_location\",\"document\":\"claim_form.pdf\",\"quote\":\"Location of loss: 5619 River Road, Naperville, IL\"},{\"field\":\"vehicle_make\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2008 Honda CRV\"},{\"field\":\"vehicle_model\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2008 Honda CRV\"},{\"field\":\"vehicle_year\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2008 Honda CRV\"},{\"field\":\"police_report_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Police report number: PR-IL-2026-70558\"},{\"field\":\"total_amount\",\"document\":\"claim_form.pdf\",\"quote\":\"Total amount claimed: $7,050.00\"},{\"field\":\"itemized_damages\",\"document\":\"repair_estimate.pdf\",\"quote\":\"Front door panel: $2,888.00\"}]}"
+}

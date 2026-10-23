@@ -1,0 +1,24 @@
+{
+  "claims": 40,
+  "extraction": {
+    "claims": 40,
+    "macro": 0.9833333333333334,
+    "min_field": 0.925,
+    "per_field": {
+      "claimant_name": 0.975,
+      "incident_date": 1.0,
+      "incident_location": 1.0,
+      "incident_type": 0.975,
+      "itemized_damages": 1.0,
+      "police_report_number": 1.0,
+      "policy_number": 0.925,
+      "reported_date": 0.925,
+      "total_amount": 1.0,
+      "vehicle_make": 1.0,
+      "vehicle_model": 1.0,
+      "vehicle_year": 1.0
+    }
+  },
+  "predicted": 40,
+  "split": "dev"
+}

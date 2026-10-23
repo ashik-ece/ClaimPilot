@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.001536,
+  "input_tokens": 728,
+  "latency_ms": 12691,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 527,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\":\"Brian Walker\",\"policy_number\":\"POL-BASIC-718890\",\"incident_date\":\"2026-08-17\",\"reported_date\":\"2026-08-19\",\"incident_type\":\"Multi-vehicle Collision\",\"incident_location\":\"6347 Cedar Road, Dayton, OH\",\"vehicle_make\":\"Ford\",\"vehicle_model\":\"F150\",\"vehicle_year\":2019,\"police_report_number\":null,\"total_amount\":\"6760.00\",\"itemized_damages\":[{\"description\":\"Rear door panel\",\"amount\":\"445.00\"},{\"description\":\"Quarter panel\",\"amount\":\"943.00\"},{\"description\":\"Door glass\",\"amount\":\"1249.00\"},{\"description\":\"Front door panel\",\"amount\":\"2104.00\"},{\"description\":\"Shop supplies\",\"amount\":\"2019.00\"}],\"evidence\":[{\"field\":\"claimant_name\",\"document\":\"claim_form.pdf\",\"quote\":\"Claimant name: Brian Walker\"},{\"field\":\"policy_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Policy number: POL-BASIC-718890\"},{\"field\":\"incident_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date of loss: August 17, 2026\"},{\"field\":\"reported_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date reported: 2026-08-19\"},{\"field\":\"incident_type\",\"document\":\"claim_form.pdf\",\"quote\":\"Type of incident: Multi-vehicle Collision\"},{\"field\":\"incident_location\",\"document\":\"claim_form.pdf\",\"quote\":\"Location of loss: 6347 Cedar Road, Dayton, OH\"},{\"field\":\"vehicle_make\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2019 Ford F150\"},{\"field\":\"vehicle_model\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2019 Ford F150\"},{\"field\":\"vehicle_year\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2019 Ford F150\"},{\"field\":\"total_amount\",\"document\":\"claim_form.pdf\",\"quote\":\"Total amount claimed: $6,760.00\"},{\"field\":\"itemized_damages\",\"document\":\"repair_estimate.pdf\",\"quote\":\"Rear door panel: $445.00\"}]}"
+}

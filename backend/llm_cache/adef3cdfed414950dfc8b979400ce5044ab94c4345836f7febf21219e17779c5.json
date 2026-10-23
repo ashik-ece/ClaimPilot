@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.001642,
+  "input_tokens": 840,
+  "latency_ms": 7021,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 556,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\":\"Marcus Mitchell\",\"policy_number\":\"POL-PREM-818725\",\"incident_date\":\"2026-06-03\",\"reported_date\":\"2026-06-05\",\"incident_type\":\"Multi-vehicle Collision\",\"incident_location\":\"8761 Maple Street, Bloomington, IN\",\"vehicle_make\":\"Honda\",\"vehicle_model\":\"Accord\",\"vehicle_year\":2012,\"police_report_number\":\"PR-IN-2026-27949\",\"total_amount\":\"6050.00\",\"itemized_damages\":[{\"description\":\"Tail lamp assembly\",\"amount\":\"1561.00\"},{\"description\":\"Rear reinforcement bar\",\"amount\":\"1432.00\"},{\"description\":\"Trunk lid\",\"amount\":\"1250.00\"},{\"description\":\"Shop supplies\",\"amount\":\"1807.00\"}],\"evidence\":[{\"field\":\"claimant_name\",\"document\":\"claim_form.pdf\",\"quote\":\"Claimant name: Marcus Mitchell\"},{\"field\":\"policy_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Policy number: POL-PREM-818725\"},{\"field\":\"incident_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date of loss: June 3, 2026\"},{\"field\":\"reported_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date reported: 06/05/2026\"},{\"field\":\"incident_type\",\"document\":\"claim_form.pdf\",\"quote\":\"Type of incident: Multi-vehicle Collision\"},{\"field\":\"incident_location\",\"document\":\"claim_form.pdf\",\"quote\":\"Location of loss: 8761 Maple Street, Bloomington, IN\"},{\"field\":\"vehicle_make\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2012 Honda Accord\"},{\"field\":\"vehicle_model\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2012 Honda Accord\"},{\"field\":\"vehicle_year\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2012 Honda Accord\"},{\"field\":\"police_report_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Police report number: PR-IN-2026-27949\"},{\"field\":\"total_amount\",\"document\":\"claim_form.pdf\",\"quote\":\"Total amount claimed: $6,050.00\"},{\"field\":\"itemized_damages\",\"document\":\"repair_estimate.pdf\",\"quote\":\"Tail lamp assembly: $1,561.00\"}]}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.002372,
+  "input_tokens": 824,
+  "latency_ms": 10418,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 850,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"claimant_name\": \"Hannah Dawson\",\n  \"policy_number\": \"POL-STD-453684\",\n  \"incident_date\": \"2026-02-13\",\n  \"reported_date\": \"2026-02-22\",\n  \"incident_type\": \"Multi-vehicle Collision\",\n  \"incident_location\": \"1240 Park Avenue, Evansville, IN\",\n  \"vehicle_make\": \"Ford\",\n  \"vehicle_model\": \"Escape\",\n  \"vehicle_year\": 2013,\n  \"police_report_number\": \"PR-IN-2026-38476\",\n  \"total_amount\": \"10580.00\",\n  \"itemized_damages\": [\n    {\n      \"description\": \"Rear body panel\",\n      \"amount\": \"2780.00\"\n    },\n    {\n      \"description\": \"Quarter panel\",\n      \"amount\": \"3244.00\"\n    },\n    {\n      \"description\": \"Body labor\",\n      \"amount\": \"4556.00\"\n    }\n  ],\n  \"evidence\": [\n    {\n      \"field\": \"claimant_name\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Claimant name: Hannah Dawson\"\n    },\n    {\n      \"field\": \"policy_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Policy number: POL-STD-453684\"\n    },\n    {\n      \"field\": \"incident_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date of loss: 2026-02-13\"\n    },\n    {\n      \"field\": \"reported_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date reported: 2026-02-22\"\n    },\n    {\n      \"field\": \"incident_type\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Type of incident: Multi-vehicle Collision\"\n    },\n    {\n      \"field\": \"incident_location\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Location of loss: 1240 Park Avenue, Evansville, IN\"\n    },\n    {\n      \"field\": \"vehicle_make\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2013 Ford Escape\"\n    },\n    {\n      \"field\": \"vehicle_model\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2013 Ford Escape\"\n    },\n    {\n      \"field\": \"vehicle_year\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2013 Ford Escape\"\n    },\n    {\n      \"field\": \"police_report_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Police report number: PR-IN-2026-38476\"\n    },\n    {\n      \"field\": \"total_amount\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Total amount claimed: $10,580.00\"\n    },\n    {\n      \"field\": \"itemized_damages\",\n      \"document\": \"repair_estimate.pdf\",\n      \"quote\": \"Rear body panel: $2,780.00\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,1545 @@
+{
+ "CLM-0001": {
+  "fields": {
+   "claimant_name": "Megan Zimmerman",
+   "incident_date": "2026-02-04",
+   "incident_location": "5619 River Road, Naperville, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2888.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1498.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1480.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "1184.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-70558",
+   "policy_number": null,
+   "reported_date": "2026-02-04",
+   "total_amount": "7050.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2008
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [
+   "claimant_name",
+   "reported_date",
+   "vehicle_model"
+  ],
+  "used_vision": false
+ },
+ "CLM-0010": {
+  "fields": {
+   "claimant_name": "Naomi Egan",
+   "incident_date": "2026-08-29",
+   "incident_location": "2671 Sunset Drive, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "806.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "2193.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1233.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "1738.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PREM-153638",
+   "reported_date": "2026-09-02",
+   "total_amount": "5970.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2013
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0020": {
+  "fields": {
+   "claimant_name": "Marcus Mitchell",
+   "incident_date": "2026-06-03",
+   "incident_location": "8761 Maple Street, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1561.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1432.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "1250.00",
+     "description": "Trunk lid"
+    },
+    {
+     "amount": "1807.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-27949",
+   "policy_number": "POL-PREM-818725",
+   "reported_date": "2026-06-05",
+   "total_amount": "6050.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2012
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0027": {
+  "fields": {
+   "claimant_name": "Brian Walker",
+   "incident_date": "2026-08-17",
+   "incident_location": "6347 Cedar Road, Dayton, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "445.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "943.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1249.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "2104.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2019.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-718890",
+   "reported_date": "2026-08-19",
+   "total_amount": "6760.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F150",
+   "vehicle_year": 2019
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0029": {
+  "fields": {
+   "claimant_name": "Robert Underwood",
+   "incident_date": "2026-09-08",
+   "incident_location": "9299 Park Avenue, Rockford, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2141.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "2025.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "1078.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1378.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "2208.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-71183",
+   "policy_number": "POL-STD-963480",
+   "reported_date": "2026-10-22",
+   "total_amount": "8830.00",
+   "vehicle_make": "Saab",
+   "vehicle_model": "93",
+   "vehicle_year": 2024
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0030": {
+  "fields": {
+   "claimant_name": "Hannah Dawson",
+   "incident_date": "2026-02-13",
+   "incident_location": "1240 Park Avenue, Evansville, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2780.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "3244.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "4556.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-38476",
+   "policy_number": "POL-STD-453684",
+   "reported_date": "2026-02-22",
+   "total_amount": "10580.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "Escape",
+   "vehicle_year": 2013
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0031": {
+  "fields": {
+   "claimant_name": "Aisha Mitchell",
+   "incident_date": "2026-01-24",
+   "incident_location": "3136 Cedar Road, Springfield, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2426.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "1529.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "5325.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-50211",
+   "policy_number": "POL-BASIC-440514",
+   "reported_date": "2026-01-27",
+   "total_amount": "9280.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "E400",
+   "vehicle_year": 2009
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0034": {
+  "fields": {
+   "claimant_name": "Leila Fischer",
+   "incident_date": "2026-07-21",
+   "incident_location": "461 Elm Drive, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "951.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1526.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "431.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "1525.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "1328.00",
+     "description": "Frame and alignment"
+    },
+    {
+     "amount": "339.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-83874",
+   "policy_number": "POL-BASIC-870031",
+   "reported_date": "2026-07-27",
+   "total_amount": "6100.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2017
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0042": {
+  "fields": {
+   "claimant_name": "Megan Reyes",
+   "incident_date": "2026-03-23",
+   "incident_location": "1706 Park Avenue, Rockford, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2812.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "841.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "1486.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "2631.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-99842",
+   "policy_number": "POL-PLUS-698361",
+   "reported_date": "2026-03-31",
+   "total_amount": "7770.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2018
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0055": {
+  "fields": {
+   "claimant_name": "Chloe Fischer",
+   "incident_date": "2026-09-29",
+   "incident_location": "4671 Park Avenue, Evansville, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "674.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "611.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2245.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "2181.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "489.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-16901",
+   "policy_number": "POL-PREM-289470",
+   "reported_date": "2026-10-04",
+   "total_amount": "6200.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F150",
+   "vehicle_year": 2011
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0057": {
+  "fields": {
+   "claimant_name": "Priya Vasquez",
+   "incident_date": "2026-06-03",
+   "incident_location": "6510 Maple Street, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "4305.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "6634.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "6918.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "5343.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-657847",
+   "reported_date": "2026-06-12",
+   "total_amount": "23200.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": null,
+   "vehicle_year": 2011
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0062": {
+  "fields": {
+   "claimant_name": "Leila Thompson",
+   "incident_date": "2026-07-25",
+   "incident_location": "9498 Elm Drive, Peoria, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1385.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "2227.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "1938.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-60838",
+   "policy_number": "POL-PREM-201751",
+   "reported_date": "2026-07-28",
+   "total_amount": "5550.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Pathfinder",
+   "vehicle_year": 2017
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0063": {
+  "fields": {
+   "claimant_name": "Carlos Okafor",
+   "incident_date": "2026-06-26",
+   "incident_location": "8892 Oak Avenue, Naperville, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2979.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "2970.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "991.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-51137",
+   "policy_number": "POL-BASIC-451881",
+   "reported_date": "2026-06-28",
+   "total_amount": "6940.00",
+   "vehicle_make": "Suburu",
+   "vehicle_model": "Impreza",
+   "vehicle_year": 2008
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0064": {
+  "fields": {
+   "claimant_name": "Carlos Zimmerman",
+   "incident_date": "2026-06-28",
+   "incident_location": "4407 Park Avenue, Naperville, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2602.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "2333.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2290.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "1515.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-893801",
+   "reported_date": "2026-07-03",
+   "total_amount": "8740.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Maxima",
+   "vehicle_year": 2022
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0066": {
+  "fields": {
+   "claimant_name": "Megan Brennan",
+   "incident_date": "2026-08-12",
+   "incident_location": "5397 Park Avenue, Indianapolis, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "946.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "2521.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "2496.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "2597.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-STD-811149",
+   "reported_date": "2026-08-18",
+   "total_amount": "8560.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "TL",
+   "vehicle_year": 2012
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0069": {
+  "fields": {
+   "claimant_name": "Omar Xu",
+   "incident_date": "2026-06-15",
+   "incident_location": "8093 Maple Street, Columbus, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "933.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "858.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "1125.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1721.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "943.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-356492",
+   "reported_date": "2026-06-21",
+   "total_amount": "5580.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Camry",
+   "vehicle_year": 2018
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0072": {
+  "fields": {
+   "claimant_name": "Rachel Fischer",
+   "incident_date": "2026-08-18",
+   "incident_location": "1901 Maple Street, Fort Wayne, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "4468.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1406.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "3456.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PREM-208684",
+   "reported_date": "2026-08-19",
+   "total_amount": "9330.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2011
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0079": {
+  "fields": {
+   "claimant_name": "Daniel Alvarez",
+   "incident_date": "2026-02-20",
+   "incident_location": "865 Mill Road, Rockford, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3312.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "1392.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "2406.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "2360.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-32543",
+   "policy_number": "POL-STD-730875",
+   "reported_date": "2026-02-27",
+   "total_amount": "9470.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "C300",
+   "vehicle_year": 2020
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0083": {
+  "fields": {
+   "claimant_name": "Carlos Reyes",
+   "incident_date": "2026-09-12",
+   "incident_location": "678 Sunset Drive, Dayton, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2769.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1021.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1252.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "3278.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-84001",
+   "policy_number": "POL-PREM-662902",
+   "reported_date": "2026-09-14",
+   "total_amount": "8320.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "MDX",
+   "vehicle_year": 2021
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0103": {
+  "fields": {
+   "claimant_name": "Aisha Chen",
+   "incident_date": "2026-09-05",
+   "incident_location": "9028 Maple Street, Toledo, OH",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3459.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "3189.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "1715.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "1077.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-482469",
+   "reported_date": "2026-09-06",
+   "total_amount": "9440.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Civic",
+   "vehicle_year": 2024
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0108": {
+  "fields": {
+   "claimant_name": "Ethan Chen",
+   "incident_date": "2026-07-28",
+   "incident_location": "5064 Maple Street, Bloomington, IN",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1077.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "800.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1582.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "928.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "1663.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PREM-138960",
+   "reported_date": "2026-08-06",
+   "total_amount": "6050.00",
+   "vehicle_make": "Chevrolet",
+   "vehicle_model": "Silverado",
+   "vehicle_year": 2009
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0113": {
+  "fields": {
+   "claimant_name": "Tariq Vasquez",
+   "incident_date": "2026-04-17",
+   "incident_location": "7621 Mill Road, Rockford, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "10479.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "7921.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "10053.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "6623.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "8114.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-STD-514794",
+   "reported_date": "2026-04-22",
+   "total_amount": "43190.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Camry",
+   "vehicle_year": 2014
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0119": {
+  "fields": {
+   "claimant_name": "Carles Egan",
+   "incident_date": "2026-08-10",
+   "incident_location": "2396 Washington Street, Toledo, OH",
+   "incident_type": "reversing out of a parking area, the rear of my vehicle struck a concrete bollard",
+   "itemized_damages": [
+    {
+     "amount": "2087.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "2748.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "2607.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1298.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "9169004720",
+   "reported_date": "2026-08-10",
+   "total_amount": "8740.00",
+   "vehicle_make": "Suburu",
+   "vehicle_model": "Legacy",
+   "vehicle_year": 2013
+  },
+  "issues": [
+   "policy_number '9169004720' is not of the form POL-XXXX-123456"
+  ],
+  "needs_review": true,
+  "unverified_fields": [
+   "policy_number",
+   "reported_date"
+  ],
+  "used_vision": false
+ },
+ "CLM-0125": {
+  "fields": {
+   "claimant_name": "Grace Okafor",
+   "incident_date": "2026-06-24",
+   "incident_location": "6613 Elm Drive, Fort Wayne, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "5666.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "3926.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1088.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-41386",
+   "policy_number": "POL-STD-355314",
+   "reported_date": "2026-08-09",
+   "total_amount": "10680.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "Fusion",
+   "vehicle_year": 2014
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0130": {
+  "fields": {
+   "claimant_name": "Brian Fischer",
+   "incident_date": "2026-05-07",
+   "incident_location": "6212 Washington Street, Evansville, IN",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "923.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1029.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "374.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "1009.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "426.00",
+     "description": "Shop supplies"
+    },
+    {
+     "amount": "709.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-55376",
+   "policy_number": "POL-BASIC-430886",
+   "reported_date": "2026-05-11",
+   "total_amount": "4470.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "ML350",
+   "vehicle_year": 2014
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0132": {
+  "fields": {
+   "claimant_name": "Daniel Alvarez",
+   "incident_date": "2026-02-20",
+   "incident_location": "865 Mill Road, Rockford, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3920.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "3539.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1378.00",
+     "description": "Shop supplies"
+    },
+    {
+     "amount": "1623.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-22791",
+   "policy_number": "POL-STD-730875",
+   "reported_date": "2026-03-05",
+   "total_amount": "10460.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "C300",
+   "vehicle_year": 2020
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0141": {
+  "fields": {
+   "claimant_name": "Fatima Gupta",
+   "incident_date": "2026-04-19",
+   "incident_location": "1117 River Road, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3006.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "1704.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "1960.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-74730",
+   "policy_number": "POL-STD-509960",
+   "reported_date": "2026-04-27",
+   "total_amount": "6670.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "TL",
+   "vehicle_year": 2017
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0142": {
+  "fields": {
+   "claimant_name": "Priya Kowalski",
+   "incident_date": "2026-06-18",
+   "incident_location": "2810 Park Avenue, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1705.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "1355.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "4239.00",
+     "description": "Frame and alignment"
+    },
+    {
+     "amount": "2651.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-165954",
+   "reported_date": "2026-06-28",
+   "total_amount": "9950.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Maxima",
+   "vehicle_year": 2011
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0143": {
+  "fields": {
+   "claimant_name": "Andre Ibrahim",
+   "incident_date": "2026-02-05",
+   "incident_location": "7035 Sunset Drive, Toledo, OH",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1694.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "2294.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "841.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1445.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1126.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-62875",
+   "policy_number": "POL-BASIC-962539",
+   "reported_date": "2026-02-10",
+   "total_amount": "7400.00",
+   "vehicle_make": "BMW",
+   "vehicle_model": "M5",
+   "vehicle_year": 2020
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0144": {
+  "fields": {
+   "claimant_name": "Daniel Young",
+   "incident_date": "2026-07-03",
+   "incident_location": "5121 Lake Boulevard, Dayton, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1067.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "1124.00",
+     "description": "Trunk lid"
+    },
+    {
+     "amount": "893.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "970.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "1226.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-39167",
+   "policy_number": "POL-BASIC-410403",
+   "reported_date": "2026-07-12",
+   "total_amount": "5280.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Camry",
+   "vehicle_year": 2011
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0147": {
+  "fields": {
+   "claimant_name": "Grace Thompson",
+   "incident_date": "2026-06-18",
+   "incident_location": "1879 River Road, Fort Wayne, IN",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1742.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1794.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "923.00",
+     "description": "Trunk lid"
+    },
+    {
+     "amount": "757.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "3314.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-24404",
+   "policy_number": null,
+   "reported_date": "2026-06-18",
+   "total_amount": "8530.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F150",
+   "vehicle_year": 2017
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [
+   "reported_date"
+  ],
+  "used_vision": false
+ },
+ "CLM-0150": {
+  "fields": {
+   "claimant_name": "Victor Zimmerman",
+   "incident_date": "2026-04-27",
+   "incident_location": "6143 Oak Avenue, Fort Wayne, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1468.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "5931.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "4013.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "3403.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "3415.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-998801",
+   "reported_date": "2026-05-06",
+   "total_amount": "18230.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2022
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0151": {
+  "fields": {
+   "claimant_name": "Priya Alvarez",
+   "incident_date": "2026-08-14",
+   "incident_location": "4291 Elm Drive, Peoria, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "594.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "2230.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1759.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "2707.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "1150.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-98433",
+   "policy_number": "POL-PREM-313088",
+   "reported_date": "2026-08-21",
+   "total_amount": "8440.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Ultima",
+   "vehicle_year": 2025
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0154": {
+  "fields": {
+   "claimant_name": "Grace Hayes",
+   "incident_date": "2026-05-28",
+   "incident_location": "2334 Cedar Road, Akron, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1742.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "1393.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1784.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "451.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-244813",
+   "reported_date": "2026-05-31",
+   "total_amount": "5370.00",
+   "vehicle_make": "Saab",
+   "vehicle_model": "93",
+   "vehicle_year": 2025
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0172": {
+  "fields": {
+   "claimant_name": "Robert Dawson",
+   "incident_date": "2026-09-26",
+   "incident_location": "5132 Oak Avenue, Rockford, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2999.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "1721.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2820.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-12975",
+   "policy_number": "POL-STD-329499",
+   "reported_date": "2026-10-01",
+   "total_amount": "7540.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "RSX",
+   "vehicle_year": 2017
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0175": {
+  "fields": {
+   "claimant_name": "Grace Egan",
+   "incident_date": "2026-08-19",
+   "incident_location": "2046 Highland Avenue, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1179.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "2037.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1435.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2019.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-78811",
+   "policy_number": "POL-BASIC-729365",
+   "reported_date": "2026-08-22",
+   "total_amount": "6670.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "E400",
+   "vehicle_year": 2014
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0182": {
+  "fields": {
+   "claimant_name": "Yuki Schmidt",
+   "incident_date": "2026-09-16",
+   "incident_location": "1862 Maple Street, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "8075.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "5599.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "7324.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "11602.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "5362.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "7188.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-386532",
+   "reported_date": "2026-09-22",
+   "total_amount": "45150.00",
+   "vehicle_make": "BMW",
+   "vehicle_model": "X6",
+   "vehicle_year": 2013
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0186": {
+  "fields": {
+   "claimant_name": "Omar Young",
+   "incident_date": "2026-03-07",
+   "incident_location": "8589 Washington Street, Naperville, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1593.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "2442.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "879.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1803.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1763.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-256721",
+   "reported_date": "2026-03-13",
+   "total_amount": "8480.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": null,
+   "vehicle_year": 2008
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0196": {
+  "fields": {
+   "claimant_name": "Marcus Gupta",
+   "incident_date": "2026-03-05",
+   "incident_location": "9289 Maple Street, Peoria, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1050.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "1953.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "2014.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "2913.00",
+     "description": "Shop supplies"
+    },
+    {
+     "amount": "900.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-884220",
+   "reported_date": "2026-03-13",
+   "total_amount": "8830.00",
+   "vehicle_make": "Audi",
+   "vehicle_model": "A5",
+   "vehicle_year": 2010
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ },
+ "CLM-0197": {
+  "fields": {
+   "claimant_name": "Grace Fischer",
+   "incident_date": "2026-03-14",
+   "incident_location": "1749 Sunset Drive, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1623.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "1242.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1714.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "1440.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "678.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "1683.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-65581",
+   "policy_number": "POL-BASIC-794962",
+   "reported_date": "2026-03-19",
+   "total_amount": "8380.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2022
+  },
+  "issues": [],
+  "needs_review": false,
+  "unverified_fields": [],
+  "used_vision": false
+ }
+}
