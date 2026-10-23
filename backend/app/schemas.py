@@ -110,6 +110,20 @@ class PolicyOut(ORMModel):
     expiry_date: date
 
 
+class ClauseCreate(BaseModel):
+    clause_id: str = Field(min_length=1, max_length=50)
+    section_path: str = Field(max_length=255)
+    text: str = Field(min_length=1)
+
+
+class ClauseOut(ORMModel):
+    id: uuid.UUID
+    policy_id: uuid.UUID
+    clause_id: str
+    section_path: str
+    text: str
+
+
 class DecisionCreate(BaseModel):
     outcome: Outcome
     reason_code: ReasonCode | None = None
