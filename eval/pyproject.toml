@@ -1,0 +1,26 @@
+[project]
+name = "claimpilot-eval"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "reportlab>=4.2",
+    "pillow>=11.0",
+    "numpy>=2.0",
+    "pypdf>=5.1",
+    "httpx>=0.27",
+    "qdrant-client>=1.12,<1.13",
+    "fastembed>=0.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.3", "ruff>=0.8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
