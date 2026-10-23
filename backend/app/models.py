@@ -156,3 +156,21 @@ class AuditEvent(Base):
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=text("clock_timestamp()"), nullable=False
     )
+
+
+class PipelineJob(Base):
+    __tablename__ = "pipeline_job"
+    __table_args__ = (
+        UniqueConstraint("claim_id", "stage"),
+        Index("ix_pipeline_job_status_created", "status", "created_at"),
+    )
+
+    id: Mapped[uuid.UUID] = _uuid_pk()
+    claim_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("claim.id"), index=True)
+    stage: Mapped[str] = mapped_column(String(30))
+    status: Mapped[str] = mapped_column(String(20), default="queued")
+    attempts: Mapped[int] = mapped_column(Integer, default=0)
+    last_error: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = _now()
+    started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
