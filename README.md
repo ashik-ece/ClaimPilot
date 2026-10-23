@@ -30,6 +30,10 @@ cd backend && uv sync && uv run pytest
 uv run ruff check . && uv run mypy app
 ```
 
+## Dataset
+
+200 synthetic auto-collision claims with ground truth, four policy forms and a frozen test set live in `eval/data/`. See `docs/dataset.md` and `eval/README.md`.
+
 ## Layout
 
-`backend/` API and migrations · `frontend/` console (Phase 4) · `eval/` evaluation harness · `infra/` deployment (deferred) · `docs/`
+`backend/` API and migrations · `frontend/` console (Phase 4) · `eval/` dataset and evaluation harness · `infra/` deployment (deferred) · `docs/`
