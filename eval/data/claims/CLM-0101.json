@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0101",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "missing_fields",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Vasquez",
+    "incident_date": "2026-06-22",
+    "incident_location": "4970 Highland Avenue, Indianapolis, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "613.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1048.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1042.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "892.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "530.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "745.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-629649",
+    "reported_date": "2026-06-27",
+    "total_amount": "4870.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": null,
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 2026-06-22, at about 17:05, I was driving my 2025 Chevrolet on 4970 Highland Avenue, Indianapolis, IN. The weather was clear and dry. The panels had been rusting and cracking from age for years, and I finally decided to put in a claim for all of the deterioration. I swerved to avoid a deer and the left side of my vehicle scraped a retaining wall. No one was hurt and I did not call the police. The main damage is to the front door panel, rocker panel, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $4,870.00.",
+  "pair_id": "CLM-0101",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:wear_and_tear",
+    "exclusion": "wear_and_tear",
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0094",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Gupta",
+    "incident_date": "2026-05-24",
+    "incident_location": "4303 Maple Street, Springfield, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1745.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1686.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "851.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "1768.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-19008",
+    "policy_number": "POL-STD-329652",
+    "reported_date": "2026-05-29",
+    "total_amount": "6050.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "E400",
+    "vehicle_year": 2023
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-4.3"
+  ],
+  "narrative_text": "On 05/24/2026, at about 6:20, I was driving my 2023 Mercedes E400 on 4303 Maple Street, Springfield, IL. Traffic was light. I was furious after an argument and deliberately steered the front of my car into the retaining wall on purpose. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the fender, radiator support. I took the car to Summit Collision and they estimated the repair at $6,050.00.",
+  "pair_id": "CLM-0094",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "intentional",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

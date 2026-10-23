@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0182",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Yuki Schmidt",
+    "incident_date": "2026-09-16",
+    "incident_location": "1862 Maple Street, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "8075.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "5599.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "7324.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "11602.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "5362.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "7188.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-386532",
+    "reported_date": "2026-09-22",
+    "total_amount": "45150.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "X6",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.1"
+  ],
+  "narrative_text": "On September 16, 2026, at about 10:35, I was driving my 2013 BMW X6 on 1862 Maple Street, Toledo, OH. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the fender, front bumper cover, hood panel. I took the car to Lakeside Autoworks and they estimated the repair at $45,150.00.",
+  "pair_id": "CLM-0182",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "dev"
+}

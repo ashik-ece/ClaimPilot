@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0010",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Naomi Egan",
+    "incident_date": "2026-08-29",
+    "incident_location": "2671 Sunset Drive, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "806.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "2193.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1233.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1738.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-153638",
+    "reported_date": "2026-09-02",
+    "total_amount": "5970.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 08/29/2026, at about 7:05, I was driving my 2013 Honda CRV on 2671 Sunset Drive, Bloomington, IN. The weather was clear and dry. I had turned off the paved road onto a dirt trail through a field to take a shortcut. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, tail lamp assembly, rear reinforcement bar. I took the car to Summit Collision and they estimated the repair at $5,970.00.",
+  "pair_id": "CLM-0010",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:off_road",
+    "exclusion": "off_road",
+    "type": "approve_distractor"
+  },
+  "split": "dev"
+}

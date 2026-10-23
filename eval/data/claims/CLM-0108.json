@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0108",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Ethan Chen",
+    "incident_date": "2026-07-28",
+    "incident_location": "5064 Maple Street, Bloomington, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1077.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "800.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1582.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "928.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1663.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-138960",
+    "reported_date": "2026-08-06",
+    "total_amount": "6050.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Silverado",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-07-28, at about 9:35, I was driving my 2009 Chevrolet Silverado on 5064 Maple Street, Bloomington, IN. The road was dry. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. No one was hurt and I did not call the police. The main damage is to the hood panel, radiator support, headlamp assembly. I took the car to Midwest Collision Center and they estimated the repair at $6,050.00.",
+  "pair_id": "CLM-0108",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

@@ -1,0 +1,85 @@
+{
+  "claim_id": "CLM-0141",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Gupta",
+    "incident_date": "2026-04-19",
+    "incident_location": "1117 River Road, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3006.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1704.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1960.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-74730",
+    "policy_number": "POL-STD-509960",
+    "reported_date": "2026-04-27",
+    "total_amount": "6670.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "TL",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-6.2",
+    "STD-4.6"
+  ],
+  "narrative_text": "On 04/19/2026, at about 20:35, I was driving my 2017 Accura TL on 1117 River Road, Toledo, OH. The weather was clear and dry. I had one drink with dinner a few hours earlier and I felt fine, but the officer asked me a few questions about it. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front bumper cover, fender. I took the car to Heartland Repair Group and they estimated the repair at $6,670.00.",
+  "pair_id": "CLM-0141",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": "dui",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "dev"
+}

@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0104",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Patrick Fischer",
+    "incident_date": "2026-03-16",
+    "incident_location": "6210 Sunset Drive, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "4367.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "4730.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "4654.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "7269.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-91125",
+    "policy_number": "POL-BASIC-671019",
+    "reported_date": "2026-03-23",
+    "total_amount": "21020.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.1"
+  ],
+  "narrative_text": "On 2026-03-16, at about 18:20, I was driving my 2008 Honda CRV on 6210 Sunset Drive, Bloomington, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear reinforcement bar, quarter panel. I took the car to Lakeside Autoworks and they estimated the repair at $21,020.00.",
+  "pair_id": "CLM-0104",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "test"
+}

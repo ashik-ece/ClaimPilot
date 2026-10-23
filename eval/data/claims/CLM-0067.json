@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0067",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Emily Mitchell",
+    "incident_date": "2026-01-31",
+    "incident_location": "9571 River Road, Fort Wayne, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "993.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1372.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "3349.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "986.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-792952",
+    "reported_date": "2026-02-10",
+    "total_amount": "6700.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-4.3"
+  ],
+  "narrative_text": "On 01/31/2026, at about 11:35, I was driving my 2025 Ford Fusion on 9571 River Road, Fort Wayne, IN. Traffic was light. I was furious after an argument and deliberately steered the front of my car into the concrete barrier on purpose. No one was hurt and I did not call the police. The main damage is to the rocker panel, door glass. I took the car to Precision Auto Body and they estimated the repair at $6,700.00.",
+  "pair_id": "CLM-0067",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "intentional",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

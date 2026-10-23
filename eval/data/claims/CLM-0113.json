@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0113",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Vasquez",
+    "incident_date": "2026-04-17",
+    "incident_location": "7621 Mill Road, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "10479.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "7921.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "10053.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "6623.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "8114.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-514794",
+    "reported_date": "2026-04-22",
+    "total_amount": "43190.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Camry",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-6.1"
+  ],
+  "narrative_text": "On 2026-04-17, at about 16:05, I was driving my 2014 Toyota Camry on 7621 Mill Road, Rockford, IL. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, quarter panel, side mirror. I took the car to Eagle Body & Paint and they estimated the repair at $43,190.00.",
+  "pair_id": "CLM-0113",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "dev"
+}

@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0073",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Zimmerman",
+    "incident_date": "2026-07-21",
+    "incident_location": "5689 Mill Road, Dayton, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2081.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "495.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1077.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1063.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1280.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "974.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-23474",
+    "policy_number": "POL-PREM-769425",
+    "reported_date": "2026-07-31",
+    "total_amount": "6970.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "X5",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "large tree",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On July 21, 2026, at about 10:05, I was driving my 2017 BMW X5 on 5689 Mill Road, Dayton, OH. The weather was clear and dry. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the hood panel, fender, headlamp assembly. I took the car to Precision Auto Body and they estimated the repair at $6,970.00.",
+  "pair_id": "CLM-0073",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0160",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Ethan Chen",
+    "incident_date": "2026-05-19",
+    "incident_location": "3056 River Road, Fort Wayne, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2646.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "3241.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "3273.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-85421",
+    "policy_number": "POL-PLUS-123093",
+    "reported_date": "2026-05-25",
+    "total_amount": "9160.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Grand Cherokee",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "large tree",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On May 19, 2026, at about 19:50, I was driving my 2011 Jeep Grand Cherokee on 3056 River Road, Fort Wayne, IN. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the side mirror, front door panel. I took the car to Summit Collision and they estimated the repair at $9,160.00.",
+  "pair_id": "CLM-0160",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

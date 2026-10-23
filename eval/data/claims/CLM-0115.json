@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0115",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Fischer",
+    "incident_date": "2026-06-13",
+    "incident_location": "6989 Sunset Drive, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2970.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "2337.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "868.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "725.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-802611",
+    "reported_date": "2026-06-14",
+    "total_amount": "6900.00",
+    "vehicle_make": "Dodge",
+    "vehicle_model": "RAM",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-06-13, at about 19:35, I was driving my 2016 Dodge RAM on 6989 Sunset Drive, Evansville, IN. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the radiator support, front bumper cover. I took the car to Precision Auto Body and they estimated the repair at $6,900.00.",
+  "pair_id": "CLM-0115",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

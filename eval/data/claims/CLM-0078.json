@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0078",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Hannah Brennan",
+    "incident_date": "2026-04-02",
+    "incident_location": "3357 Oak Avenue, Dayton, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3327.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1167.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "2109.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1912.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "2395.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-461646",
+    "reported_date": "2026-04-08",
+    "total_amount": "10910.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Wrangler",
+    "vehicle_year": 2021
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-6.2",
+    "STD-4.5"
+  ],
+  "narrative_text": "On April 2, 2026, at about 13:50, I was driving my 2021 Jeep Wrangler on 3357 Oak Avenue, Dayton, OH. The weather was clear and dry. My cousin was driving and thinks his license may have expired around last month, but he has not checked. I lost traction on a patch of gravel and the front of my vehicle struck a guardrail. No one was hurt and I did not call the police. The main damage is to the front grille, hood panel, front bumper cover. I took the car to Midwest Collision Center and they estimated the repair at $10,910.00.",
+  "pair_id": "CLM-0078",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": "unlicensed_driver",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

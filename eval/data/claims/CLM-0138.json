@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0138",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Emily Xu",
+    "incident_date": "2026-05-27",
+    "incident_location": "6443 Lake Boulevard, Bloomington, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2537.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1715.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "2568.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-818693",
+    "reported_date": "2026-05-31",
+    "total_amount": "6820.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Impreza",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "large tree",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 2026-05-27, at about 19:20, I was driving my 2011 Suburu Impreza on 6443 Lake Boulevard, Bloomington, IN. The weather was clear and dry. I lost traction on a patch of gravel and the front of my vehicle struck a large tree. No one was hurt and I did not call the police. The main damage is to the fender, radiator support. I took the car to Midwest Collision Center and they estimated the repair at $6,820.00.",
+  "pair_id": "CLM-0138",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

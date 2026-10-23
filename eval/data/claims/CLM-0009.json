@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0009",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Vasquez",
+    "incident_date": "2026-03-27",
+    "incident_location": "1678 Mill Road, Peoria, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1546.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1355.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1148.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "686.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1556.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "1529.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-936899",
+    "reported_date": "2026-04-06",
+    "total_amount": "7820.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On March 27, 2026, at about 18:35, I was driving my 2016 Saab 95 on 1678 Mill Road, Peoria, IL. The weather was clear and dry. I lost traction on a patch of gravel and the front of my vehicle struck a concrete barrier. No one was hurt and I did not call the police. The main damage is to the front bumper cover, radiator support, front grille. I took the car to Heartland Repair Group and they estimated the repair at $7,820.00.",
+  "pair_id": "CLM-0009",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

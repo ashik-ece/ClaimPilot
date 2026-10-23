@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0069",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Omar Xu",
+    "incident_date": "2026-06-15",
+    "incident_location": "8093 Maple Street, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "933.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "858.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1125.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1721.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "943.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-356492",
+    "reported_date": "2026-06-21",
+    "total_amount": "5580.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Camry",
+    "vehicle_year": 2018
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 06/15/2026, at about 8:50, I was driving my 2018 Toyota Camry on 8093 Maple Street, Columbus, OH. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the headlamp assembly, hood panel, radiator support. I took the car to Heartland Repair Group and they estimated the repair at $5,580.00.",
+  "pair_id": "CLM-0069",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

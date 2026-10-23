@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0106",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Omar Mitchell",
+    "incident_date": "2026-03-23",
+    "incident_location": "4756 Oak Avenue, Peoria, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1775.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2312.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "705.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "2338.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-472044",
+    "reported_date": "2026-03-29",
+    "total_amount": "7130.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On March 23, 2026, at about 17:20, I was driving my 2011 Honda CRV on 4756 Oak Avenue, Peoria, IL. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear bumper cover, rear reinforcement bar. I took the car to Summit Collision and they estimated the repair at $7,130.00.",
+  "pair_id": "CLM-0106",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

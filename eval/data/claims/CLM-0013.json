@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0013",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Reyes",
+    "incident_date": "2026-09-30",
+    "incident_location": "3187 Park Avenue, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1079.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1198.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "951.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1525.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1407.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-48076",
+    "policy_number": "POL-PREM-124213",
+    "reported_date": "2026-10-04",
+    "total_amount": "6160.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A5",
+    "vehicle_year": 2023
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 09/30/2026, at about 18:20, I was driving my 2023 Audi A5 on 3187 Park Avenue, Toledo, OH. The weather was clear and dry. While reversing out of a parking area, the rear of my vehicle struck a steel pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the trunk lid, rear body panel, tail lamp assembly. I took the car to Precision Auto Body and they estimated the repair at $6,160.00.",
+  "pair_id": "CLM-0013",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

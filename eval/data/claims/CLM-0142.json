@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0142",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Priya Kowalski",
+    "incident_date": "2026-06-18",
+    "incident_location": "2810 Park Avenue, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1705.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1355.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "4239.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "2651.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-165954",
+    "reported_date": "2026-06-28",
+    "total_amount": "9950.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Maxima",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 2026-06-18, at about 20:05, I was driving my 2011 Nissan Maxima on 2810 Park Avenue, Bloomington, IN. The road was dry. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, front bumper cover. I took the car to Summit Collision and they estimated the repair at $9,950.00.",
+  "pair_id": "CLM-0142",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

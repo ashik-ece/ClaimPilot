@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0099",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Yuki Underwood",
+    "incident_date": "2026-06-24",
+    "incident_location": "9619 Church Street, Columbus, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "4858.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1966.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "4282.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "3664.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "4700.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-19497",
+    "policy_number": "POL-BASIC-859587",
+    "reported_date": "2026-07-04",
+    "total_amount": "19470.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Maxima",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.1"
+  ],
+  "narrative_text": "On 2026-06-24, at about 6:20, I was driving my 2010 Nissan Maxima on 9619 Church Street, Columbus, OH. Traffic was light. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the headlamp assembly, radiator support, front grille. I took the car to Heartland Repair Group and they estimated the repair at $19,470.00.",
+  "pair_id": "CLM-0099",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "test"
+}

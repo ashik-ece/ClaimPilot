@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0122",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Kevin Underwood",
+    "incident_date": "2026-07-14",
+    "incident_location": "5970 Oak Avenue, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1613.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "470.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2023.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1215.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1009.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-558034",
+    "reported_date": "2026-07-15",
+    "total_amount": "6330.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Grand Cherokee",
+    "vehicle_year": 2015
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 2026-07-14, at about 15:20, I was driving my 2015 Jeep Grand Cherokee on 5970 Oak Avenue, Indianapolis, IN. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear reinforcement bar, trunk lid, rear body panel. I took the car to Lakeside Autoworks and they estimated the repair at $6,330.00.",
+  "pair_id": "CLM-0122",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

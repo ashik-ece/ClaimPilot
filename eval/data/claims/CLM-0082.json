@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0082",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Samuel Alvarez",
+    "incident_date": "2026-03-01",
+    "incident_location": "4086 Sunset Drive, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "795.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "3262.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "725.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "2828.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-63131",
+    "policy_number": "POL-BASIC-316897",
+    "reported_date": "2026-03-11",
+    "total_amount": "7610.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Escape",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "right",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 03/01/2026, at about 9:20, I was driving my 2016 Ford Escape on 4086 Sunset Drive, Toledo, OH. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, door glass, front door panel. I took the car to Summit Collision and they estimated the repair at $7,610.00.",
+  "pair_id": "CLM-0082",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

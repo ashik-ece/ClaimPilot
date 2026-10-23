@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0072",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Fischer",
+    "incident_date": "2026-08-18",
+    "incident_location": "1901 Maple Street, Fort Wayne, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "4468.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1406.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "3456.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-208684",
+    "reported_date": "2026-08-19",
+    "total_amount": "9330.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On August 18, 2026, at about 14:50, I was driving my 2011 Honda Accord on 1901 Maple Street, Fort Wayne, IN. It was dusk and visibility was reduced. My nephew was driving that day, and I knew his license had been suspended since the spring. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the tail lamp assembly, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $9,330.00.",
+  "pair_id": "CLM-0072",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:unlicensed_driver",
+    "exclusion": "unlicensed_driver",
+    "type": "approve_distractor"
+  },
+  "split": "dev"
+}

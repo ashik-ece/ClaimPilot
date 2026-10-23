@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0074",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Lopez",
+    "incident_date": "2026-06-03",
+    "incident_location": "9756 Lake Boulevard, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1426.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "387.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "647.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "925.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1585.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-58998",
+    "policy_number": "POL-PREM-410451",
+    "reported_date": "2026-06-10",
+    "total_amount": "4970.00",
+    "vehicle_make": "Dodge",
+    "vehicle_model": "Neon",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 06/03/2026, at about 18:50, I was driving my 2025 Dodge Neon on 9756 Lake Boulevard, Rockford, IL. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, trunk lid, rear body panel. I took the car to Lakeside Autoworks and they estimated the repair at $4,970.00.",
+  "pair_id": "CLM-0074",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

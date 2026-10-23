@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0117",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Lopez",
+    "incident_date": "2026-07-18",
+    "incident_location": "4984 Lake Boulevard, Bloomington, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1997.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1323.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "3226.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1717.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1457.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-52069",
+    "policy_number": "POL-PREM-235563",
+    "reported_date": "2026-07-25",
+    "total_amount": "9720.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Highlander",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 07/18/2026, at about 11:05, I was driving my 2009 Toyota Highlander on 4984 Lake Boulevard, Bloomington, IN. Traffic was light. The panels had been rusting and cracking from age for years, and I finally decided to put in a claim for all of the deterioration. While reversing out of a parking area, the rear of my vehicle struck a fence post. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, quarter panel, rear body panel. I took the car to Heartland Repair Group and they estimated the repair at $9,720.00.",
+  "pair_id": "CLM-0117",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:wear_and_tear",
+    "exclusion": "wear_and_tear",
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

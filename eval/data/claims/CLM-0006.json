@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0006",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Sofia Gupta",
+    "incident_date": "2026-07-29",
+    "incident_location": "4973 Mill Road, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1106.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1257.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "993.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1259.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1135.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-124016",
+    "reported_date": "2026-08-04",
+    "total_amount": "5750.00",
+    "vehicle_make": "Volkswagen",
+    "vehicle_model": "Passat",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 07/29/2026, at about 16:35, I was driving my 2014 Volkswagen Passat on 4973 Mill Road, Evansville, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, rear reinforcement bar, trunk lid. I took the car to Midwest Collision Center and they estimated the repair at $5,750.00.",
+  "pair_id": "CLM-0006",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

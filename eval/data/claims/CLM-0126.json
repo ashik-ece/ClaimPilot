@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0126",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Jensen",
+    "incident_date": "2026-06-12",
+    "incident_location": "2513 Washington Street, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2001.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "495.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2205.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2057.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1992.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "970.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-46079",
+    "policy_number": "POL-PREM-746158",
+    "reported_date": "2026-06-19",
+    "total_amount": "9720.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 06/12/2026, at about 18:05, I was driving my 2010 Honda Accord on 2513 Washington Street, Rockford, IL. It was dusk and visibility was reduced. My nephew was driving that day, and I knew his license had been suspended since the spring. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear body panel, tail lamp assembly, trunk lid. I took the car to Midwest Collision Center and they estimated the repair at $9,720.00.",
+  "pair_id": "CLM-0126",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:unlicensed_driver",
+    "exclusion": "unlicensed_driver",
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0039",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Carlos Reyes",
+    "incident_date": "2026-05-18",
+    "incident_location": "5852 Lake Boulevard, Akron, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2280.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1862.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1677.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1211.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "500.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-84453",
+    "policy_number": "POL-BASIC-365404",
+    "reported_date": "2026-05-19",
+    "total_amount": "7530.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Malibu",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.5"
+  ],
+  "narrative_text": "On May 18, 2026, at about 20:20, I was driving my 2016 Chevrolet Malibu on 5852 Lake Boulevard, Akron, OH. The road was dry. My nephew was driving that day, and I knew his license had been suspended since the spring. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, rear body panel, rear reinforcement bar. I took the car to Heartland Repair Group and they estimated the repair at $7,530.00.",
+  "pair_id": "CLM-0039",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "unlicensed_driver",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

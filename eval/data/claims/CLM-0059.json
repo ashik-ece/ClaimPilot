@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0059",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Chloe Vasquez",
+    "incident_date": "2026-08-30",
+    "incident_location": "6251 Church Street, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1603.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "3830.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1757.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2190.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-94720",
+    "policy_number": "POL-STD-132357",
+    "reported_date": "2026-09-04",
+    "total_amount": "9380.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A5",
+    "vehicle_year": 2015
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-4.6"
+  ],
+  "narrative_text": "On 2026-08-30, at about 14:05, I was driving my 2015 Audi A5 on 6251 Church Street, Toledo, OH. Traffic was light. I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, quarter panel, tail lamp assembly. I took the car to Eagle Body & Paint and they estimated the repair at $9,380.00.",
+  "pair_id": "CLM-0059",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "dui",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

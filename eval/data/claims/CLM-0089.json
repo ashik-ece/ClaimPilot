@@ -1,0 +1,80 @@
+{
+  "claim_id": "CLM-0089",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Okafor",
+    "incident_date": "2026-07-25",
+    "incident_location": "1513 Mill Road, Springfield, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2442.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2174.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1634.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-862778",
+    "reported_date": "2026-07-29",
+    "total_amount": "6250.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Pathfinder",
+    "vehicle_year": 2019
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-6.2",
+    "PREM-4.4"
+  ],
+  "narrative_text": "On July 25, 2026, at about 8:05, I was driving my 2019 Nissan Pathfinder on 1513 Mill Road, Springfield, IL. The road was dry. I had one drink with dinner a few hours earlier and I felt fine, but the officer asked me a few questions about it. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the tail lamp assembly, trunk lid. I took the car to Eagle Body & Paint and they estimated the repair at $6,250.00.",
+  "pair_id": "CLM-0089",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": "dui",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

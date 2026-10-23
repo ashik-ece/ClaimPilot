@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0105",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Okafor",
+    "incident_date": "2026-08-15",
+    "incident_location": "8503 Maple Street, Rockford, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1900.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1587.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1974.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1234.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1295.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-699325",
+    "reported_date": "2026-08-20",
+    "total_amount": "7990.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A5",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.3"
+  ],
+  "narrative_text": "On 2026-08-15, at about 14:35, I was driving my 2016 Audi A5 on 8503 Maple Street, Rockford, IL. The road was dry. I was furious after an argument and deliberately steered the front of my car into the concrete barrier on purpose. No one was hurt and I did not call the police. The main damage is to the side mirror, rear door panel, rocker panel. I took the car to Heartland Repair Group and they estimated the repair at $7,990.00.",
+  "pair_id": "CLM-0105",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "intentional",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

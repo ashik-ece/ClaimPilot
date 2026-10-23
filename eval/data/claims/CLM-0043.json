@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0043",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Okafor",
+    "incident_date": "2026-09-03",
+    "incident_location": "2435 Oak Avenue, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "730.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1419.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2681.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-267633",
+    "reported_date": "2026-09-05",
+    "total_amount": "4830.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Maxima",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-09-03, at about 14:35, I was driving my 2010 Nissan Maxima on 2435 Oak Avenue, Naperville, IL. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, trunk lid. I took the car to Precision Auto Body and they estimated the repair at $4,830.00.",
+  "pair_id": "CLM-0043",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

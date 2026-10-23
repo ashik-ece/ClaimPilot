@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0111",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Priya Fischer",
+    "incident_date": "2026-09-10",
+    "incident_location": "248 River Road, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2463.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1745.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "945.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "873.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "2479.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "1235.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-780953",
+    "reported_date": "2026-09-14",
+    "total_amount": "9740.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "ML350",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 09/10/2026, at about 6:05, I was driving my 2016 Mercedes ML350 on 248 River Road, Toledo, OH. It was dusk and visibility was reduced. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. No one was hurt and I did not call the police. The main damage is to the headlamp assembly, fender, front grille. I took the car to Heartland Repair Group and they estimated the repair at $9,740.00.",
+  "pair_id": "CLM-0111",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

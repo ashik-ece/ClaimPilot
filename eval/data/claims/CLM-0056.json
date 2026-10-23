@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0056",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Yuki Kowalski",
+    "incident_date": "2026-03-20",
+    "incident_location": "7965 Lake Boulevard, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1099.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1012.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1817.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "757.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "1205.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-15440",
+    "policy_number": "POL-BASIC-832606",
+    "reported_date": "2026-03-28",
+    "total_amount": "5890.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A5",
+    "vehicle_year": 2023
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.6"
+  ],
+  "narrative_text": "On 03/20/2026, at about 20:05, I was driving my 2023 Audi A5 on 7965 Lake Boulevard, Evansville, IN. Traffic was light. I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the side mirror, rocker panel, quarter panel. I took the car to Lakeside Autoworks and they estimated the repair at $5,890.00.",
+  "pair_id": "CLM-0056",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "dui",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

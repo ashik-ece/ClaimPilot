@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0149",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Young",
+    "incident_date": "2026-03-27",
+    "incident_location": "4724 Maple Street, Naperville, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2096.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "861.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "849.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "560.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1014.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1410.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-430099",
+    "reported_date": "2026-03-31",
+    "total_amount": "6790.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Civic",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On March 27, 2026, at about 10:50, I was driving my 2022 Honda Civic on 4724 Maple Street, Naperville, IL. It was dusk and visibility was reduced. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. No one was hurt and I did not call the police. The main damage is to the front grille, fender, radiator support. I took the car to Eagle Body & Paint and they estimated the repair at $6,790.00.",
+  "pair_id": "CLM-0149",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

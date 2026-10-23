@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0110",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "rotated",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Kevin Kowalski",
+    "incident_date": "2026-08-23",
+    "incident_location": "1536 Park Avenue, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "611.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "2467.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1728.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1737.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "2417.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-84754",
+    "policy_number": "POL-PREM-757102",
+    "reported_date": "2026-08-29",
+    "total_amount": "8960.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Pathfinder",
+    "vehicle_year": 2024
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 08/23/2026, at about 12:05, I was driving my 2024 Nissan Pathfinder on 1536 Park Avenue, Evansville, IN. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, quarter panel, rocker panel. I took the car to Lakeside Autoworks and they estimated the repair at $8,960.00.",
+  "pair_id": "CLM-0110",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0083",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Carlos Reyes",
+    "incident_date": "2026-09-12",
+    "incident_location": "678 Sunset Drive, Dayton, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2769.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1021.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1252.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "3278.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-84001",
+    "policy_number": "POL-PREM-662902",
+    "reported_date": "2026-09-14",
+    "total_amount": "8320.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "MDX",
+    "vehicle_year": 2021
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-4.2"
+  ],
+  "narrative_text": "On September 12, 2026, at about 9:20, I was driving my 2021 Accura MDX on 678 Sunset Drive, Dayton, OH. It was dusk and visibility was reduced. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, front door panel, rear door panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,320.00.",
+  "pair_id": "CLM-0083",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "racing",
+    "type": "deny_exclusion"
+  },
+  "split": "dev"
+}

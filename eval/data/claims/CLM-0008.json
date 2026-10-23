@@ -1,0 +1,89 @@
+{
+  "claim_id": "CLM-0008",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Underwood",
+    "incident_date": "2026-06-17",
+    "incident_location": "6114 Park Avenue, Akron, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "6370.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "5846.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1395.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "2285.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "3634.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-14064",
+    "policy_number": "POL-STD-899357",
+    "reported_date": "2026-06-24",
+    "total_amount": "19530.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Highlander",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-7.3"
+  ],
+  "narrative_text": "On 06/17/2026, at about 7:20, I was driving my 2016 Toyota Highlander on 6114 Park Avenue, Akron, OH. Traffic was light. I swerved to avoid a deer and the left side of my vehicle scraped a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rocker panel, door glass. I took the car to Lakeside Autoworks and they estimated the repair at $19,530.00.",
+  "pair_id": "CLM-0008",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "test"
+}

@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0107",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Zimmerman",
+    "incident_date": "2026-06-05",
+    "incident_location": "9500 Church Street, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "918.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1308.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1523.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "758.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1323.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-80595",
+    "policy_number": "POL-PLUS-660647",
+    "reported_date": "2026-06-12",
+    "total_amount": "5830.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Wrangler",
+    "vehicle_year": 2021
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On June 5, 2026, at about 11:35, I was driving my 2021 Jeep Wrangler on 9500 Church Street, Columbus, OH. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, front door panel, door glass. I took the car to Eagle Body & Paint and they estimated the repair at $5,830.00.",
+  "pair_id": "CLM-0107",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

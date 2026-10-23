@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0018",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "James Underwood",
+    "incident_date": "2026-08-19",
+    "incident_location": "6323 Highland Avenue, Columbus, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1725.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "2086.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1155.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1374.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-37637",
+    "policy_number": "POL-STD-467409",
+    "reported_date": "2026-08-22",
+    "total_amount": "6340.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "92x",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 08/19/2026, at about 17:05, I was driving my 2022 Saab 92x on 6323 Highland Avenue, Columbus, OH. It was dusk and visibility was reduced. It was raining heavily and the road surface was slick. I swerved to avoid a deer and the left side of my vehicle scraped a guardrail. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, front door panel, rocker panel. I took the car to Midwest Collision Center and they estimated the repair at $6,340.00.",
+  "pair_id": "CLM-0018",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "benign_context",
+    "exclusion": null,
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

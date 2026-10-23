@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0136",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Chloe Hayes",
+    "incident_date": "2026-07-08",
+    "incident_location": "1936 Cedar Road, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "594.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2146.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1864.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "563.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1433.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-271922",
+    "reported_date": "2026-07-12",
+    "total_amount": "6600.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Maxima",
+    "vehicle_year": 2019
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-07-08, at about 21:50, I was driving my 2019 Nissan Maxima on 1936 Cedar Road, Toledo, OH. The weather was clear and dry. I was in the middle of a paid rideshare trip with a passenger in the back seat when this happened. While reversing out of a parking area, the rear of my vehicle struck a steel pole. No one was hurt and I did not call the police. The main damage is to the quarter panel, rear bumper cover, trunk lid. I took the car to Summit Collision and they estimated the repair at $6,600.00.",
+  "pair_id": "CLM-0136",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:commercial_use",
+    "exclusion": "commercial_use",
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

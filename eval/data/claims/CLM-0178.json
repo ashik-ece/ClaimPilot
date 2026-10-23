@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0178",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Fischer",
+    "incident_date": "2026-01-20",
+    "incident_location": "6994 Washington Street, Springfield, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "806.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1548.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "3290.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "2116.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-557767",
+    "reported_date": "2026-01-24",
+    "total_amount": "7760.00",
+    "vehicle_make": "Volkswagen",
+    "vehicle_model": "Jetta",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "large tree",
+    "side": "right",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 01/20/2026, at about 10:50, I was driving my 2013 Volkswagen Jetta on 6994 Washington Street, Springfield, IL. Traffic was light. I lost traction on a patch of gravel and the front of my vehicle struck a large tree. No one was hurt and I did not call the police. The main damage is to the radiator support, headlamp assembly. I took the car to Summit Collision and they estimated the repair at $7,760.00.",
+  "pair_id": "CLM-0178",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

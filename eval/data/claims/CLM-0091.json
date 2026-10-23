@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0091",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Megan Ibrahim",
+    "incident_date": "2026-08-01",
+    "incident_location": "8877 River Road, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "4084.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "4160.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "3800.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1641.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "6504.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1341.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-600585",
+    "reported_date": "2026-08-02",
+    "total_amount": "21530.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Forrestor",
+    "vehicle_year": 2015
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.1"
+  ],
+  "narrative_text": "On 2026-08-01, at about 6:50, I was driving my 2015 Suburu Forrestor on 8877 River Road, Toledo, OH. Traffic was light. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. No one was hurt and I did not call the police. The main damage is to the headlamp assembly, front grille, hood panel. I took the car to Precision Auto Body and they estimated the repair at $21,530.00.",
+  "pair_id": "CLM-0091",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "test"
+}

@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0097",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "rotated",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Hayes",
+    "incident_date": "2026-07-26",
+    "incident_location": "4034 Highland Avenue, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1074.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1233.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "696.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1343.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1324.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-42957",
+    "policy_number": "POL-PREM-340853",
+    "reported_date": "2026-07-29",
+    "total_amount": "5670.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Malibu",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-07-26, at about 18:50, I was driving my 2011 Chevrolet Malibu on 4034 Highland Avenue, Toledo, OH. Traffic was light. I had renewed my driver's license the previous month and it was valid. While reversing out of a parking area, the rear of my vehicle struck a fence post. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the trunk lid, rear body panel, rear bumper cover. I took the car to Precision Auto Body and they estimated the repair at $5,670.00.",
+  "pair_id": "CLM-0097",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "benign_context",
+    "exclusion": null,
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

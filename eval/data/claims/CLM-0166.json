@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0166",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Patel",
+    "incident_date": "2026-06-04",
+    "incident_location": "4867 Cedar Road, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1095.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2136.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1939.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1860.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-345037",
+    "reported_date": "2026-06-12",
+    "total_amount": "7030.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Silverado",
+    "vehicle_year": 2018
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-06-04, at about 17:20, I was driving my 2018 Chevrolet Silverado on 4867 Cedar Road, Toledo, OH. The weather was clear and dry. While reversing out of a parking area, the rear of my vehicle struck a steel pole. No one was hurt and I did not call the police. The main damage is to the rear reinforcement bar, quarter panel, rear body panel. I took the car to Summit Collision and they estimated the repair at $7,030.00.",
+  "pair_id": "CLM-0166",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

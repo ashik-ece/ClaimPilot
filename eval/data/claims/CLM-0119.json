@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0119",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Carlos Egan",
+    "incident_date": "2026-08-10",
+    "incident_location": "2396 Washington Street, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2087.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2748.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "2607.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1298.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-204685",
+    "reported_date": "2026-08-16",
+    "total_amount": "8740.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Legacy",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 2026-08-10, at about 15:50, I was driving my 2013 Suburu Legacy on 2396 Washington Street, Toledo, OH. The weather was clear and dry. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. No one was hurt and I did not call the police. The main damage is to the rear reinforcement bar, rear body panel, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,740.00.",
+  "pair_id": "CLM-0119",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

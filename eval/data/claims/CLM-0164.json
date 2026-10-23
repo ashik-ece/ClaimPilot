@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0164",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Hannah Reyes",
+    "incident_date": "2026-05-24",
+    "incident_location": "7586 Cedar Road, Akron, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1276.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1228.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1504.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "753.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1071.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "768.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-587811",
+    "reported_date": "2026-05-29",
+    "total_amount": "6600.00",
+    "vehicle_make": "Dodge",
+    "vehicle_model": "Neon",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [
+    "date_outside_policy_period"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "right",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-1.1"
+  ],
+  "narrative_text": "On 2026-05-24, at about 15:05, I was driving my 2022 Dodge Neon on 7586 Cedar Road, Akron, OH. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, rocker panel, quarter panel. I took the car to Lakeside Autoworks and they estimated the repair at $6,600.00.",
+  "pair_id": "CLM-0164",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_outside_period"
+  },
+  "split": "test"
+}

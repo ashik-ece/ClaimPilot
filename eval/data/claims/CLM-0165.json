@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0165",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "James Zimmerman",
+    "incident_date": "2026-08-05",
+    "incident_location": "8884 Oak Avenue, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3316.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2170.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1176.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1338.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-71294",
+    "policy_number": "POL-PLUS-369878",
+    "reported_date": "2026-08-08",
+    "total_amount": "8000.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A3",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 2026-08-05, at about 16:05, I was driving my 2012 Audi A3 on 8884 Oak Avenue, Indianapolis, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the tail lamp assembly, rear bumper cover. I took the car to Heartland Repair Group and they estimated the repair at $8,000.00.",
+  "pair_id": "CLM-0165",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

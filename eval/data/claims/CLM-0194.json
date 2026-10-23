@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0194",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Gupta",
+    "incident_date": "2025-12-15",
+    "incident_location": "5867 Highland Avenue, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "672.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1434.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1083.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1193.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "889.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "579.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-731333",
+    "reported_date": "2025-12-17",
+    "total_amount": "5850.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Escape",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [
+    "date_outside_policy_period"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-1.1"
+  ],
+  "narrative_text": "On December 15, 2025, at about 6:35, I was driving my 2013 Ford Escape on 5867 Highland Avenue, Toledo, OH. Traffic was light. While reversing out of a parking area, the rear of my vehicle struck a steel pole. No one was hurt and I did not call the police. The main damage is to the rear bumper cover, rear reinforcement bar, quarter panel. I took the car to Lakeside Autoworks and they estimated the repair at $5,850.00.",
+  "pair_id": "CLM-0194",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_outside_period"
+  },
+  "split": "test"
+}
