@@ -9,6 +9,7 @@ import hashlib
 import json
 import logging
 import random
+import re
 import time
 import uuid
 from dataclasses import asdict, dataclass, field
@@ -34,6 +35,10 @@ PRICING: dict[str, tuple[float, float]] = {
 
 class LLMError(Exception):
     pass
+
+
+class QuotaExhausted(LLMError):
+    """The provider says the quota resets hours from now, so retrying is pointless."""
 
 
 class ReplayMiss(LLMError):
@@ -93,6 +98,12 @@ class LLMClient(Protocol):
     def generate(self, request: LLMRequest, schema: type[T]) -> tuple[T, LLMResult]: ...
 
 
+def _retry_after_seconds(exc: Exception) -> float:
+    """Seconds the provider asks us to wait (from RetryInfo), or 0 if it does not say."""
+    match = re.search(r"'retryDelay': '(\d+(?:\.\d+)?)s'", str(exc))
+    return float(match.group(1)) if match else 0.0
+
+
 class GeminiClient:
     """Calls Gemini with JSON-schema constrained output, retrying transient failures."""
 
@@ -135,6 +146,8 @@ class GeminiClient:
                     raise LLMError(f"model returned invalid {schema.__name__}: {exc}") from exc
             except (errors.APIError, TimeoutError, ConnectionError) as exc:
                 code = getattr(exc, "code", None)
+                if code == 429 and _retry_after_seconds(exc) > 120:
+                    raise QuotaExhausted(f"Gemini quota exhausted: {str(exc)[:300]}") from exc
                 if isinstance(code, int) and 400 <= code < 500 and code != 429:
                     raise LLMError(f"Gemini rejected the request ({code}): {exc}") from exc
                 last = exc
@@ -173,9 +186,9 @@ class RecordReplayClient:
 
     def generate(self, request: LLMRequest, schema: type[T]) -> tuple[T, LLMResult]:
         path = self._dir / f"{request.cache_key(schema)}.json"
-        if self._mode == "replay":
-            if not path.exists():
-                raise ReplayMiss(f"no recorded response for {request.prompt_name} ({path.name})")
+        if self._mode == "replay" and not path.exists():
+            raise ReplayMiss(f"no recorded response for {request.prompt_name} ({path.name})")
+        if self._mode in {"replay", "record"} and path.exists():
             return self._load(path, request, schema)
         assert self._inner is not None
         parsed, result = self._inner.generate(request, schema)

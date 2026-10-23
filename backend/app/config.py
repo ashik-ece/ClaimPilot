@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     # live: call Gemini. record: call Gemini and save each response. replay: never call out.
     llm_mode: str = "live"
     llm_cache_dir: str = str(_ROOT / "backend" / "llm_cache")
-    llm_fast_model: str = "gemini-2.5-flash"
+    llm_fast_model: str = "gemini-3.5-flash"
     llm_strong_model: str = "gemini-3.5-flash"
     llm_timeout_seconds: float = 60.0
     llm_max_retries: int = 4

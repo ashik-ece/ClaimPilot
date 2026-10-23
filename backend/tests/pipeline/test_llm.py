@@ -72,3 +72,11 @@ def test_cache_key_depends_on_images_and_prompt_version() -> None:
 def test_live_mode_does_not_write_cache(tmp_path: Path) -> None:
     RecordReplayClient(StubClient(), "live", tmp_path).generate(_req(), Answer)
     assert not list(tmp_path.glob("*.json"))
+
+
+def test_record_mode_reuses_cache(tmp_path: Path) -> None:
+    stub = StubClient()
+    client = RecordReplayClient(stub, "record", tmp_path)
+    client.generate(_req(), Answer)
+    _, again = client.generate(_req(), Answer)
+    assert stub.calls == 1 and again.replayed
