@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0140",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Xu",
+    "incident_date": "2026-06-25",
+    "incident_location": "7938 Washington Street, Naperville, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1445.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "3107.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "2858.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-277656",
+    "reported_date": "2026-06-29",
+    "total_amount": "7410.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "C300",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 06/25/2026, at about 8:50, I was driving my 2016 Mercedes C300 on 7938 Washington Street, Naperville, IL. The weather was clear and dry. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. No one was hurt and I did not call the police. The main damage is to the hood panel, fender. I took the car to Lakeside Autoworks and they estimated the repair at $7,410.00.",
+  "pair_id": "CLM-0140",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

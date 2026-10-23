@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0134",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": "missing_fields",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Alvarez",
+    "incident_date": "2026-07-24",
+    "incident_location": "5629 Mill Road, Evansville, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "6094.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "5409.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1124.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "5567.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1146.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-102649",
+    "reported_date": "2026-07-30",
+    "total_amount": "19340.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": null,
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.1"
+  ],
+  "narrative_text": "On 2026-07-24, at about 13:50, I was driving my 2008 Accura on 5629 Mill Road, Evansville, IN. Traffic was light. I swerved to avoid a deer and the right side of my vehicle scraped a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, rocker panel, door glass. I took the car to Lakeside Autoworks and they estimated the repair at $19,340.00.",
+  "pair_id": "CLM-0134",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "test"
+}

@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0090",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Omar Brennan",
+    "incident_date": "2026-09-17",
+    "incident_location": "5417 Mill Road, Columbus, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1974.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1623.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2546.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "967.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-358944",
+    "reported_date": "2026-09-26",
+    "total_amount": "7110.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Corolla",
+    "vehicle_year": 2020
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-09-17, at about 19:05, I was driving my 2020 Toyota Corolla on 5417 Mill Road, Columbus, OH. The road was dry. My car has a turbo kit and an exhaust that I installed myself and never reported to the insurer. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. No one was hurt and I did not call the police. The main damage is to the quarter panel, tail lamp assembly, rear body panel. I took the car to Midwest Collision Center and they estimated the repair at $7,110.00.",
+  "pair_id": "CLM-0090",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "exclusion_not_in_policy:modifications",
+    "exclusion": "modifications",
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

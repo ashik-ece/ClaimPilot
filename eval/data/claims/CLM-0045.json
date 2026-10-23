@@ -1,0 +1,80 @@
+{
+  "claim_id": "CLM-0045",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": "CLM-0015",
+  "fields": {
+    "claimant_name": "Fatima Underwood",
+    "incident_date": "2026-06-03",
+    "incident_location": "9726 Cedar Road, Fort Wayne, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1648.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "2406.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1627.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "3579.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-693814",
+    "reported_date": "2026-06-14",
+    "total_amount": "9260.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "X6",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [
+    "duplicate_claim"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-7.2"
+  ],
+  "narrative_text": "On June 3, 2026, at about 12:05, I was driving my 2016 BMW X6 on 9726 Cedar Road, Fort Wayne, IN. The road was dry. I lost traction on a patch of gravel and the front of my vehicle struck a concrete barrier. No one was hurt and I did not call the police. The main damage is to the front grille, front bumper cover, headlamp assembly. I took the car to Heartland Repair Group and they estimated the repair at $9,260.00.",
+  "pair_id": "CLM-0015",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_duplicate"
+  },
+  "split": "test"
+}

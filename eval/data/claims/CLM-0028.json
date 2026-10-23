@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0028",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Vasquez",
+    "incident_date": "2026-08-28",
+    "incident_location": "2859 Park Avenue, Akron, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1199.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1749.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "2267.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "3045.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-508467",
+    "reported_date": "2026-08-31",
+    "total_amount": "8260.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Tahoe",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "large tree",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.2",
+    "PLUS-4.4"
+  ],
+  "narrative_text": "On 2026-08-28, at about 12:35, I was driving my 2009 Chevrolet Tahoe on 2859 Park Avenue, Akron, OH. The road was dry. I was carrying some boxes to a friend's shop and he said he might give me gas money, I am not sure if that counts as work. I lost traction on a patch of gravel and the front of my vehicle struck a large tree. No one was hurt and I did not call the police. The main damage is to the front bumper cover, fender, radiator support. I took the car to Summit Collision and they estimated the repair at $8,260.00.",
+  "pair_id": "CLM-0028",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": "commercial_use",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

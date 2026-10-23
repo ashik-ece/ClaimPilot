@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0169",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Omar Quinn",
+    "incident_date": "2026-08-18",
+    "incident_location": "7213 Elm Drive, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1087.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1394.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2409.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-52939",
+    "policy_number": "POL-BASIC-500126",
+    "reported_date": "2026-08-24",
+    "total_amount": "4890.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A3",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.2"
+  ],
+  "narrative_text": "On August 18, 2026, at about 18:20, I was driving my 2016 Audi A3 on 7213 Elm Drive, Rockford, IL. It was dusk and visibility was reduced. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the side mirror, quarter panel. I took the car to Precision Auto Body and they estimated the repair at $4,890.00.",
+  "pair_id": "CLM-0169",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "racing",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

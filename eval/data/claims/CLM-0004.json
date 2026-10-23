@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0004",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Emily Schmidt",
+    "incident_date": "2026-03-19",
+    "incident_location": "6266 Maple Street, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2715.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2544.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2854.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1807.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-256830",
+    "reported_date": "2026-05-17",
+    "total_amount": "9920.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "TL",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-5.1"
+  ],
+  "narrative_text": "On 2026-03-19, at about 12:20, I was driving my 2013 Accura TL on 6266 Maple Street, Columbus, OH. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the trunk lid, rear reinforcement bar. I took the car to Summit Collision and they estimated the repair at $9,920.00.",
+  "pair_id": "CLM-0004",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_late_notice"
+  },
+  "split": "test"
+}

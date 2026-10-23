@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0033",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": "rotated",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Dawson",
+    "incident_date": "2026-01-27",
+    "incident_location": "6855 Church Street, Springfield, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "721.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "475.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "910.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1757.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1687.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-80068",
+    "policy_number": "POL-STD-787593",
+    "reported_date": "2026-02-04",
+    "total_amount": "5550.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Grand Cherokee",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "large tree",
+    "side": "right",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-6.2",
+    "STD-4.2"
+  ],
+  "narrative_text": "On 2026-01-27, at about 9:50, I was driving my 2010 Jeep Grand Cherokee on 6855 Church Street, Springfield, IL. The road was dry. Another car was driving fast near me and I may have sped up a little, though I am not sure whether you would call that racing. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front bumper cover, headlamp assembly, fender. I took the car to Heartland Repair Group and they estimated the repair at $5,550.00.",
+  "pair_id": "CLM-0033",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": "racing",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

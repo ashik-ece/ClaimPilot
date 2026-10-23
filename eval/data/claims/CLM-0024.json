@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0024",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Mitchell",
+    "incident_date": "2026-06-25",
+    "incident_location": "9506 Mill Road, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "638.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2969.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "851.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "3142.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-580281",
+    "reported_date": "2026-07-04",
+    "total_amount": "7600.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 06/25/2026, at about 15:05, I was driving my 2025 Ford Fusion on 9506 Mill Road, Rockford, IL. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear reinforcement bar, rear bumper cover, rear body panel. I took the car to Midwest Collision Center and they estimated the repair at $7,600.00.",
+  "pair_id": "CLM-0024",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

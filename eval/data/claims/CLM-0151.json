@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0151",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Priya Alvarez",
+    "incident_date": "2026-08-14",
+    "incident_location": "4291 Elm Drive, Peoria, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "594.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2230.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1759.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2707.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1150.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-98433",
+    "policy_number": "POL-PREM-313088",
+    "reported_date": "2026-08-21",
+    "total_amount": "8440.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Ultima",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On August 14, 2026, at about 6:35, I was driving my 2025 Nissan Ultima on 4291 Elm Drive, Peoria, IL. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear reinforcement bar, quarter panel, rear bumper cover. I took the car to Precision Auto Body and they estimated the repair at $8,440.00.",
+  "pair_id": "CLM-0151",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

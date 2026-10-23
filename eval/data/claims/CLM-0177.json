@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0177",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Patel",
+    "incident_date": "2026-08-20",
+    "incident_location": "5180 Church Street, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "626.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "550.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2625.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1549.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "970.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-82763",
+    "policy_number": "POL-PLUS-127431",
+    "reported_date": "2026-08-21",
+    "total_amount": "6320.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "C300",
+    "vehicle_year": 2020
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.4"
+  ],
+  "narrative_text": "On 2026-08-20, at about 16:50, I was driving my 2020 Mercedes C300 on 5180 Church Street, Toledo, OH. The road was dry. I was in the middle of a paid rideshare trip with a passenger in the back seat when this happened. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the trunk lid, rear bumper cover, tail lamp assembly. I took the car to Heartland Repair Group and they estimated the repair at $6,320.00.",
+  "pair_id": "CLM-0177",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "commercial_use",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

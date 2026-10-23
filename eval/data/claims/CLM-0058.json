@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0058",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Samuel Walker",
+    "incident_date": "2026-07-24",
+    "incident_location": "789 Church Street, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1202.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1126.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1343.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1185.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1841.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "703.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-394784",
+    "reported_date": "2026-07-26",
+    "total_amount": "7400.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Corolla",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 2026-07-24, at about 7:20, I was driving my 2013 Toyota Corolla on 789 Church Street, Bloomington, IN. The weather was clear and dry. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the radiator support, front bumper cover, headlamp assembly. I took the car to Summit Collision and they estimated the repair at $7,400.00.",
+  "pair_id": "CLM-0058",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

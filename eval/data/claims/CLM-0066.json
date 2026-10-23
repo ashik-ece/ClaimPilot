@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0066",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Megan Brennan",
+    "incident_date": "2026-08-12",
+    "incident_location": "5397 Park Avenue, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "946.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "2521.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "2496.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "2597.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-811149",
+    "reported_date": "2026-08-18",
+    "total_amount": "8560.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "TL",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-08-12, at about 18:35, I was driving my 2012 Accura TL on 5397 Park Avenue, Indianapolis, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, fender, radiator support. I took the car to Midwest Collision Center and they estimated the repair at $8,560.00.",
+  "pair_id": "CLM-0066",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

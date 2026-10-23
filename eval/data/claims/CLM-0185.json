@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0185",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Gupta",
+    "incident_date": "2026-06-11",
+    "incident_location": "7967 Cedar Road, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1723.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1140.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1741.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1649.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "2387.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-969882",
+    "reported_date": "2026-06-17",
+    "total_amount": "8640.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "ML350",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-06-11, at about 21:20, I was driving my 2025 Mercedes ML350 on 7967 Cedar Road, Columbus, OH. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, rear bumper cover, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,640.00.",
+  "pair_id": "CLM-0185",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

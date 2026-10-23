@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0076",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Linh Fischer",
+    "incident_date": "2026-06-30",
+    "incident_location": "1520 Cedar Road, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "783.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1193.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1376.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2737.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1531.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-394105",
+    "reported_date": "2026-07-05",
+    "total_amount": "7620.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Corolla",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 06/30/2026, at about 10:35, I was driving my 2014 Toyota Corolla on 1520 Cedar Road, Columbus, OH. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, trunk lid, quarter panel. I took the car to Summit Collision and they estimated the repair at $7,620.00.",
+  "pair_id": "CLM-0076",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

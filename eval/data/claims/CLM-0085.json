@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0085",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Andre Vasquez",
+    "incident_date": "2026-08-26",
+    "incident_location": "3590 Cedar Road, Dayton, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2058.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1834.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1731.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "427.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-696390",
+    "reported_date": "2026-09-03",
+    "total_amount": "6050.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "TL",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.7"
+  ],
+  "narrative_text": "On 2026-08-26, at about 10:20, I was driving my 2013 Accura TL on 3590 Cedar Road, Dayton, OH. The weather was clear and dry. I had turned off the paved road onto a dirt trail through a field to take a shortcut. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, radiator support, headlamp assembly. I took the car to Precision Auto Body and they estimated the repair at $6,050.00.",
+  "pair_id": "CLM-0085",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "off_road",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

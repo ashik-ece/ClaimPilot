@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0096",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Robert Xu",
+    "incident_date": "2026-06-05",
+    "incident_location": "7833 Highland Avenue, Peoria, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2307.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "1472.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1251.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-55763",
+    "policy_number": "POL-STD-602145",
+    "reported_date": "2026-06-09",
+    "total_amount": "5030.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Ultima",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 06/05/2026, at about 7:50, I was driving my 2016 Nissan Ultima on 7833 Highland Avenue, Peoria, IL. It was dusk and visibility was reduced. I swerved to avoid a deer and the right side of my vehicle scraped a retaining wall. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the door glass, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $5,030.00.",
+  "pair_id": "CLM-0096",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

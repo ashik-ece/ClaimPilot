@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0005",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Leila Reyes",
+    "incident_date": "2026-06-14",
+    "incident_location": "6064 Church Street, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1922.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "465.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "409.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "769.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1855.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-615518",
+    "reported_date": "2026-06-20",
+    "total_amount": "5420.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Silverado",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "right",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 06/14/2026, at about 16:50, I was driving my 2010 Chevrolet Silverado on 6064 Church Street, Toledo, OH. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the door glass, side mirror, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $5,420.00.",
+  "pair_id": "CLM-0005",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

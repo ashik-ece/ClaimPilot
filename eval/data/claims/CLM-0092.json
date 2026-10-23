@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0092",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Hannah Brennan",
+    "incident_date": "2026-07-28",
+    "incident_location": "8354 Lake Boulevard, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "803.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1297.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "3128.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2122.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-309294",
+    "reported_date": "2026-07-31",
+    "total_amount": "7350.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "RSX",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On July 28, 2026, at about 7:50, I was driving my 2010 Accura RSX on 8354 Lake Boulevard, Columbus, OH. It was dusk and visibility was reduced. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, rear reinforcement bar, tail lamp assembly. I took the car to Lakeside Autoworks and they estimated the repair at $7,350.00.",
+  "pair_id": "CLM-0092",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

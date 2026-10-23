@@ -1,0 +1,85 @@
+{
+  "claim_id": "CLM-0086",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Jordan Chen",
+    "incident_date": "2026-04-03",
+    "incident_location": "8470 Park Avenue, Akron, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3808.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "4525.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "6336.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "5981.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-35921",
+    "policy_number": "POL-PLUS-474544",
+    "reported_date": "2026-04-13",
+    "total_amount": "20650.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-7.3"
+  ],
+  "narrative_text": "On 04/03/2026, at about 17:50, I was driving my 2014 Honda CRV on 8470 Park Avenue, Akron, OH. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the hood panel, front bumper cover. I took the car to Lakeside Autoworks and they estimated the repair at $20,650.00.",
+  "pair_id": "CLM-0086",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "test"
+}

@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0147",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Thompson",
+    "incident_date": "2026-06-18",
+    "incident_location": "1879 River Road, Fort Wayne, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1742.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1794.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "923.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "757.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "3314.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-24404",
+    "policy_number": "POL-PLUS-228576",
+    "reported_date": "2026-06-26",
+    "total_amount": "8530.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "F150",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.5"
+  ],
+  "narrative_text": "On June 18, 2026, at about 18:35, I was driving my 2017 Ford F150 on 1879 River Road, Fort Wayne, IN. The road was dry. My nephew was driving that day, and I knew his license had been suspended since the spring. While reversing out of a parking area, the rear of my vehicle struck a steel pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear body panel, trunk lid. I took the car to Heartland Repair Group and they estimated the repair at $8,530.00.",
+  "pair_id": "CLM-0147",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "unlicensed_driver",
+    "type": "deny_exclusion"
+  },
+  "split": "dev"
+}

@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0029",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Robert Underwood",
+    "incident_date": "2026-09-08",
+    "incident_location": "9299 Park Avenue, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2141.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2025.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1078.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1378.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2208.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-71183",
+    "policy_number": "POL-STD-963480",
+    "reported_date": "2026-10-22",
+    "total_amount": "8830.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "93",
+    "vehicle_year": 2024
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-5.1"
+  ],
+  "narrative_text": "On 09/08/2026, at about 20:05, I was driving my 2024 Saab 93 on 9299 Park Avenue, Rockford, IL. It was dusk and visibility was reduced. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear body panel, tail lamp assembly. I took the car to Eagle Body & Paint and they estimated the repair at $8,830.00.",
+  "pair_id": "CLM-0029",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_late_notice"
+  },
+  "split": "dev"
+}

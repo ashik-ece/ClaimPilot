@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0037",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Brian Walker",
+    "incident_date": "2026-03-19",
+    "incident_location": "7114 Church Street, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "947.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1122.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1584.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1154.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "943.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-248524",
+    "reported_date": "2026-03-22",
+    "total_amount": "5750.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Malibu",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 03/19/2026, at about 7:50, I was driving my 2011 Chevrolet Malibu on 7114 Church Street, Bloomington, IN. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the front bumper cover, fender, headlamp assembly. I took the car to Precision Auto Body and they estimated the repair at $5,750.00.",
+  "pair_id": "CLM-0037",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

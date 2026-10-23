@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0052",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Chloe Xu",
+    "incident_date": "2026-09-04",
+    "incident_location": "5462 Sunset Drive, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "943.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "558.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1980.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1632.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "407.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-54082",
+    "policy_number": "POL-PREM-510996",
+    "reported_date": "2026-09-12",
+    "total_amount": "5520.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "X6",
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-09-04, at about 16:50, I was driving my 2008 BMW X6 on 5462 Sunset Drive, Rockford, IL. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear reinforcement bar, rear body panel, tail lamp assembly. I took the car to Summit Collision and they estimated the repair at $5,520.00.",
+  "pair_id": "CLM-0052",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

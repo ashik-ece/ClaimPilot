@@ -1,0 +1,84 @@
+{
+  "claim_id": "CLM-0098",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": "CLM-0054",
+  "fields": {
+    "claimant_name": "Victor Ibrahim",
+    "incident_date": "2026-05-24",
+    "incident_location": "4319 Maple Street, Peoria, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1856.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1347.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "928.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2146.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "3403.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-174451",
+    "reported_date": "2026-05-27",
+    "total_amount": "9680.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [
+    "duplicate_claim"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-7.2"
+  ],
+  "narrative_text": "On 2026-05-24, at about 16:50, I was driving my 2014 Honda Accord on 4319 Maple Street, Peoria, IL. The weather was clear and dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear bumper cover, rear reinforcement bar, trunk lid. I took the car to Lakeside Autoworks and they estimated the repair at $9,680.00.",
+  "pair_id": "CLM-0054",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_duplicate"
+  },
+  "split": "test"
+}

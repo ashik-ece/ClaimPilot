@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0189",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Gupta",
+    "incident_date": "2026-07-26",
+    "incident_location": "5821 Mill Road, Peoria, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1695.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1142.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "407.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1256.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1710.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-26005",
+    "policy_number": "POL-PLUS-875291",
+    "reported_date": "2026-07-31",
+    "total_amount": "6210.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Impreza",
+    "vehicle_year": 2018
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 07/26/2026, at about 7:35, I was driving my 2018 Suburu Impreza on 5821 Mill Road, Peoria, IL. Traffic was light. I had just left the grocery store and was heading home. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, trunk lid, rear reinforcement bar. I took the car to Heartland Repair Group and they estimated the repair at $6,210.00.",
+  "pair_id": "CLM-0189",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "benign_context",
+    "exclusion": null,
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

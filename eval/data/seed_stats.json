@@ -1,0 +1,226 @@
+{
+  "auto_year_range": [
+    1995,
+    2015
+  ],
+  "collision_type_share": {
+    "Front Collision": 0.309,
+    "Rear Collision": 0.3552,
+    "Side Collision": 0.3358
+  },
+  "fraud_rate": 0.247,
+  "incident_type_share": {
+    "Multi-vehicle Collision": 0.5097,
+    "Single Vehicle Collision": 0.4903
+  },
+  "rows_collision": 822,
+  "rows_total": 1000,
+  "severity_share": {
+    "Major Damage": 0.3358,
+    "Minor Damage": 0.3236,
+    "Total Loss": 0.3406
+  },
+  "source": "Mendeley Data 10.17632/992mh7dk9y (CC BY 4.0)",
+  "vehicle_claim_median_by_severity": {
+    "Major Damage": 45600.0,
+    "Minor Damage": 44255.0,
+    "Total Loss": 45280.0
+  },
+  "vehicle_claim_quantiles": {
+    "all": [
+      26670.0,
+      37440.0,
+      44800.0,
+      52650.0,
+      63920.0
+    ],
+    "by_severity": {
+      "Major Damage": [
+        29680.0,
+        38080.0,
+        45840.0,
+        52080.0,
+        65120.0
+      ],
+      "Minor Damage": [
+        25200.0,
+        37440.0,
+        44310.0,
+        53900.0,
+        64800.0
+      ],
+      "Total Loss": [
+        26080.0,
+        36560.0,
+        45360.0,
+        52200.0,
+        63280.0
+      ]
+    },
+    "quantile_points": [
+      0.05,
+      0.25,
+      0.5,
+      0.75,
+      0.95
+    ]
+  },
+  "vehicles": [
+    [
+      "Accura",
+      "MDX"
+    ],
+    [
+      "Accura",
+      "RSX"
+    ],
+    [
+      "Accura",
+      "TL"
+    ],
+    [
+      "Audi",
+      "A3"
+    ],
+    [
+      "Audi",
+      "A5"
+    ],
+    [
+      "BMW",
+      "3 Series"
+    ],
+    [
+      "BMW",
+      "M5"
+    ],
+    [
+      "BMW",
+      "X5"
+    ],
+    [
+      "BMW",
+      "X6"
+    ],
+    [
+      "Chevrolet",
+      "Malibu"
+    ],
+    [
+      "Chevrolet",
+      "Silverado"
+    ],
+    [
+      "Chevrolet",
+      "Tahoe"
+    ],
+    [
+      "Dodge",
+      "Neon"
+    ],
+    [
+      "Dodge",
+      "RAM"
+    ],
+    [
+      "Ford",
+      "Escape"
+    ],
+    [
+      "Ford",
+      "F150"
+    ],
+    [
+      "Ford",
+      "Fusion"
+    ],
+    [
+      "Honda",
+      "Accord"
+    ],
+    [
+      "Honda",
+      "CRV"
+    ],
+    [
+      "Honda",
+      "Civic"
+    ],
+    [
+      "Jeep",
+      "Grand Cherokee"
+    ],
+    [
+      "Jeep",
+      "Wrangler"
+    ],
+    [
+      "Mercedes",
+      "C300"
+    ],
+    [
+      "Mercedes",
+      "E400"
+    ],
+    [
+      "Mercedes",
+      "ML350"
+    ],
+    [
+      "Nissan",
+      "Maxima"
+    ],
+    [
+      "Nissan",
+      "Pathfinder"
+    ],
+    [
+      "Nissan",
+      "Ultima"
+    ],
+    [
+      "Saab",
+      "92x"
+    ],
+    [
+      "Saab",
+      "93"
+    ],
+    [
+      "Saab",
+      "95"
+    ],
+    [
+      "Suburu",
+      "Forrestor"
+    ],
+    [
+      "Suburu",
+      "Impreza"
+    ],
+    [
+      "Suburu",
+      "Legacy"
+    ],
+    [
+      "Toyota",
+      "Camry"
+    ],
+    [
+      "Toyota",
+      "Corolla"
+    ],
+    [
+      "Toyota",
+      "Highlander"
+    ],
+    [
+      "Volkswagen",
+      "Jetta"
+    ],
+    [
+      "Volkswagen",
+      "Passat"
+    ]
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "claim_id": "CLM-0121",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Patrick Hayes",
+    "incident_date": "2026-09-18",
+    "incident_location": "7186 Highland Avenue, Dayton, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1182.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "2189.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "2642.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1967.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-776540",
+    "reported_date": "2026-09-22",
+    "total_amount": "7980.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Wrangler",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-6.2",
+    "STD-4.3"
+  ],
+  "narrative_text": "On September 18, 2026, at about 21:05, I was driving my 2014 Jeep Wrangler on 7186 Highland Avenue, Dayton, OH. Traffic was light. I swerved at the last moment, and afterward the other driver said I did it on purpose, which I dispute. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rocker panel, side mirror. I took the car to Precision Auto Body and they estimated the repair at $7,980.00.",
+  "pair_id": "CLM-0121",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": "intentional",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

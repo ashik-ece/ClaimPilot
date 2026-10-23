@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0060",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Naomi Thompson",
+    "incident_date": "2026-03-02",
+    "incident_location": "9297 Elm Drive, Naperville, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1840.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "5343.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "6279.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "4340.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1507.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1391.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-893970",
+    "reported_date": "2026-03-09",
+    "total_amount": "20700.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Escape",
+    "vehicle_year": 2023
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-7.3"
+  ],
+  "narrative_text": "On 03/02/2026, at about 9:35, I was driving my 2023 Ford Escape on 9297 Elm Drive, Naperville, IL. The road was dry. I lost traction on a patch of gravel and the front of my vehicle struck a guardrail. No one was hurt and I did not call the police. The main damage is to the fender, front grille, headlamp assembly. I took the car to Midwest Collision Center and they estimated the repair at $20,700.00.",
+  "pair_id": "CLM-0060",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "test"
+}

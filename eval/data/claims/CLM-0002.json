@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0002",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Mitchell",
+    "incident_date": "2026-06-16",
+    "incident_location": "4614 Lake Boulevard, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2225.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "603.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "2098.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "2104.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-779762",
+    "reported_date": "2026-06-18",
+    "total_amount": "7030.00",
+    "vehicle_make": "Audi",
+    "vehicle_model": "A3",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.4"
+  ],
+  "narrative_text": "On 2026-06-16, at about 21:35, I was driving my 2016 Audi A3 on 4614 Lake Boulevard, Toledo, OH. It was dusk and visibility was reduced. I was in the middle of a paid rideshare trip with a passenger in the back seat when this happened. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the front grille, headlamp assembly. I took the car to Lakeside Autoworks and they estimated the repair at $7,030.00.",
+  "pair_id": "CLM-0002",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "commercial_use",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

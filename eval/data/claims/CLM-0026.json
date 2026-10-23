@@ -1,0 +1,85 @@
+{
+  "claim_id": "CLM-0026",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Yuki Mitchell",
+    "incident_date": "2025-11-15",
+    "incident_location": "5316 River Road, Dayton, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2533.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "2364.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1706.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1317.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-OH-2025-95308",
+    "policy_number": "POL-STD-465463",
+    "reported_date": "2025-11-21",
+    "total_amount": "7920.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "E400",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [
+    "date_outside_policy_period"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-1.1"
+  ],
+  "narrative_text": "On 11/15/2025, at about 12:50, I was driving my 2012 Mercedes E400 on 5316 River Road, Dayton, OH. It was dusk and visibility was reduced. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear body panel, trunk lid, quarter panel. I took the car to Lakeside Autoworks and they estimated the repair at $7,920.00.",
+  "pair_id": "CLM-0026",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_outside_period"
+  },
+  "split": "test"
+}

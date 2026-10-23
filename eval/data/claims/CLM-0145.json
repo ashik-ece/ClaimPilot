@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0145",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Andre Walker",
+    "incident_date": "2026-09-10",
+    "incident_location": "8545 Mill Road, Bloomington, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2642.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "3108.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "950.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-353581",
+    "reported_date": "2026-09-14",
+    "total_amount": "6700.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2015
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On September 10, 2026, at about 9:05, I was driving my 2015 Saab 95 on 8545 Mill Road, Bloomington, IN. The weather was clear and dry. I lost traction on a patch of gravel and the front of my vehicle struck a guardrail. No one was hurt and I did not call the police. The main damage is to the radiator support, headlamp assembly. I took the car to Precision Auto Body and they estimated the repair at $6,700.00.",
+  "pair_id": "CLM-0145",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

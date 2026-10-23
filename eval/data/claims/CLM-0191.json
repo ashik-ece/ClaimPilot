@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0191",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Linh Mitchell",
+    "incident_date": "2026-05-16",
+    "incident_location": "8098 Church Street, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1749.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1014.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "2179.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1796.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "1492.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-857372",
+    "reported_date": "2026-05-23",
+    "total_amount": "8230.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Escape",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On May 16, 2026, at about 6:05, I was driving my 2017 Ford Escape on 8098 Church Street, Toledo, OH. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the side mirror, door glass, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,230.00.",
+  "pair_id": "CLM-0191",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

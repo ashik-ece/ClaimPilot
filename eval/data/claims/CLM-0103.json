@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0103",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Chen",
+    "incident_date": "2026-09-05",
+    "incident_location": "9028 Maple Street, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3459.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "3189.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1715.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1077.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-482469",
+    "reported_date": "2026-09-06",
+    "total_amount": "9440.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Civic",
+    "vehicle_year": 2024
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.2",
+    "BASIC-4.2"
+  ],
+  "narrative_text": "On 2026-09-05, at about 19:35, I was driving my 2024 Honda Civic on 9028 Maple Street, Toledo, OH. The weather was clear and dry. Another car was driving fast near me and I may have sped up a little, though I am not sure whether you would call that racing. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. No one was hurt and I did not call the police. The main damage is to the radiator support, hood panel, front grille. I took the car to Precision Auto Body and they estimated the repair at $9,440.00.",
+  "pair_id": "CLM-0103",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": "racing",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "dev"
+}

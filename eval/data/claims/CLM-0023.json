@@ -1,0 +1,93 @@
+{
+  "claim_id": "CLM-0023",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Linh Egan",
+    "incident_date": "2026-06-03",
+    "incident_location": "7760 Maple Street, Indianapolis, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "4672.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "3942.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "3956.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "3795.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "2081.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "2464.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-87858",
+    "policy_number": "POL-PREM-447220",
+    "reported_date": "2026-06-10",
+    "total_amount": "20910.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Civic",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-7.3"
+  ],
+  "narrative_text": "On June 3, 2026, at about 21:05, I was driving my 2010 Honda Civic on 7760 Maple Street, Indianapolis, IN. It was dusk and visibility was reduced. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the hood panel, front grille, headlamp assembly. I took the car to Eagle Body & Paint and they estimated the repair at $20,910.00.",
+  "pair_id": "CLM-0023",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "test"
+}

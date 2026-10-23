@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0034",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Leila Fischer",
+    "incident_date": "2026-07-21",
+    "incident_location": "461 Elm Drive, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "951.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1526.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "431.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1525.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1328.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "339.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-83874",
+    "policy_number": "POL-BASIC-870031",
+    "reported_date": "2026-07-27",
+    "total_amount": "6100.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On July 21, 2026, at about 15:20, I was driving my 2017 Honda Accord on 461 Elm Drive, Bloomington, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the radiator support, fender, front grille. I took the car to Summit Collision and they estimated the repair at $6,100.00.",
+  "pair_id": "CLM-0034",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

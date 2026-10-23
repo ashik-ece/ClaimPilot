@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0065",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Chloe Brennan",
+    "incident_date": "2026-07-02",
+    "incident_location": "9575 Oak Avenue, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1620.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "3800.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1731.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2349.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-50021",
+    "policy_number": "POL-PLUS-788709",
+    "reported_date": "2026-07-10",
+    "total_amount": "9500.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.3"
+  ],
+  "narrative_text": "On July 2, 2026, at about 17:20, I was driving my 2017 Saab 95 on 9575 Oak Avenue, Naperville, IL. It was dusk and visibility was reduced. I was furious after an argument and deliberately steered the front of my car into the concrete bollard on purpose. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the trunk lid, rear body panel, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $9,500.00.",
+  "pair_id": "CLM-0065",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "intentional",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

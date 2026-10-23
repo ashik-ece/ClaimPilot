@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0180",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Kowalski",
+    "incident_date": "2026-08-18",
+    "incident_location": "6008 Highland Avenue, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2492.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1745.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1367.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "2943.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "763.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-446673",
+    "reported_date": "2026-08-19",
+    "total_amount": "9310.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "ML350",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On August 18, 2026, at about 10:05, I was driving my 2016 Mercedes ML350 on 6008 Highland Avenue, Bloomington, IN. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the quarter panel, side mirror, rocker panel. I took the car to Midwest Collision Center and they estimated the repair at $9,310.00.",
+  "pair_id": "CLM-0180",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,89 @@
+{
+  "claim_id": "CLM-0150",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Victor Zimmerman",
+    "incident_date": "2026-04-27",
+    "incident_location": "6143 Oak Avenue, Fort Wayne, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1468.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "5931.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "4013.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "3403.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "3415.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-998801",
+    "reported_date": "2026-05-06",
+    "total_amount": "18230.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-7.3"
+  ],
+  "narrative_text": "On April 27, 2026, at about 20:20, I was driving my 2022 Honda CRV on 6143 Oak Avenue, Fort Wayne, IN. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, front door panel, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $18,230.00.",
+  "pair_id": "CLM-0150",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "dev"
+}

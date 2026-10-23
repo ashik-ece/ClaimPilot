@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0159",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Robert Ibrahim",
+    "incident_date": "2026-05-01",
+    "incident_location": "7393 Lake Boulevard, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3303.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "3420.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1617.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-701703",
+    "reported_date": "2026-05-09",
+    "total_amount": "8340.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2021
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 2026-05-01, at about 17:05, I was driving my 2021 Ford Fusion on 7393 Lake Boulevard, Naperville, IL. It was dusk and visibility was reduced. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the tail lamp assembly, trunk lid. I took the car to Heartland Repair Group and they estimated the repair at $8,340.00.",
+  "pair_id": "CLM-0159",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

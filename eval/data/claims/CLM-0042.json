@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0042",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Megan Reyes",
+    "incident_date": "2026-03-23",
+    "incident_location": "1706 Park Avenue, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2812.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "841.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1486.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "2631.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-99842",
+    "policy_number": "POL-PLUS-698361",
+    "reported_date": "2026-03-31",
+    "total_amount": "7770.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2018
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "large tree",
+    "side": "right",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.5"
+  ],
+  "narrative_text": "On March 23, 2026, at about 6:20, I was driving my 2018 Honda CRV on 1706 Park Avenue, Rockford, IL. It was dusk and visibility was reduced. My nephew was driving that day, and I knew his license had been suspended since the spring. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, side mirror, door glass. I took the car to Midwest Collision Center and they estimated the repair at $7,770.00.",
+  "pair_id": "CLM-0042",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "unlicensed_driver",
+    "type": "deny_exclusion"
+  },
+  "split": "dev"
+}

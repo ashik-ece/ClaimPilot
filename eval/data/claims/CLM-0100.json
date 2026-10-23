@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0100",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Zimmerman",
+    "incident_date": "2026-02-02",
+    "incident_location": "4002 Mill Road, Evansville, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3729.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "4929.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1115.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "1227.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-669917",
+    "reported_date": "2026-02-06",
+    "total_amount": "11000.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "ML350",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 02/02/2026, at about 14:20, I was driving my 2013 Mercedes ML350 on 4002 Mill Road, Evansville, IN. It was dusk and visibility was reduced. While reversing out of a parking area, the rear of my vehicle struck a fence post. No one was hurt and I did not call the police. The main damage is to the quarter panel, rear body panel. I took the car to Summit Collision and they estimated the repair at $11,000.00.",
+  "pair_id": "CLM-0100",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,80 @@
+{
+  "claim_id": "CLM-0131",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Maria Okafor",
+    "incident_date": "2026-06-13",
+    "incident_location": "4653 Oak Avenue, Akron, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1697.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1910.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "2223.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-10325",
+    "policy_number": "POL-PLUS-885656",
+    "reported_date": "2026-06-15",
+    "total_amount": "5830.00",
+    "vehicle_make": "Volkswagen",
+    "vehicle_model": "Passat",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.2",
+    "PLUS-4.7"
+  ],
+  "narrative_text": "On 2026-06-13, at about 10:05, I was driving my 2016 Volkswagen Passat on 4653 Oak Avenue, Akron, OH. The road was dry. The bumper already had some scuffs and surface rust, but the dent in it is definitely from this impact. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, door glass. I took the car to Eagle Body & Paint and they estimated the repair at $5,830.00.",
+  "pair_id": "CLM-0131",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": "wear_and_tear",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0152",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Kevin Quinn",
+    "incident_date": "2026-03-23",
+    "incident_location": "8273 Sunset Drive, Bloomington, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2195.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1336.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "2243.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1926.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-615539",
+    "reported_date": "2026-03-25",
+    "total_amount": "7700.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "C300",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.3"
+  ],
+  "narrative_text": "On 2026-03-23, at about 6:50, I was driving my 2017 Mercedes C300 on 8273 Sunset Drive, Bloomington, IN. The road was dry. I was furious after an argument and deliberately steered the front of my car into the utility pole on purpose. No one was hurt and I did not call the police. The main damage is to the front grille, fender. I took the car to Lakeside Autoworks and they estimated the repair at $7,700.00.",
+  "pair_id": "CLM-0152",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "intentional",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

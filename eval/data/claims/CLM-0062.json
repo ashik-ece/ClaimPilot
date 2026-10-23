@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0062",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Leila Thompson",
+    "incident_date": "2026-07-25",
+    "incident_location": "9498 Elm Drive, Peoria, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1385.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "2227.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1938.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-60838",
+    "policy_number": "POL-PREM-201751",
+    "reported_date": "2026-07-28",
+    "total_amount": "5550.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Pathfinder",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On July 25, 2026, at about 16:05, I was driving my 2017 Nissan Pathfinder on 9498 Elm Drive, Peoria, IL. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the fender, headlamp assembly. I took the car to Lakeside Autoworks and they estimated the repair at $5,550.00.",
+  "pair_id": "CLM-0062",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

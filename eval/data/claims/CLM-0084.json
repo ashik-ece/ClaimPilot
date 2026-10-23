@@ -1,0 +1,92 @@
+{
+  "claim_id": "CLM-0084",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "missing_fields",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Kevin Kowalski",
+    "incident_date": "2026-02-13",
+    "incident_location": "5802 Lake Boulevard, Springfield, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "702.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1250.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "709.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "835.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2064.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-241391",
+    "reported_date": "2026-02-16",
+    "total_amount": "5560.00",
+    "vehicle_make": "Dodge",
+    "vehicle_model": null,
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On February 13, 2026, at about 13:05, I was driving my 2012 Dodge on 5802 Lake Boulevard, Springfield, IL. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear bumper cover, rear body panel. I took the car to Midwest Collision Center and they estimated the repair at $5,560.00.",
+  "pair_id": "CLM-0084",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

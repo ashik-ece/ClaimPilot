@@ -1,0 +1,75 @@
+{
+  "claim_id": "CLM-0167",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Ethan Alvarez",
+    "incident_date": "2026-09-21",
+    "incident_location": "3024 Park Avenue, Akron, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2927.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1545.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1158.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-381395",
+    "reported_date": "2026-09-24",
+    "total_amount": "5630.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2015
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.2",
+    "PLUS-4.6"
+  ],
+  "narrative_text": "On 2026-09-21, at about 9:50, I was driving my 2015 Ford Fusion on 3024 Park Avenue, Akron, OH. The weather was clear and dry. I had one drink with dinner a few hours earlier and I felt fine, but the officer asked me a few questions about it. I lost traction on a patch of gravel and the front of my vehicle struck a concrete barrier. No one was hurt and I did not call the police. The main damage is to the hood panel, front bumper cover. I took the car to Eagle Body & Paint and they estimated the repair at $5,630.00.",
+  "pair_id": "CLM-0167",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": "dui",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

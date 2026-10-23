@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0093",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Samuel Kowalski",
+    "incident_date": "2026-06-07",
+    "incident_location": "265 River Road, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "928.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1354.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "2740.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "2148.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-404511",
+    "reported_date": "2026-06-16",
+    "total_amount": "7170.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "RSX",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-06-07, at about 12:35, I was driving my 2017 Accura RSX on 265 River Road, Toledo, OH. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, headlamp assembly, front grille. I took the car to Heartland Repair Group and they estimated the repair at $7,170.00.",
+  "pair_id": "CLM-0093",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}
