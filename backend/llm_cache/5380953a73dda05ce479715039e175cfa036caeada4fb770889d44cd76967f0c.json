@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 8.1e-05,
+  "input_tokens": 575,
+  "latency_ms": 3829,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 59,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"PLUS-6.2\",\n      \"quote\": \"My cousin was driving and thinks his license may have expired around last month, but he has not checked.\"\n    }\n  ]\n}"
+}

@@ -31,6 +31,7 @@ def _claim(**over: object) -> ExtractedClaim:
             LineItem(description="a", amount="10.00"),
             LineItem(description="b", amount="20.00"),
         ],
+        "incident_description": None,
         "evidence": [],
     }
     base.update(over)

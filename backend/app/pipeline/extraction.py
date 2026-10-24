@@ -23,6 +23,7 @@ from app.pipeline.prompts import load_prompt
 
 OCR_TRUST_THRESHOLD = 85.0
 POLICY_NUMBER = re.compile(r"^POL-[A-Z]+-\d{6}$")
+REQUIRED = ("policy_number", "incident_date", "total_amount")
 FIELDS = (
     "claimant_name",
     "policy_number",
@@ -62,6 +63,7 @@ class ExtractedClaim(BaseModel):
     police_report_number: str | None
     total_amount: str | None
     itemized_damages: list[LineItem]
+    incident_description: str | None
     evidence: list[Evidence]
 
 
@@ -73,6 +75,9 @@ class ExtractionResult:
     used_vision: bool
     calls: list[LLMResult] = field(default_factory=list)
     unverified_fields: list[str] = field(default_factory=list)
+    # Read from a scan by the vision model with no text copy to check against: the adjuster
+    # should confirm these against the page image (a misread digit can still look valid).
+    vision_sourced: list[str] = field(default_factory=list)
 
     @property
     def cost_usd(self) -> float:
@@ -139,6 +144,9 @@ def verify(
         if not ok and not any(e.document in vision_docs for e in quotes):
             unverified.append(f)
 
+    for name in REQUIRED:
+        if getattr(claim, name) is None:
+            issues.append(f"{name} is required but was not found")
     if claim.policy_number and not POLICY_NUMBER.match(claim.policy_number):
         issues.append(f"policy_number {claim.policy_number!r} is not of the form POL-XXXX-123456")
     incident, reported = _iso(claim.incident_date), _iso(claim.reported_date)
@@ -226,8 +234,16 @@ def extract_claim(
                 + "\n- ".join(issues)
             )
     assert claim is not None
+    vision_sourced = sorted(
+        f
+        for f in FIELDS
+        if getattr(claim, f) is not None
+        and (quotes := [e for e in claim.evidence if e.field == f])
+        and all(e.document in vision_docs for e in quotes)
+    )
     fields = {f: getattr(claim, f) for f in FIELDS}
     fields["itemized_damages"] = [i.model_dump() for i in claim.itemized_damages]
+    fields["incident_description"] = claim.incident_description
     return ExtractionResult(
         fields=fields,
         issues=issues,
@@ -235,4 +251,5 @@ def extract_claim(
         used_vision=bool(images),
         calls=calls,
         unverified_fields=unverified,
+        vision_sourced=vision_sourced,
     )

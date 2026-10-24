@@ -32,6 +32,8 @@ class Settings(BaseSettings):
     llm_cache_dir: str = str(_ROOT / "backend" / "llm_cache")
     llm_fast_model: str = "gemini-3.1-flash-lite"
     llm_strong_model: str = "gemini-3.5-flash-lite"
+    qdrant_url: str = "http://localhost:6335"
+    embedding_model: str = "BAAI/bge-small-en-v1.5"
     llm_timeout_seconds: float = 60.0
     llm_max_retries: int = 4
 

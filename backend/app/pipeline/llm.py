@@ -101,7 +101,7 @@ class LLMClient(Protocol):
     def generate(self, request: LLMRequest, schema: type[T]) -> tuple[T, LLMResult]: ...
 
 
-def _retry_after_seconds(exc: Exception) -> float:
+def _retry_after_seconds(exc: BaseException | None) -> float:
     """Seconds the provider asks us to wait (from RetryInfo), or 0 if it does not say."""
     match = re.search(r"'retryDelay': '(\d+(?:\.\d+)?)s'", str(exc))
     return float(match.group(1)) if match else 0.0
@@ -171,7 +171,7 @@ class GeminiClient:
                     raw_text=text,
                 )
                 return parsed, result
-            delay = min(30.0, 2.0**attempt) + random.random()
+            delay = max(min(30.0, 2.0**attempt), _retry_after_seconds(last)) + random.random()
             log.warning("LLM call failed (attempt %d): %s; retrying in %.1fs", attempt, last, delay)
             time.sleep(delay)
         raise LLMError(f"LLM call failed after {self._max_retries + 1} attempts: {last}")

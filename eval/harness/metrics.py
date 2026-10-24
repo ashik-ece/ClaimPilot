@@ -119,15 +119,17 @@ def fraud_report(
 
 def citation_report(labels: Mapping[str, list[str]], cited: Mapping[str, list[str]]) -> dict[str, Any]:
     """Share of claims whose governing clause is cited, and share of cited clauses that are governing."""
-    recalled = precise = n_cited = 0
+    recalled = recalled_all = precise = n_cited = 0
     for claim_id, gold in labels.items():
         got = set(cited.get(claim_id, []))
         recalled += bool(set(gold) & got)
+        recalled_all += set(gold) <= got
         precise += len(got & set(gold))
         n_cited += len(got)
     n = len(labels)
     return {
         "recall": recalled / n if n else 0.0,
+        "recall_all": recalled_all / n if n else 0.0,
         "precision": precise / n_cited if n_cited else 0.0,
         "claims": n,
     }

@@ -1,0 +1,980 @@
+{
+ "CLM-0001": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5.2e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0010": {
+  "candidates": [
+   {
+    "clause_id": "PREM-6.2",
+    "reasons": [
+     "model-selected, quote verified: I was stopped at a light when another driver failed to brake and hit the rear of my car."
+    ],
+    "score": 2.862
+   },
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-6.2",
+   "PREM-2.1"
+  ],
+  "cost_usd": 8.3e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0020": {
+  "candidates": [
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 4.4e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0027": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0029": {
+  "candidates": [
+   {
+    "clause_id": "STD-5.1",
+    "reasons": [
+     "notice was given after the policy's notice window"
+    ],
+    "score": 3.904
+   },
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": true,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-5.1",
+   "STD-2.1"
+  ],
+  "cost_usd": 6.1e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0030": {
+  "candidates": [
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 5.3e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0031": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-1.1",
+    "reasons": [
+     "claim date is outside the policy period"
+    ],
+    "score": 3.91
+   },
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": true
+  },
+  "cited_clause_ids": [
+   "BASIC-1.1",
+   "BASIC-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0034": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5.1e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0042": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-4.5",
+    "reasons": [
+     "model-selected, quote verified: My nephew was driving that day, and I knew his license had been suspended since the spring."
+    ],
+    "score": 2.578
+   },
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-4.5",
+   "PLUS-2.1"
+  ],
+  "cost_usd": 8.9e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0055": {
+  "candidates": [
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 4.6e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0057": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-2.1"
+  ],
+  "cost_usd": 5.1e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0062": {
+  "candidates": [
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0063": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5.8e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0064": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-6.2",
+    "reasons": [
+     "model-selected, quote verified: My cousin was driving and thinks his license may have expired around last month, but he has not checked."
+    ],
+    "score": 2.862
+   },
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-6.2",
+   "PLUS-2.1"
+  ],
+  "cost_usd": 8.1e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0066": {
+  "candidates": [
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 5.2e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0069": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 4.2e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0072": {
+  "candidates": [
+   {
+    "clause_id": "PREM-4.4",
+    "reasons": [
+     "model-selected, quote verified: My nephew was driving that day, and I knew his license had been suspended since the spring."
+    ],
+    "score": 2.526
+   },
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-4.4",
+   "PREM-2.1"
+  ],
+  "cost_usd": 7.4e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0079": {
+  "candidates": [
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0083": {
+  "candidates": [
+   {
+    "clause_id": "PREM-4.2",
+    "reasons": [
+     "model-selected, quote verified: we began racing each other down the road, and I was well over the speed limit when I lost control"
+    ],
+    "score": 2.592
+   },
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-4.2",
+   "PREM-2.1"
+  ],
+  "cost_usd": 8.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0103": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-6.2",
+    "reasons": [
+     "model-selected, quote verified: I may have sped up a little, though I am not sure whether you would call that racing."
+    ],
+    "score": 2.862
+   },
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-6.2",
+   "BASIC-2.1"
+  ],
+  "cost_usd": 8.6e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0108": {
+  "candidates": [
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 4.4e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0113": {
+  "candidates": [
+   {
+    "clause_id": "STD-6.1",
+    "reasons": [
+     "amount is at or above the high-value referral threshold"
+    ],
+    "score": 3.846
+   },
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": true,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-6.1",
+   "STD-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0119": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 4.9e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0125": {
+  "candidates": [
+   {
+    "clause_id": "STD-5.1",
+    "reasons": [
+     "notice was given after the policy's notice window"
+    ],
+    "score": 3.904
+   },
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": true,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-5.1",
+   "STD-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0130": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-4.7",
+    "reasons": [
+     "model-selected, quote verified: I had turned off the paved road onto a dirt trail through a field to take a shortcut. I swerved to avoid a deer and the "
+    ],
+    "score": 2.592
+   },
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-4.7",
+   "BASIC-2.1"
+  ],
+  "cost_usd": 8.8e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0132": {
+  "candidates": [
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 5.3e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0141": {
+  "candidates": [
+   {
+    "clause_id": "STD-6.2",
+    "reasons": [
+     "model-selected, quote verified: I had one drink with dinner a few hours earlier and I felt fine, but the officer asked me a few questions about it."
+    ],
+    "score": 2.862
+   },
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-6.2",
+   "STD-2.1"
+  ],
+  "cost_usd": 8.4e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0142": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-2.1"
+  ],
+  "cost_usd": 5.2e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0143": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5.4e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0144": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-4.6",
+    "reasons": [
+     "model-selected, quote verified: I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit."
+    ],
+    "score": 2.597
+   },
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-4.6",
+   "BASIC-2.1"
+  ],
+  "cost_usd": 7.8e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0150": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-2.1"
+  ],
+  "cost_usd": 5.3e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0151": {
+  "candidates": [
+   {
+    "clause_id": "PREM-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 4.5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0154": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-2.1"
+  ],
+  "cost_usd": 6e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0172": {
+  "candidates": [
+   {
+    "clause_id": "STD-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 4.3e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0175": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5.1e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0182": {
+  "candidates": [
+   {
+    "clause_id": "PLUS-6.1",
+    "reasons": [
+     "amount is at or above the high-value referral threshold"
+    ],
+    "score": 3.846
+   },
+   {
+    "clause_id": "PLUS-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": true,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "PLUS-6.1",
+   "PLUS-2.1"
+  ],
+  "cost_usd": 5.3e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0186": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-4.2",
+    "reasons": [
+     "model-selected, quote verified: another driver pulled alongside me and we began racing each other down the road"
+    ],
+    "score": 2.592
+   },
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-4.2",
+   "BASIC-2.1"
+  ],
+  "cost_usd": 8.8e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0196": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ },
+ "CLM-0197": {
+  "candidates": [
+   {
+    "clause_id": "BASIC-2.1",
+    "reasons": [
+     "coverage grant"
+    ],
+    "score": 1.868
+   }
+  ],
+  "checks": {
+   "high_value": false,
+   "late_notice": false,
+   "outside_period": false
+  },
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 5.8e-05,
+  "rejected_picks": [],
+  "selection": "model"
+ }
+}
