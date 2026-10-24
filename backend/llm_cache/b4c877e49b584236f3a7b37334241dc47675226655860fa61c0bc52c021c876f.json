@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000456,
+  "input_tokens": 879,
+  "latency_ms": 2316,
+  "model": "gemini-3.1-flash-lite",
+  "output_tokens": 921,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"claimant_name\": \"Carlos Reyes\",\n  \"policy_number\": \"POL-PREM-662902\",\n  \"incident_date\": \"2026-09-12\",\n  \"reported_date\": \"2026-09-14\",\n  \"incident_type\": \"Multi-vehicle Collision\",\n  \"incident_location\": \"678 Sunset Drive, Dayton, OH\",\n  \"vehicle_make\": \"Accura\",\n  \"vehicle_model\": \"MDX\",\n  \"vehicle_year\": 2021,\n  \"police_report_number\": \"PR-OH-2026-84001\",\n  \"total_amount\": \"8320.00\",\n  \"itemized_damages\": [\n    {\n      \"description\": \"Rocker panel\",\n      \"amount\": \"2769.00\"\n    },\n    {\n      \"description\": \"Front door panel\",\n      \"amount\": \"1021.00\"\n    },\n    {\n      \"description\": \"Rear door panel\",\n      \"amount\": \"1252.00\"\n    },\n    {\n      \"description\": \"Body labor\",\n      \"amount\": \"3278.00\"\n    }\n  ],\n  \"evidence\": [\n    {\n      \"field\": \"claimant_name\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Claimant name: Carlos Reyes\"\n    },\n    {\n      \"field\": \"policy_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Policy number: POL-PREM-662902\"\n    },\n    {\n      \"field\": \"incident_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date of loss: September 12, 2026\"\n    },\n    {\n      \"field\": \"reported_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date reported: September 14, 2026\"\n    },\n    {\n      \"field\": \"incident_type\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Type of incident: Multi-vehicle Collision\"\n    },\n    {\n      \"field\": \"incident_location\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Location of loss: 678 Sunset Drive, Dayton, OH\"\n    },\n    {\n      \"field\": \"vehicle_make\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2021 Accura MDX\"\n    },\n    {\n      \"field\": \"vehicle_model\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2021 Accura MDX\"\n    },\n    {\n      \"field\": \"vehicle_year\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2021 Accura MDX\"\n    },\n    {\n      \"field\": \"police_report_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Police report number: PR-OH-2026-84001\"\n    },\n    {\n      \"field\": \"total_amount\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Total amount claimed: $8,320.00\"\n    },\n    {\n      \"field\": \"itemized_damages\",\n      \"document\": \"repair_estimate.pdf\",\n      \"quote\": \"Rocker panel: $2,769.00 Front door panel: $1,021.00 Rear door panel: $1,252.00 Body labor: $3,278.00\"\n    }\n  ]\n}"
+}

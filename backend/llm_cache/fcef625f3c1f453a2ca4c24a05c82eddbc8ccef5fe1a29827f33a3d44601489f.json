@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000162,
+  "input_tokens": 966,
+  "latency_ms": 1531,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 163,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny this claim because the automated findings and the claimant's own account confirm that the vehicle was involved in an impromptu race at the time of the incident. This situation is explicitly excluded from coverage under Section 4 for Racing and Speed Contests. Therefore, no payment can be issued for the reported damages.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-4.2\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is used in, or in practice or preparation for, any organized or impromptu race, speed contest, stunt driving or demonstration, whether on a public road or on a closed course.\"\n    }\n  ]\n}"
+}

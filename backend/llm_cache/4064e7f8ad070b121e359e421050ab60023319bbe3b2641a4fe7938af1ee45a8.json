@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 4,
+  "cost_usd": 0.001706,
+  "input_tokens": 845,
+  "latency_ms": 46722,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 581,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\":\"Leila Fischer\",\"policy_number\":\"POL-BASIC-870031\",\"incident_date\":\"2026-07-21\",\"reported_date\":\"2026-07-27\",\"incident_type\":\"Multi-vehicle Collision\",\"incident_location\":\"461 Elm Drive, Bloomington, IN\",\"vehicle_make\":\"Honda\",\"vehicle_model\":\"Accord\",\"vehicle_year\":2017,\"police_report_number\":\"PR-IN-2026-83874\",\"total_amount\":\"6100.00\",\"itemized_damages\":[{\"description\":\"Radiator support\",\"amount\":\"951.00\"},{\"description\":\"Fender\",\"amount\":\"1526.00\"},{\"description\":\"Front grille\",\"amount\":\"431.00\"},{\"description\":\"Headlamp assembly\",\"amount\":\"1525.00\"},{\"description\":\"Frame and alignment\",\"amount\":\"1328.00\"},{\"description\":\"Paint and materials\",\"amount\":\"339.00\"}],\"evidence\":[{\"field\":\"claimant_name\",\"document\":\"claim_form.pdf\",\"quote\":\"Claimant name: Leila Fischer\"},{\"field\":\"policy_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Policy number: POL-BASIC-870031\"},{\"field\":\"incident_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date of loss: 07/21/2026\"},{\"field\":\"reported_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date reported: 2026-07-27\"},{\"field\":\"incident_type\",\"document\":\"claim_form.pdf\",\"quote\":\"Type of incident: Multi-vehicle Collision\"},{\"field\":\"incident_location\",\"document\":\"claim_form.pdf\",\"quote\":\"Location of loss: 461 Elm Drive, Bloomington, IN\"},{\"field\":\"vehicle_make\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2017 Honda Accord\"},{\"field\":\"vehicle_model\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2017 Honda Accord\"},{\"field\":\"vehicle_year\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2017 Honda Accord\"},{\"field\":\"police_report_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Police report number: PR-IN-2026-83874\"},{\"field\":\"total_amount\",\"document\":\"claim_form.pdf\",\"quote\":\"Total amount claimed: $6,100.00\"},{\"field\":\"itemized_damages\",\"document\":\"repair_estimate.pdf\",\"quote\":\"Radiator support: $951.00\"}]}"
+}

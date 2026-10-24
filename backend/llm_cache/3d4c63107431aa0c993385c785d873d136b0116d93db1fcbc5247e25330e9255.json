@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000159,
+  "input_tokens": 939,
+  "latency_ms": 2593,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 162,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We deny this claim because the automated findings and the claimant's account confirm that the vehicle was driven by an individual with a suspended license with the knowledge of the insured. This situation is explicitly excluded under Section 4, Unlicensed or Suspended Driver. Therefore, the loss is not covered.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-4.5\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is operated by any person who does not hold a valid driver's license, or whose license is suspended, revoked or expired on the date of loss, with the knowledge of the named insured.\"\n    }\n  ]\n}"
+}

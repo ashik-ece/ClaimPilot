@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000149,
+  "input_tokens": 833,
+  "latency_ms": 944,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 165,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for Grace Hayes because the automated findings indicate no exclusions or flags apply and the incident falls within the policy period. This decision is governed by the collision coverage insuring agreement, which provides payment for direct and accidental loss caused by collision. The key fact is that the insured vehicle sustained damage in a multi-vehicle collision on May 28, 2026, totaling $5,370.00 in reasonable repair costs.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000153,
+  "input_tokens": 994,
+  "latency_ms": 971,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 133,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because an automated fraud flag was raised for an inflated estimate. Section [STD-7.3] governs this situation when the amount claimed is substantially higher than the usual repair cost, requiring review.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-7.3\",\n      \"quote\": \"If the amount claimed is substantially higher than the usual cost of repairing the damage described, or is not supported by the itemized estimate, the claim must be escalated for review.\"\n    }\n  ]\n}"
+}

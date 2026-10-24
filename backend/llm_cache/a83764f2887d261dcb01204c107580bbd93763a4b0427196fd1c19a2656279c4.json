@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000149,
+  "input_tokens": 909,
+  "latency_ms": 1070,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 146,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because all automated findings show no exclusions, flags, or late notices apply to this collision. Policy clause PLUS-2.1 governs this collision coverage, under which we pay for direct and accidental loss during the policy period. The key fact is that the claimant sustained direct and accidental damage to her vehicle from hitting a retaining wall within the policy period.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

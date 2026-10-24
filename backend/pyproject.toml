@@ -1,7 +1,7 @@
 [project]
 name = "claimpilot-backend"
 version = "0.1.0"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.32",
@@ -14,6 +14,12 @@ dependencies = [
     "boto3>=1.35",
     "python-multipart>=0.0.12",
     "email-validator>=2.2",
+    "google-genai>=2.33.0",
+    "pymupdf>=2.0",
+    "pytesseract>=0.3.13",
+    "pillow>=13.0.0",
+    "fastembed>=0.2.7",
+    "qdrant-client>=1.12,<1.13",
 ]
 
 [dependency-groups]
@@ -35,3 +41,8 @@ line-length = 100
 strict = true
 plugins = ["pydantic.mypy"]
 exclude = ["migrations/"]
+
+[[tool.mypy.overrides]]
+module = ["pymupdf.*", "pytesseract.*", "fastembed.*"]
+ignore_missing_imports = true
+disallow_untyped_calls = false

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000163,
+  "input_tokens": 968,
+  "latency_ms": 1182,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 165,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"This claim is escalated due to a raised fraud flag for an inflated estimate, as the claimed amount is substantially higher than the typical repair cost. Section 7 governs this situation and requires escalation when the amount claimed is substantially higher than usual repair costs. The key fact is the estimate of $20,640.00 is more than double the typical repair cost.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-7.3\",\n      \"quote\": \"If the amount claimed is substantially higher than the usual cost of repairing the damage described, or is not supported by the itemized estimate, the claim must be escalated for review.\"\n    }\n  ]\n}"
+}

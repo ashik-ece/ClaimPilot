@@ -1,0 +1,1985 @@
+{
+ "CLM-0001": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.000261,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Megan Zimmerman",
+   "incident_date": "2026-02-04",
+   "incident_description": "On 02/04/2026, at about 11:35, I was driving my 2008 Honda CRV on 5619 River Road, Naperville, IL. The road was dry. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, rocker panel. I took the car to Precision Auto Body and they estimated the repair at $7,050.00.",
+   "incident_location": "5619 River Road, Naperville, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2888.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1498.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1480.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "1184.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-70558",
+   "policy_number": "POL-BASIC-897132",
+   "reported_date": "2026-02-10",
+   "total_amount": "7050.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2008
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because automated checks found no fraud flags, late notice, or exclusions, and the incident occurred within the policy period. This decision is governed by Section 2. Insuring Agreement, which covers direct and accidental loss caused by collision. The key fact is that the collision caused $7,050.00 in itemized damages to the claimant's vehicle.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0010": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.000243,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Naomi Egan",
+   "incident_date": "2026-08-29",
+   "incident_description": "On 08/29/2026, at about 7:05, I was driving my 2013 Honda CRV on 2671 Sunset Drive, Bloomington, IN. The weather was clear and dry. I had turned off the paved road onto a dirt trail through a field to take a shortcut. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear body panel, tail lamp assembly, rear reinforcement bar. I took the car to Summit Collision and they estimated the repair at $5,970.00.",
+   "incident_location": "2671 Sunset Drive, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "806.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "2193.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1233.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "1738.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PREM-153638",
+   "reported_date": "2026-09-02",
+   "total_amount": "5970.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2013
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "The claim is approved because automated checks confirm no exclusions or fraud flags apply, and the loss occurred during the policy period without late notice. Section 2.1 governs this collision coverage for direct and accidental loss. The key fact is that the claimant's vehicle suffered $5,970.00 in damages from a rear-end collision on August 29, 2026.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0020": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.000232,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Marcus Mitchell",
+   "incident_date": "2026-06-03",
+   "incident_description": "On 06/03/2026, at about 19:50, I was driving my 2012 Honda Accord on 8761 Maple Street, Bloomington, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the tail lamp assembly, rear reinforcement bar, trunk lid. I took the car to Lakeside Autoworks and they estimated the repair at $6,050.00.",
+   "incident_location": "8761 Maple Street, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1561.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1432.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "1250.00",
+     "description": "Trunk lid"
+    },
+    {
+     "amount": "1807.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-27949",
+   "policy_number": "POL-PREM-818725",
+   "reported_date": "2026-06-05",
+   "total_amount": "6050.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2012
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim because the automated findings indicate no exclusions, referrals, or flags apply, and the incident occurred during the policy period. The claim is governed by the collision coverage insuring agreement which provides payment for direct and accidental loss. The key fact is that the vehicle sustained rear-end collision damage totaling $6,050.00 while the policy was active.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0027": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.00025299999999999997,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Brian Walker",
+   "incident_date": "2026-08-17",
+   "incident_description": "On August 17, 2026, at about 10:05, I was driving my 2019 Ford F150 on 6347 Cedar Road, Dayton, OH. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, quarter panel, door glass. I took the car to Heartland Repair Group and they estimated the repair at $6,760.00.",
+   "incident_location": "6347 Cedar Road, Dayton, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "445.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "943.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1249.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "2104.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2019.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-718890",
+   "reported_date": "2026-08-19",
+   "total_amount": "6760.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F150",
+   "vehicle_year": 2019
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approved the claim for the multi-vehicle collision because the automated findings confirmed no exclusions, referrals, or flags apply. The governing collision coverage clause requires us to pay for direct and accidental loss during the policy period based on the key fact that the incident and damages occurred as reported without dispute.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0029": {
+  "cited_clause_ids": [
+   "STD-5.1"
+  ],
+  "cost_usd": 0.000255,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Robert Underwood",
+   "incident_date": "2026-09-08",
+   "incident_description": "On 09/08/2026, at about 20:05, I was driving my 2024 Saab 93 on 9299 Park Avenue, Rockford, IL. It was dusk and visibility was reduced. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear body panel, tail lamp assembly. I took the car to Eagle Body & Paint and they estimated the repair at $8,830.00.",
+   "incident_location": "9299 Park Avenue, Rockford, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2141.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "2025.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "1078.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1378.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "2208.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-71183",
+   "policy_number": "POL-STD-963480",
+   "reported_date": "2026-10-22",
+   "total_amount": "8830.00",
+   "vehicle_make": "Saab",
+   "vehicle_model": "93",
+   "vehicle_year": 2024
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [
+   "model proposed escalate; rules require deny, which stands"
+  ],
+  "rationale": "Recommend deny: notice was given after the policy's notice window. See STD-5.1.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "notice was given after the policy's notice window"
+  ],
+  "source": "model"
+ },
+ "CLM-0030": {
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 0.000249,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Hannah Dawson",
+   "incident_date": "2026-02-13",
+   "incident_description": "On 02/13/2026, at about 6:35, I was driving my 2013 Ford Escape on 1240 Park Avenue, Evansville, IN. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear body panel, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $10,580.00.",
+   "incident_location": "1240 Park Avenue, Evansville, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2780.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "3244.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "4556.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-38476",
+   "policy_number": "POL-STD-453684",
+   "reported_date": "2026-02-22",
+   "total_amount": "10580.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "Escape",
+   "vehicle_year": 2013
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve this collision claim because the automated findings confirmed no exclusions, flags, or reporting delays apply. Collision Coverage governs direct and accidental losses to the covered vehicle during the policy period, and the reported incident meets these terms. The key fact is that the total damages of $10,580.00 resulted from a covered multi-vehicle rear-end collision.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0031": {
+  "cited_clause_ids": [
+   "BASIC-1.1"
+  ],
+  "cost_usd": 0.000257,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Aisha Mitchell",
+   "incident_date": "2026-01-24",
+   "incident_description": "On January 24, 2026, at about 9:20, I was driving my 2009 Mercedes E400 on 3136 Cedar Road, Springfield, IL. Traffic was light. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the fender, headlamp assembly. I took the car to Precision Auto Body and they estimated the repair at $9,280.00.",
+   "incident_location": "3136 Cedar Road, Springfield, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2426.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "1529.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "5325.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-50211",
+   "policy_number": "POL-BASIC-440514",
+   "reported_date": "2026-01-27",
+   "total_amount": "9280.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "E400",
+   "vehicle_year": 2009
+  },
+  "forced": false,
+  "fraud_flags": [
+   "date_outside_policy_period"
+  ],
+  "notes": [],
+  "rationale": "We recommend denying the claim because the incident date of January 24, 2026, falls outside the active policy period. This decision is governed by policy clause BASIC-1.1, which states that loss occurring before the policy period is not covered.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "the loss date is outside the policy period"
+  ],
+  "source": "model"
+ },
+ "CLM-0034": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.000257,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Leila Fischer",
+   "incident_date": "2026-07-21",
+   "incident_description": "On July 21, 2026, at about 15:20, I was driving my 2017 Honda Accord on 461 Elm Drive, Bloomington, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the radiator support, fender, front grille. I took the car to Summit Collision and they estimated the repair at $6,100.00.",
+   "incident_location": "461 Elm Drive, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "951.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1526.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "431.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "1525.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "1328.00",
+     "description": "Frame and alignment"
+    },
+    {
+     "amount": "339.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-83874",
+   "policy_number": "POL-BASIC-870031",
+   "reported_date": "2026-07-27",
+   "total_amount": "6100.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2017
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because no exclusions, referrals, or fraud flags apply to the incident. Policy clause BASIC-2.1 governs direct and accidental losses caused by collision during the policy period. The key fact is that the collision damages to the covered vehicle are verified and directly covered under this agreement.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0042": {
+  "cited_clause_ids": [
+   "PLUS-4.5"
+  ],
+  "cost_usd": 0.00029,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Megan Reyes",
+   "incident_date": "2026-03-23",
+   "incident_description": "On March 23, 2026, at about 6:20, I was driving my 2018 Honda CRV on 1706 Park Avenue, Rockford, IL. It was dusk and visibility was reduced. My nephew was driving that day, and I knew his license had been suspended since the spring. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, side mirror, door glass. I took the car to Midwest Collision Center and they estimated the repair at $7,770.00.",
+   "incident_location": "1706 Park Avenue, Rockford, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2812.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "841.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "1486.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "2631.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-99842",
+   "policy_number": "POL-PLUS-698361",
+   "reported_date": "2026-03-31",
+   "total_amount": "7770.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2018
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We deny this claim because the automated findings and the claimant's account confirm that the vehicle was driven by an individual with a suspended license with the knowledge of the insured. This situation is explicitly excluded under Section 4, Unlicensed or Suspended Driver. Therefore, the loss is not covered.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "the claimant's account triggers an exclusion"
+  ],
+  "source": "model"
+ },
+ "CLM-0055": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.000241,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Chloe Fischer",
+   "incident_date": "2026-09-29",
+   "incident_description": "On 2026-09-29, at about 15:20, I was driving my 2011 Ford F150 on 4671 Park Avenue, Evansville, IN. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, front door panel, rear door panel. I took the car to Precision Auto Body and they estimated the repair at $6,200.00.",
+   "incident_location": "4671 Park Avenue, Evansville, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "674.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "611.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2245.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "2181.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "489.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-16901",
+   "policy_number": "POL-PREM-289470",
+   "reported_date": "2026-10-04",
+   "total_amount": "6200.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F150",
+   "vehicle_year": 2011
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim for Chloe Fischer because all automated findings show no exclusions, delays, or high-value flags. Clause PREM-2.1 governs this collision coverage, stating that the insurer will pay for direct and accidental loss caused by collision during the policy period. The key fact is that the multi-vehicle collision occurred on 2026-09-29 and damages were properly documented within policy terms.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0057": {
+  "cited_clause_ids": [
+   "PLUS-7.3"
+  ],
+  "cost_usd": 0.00025699999999999996,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Priya Vasquez",
+   "incident_date": "2026-06-03",
+   "incident_description": "On June 3, 2026, at about 19:05, I was driving my 2011 Toyota on 6510 Maple Street, Toledo, OH. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear body panel, rear bumper cover. I took the car to Heartland Repair Group and they estimated the repair at $23,200.00.",
+   "incident_location": "6510 Maple Street, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "4305.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "6634.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "6918.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "5343.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-657847",
+   "reported_date": "2026-06-12",
+   "total_amount": "23200.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": null,
+   "vehicle_year": 2011
+  },
+  "forced": false,
+  "fraud_flags": [
+   "inflated_estimate"
+  ],
+  "notes": [],
+  "rationale": "We are escalating this claim because an automated fraud flag was raised for an inflated estimate. Section 7.3 governs this finding by stating that claims must be escalated if the amount claimed is substantially higher than the usual cost.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "fraud flag raised: inflated_estimate"
+  ],
+  "source": "model"
+ },
+ "CLM-0062": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.000235,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Leila Thompson",
+   "incident_date": "2026-07-25",
+   "incident_description": "On July 25, 2026, at about 16:05, I was driving my 2017 Nissan Pathfinder on 9498 Elm Drive, Peoria, IL. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the fender, headlamp assembly. I took the car to Lakeside Autoworks and they estimated the repair at $5,550.00.",
+   "incident_location": "9498 Elm Drive, Peoria, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1385.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "2227.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "1938.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-60838",
+   "policy_number": "POL-PREM-201751",
+   "reported_date": "2026-07-28",
+   "total_amount": "5550.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Pathfinder",
+   "vehicle_year": 2017
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving this claim because automated findings confirm no exclusions, fraud flags, or timeliness issues apply, and the loss meets the criteria for collision coverage. Clause PREM-2.1 governs this decision by providing payment for direct and accidental loss caused by collision during the policy period. The key fact is that the insured vehicle sustained $5,550.00 in damages from a multi-vehicle collision within the coverage period and was reported without complications.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0063": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.000263,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Carlos Okafor",
+   "incident_date": "2026-06-26",
+   "incident_description": "On June 26, 2026, at about 14:05, I was driving my 2008 Suburu Impreza on 8892 Oak Avenue, Naperville, IL. The weather was clear and dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear reinforcement bar. I took the car to Heartland Repair Group and they estimated the repair at $6,940.00.",
+   "incident_location": "8892 Oak Avenue, Naperville, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2979.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "2970.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "991.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-51137",
+   "policy_number": "POL-BASIC-451881",
+   "reported_date": "2026-06-28",
+   "total_amount": "6940.00",
+   "vehicle_make": "Suburu",
+   "vehicle_model": "Impreza",
+   "vehicle_year": 2008
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim for $6,940.00 since automated findings confirm no exclusions, late notice, or fraud flags apply. This loss is governed by Section 2. Insuring Agreement, which covers direct and accidental loss caused by collision during the policy period. The key fact is that the claimant's vehicle was struck from behind by another driver, resulting in verified repair costs for the quarter panel, rear reinforcement bar, and body labor.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0064": {
+  "cited_clause_ids": [
+   "PLUS-4.5",
+   "PLUS-6.2"
+  ],
+  "cost_usd": 0.000294,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Carlos Zimmerman",
+   "incident_date": "2026-06-28",
+   "incident_description": "On June 28, 2026, at about 20:05, I was driving my 2022 Nissan Maxima on 4407 Park Avenue, Naperville, IL. The road was dry. My cousin was driving and thinks his license may have expired around last month, but he has not checked. I swerved to avoid a deer and the right side of my vehicle scraped a retaining wall. No one was hurt and I did not call the police. The main damage is to the rear door panel, front door panel. I took the car to Summit Collision and they estimated the repair at $8,740.00.",
+   "incident_location": "4407 Park Avenue, Naperville, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2602.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "2333.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2290.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "1515.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-893801",
+   "reported_date": "2026-07-03",
+   "total_amount": "8740.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Maxima",
+   "vehicle_year": 2022
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We are escalating this claim because the automated findings indicate it is unclear whether an exclusion applies regarding the driver's license status. Under Section 6. Claim Handling, claims with material facts that are open to more than one reasonable reading must be escalated for further investigation.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "it is unclear whether an exclusion applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0066": {
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 0.00024400000000000002,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Megan Brennan",
+   "incident_date": "2026-08-12",
+   "incident_description": "On 2026-08-12, at about 18:35, I was driving my 2012 Accura TL on 5397 Park Avenue, Indianapolis, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, fender, radiator support. I took the car to Midwest Collision Center and they estimated the repair at $8,560.00.",
+   "incident_location": "5397 Park Avenue, Indianapolis, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "946.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "2521.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "2496.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "2597.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-STD-811149",
+   "reported_date": "2026-08-18",
+   "total_amount": "8560.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "TL",
+   "vehicle_year": 2012
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim for collision coverage since no exclusions, referrals, or flags apply to the loss. This decision is governed by Section 2. Insuring Agreement, which covers direct and accidental loss to the covered vehicle caused by collision during the policy period. The key fact is that the accident and damages occurred while the policy was active and are supported by the itemized repair estimate.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0069": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.00025299999999999997,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Omar Xu",
+   "incident_date": "2026-06-15",
+   "incident_description": "On 06/15/2026, at about 8:50, I was driving my 2018 Toyota Camry on 8093 Maple Street, Columbus, OH. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the headlamp assembly, hood panel, radiator support. I took the car to Heartland Repair Group and they estimated the repair at $5,580.00.",
+   "incident_location": "8093 Maple Street, Columbus, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "933.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "858.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "1125.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1721.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "943.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-356492",
+   "reported_date": "2026-06-21",
+   "total_amount": "5580.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Camry",
+   "vehicle_year": 2018
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve this claim because automated checks found no exclusions or flags, and the incident falls within the policy terms. Section 2. Insuring Agreement governs collision coverage for direct and accidental losses. The key fact is that the repair estimate for the collision damage is $5,580.00.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0072": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.00023,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Rachel Fischer",
+   "incident_date": "2026-08-18",
+   "incident_description": "On August 18, 2026, at about 14:50, I was driving my 2011 Honda Accord on 1901 Maple Street, Fort Wayne, IN. It was dusk and visibility was reduced. My nephew was driving that day, and I knew his license had been suspended since the spring. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the tail lamp assembly, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $9,330.00.",
+   "incident_location": "1901 Maple Street, Fort Wayne, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "4468.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1406.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "3456.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PREM-208684",
+   "reported_date": "2026-08-19",
+   "total_amount": "9330.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2011
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because the loss occurred during the policy period and automated checks found no exclusions or fraud flags. Section 2 governs this collision coverage by paying for direct and accidental loss caused by collision. The key fact is that the vehicle suffered $9,330.00 in damages from a rear-end collision reported promptly the next day.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0079": {
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 0.00023999999999999998,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Daniel Alvarez",
+   "incident_date": "2026-02-20",
+   "incident_description": "On 02/20/2026, at about 18:05, I was driving my 2020 Mercedes C300 on 865 Mill Road, Rockford, IL. Traffic was light. I lost traction on a patch of gravel and the front of my vehicle struck a guardrail. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front grille, front bumper cover. I took the car to Precision Auto Body and they estimated the repair at $9,470.00.",
+   "incident_location": "865 Mill Road, Rockford, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3312.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "1392.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "2406.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "2360.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-32543",
+   "policy_number": "POL-STD-730875",
+   "reported_date": "2026-02-27",
+   "total_amount": "9470.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "C300",
+   "vehicle_year": 2020
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because the loss is covered by the policy and no exclusions, delays, or fraud flags apply. Collision Coverage governs this direct and accidental loss during the policy period. The key fact is that the insured vehicle sustained accidental collision damage totaling $9,470.00.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0083": {
+  "cited_clause_ids": [
+   "PREM-4.2"
+  ],
+  "cost_usd": 0.000265,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Carlos Reyes",
+   "incident_date": "2026-09-12",
+   "incident_description": "On September 12, 2026, at about 9:20, I was driving my 2021 Accura MDX on 678 Sunset Drive, Dayton, OH. It was dusk and visibility was reduced. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, front door panel, rear door panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,320.00.",
+   "incident_location": "678 Sunset Drive, Dayton, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2769.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1021.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1252.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "3278.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-84001",
+   "policy_number": "POL-PREM-662902",
+   "reported_date": "2026-09-14",
+   "total_amount": "8320.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "MDX",
+   "vehicle_year": 2021
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We deny this claim because the claimant's account of racing triggers the policy exclusion for impromptu street racing. Section PREM-4.2 specifically excludes coverage for any loss that occurs while the vehicle is used in an impromptu race.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "the claimant's account triggers an exclusion"
+  ],
+  "source": "model"
+ },
+ "CLM-0103": {
+  "cited_clause_ids": [
+   "BASIC-6.2"
+  ],
+  "cost_usd": 0.000295,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Aisha Chen",
+   "incident_date": "2026-09-05",
+   "incident_description": "On 2026-09-05, at about 19:35, I was driving my 2024 Honda Civic on 9028 Maple Street, Toledo, OH. The weather was clear and dry. Another car was driving fast near me and I may have sped up a little, though I am not sure whether you would call that racing. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. No one was hurt and I did not call the police. The main damage is to the radiator support, hood panel, front grille. I took the car to Precision Auto Body and they estimated the repair at $9,440.00.",
+   "incident_location": "9028 Maple Street, Toledo, OH",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3459.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "3189.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "1715.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "1077.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-482469",
+   "reported_date": "2026-09-06",
+   "total_amount": "9440.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Civic",
+   "vehicle_year": 2024
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We are escalating this claim because automated findings indicate it is unclear whether an exclusion applies due to the claimant mentioning possible racing. Section [BASIC-6.2] governs this situation by requiring escalation when material facts are disputed, missing, or open to more than one reasonable reading. The key fact is that the claimant's account leaves uncertainty regarding whether a racing exclusion applies.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "it is unclear whether an exclusion applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0108": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.000243,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Ethan Chen",
+   "incident_date": "2026-07-28",
+   "incident_description": "On 2026-07-28, at about 9:35, I was driving my 2009 Chevrolet Silverado on 5064 Maple Street, Bloomington, IN. The road was dry. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. No one was hurt and I did not call the police. The main damage is to the hood panel, radiator support, headlamp assembly. I took the car to Midwest Collision Center and they estimated the repair at $6,050.00.",
+   "incident_location": "5064 Maple Street, Bloomington, IN",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1077.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "800.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1582.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "928.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "1663.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PREM-138960",
+   "reported_date": "2026-08-06",
+   "total_amount": "6050.00",
+   "vehicle_make": "Chevrolet",
+   "vehicle_model": "Silverado",
+   "vehicle_year": 2009
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving this claim because the automated findings confirm no exclusions, policy period issues, late notice, or fraud flags apply. Under Section 2, the insurer covers direct and accidental loss to the covered vehicle caused by collision during the policy period. The key fact is that the vehicle sustained collision damage within the policy period and the total repair estimate of $6,050.00 is supported by the claimant's account.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0113": {
+  "cited_clause_ids": [
+   "STD-6.1"
+  ],
+  "cost_usd": 0.000272,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Tariq Vasquez",
+   "incident_date": "2026-04-17",
+   "incident_description": "On 2026-04-17, at about 16:05, I was driving my 2014 Toyota Camry on 7621 Mill Road, Rockford, IL. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, quarter panel, side mirror. I took the car to Eagle Body & Paint and they estimated the repair at $43,190.00.",
+   "incident_location": "7621 Mill Road, Rockford, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "10479.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "7921.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "10053.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "6623.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "8114.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-STD-514794",
+   "reported_date": "2026-04-22",
+   "total_amount": "43190.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Camry",
+   "vehicle_year": 2014
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We are escalating this claim to a senior adjuster because the total amount of loss is at or above the $30,000 high-value referral threshold. Clause STD-6.1 explicitly governs this by requiring any claim with an amount of loss at or above $30,000 to be escalated before payment is authorized. The key fact is that the itemized damages total $43,190.00.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "the amount is at or above the high-value referral threshold"
+  ],
+  "source": "model"
+ },
+ "CLM-0119": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.000256,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Carlos Egan",
+   "incident_date": "2026-08-10",
+   "incident_description": "On 2026-08-10, at about 15:50, I was driving my 2013 Suburu Legacy on 2396 Washington Street, Toledo, OH. The weather was clear and dry. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. No one was hurt and I did not call the police. The main damage is to the rear reinforcement bar, rear body panel, quarter panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,740.00.",
+   "incident_location": "2396 Washington Street, Toledo, OH",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2087.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "2748.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "2607.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1298.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-204686",
+   "reported_date": "2026-08-16",
+   "total_amount": "8740.00",
+   "vehicle_make": "Suburu",
+   "vehicle_model": "Legacy",
+   "vehicle_year": 2013
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim for the single vehicle collision as all automated checks are clear and no exclusions apply. Clause [BASIC-2.1] governs this decision, which covers direct and accidental loss to the covered vehicle caused by collision during the policy period. The key fact is that the claimant struck a concrete bollard resulting in $8,740.00 of repair costs.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0125": {
+  "cited_clause_ids": [
+   "STD-5.1"
+  ],
+  "cost_usd": 0.000256,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Grace Okafor",
+   "incident_date": "2026-06-24",
+   "incident_description": "On 2026-06-24, at about 18:05, I was driving my 2014 Ford Fusion on 6613 Elm Drive, Fort Wayne, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear body panel, tail lamp assembly. I took the car to Eagle Body & Paint and they estimated the repair at $10,680.00.",
+   "incident_location": "6613 Elm Drive, Fort Wayne, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "5666.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "3926.00",
+     "description": "Tail lamp assembly"
+    },
+    {
+     "amount": "1088.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-41386",
+   "policy_number": "POL-STD-355314",
+   "reported_date": "2026-08-09",
+   "total_amount": "10680.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "Fusion",
+   "vehicle_year": 2014
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We must deny this claim because notice was provided after the required policy window without any documented exception. Clause STD-5.1 governs the notice requirement, and the automated findings confirm that late_notice is true. The key fact is that the incident occurred on June 24, 2026, but notice was not given until August 9, 2026, exceeding the thirty-day limit.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "notice was given after the policy's notice window"
+  ],
+  "source": "model"
+ },
+ "CLM-0130": {
+  "cited_clause_ids": [
+   "BASIC-4.7"
+  ],
+  "cost_usd": 0.000283,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Brian Fischer",
+   "incident_date": "2026-05-07",
+   "incident_description": "On 2026-05-07, at about 6:35, I was driving my 2014 Mercedes ML350 on 6212 Washington Street, Evansville, IN. Traffic was light. I had turned off the paved road onto a dirt trail through a field to take a shortcut. I swerved to avoid a deer and the right side of my vehicle scraped a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, rear door panel, side mirror. I took the car to Summit Collision and they estimated the repair at $4,470.00.",
+   "incident_location": "6212 Washington Street, Evansville, IN",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "923.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1029.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "374.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "1009.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "426.00",
+     "description": "Shop supplies"
+    },
+    {
+     "amount": "709.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-55376",
+   "policy_number": "POL-BASIC-430886",
+   "reported_date": "2026-05-11",
+   "total_amount": "4470.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "ML350",
+   "vehicle_year": 2014
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We deny this claim because the loss occurred while the vehicle was being driven off a maintained public or private road on a dirt trail. This event triggers the off-road use exclusion under section BASIC-4.7. Consequently, collision coverage does not apply to this incident.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "the claimant's account triggers an exclusion"
+  ],
+  "source": "model"
+ },
+ "CLM-0132": {
+  "cited_clause_ids": [
+   "STD-7.2"
+  ],
+  "cost_usd": 0.000247,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Daniel Alvarez",
+   "incident_date": "2026-02-20",
+   "incident_description": "On 02/20/2026, at about 14:20, I was driving my 2020 Mercedes C300 on 865 Mill Road, Rockford, IL. It was dusk and visibility was reduced. I lost traction on a patch of gravel and the front of my vehicle struck a guardrail. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the headlamp assembly, radiator support. I took the car to Midwest Collision Center and they estimated the repair at $10,460.00.",
+   "incident_location": "865 Mill Road, Rockford, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3920.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "3539.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "1378.00",
+     "description": "Shop supplies"
+    },
+    {
+     "amount": "1623.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-22791",
+   "policy_number": "POL-STD-730875",
+   "reported_date": "2026-03-05",
+   "total_amount": "10460.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "C300",
+   "vehicle_year": 2020
+  },
+  "forced": false,
+  "fraud_flags": [
+   "duplicate_claim"
+  ],
+  "notes": [],
+  "rationale": "We are escalating this claim because automated findings raised a duplicate claim fraud flag matching an earlier claim. Under Section 7, claims that have already been reported must be escalated to the special investigation unit.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "fraud flag raised: duplicate_claim"
+  ],
+  "source": "model"
+ },
+ "CLM-0141": {
+  "cited_clause_ids": [
+   "STD-6.2"
+  ],
+  "cost_usd": 0.000278,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Fatima Gupta",
+   "incident_date": "2026-04-19",
+   "incident_description": "On 04/19/2026, at about 20:35, I was driving my 2017 Accura TL on 1117 River Road, Toledo, OH. The weather was clear and dry. I had one drink with dinner a few hours earlier and I felt fine, but the officer asked me a few questions about it. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front bumper cover, fender. I took the car to Heartland Repair Group and they estimated the repair at $6,670.00.",
+   "incident_location": "1117 River Road, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "3006.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "1704.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "1960.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-74730",
+   "policy_number": "POL-STD-509960",
+   "reported_date": "2026-04-27",
+   "total_amount": "6670.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "TL",
+   "vehicle_year": 2017
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We must escalate this claim because automated findings indicate it is unclear whether an exclusion applies due to the claimant's mention of alcohol consumption. Under Section 6.2, claims with open or unclear coverage determinations must be referred for further investigation. Therefore, the adjuster should not approve or deny the claim at this time.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "it is unclear whether an exclusion applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0142": {
+  "cited_clause_ids": [
+   "PLUS-2.1"
+  ],
+  "cost_usd": 0.000258,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Priya Kowalski",
+   "incident_date": "2026-06-18",
+   "incident_description": "On 2026-06-18, at about 20:05, I was driving my 2011 Nissan Maxima on 2810 Park Avenue, Bloomington, IN. The road was dry. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, front bumper cover. I took the car to Summit Collision and they estimated the repair at $9,950.00.",
+   "incident_location": "2810 Park Avenue, Bloomington, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1705.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "1355.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "4239.00",
+     "description": "Frame and alignment"
+    },
+    {
+     "amount": "2651.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-165954",
+   "reported_date": "2026-06-28",
+   "total_amount": "9950.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Maxima",
+   "vehicle_year": 2011
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim because all automated checks confirm the loss is within the policy period, timely reported, and free of exclusions or fraud flags. The governing clause is [PLUS-2.1], which covers direct and accidental loss caused by collision during the policy period. The key fact is that the total repair cost of $9,950.00 for the front-end collision damage is supported by the claimant's account and the policy terms.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0143": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.00027,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Andre Ibrahim",
+   "incident_date": "2026-02-05",
+   "incident_description": "On February 5, 2026, at about 19:35, I was driving my 2020 BMW M5 on 7035 Sunset Drive, Toledo, OH. It was dusk and visibility was reduced. The panels had been rusting and cracking from age for years, and I finally decided to put in a claim for all of the deterioration. I swerved to avoid a deer and the right side of my vehicle scraped a retaining wall. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, door glass, front door panel. I took the car to Eagle Body & Paint and they estimated the repair at $7,400.00.",
+   "incident_location": "7035 Sunset Drive, Toledo, OH",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1694.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "2294.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "841.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1445.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1126.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-62875",
+   "policy_number": "POL-BASIC-962539",
+   "reported_date": "2026-02-10",
+   "total_amount": "7400.00",
+   "vehicle_make": "BMW",
+   "vehicle_model": "M5",
+   "vehicle_year": 2020
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [
+   "model escalated a claim the rules would approve"
+  ],
+  "rationale": "We are escalating this claim to a senior adjuster because the claimant's statement reveals that the damage includes panels that had been rusting and cracking from age for years, raising uncertainty about whether the claimed damages qualify as a direct and accidental loss. This decision is governed by the collision coverage clause which requires the loss to be accidental. The key fact is that the claimant admitted parts of the damage stem from long-term deterioration rather than the collision itself.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0144": {
+  "cited_clause_ids": [
+   "BASIC-4.6"
+  ],
+  "cost_usd": 0.000291,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Daniel Young",
+   "incident_date": "2026-07-03",
+   "incident_description": "On 07/03/2026, at about 18:35, I was driving my 2011 Toyota Camry on 5121 Lake Boulevard, Dayton, OH. Traffic was light. I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, trunk lid, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $5,280.00.",
+   "incident_location": "5121 Lake Boulevard, Dayton, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1067.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "1124.00",
+     "description": "Trunk lid"
+    },
+    {
+     "amount": "893.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "970.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "1226.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-39167",
+   "policy_number": "POL-BASIC-410403",
+   "reported_date": "2026-07-12",
+   "total_amount": "5280.00",
+   "vehicle_make": "Toyota",
+   "vehicle_model": "Camry",
+   "vehicle_year": 2011
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We must deny the claim because the claimant admitted to driving while over the legal blood alcohol limit. This triggers the policy exclusion for impaired driving, making the loss not covered. The governing clause is BASIC-4.6.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "the claimant's account triggers an exclusion"
+  ],
+  "source": "model"
+ },
+ "CLM-0147": {
+  "cited_clause_ids": [],
+  "cost_usd": 0,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Grace Thompson",
+   "incident_date": "2026-06-18",
+   "incident_description": "On June 18, 2026, at about 18:35, I was driving my 2017 Ford F150 on 1879 River Road, Fort Wayne, IN. The road was dry. My nephew was driving that day, and I knew his license had been suspended since the spring. While reversing out of a parking area, the rear of my vehicle struck a steel pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear body panel, trunk lid. I took the car to Heartland Repair Group and they estimated the repair at $8,530.00.",
+   "incident_location": "1879 River Road, Fort Wayne, IN",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1742.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1794.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "923.00",
+     "description": "Trunk lid"
+    },
+    {
+     "amount": "757.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "3314.00",
+     "description": "Shop supplies"
+    }
+   ],
+   "police_report_number": "PR-IN-2026-24404",
+   "policy_number": null,
+   "reported_date": "2026-06-26",
+   "total_amount": "8530.00",
+   "vehicle_make": "Ford",
+   "vehicle_model": "F150",
+   "vehicle_year": 2017
+  },
+  "forced": true,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "Recommend escalate: policy None was not found.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "policy None was not found"
+  ],
+  "source": "rules_fallback"
+ },
+ "CLM-0150": {
+  "cited_clause_ids": [
+   "PLUS-7.3"
+  ],
+  "cost_usd": 0.00026599999999999996,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Victor Zimmerman",
+   "incident_date": "2026-04-27",
+   "incident_description": "On April 27, 2026, at about 20:20, I was driving my 2022 Honda CRV on 6143 Oak Avenue, Fort Wayne, IN. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, front door panel, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $18,230.00.",
+   "incident_location": "6143 Oak Avenue, Fort Wayne, IN",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1468.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "5931.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "4013.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "3403.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "3415.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-998801",
+   "reported_date": "2026-05-06",
+   "total_amount": "18230.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "CRV",
+   "vehicle_year": 2022
+  },
+  "forced": false,
+  "fraud_flags": [
+   "inflated_estimate"
+  ],
+  "notes": [],
+  "rationale": "We are escalating this claim because an automated fraud flag was raised for an inflated estimate. Section 7 governs this by requiring escalation if the amount claimed is substantially higher than the usual cost of repairing the damage described, as seen with the claimed amount of $18,230.00.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "fraud flag raised: inflated_estimate"
+  ],
+  "source": "model"
+ },
+ "CLM-0151": {
+  "cited_clause_ids": [
+   "PREM-2.1"
+  ],
+  "cost_usd": 0.000238,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Priya Alvarez",
+   "incident_date": "2026-08-14",
+   "incident_description": "On August 14, 2026, at about 6:35, I was driving my 2025 Nissan Ultima on 4291 Elm Drive, Peoria, IL. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear reinforcement bar, quarter panel, rear bumper cover. I took the car to Precision Auto Body and they estimated the repair at $8,440.00.",
+   "incident_location": "4291 Elm Drive, Peoria, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "594.00",
+     "description": "Rear reinforcement bar"
+    },
+    {
+     "amount": "2230.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1759.00",
+     "description": "Rear bumper cover"
+    },
+    {
+     "amount": "2707.00",
+     "description": "Rear body panel"
+    },
+    {
+     "amount": "1150.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-98433",
+   "policy_number": "POL-PREM-313088",
+   "reported_date": "2026-08-21",
+   "total_amount": "8440.00",
+   "vehicle_make": "Nissan",
+   "vehicle_model": "Ultima",
+   "vehicle_year": 2025
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim for Priya Alvarez because no automated fraud flags or exclusions apply, and the incident falls within the policy period and coverage terms. The governing clause is Section 2, which states the insurer will pay for direct and accidental loss caused by collision. The key fact is that the claimant's vehicle suffered $8,440.00 in damages from a rear-end collision while the policy was active.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0154": {
+  "cited_clause_ids": [
+   "PLUS-2.1"
+  ],
+  "cost_usd": 0.000259,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Grace Hayes",
+   "incident_date": "2026-05-28",
+   "incident_description": "On May 28, 2026, at about 8:35, I was driving my 2025 Saab 93 on 2334 Cedar Road, Akron, OH. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, rocker panel, side mirror. I took the car to Summit Collision and they estimated the repair at $5,370.00.",
+   "incident_location": "2334 Cedar Road, Akron, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1742.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "1393.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1784.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "451.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-244813",
+   "reported_date": "2026-05-31",
+   "total_amount": "5370.00",
+   "vehicle_make": "Saab",
+   "vehicle_model": "93",
+   "vehicle_year": 2025
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We approve the claim for Grace Hayes because the automated findings indicate no exclusions or flags apply and the incident falls within the policy period. This decision is governed by the collision coverage insuring agreement, which provides payment for direct and accidental loss caused by collision. The key fact is that the insured vehicle sustained damage in a multi-vehicle collision on May 28, 2026, totaling $5,370.00 in reasonable repair costs.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0172": {
+  "cited_clause_ids": [
+   "STD-2.1"
+  ],
+  "cost_usd": 0.00023999999999999998,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Robert Dawson",
+   "incident_date": "2026-09-26",
+   "incident_description": "On September 26, 2026, at about 19:50, I was driving my 2017 Accura RSX on 5132 Oak Avenue, Rockford, IL. The road was dry. I swerved to avoid a deer and the left side of my vehicle scraped a guardrail. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, front door panel. I took the car to Summit Collision and they estimated the repair at $7,540.00.",
+   "incident_location": "5132 Oak Avenue, Rockford, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "2999.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "1721.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2820.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-IL-2026-12975",
+   "policy_number": "POL-STD-329499",
+   "reported_date": "2026-10-01",
+   "total_amount": "7540.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": "RSX",
+   "vehicle_year": 2017
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because automated findings confirm no exclusions, fraud flags, or late notices apply to this loss. Section [STD-2.1] governs collision coverage for direct and accidental loss to the covered vehicle during the policy period. The key fact is that the insured vehicle sustained accidental damage from a collision during the active policy period.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0175": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.00026199999999999997,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Grace Egan",
+   "incident_date": "2026-08-19",
+   "incident_description": "On August 19, 2026, at about 17:35, I was driving my 2014 Mercedes E400 on 2046 Highland Avenue, Toledo, OH. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the door glass, quarter panel, front door panel. I took the car to Precision Auto Body and they estimated the repair at $6,670.00.",
+   "incident_location": "2046 Highland Avenue, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1179.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "2037.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "1435.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "2019.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-78811",
+   "policy_number": "POL-BASIC-729365",
+   "reported_date": "2026-08-22",
+   "total_amount": "6670.00",
+   "vehicle_make": "Mercedes",
+   "vehicle_model": "E400",
+   "vehicle_year": 2014
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because automated checks found no exclusions, flags, or reporting delays, and the incident falls within the policy period. Clause BASIC-2.1 governs this collision coverage, obligating payment for direct and accidental loss to the covered vehicle. The key fact is that Grace Egan suffered a valid multi-vehicle collision resulting in $6,670.00 in verified damages.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0182": {
+  "cited_clause_ids": [
+   "PLUS-6.1"
+  ],
+  "cost_usd": 0.000262,
+  "decision": "escalate",
+  "fields": {
+   "claimant_name": "Yuki Schmidt",
+   "incident_date": "2026-09-16",
+   "incident_description": "On September 16, 2026, at about 10:35, I was driving my 2013 BMW X6 on 1862 Maple Street, Toledo, OH. It was dusk and visibility was reduced. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the fender, front bumper cover, hood panel. I took the car to Lakeside Autoworks and they estimated the repair at $45,150.00.",
+   "incident_location": "1862 Maple Street, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "8075.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "5599.00",
+     "description": "Front bumper cover"
+    },
+    {
+     "amount": "7324.00",
+     "description": "Hood panel"
+    },
+    {
+     "amount": "11602.00",
+     "description": "Front grille"
+    },
+    {
+     "amount": "5362.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "7188.00",
+     "description": "Body labor"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-PLUS-386532",
+   "reported_date": "2026-09-22",
+   "total_amount": "45150.00",
+   "vehicle_make": "BMW",
+   "vehicle_model": "X6",
+   "vehicle_year": 2013
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We escalate this claim to a senior adjuster because the total amount of loss meets the referral threshold. Clause PLUS-6.1 governs this requirement, stating that claims at or above $45,000 must be escalated for review.",
+  "rules_outcome": "escalate",
+  "rules_reasons": [
+   "the amount is at or above the high-value referral threshold"
+  ],
+  "source": "model"
+ },
+ "CLM-0186": {
+  "cited_clause_ids": [
+   "BASIC-4.2"
+  ],
+  "cost_usd": 0.000291,
+  "decision": "deny",
+  "fields": {
+   "claimant_name": "Omar Young",
+   "incident_date": "2026-03-07",
+   "incident_description": "On March 7, 2026, at about 9:50, I was driving my 2008 Accura on 8589 Washington Street, Naperville, IL. Traffic was light. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, door glass, front door panel. I took the car to Midwest Collision Center and they estimated the repair at $8,480.00.",
+   "incident_location": "8589 Washington Street, Naperville, IL",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1593.00",
+     "description": "Quarter panel"
+    },
+    {
+     "amount": "2442.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "879.00",
+     "description": "Front door panel"
+    },
+    {
+     "amount": "1803.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1763.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-256721",
+   "reported_date": "2026-03-13",
+   "total_amount": "8480.00",
+   "vehicle_make": "Accura",
+   "vehicle_model": null,
+   "vehicle_year": 2008
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend denying this claim because the automated findings and claimant account establish that the loss occurred during an impromptu race. This brings the incident under the racing exclusion in the policy. The governing clause is Section 4, Exclusions.",
+  "rules_outcome": "deny",
+  "rules_reasons": [
+   "the claimant's account triggers an exclusion"
+  ],
+  "source": "model"
+ },
+ "CLM-0196": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.00025600000000000004,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Marcus Gupta",
+   "incident_date": "2026-03-05",
+   "incident_description": "On 2026-03-05, at about 6:35, I was driving my 2010 Audi A5 on 9289 Maple Street, Peoria, IL. The weather was clear and dry. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. No one was hurt and I did not call the police. The main damage is to the headlamp assembly, radiator support, fender. I took the car to Summit Collision and they estimated the repair at $8,830.00.",
+   "incident_location": "9289 Maple Street, Peoria, IL",
+   "incident_type": "Single Vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1050.00",
+     "description": "Headlamp assembly"
+    },
+    {
+     "amount": "1953.00",
+     "description": "Radiator support"
+    },
+    {
+     "amount": "2014.00",
+     "description": "Fender"
+    },
+    {
+     "amount": "2913.00",
+     "description": "Shop supplies"
+    },
+    {
+     "amount": "900.00",
+     "description": "Paint and materials"
+    }
+   ],
+   "police_report_number": null,
+   "policy_number": "POL-BASIC-884220",
+   "reported_date": "2026-03-13",
+   "total_amount": "8830.00",
+   "vehicle_make": "Audi",
+   "vehicle_model": "A5",
+   "vehicle_year": 2010
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving the claim because the automated findings indicate no exclusions or flags apply and the loss falls within the policy period. The governing clause is Section 2, which provides coverage for direct and accidental loss caused by collision. The key fact is that the claimant's vehicle suffered collision damage to the front end on Maple Street without any policy violations.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ },
+ "CLM-0197": {
+  "cited_clause_ids": [
+   "BASIC-2.1"
+  ],
+  "cost_usd": 0.00025299999999999997,
+  "decision": "approve",
+  "fields": {
+   "claimant_name": "Grace Fischer",
+   "incident_date": "2026-03-14",
+   "incident_description": "On March 14, 2026, at about 9:35, I was driving my 2022 Honda Accord on 1749 Sunset Drive, Toledo, OH. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, rocker panel, side mirror. I took the car to Eagle Body & Paint and they estimated the repair at $8,380.00.",
+   "incident_location": "1749 Sunset Drive, Toledo, OH",
+   "incident_type": "Multi-vehicle Collision",
+   "itemized_damages": [
+    {
+     "amount": "1623.00",
+     "description": "Rear door panel"
+    },
+    {
+     "amount": "1242.00",
+     "description": "Rocker panel"
+    },
+    {
+     "amount": "1714.00",
+     "description": "Side mirror"
+    },
+    {
+     "amount": "1440.00",
+     "description": "Door glass"
+    },
+    {
+     "amount": "678.00",
+     "description": "Paint and materials"
+    },
+    {
+     "amount": "1683.00",
+     "description": "Frame and alignment"
+    }
+   ],
+   "police_report_number": "PR-OH-2026-65581",
+   "policy_number": "POL-BASIC-794962",
+   "reported_date": "2026-03-19",
+   "total_amount": "8380.00",
+   "vehicle_make": "Honda",
+   "vehicle_model": "Accord",
+   "vehicle_year": 2022
+  },
+  "forced": false,
+  "fraud_flags": [],
+  "notes": [],
+  "rationale": "We recommend approving this claim because the automated findings show no exclusions, flags, or policy violations. Clause [BASIC-2.1] governs collision coverage for accidental loss during the policy period, and the incident occurred within the active term without any conflicting facts.",
+  "rules_outcome": "approve",
+  "rules_reasons": [
+   "no exclusion, referral or flag applies"
+  ],
+  "source": "model"
+ }
+}

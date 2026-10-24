@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000142,
+  "input_tokens": 905,
+  "latency_ms": 1156,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 129,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We deny this claim because the stated damage is due to long-term deterioration rather than an accidental collision. Under Section 2, Collision Coverage, coverage is restricted to direct and accidental loss. The claimant explicitly stated that the panels had been rusting and cracking from age for years.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

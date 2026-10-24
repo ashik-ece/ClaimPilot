@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000154,
+  "input_tokens": 901,
+  "latency_ms": 1216,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 160,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny this claim because notice was provided after the required policy window without any documented exception. Clause STD-5.1 governs the notice requirement, and the automated findings confirm that late_notice is true. The key fact is that the incident occurred on June 24, 2026, but notice was not given until August 9, 2026, exceeding the thirty-day limit.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-5.1\",\n      \"quote\": \"The insured person must notify us of a collision loss within 30 days after the date of loss.\"\n    }\n  ]\n}"
+}

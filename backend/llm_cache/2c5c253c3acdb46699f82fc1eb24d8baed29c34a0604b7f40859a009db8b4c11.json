@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000156,
+  "input_tokens": 855,
+  "latency_ms": 1510,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 175,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving this claim because the automated findings confirm no exclusions, policy period issues, late notice, or fraud flags apply. Under Section 2, the insurer covers direct and accidental loss to the covered vehicle caused by collision during the policy period. The key fact is that the vehicle sustained collision damage within the policy period and the total repair estimate of $6,050.00 is supported by the claimant's account.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"Subject to the limit, the deductible and the exclusions in this policy, we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

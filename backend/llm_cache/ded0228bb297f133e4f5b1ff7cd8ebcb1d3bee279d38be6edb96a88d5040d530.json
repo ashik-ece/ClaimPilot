@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000155,
+  "input_tokens": 989,
+  "latency_ms": 1114,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 141,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We recommend denying this claim because the automated findings and the claimant's account confirm that the vehicle was being used for a commercial rideshare trip at the time of the collision. This situation is explicitly excluded under the policy terms. Therefore, the loss is not covered.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-4.4\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is being used to carry persons or property for a fee, including rideshare, taxi, courier and paid delivery services\"\n    }\n  ]\n}"
+}

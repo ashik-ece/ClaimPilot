@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000154,
+  "input_tokens": 876,
+  "latency_ms": 1235,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 167,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approved the claim for Sofia Okafor because automated findings show no exclusions, fraud flags, or timeliness issues apply to the collision. Section 2.1 governs this direct and accidental loss during the policy period, covering the reasonable cost of repairs for the BMW M5. The key fact is that the vehicle struck a fence post while reversing on July 21, 2026, resulting in verified damages totaling $7,870.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

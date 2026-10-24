@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 7.4e-05,
+  "input_tokens": 703,
+  "latency_ms": 788,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 9,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": []\n}"
+}

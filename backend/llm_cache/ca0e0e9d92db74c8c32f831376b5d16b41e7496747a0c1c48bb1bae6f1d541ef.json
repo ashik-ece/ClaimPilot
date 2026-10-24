@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00017,
+  "input_tokens": 958,
+  "latency_ms": 1096,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 186,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim to a senior adjuster because the total amount of loss is at or above the $30,000 high-value referral threshold. Clause STD-6.1 explicitly governs this by requiring any claim with an amount of loss at or above $30,000 to be escalated before payment is authorized. The key fact is that the itemized damages total $43,190.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-6.1\",\n      \"quote\": \"Any claim where the amount of loss is at or above $30,000 must be escalated to a senior adjuster for review before any payment is authorized, even if no exclusion appears to apply.\"\n    }\n  ]\n}"
+}

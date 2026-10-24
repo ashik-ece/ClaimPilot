@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000138,
+  "input_tokens": 860,
+  "latency_ms": 4463,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 131,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approved the claim for the multi-vehicle collision because the automated findings confirmed no exclusions, referrals, or flags apply. The governing collision coverage clause requires us to pay for direct and accidental loss during the policy period based on the key fact that the incident and damages occurred as reported without dispute.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

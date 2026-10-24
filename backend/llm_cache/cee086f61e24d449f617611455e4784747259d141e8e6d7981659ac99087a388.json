@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000147,
+  "input_tokens": 881,
+  "latency_ms": 1027,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 148,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because all automated checks confirm no exclusions or flags apply and the incident falls within the policy terms. Section 2. Insuring Agreement governs collision coverage for direct and accidental loss to the covered vehicle. The key fact is that the claimant collided with a steel pole during the policy period, causing verified damages of $6,160.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

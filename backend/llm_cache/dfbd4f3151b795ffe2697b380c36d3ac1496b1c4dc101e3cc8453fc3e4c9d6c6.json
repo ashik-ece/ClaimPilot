@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000142,
+  "input_tokens": 915,
+  "latency_ms": 1327,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 127,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We must escalate this claim because an automated fraud flag was raised for a duplicate claim matching an earlier claim. Under Section 7, claims involving duplicate losses must be referred to the special investigation unit.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-7.2\",\n      \"quote\": \"A claim for a loss that has already been reported to us, or paid, under this policy or any other policy, must be escalated to the special investigation unit.\"\n    }\n  ]\n}"
+}

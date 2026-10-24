@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000153,
+  "input_tokens": 939,
+  "latency_ms": 987,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 147,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We must escalate this claim because an automated fraud flag for a duplicate claim was raised, which matches an earlier claim under CLM-0077. This decision is governed by Section 7 regarding Duplicate Claims. The key fact is that the automated findings detected a duplicate submission for the same loss.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-7.2\",\n      \"quote\": \"A claim for a loss that has already been reported to us, or paid, under this policy or any other policy, must be escalated to the special investigation unit.\"\n    }\n  ]\n}"
+}

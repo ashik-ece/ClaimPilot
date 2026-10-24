@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000139,
+  "input_tokens": 846,
+  "latency_ms": 1473,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 135,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving the claim because the automated findings confirm that no exclusions, late notice, or fraud flags apply to the loss. Section 2. Insuring Agreement governs this collision coverage, and the incident occurred during the policy period with direct and accidental damage amounting to $7,110.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000133,
+  "input_tokens": 822,
+  "latency_ms": 1003,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 127,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because no exclusions, fraud flags, or timeliness issues were found. Section 2. Insuring Agreement governs this collision loss during the policy period. The key fact is that the claimant suffered a direct and accidental single vehicle collision resulting in verified repair costs.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

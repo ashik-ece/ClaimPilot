@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000149,
+  "input_tokens": 826,
+  "latency_ms": 1116,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 165,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because all automated checks confirm the loss is within the policy period, timely reported, and free of exclusions or fraud flags. The governing clause is [PLUS-2.1], which covers direct and accidental loss caused by collision during the policy period. The key fact is that the total repair cost of $9,950.00 for the front-end collision damage is supported by the claimant's account and the policy terms.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

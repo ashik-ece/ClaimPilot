@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.001736,
+  "input_tokens": 820,
+  "latency_ms": 6086,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 596,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\": \"Leila Thompson\", \"policy_number\": \"POL-PREM-201751\", \"incident_date\": \"2026-07-25\", \"reported_date\": \"2026-07-28\", \"incident_type\": \"Multi-vehicle Collision\", \"incident_location\": \"9498 Elm Drive, Peoria, IL\", \"vehicle_make\": \"Nissan\", \"vehicle_model\": \"Pathfinder\", \"vehicle_year\": 2017, \"police_report_number\": \"PR-IL-2026-60838\", \"total_amount\": \"5550.00\", \"itemized_damages\": [{\"description\": \"Fender\", \"amount\": \"1385.00\"}, {\"description\": \"Headlamp assembly\", \"amount\": \"2227.00\"}, {\"description\": \"Shop supplies\", \"amount\": \"1938.00\"}], \"evidence\": [{\"field\": \"claimant_name\", \"document\": \"claim_form.pdf\", \"quote\": \"Leila Thompson\"}, {\"field\": \"policy_number\", \"document\": \"claim_form.pdf\", \"quote\": \"POL-PREM-201751\"}, {\"field\": \"incident_date\", \"document\": \"claim_form.pdf\", \"quote\": \"July 25, 2026\"}, {\"field\": \"reported_date\", \"document\": \"claim_form.pdf\", \"quote\": \"2026-07-28\"}, {\"field\": \"incident_type\", \"document\": \"claim_form.pdf\", \"quote\": \"Multi-vehicle Collision\"}, {\"field\": \"incident_location\", \"document\": \"claim_form.pdf\", \"quote\": \"9498 Elm Drive, Peoria, IL\"}, {\"field\": \"vehicle_make\", \"document\": \"claim_form.pdf\", \"quote\": \"Nissan\"}, {\"field\": \"vehicle_model\", \"document\": \"claim_form.pdf\", \"quote\": \"Pathfinder\"}, {\"field\": \"vehicle_year\", \"document\": \"claim_form.pdf\", \"quote\": \"2017\"}, {\"field\": \"police_report_number\", \"document\": \"claim_form.pdf\", \"quote\": \"PR-IL-2026-60838\"}, {\"field\": \"total_amount\", \"document\": \"claim_form.pdf\", \"quote\": \"$5,550.00\"}, {\"field\": \"itemized_damages\", \"document\": \"repair_estimate.pdf\", \"quote\": \"Fender: $1,385.00\"}]}"
+}

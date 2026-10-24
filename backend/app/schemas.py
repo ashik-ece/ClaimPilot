@@ -152,3 +152,40 @@ class AuditEventOut(ORMModel):
     model_version: str | None
     prompt_version: str | None
     created_at: datetime
+
+
+class ExtractionOut(ORMModel):
+    claim_id: uuid.UUID
+    fields: dict[str, Any]
+    meta: dict[str, Any]
+    prompt_version: str | None
+    created_at: datetime
+
+
+class CitedClause(BaseModel):
+    clause_id: str
+    section_path: str
+    text: str
+
+
+class RecommendationOut(ORMModel):
+    id: uuid.UUID
+    claim_id: uuid.UUID
+    outcome: str
+    rationale: str
+    cited_clause_ids: list[str]
+    cited_clauses: list[CitedClause] = []
+    fraud_flags: list[dict[str, Any]]
+    meta: dict[str, Any]
+    model_name: str | None
+    prompt_version: str | None
+    created_at: datetime
+
+
+class PipelineJobOut(ORMModel):
+    stage: str
+    status: str
+    attempts: int
+    last_error: str | None
+    created_at: datetime
+    finished_at: datetime | None

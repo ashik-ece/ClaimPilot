@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000154,
+  "input_tokens": 858,
+  "latency_ms": 1080,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 170,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"The claim is approved because automated checks confirm no exclusions or fraud flags apply, and the loss occurred during the policy period without late notice. Section 2.1 governs this collision coverage for direct and accidental loss. The key fact is that the claimant's vehicle suffered $5,970.00 in damages from a rear-end collision on August 29, 2026.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"Subject to the limit, the deductible and the exclusions in this policy, we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.000154,
+  "input_tokens": 876,
+  "latency_ms": 46283,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 166,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve this claim for the multi-vehicle collision because automated findings confirm no exclusions or flags apply and the loss occurred during the policy period. This decision is governed by Section 2. Insuring Agreement, which states we will pay for direct and accidental loss caused by collision. The key fact is that the claimant's vehicle suffered $7,750.00 in direct damages during an accident on July 15, 2026.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

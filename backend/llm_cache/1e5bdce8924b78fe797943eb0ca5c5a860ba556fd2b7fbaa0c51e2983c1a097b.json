@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000148,
+  "input_tokens": 877,
+  "latency_ms": 927,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 151,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We have decided to approve Sofia Egan's collision claim because automated checks found no exclusions, fraud flags, or timeliness issues. The policy's collision coverage governs this loss, as the incident occurred during the policy period and involves a direct and accidental collision. The total repair amount of $8,260.00 is supported by the claimant's account and itemized damages.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

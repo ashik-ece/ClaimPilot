@@ -7,15 +7,29 @@ from sqlalchemy import func, select
 
 from app import audit
 from app.deps import AdminUser, SessionDep, StaffUser, actor_of, get_claim_or_404
-from app.models import AuditEvent, Claim, Decision, Document, Recommendation
+from app.models import (
+    AuditEvent,
+    Claim,
+    Decision,
+    Document,
+    Extraction,
+    PipelineJob,
+    PolicyClause,
+    Recommendation,
+)
+from app.pipeline import jobs
 from app.schemas import (
     AuditEventOut,
+    CitedClause,
     ClaimCreate,
     ClaimOut,
     ClaimPage,
     DecisionCreate,
     DecisionOut,
     DocumentOut,
+    ExtractionOut,
+    PipelineJobOut,
+    RecommendationOut,
     TransitionRequest,
 )
 from app.states import TERMINAL, ClaimStatus, IllegalTransition, check_transition
@@ -144,14 +158,6 @@ def upload_document(
         claim_id=claim.id,
         payload={"document_id": str(doc.id), "filename": filename, "sha256": doc.sha256},
     )
-    # Phase 3 replaces this marker with a real queue; the audit entry keeps the trail honest.
-    audit.record(
-        session,
-        actor=actor,
-        event_type="pipeline.enqueue_requested",
-        claim_id=claim.id,
-        payload={"stage": "extraction"},
-    )
     session.commit()
     return doc
 
@@ -225,3 +231,73 @@ def claim_audit(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> li
             select(AuditEvent).where(AuditEvent.claim_id == claim_id).order_by(AuditEvent.id)
         )
     )
+
+
+@router.post("/{claim_id}/analyze", status_code=status.HTTP_202_ACCEPTED)
+def analyze_claim_request(
+    claim_id: uuid.UUID, session: SessionDep, user: StaffUser
+) -> dict[str, str]:
+    """Start background analysis once the adjuster has uploaded the claim's documents."""
+    claim = get_claim_or_404(session, claim_id)
+    if claim.status != ClaimStatus.RECEIVED.value:
+        raise HTTPException(status.HTTP_409_CONFLICT, f"Claim is {claim.status}, not RECEIVED")
+    has_docs = session.scalar(
+        select(func.count()).select_from(Document).where(Document.claim_id == claim.id)
+    )
+    if not has_docs:
+        raise HTTPException(status.HTTP_422_UNPROCESSABLE_CONTENT, "Upload documents first")
+    if not jobs.enqueue(session, claim.id, "extract", actor=actor_of(user)):
+        session.rollback()
+        raise HTTPException(status.HTTP_409_CONFLICT, "Analysis was already requested")
+    session.commit()
+    return {"status": "queued"}
+
+
+@router.get("/{claim_id}/pipeline", response_model=list[PipelineJobOut])
+def pipeline_status(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> list[PipelineJob]:
+    get_claim_or_404(session, claim_id)
+    return list(
+        session.scalars(
+            select(PipelineJob)
+            .where(PipelineJob.claim_id == claim_id)
+            .order_by(PipelineJob.created_at)
+        )
+    )
+
+
+@router.get("/{claim_id}/extraction", response_model=ExtractionOut)
+def get_extraction(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> Extraction:
+    get_claim_or_404(session, claim_id)
+    extraction = session.scalar(select(Extraction).where(Extraction.claim_id == claim_id))
+    if extraction is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "No extraction yet")
+    return extraction
+
+
+@router.get("/{claim_id}/recommendation", response_model=RecommendationOut)
+def get_recommendation(
+    claim_id: uuid.UUID, session: SessionDep, user: StaffUser
+) -> RecommendationOut:
+    """The recommendation with each cited clause quoted in full, for side-by-side review."""
+    claim = get_claim_or_404(session, claim_id)
+    rec = session.scalar(select(Recommendation).where(Recommendation.claim_id == claim_id))
+    if rec is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "No recommendation yet")
+    clauses: dict[str, PolicyClause] = {}
+    if claim.policy_id is not None and rec.cited_clause_ids:
+        clauses = {
+            c.clause_id: c
+            for c in session.scalars(
+                select(PolicyClause).where(
+                    PolicyClause.policy_id == claim.policy_id,
+                    PolicyClause.clause_id.in_(rec.cited_clause_ids),
+                )
+            )
+        }
+    out = RecommendationOut.model_validate(rec)
+    out.cited_clauses = [
+        CitedClause(clause_id=i, section_path=clauses[i].section_path, text=clauses[i].text)
+        for i in rec.cited_clause_ids
+        if i in clauses
+    ]
+    return out

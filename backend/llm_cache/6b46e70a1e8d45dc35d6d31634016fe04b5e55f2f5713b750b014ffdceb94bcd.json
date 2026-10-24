@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000151,
+  "input_tokens": 963,
+  "latency_ms": 1074,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 137,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny this claim because the automated findings and policy terms confirm that the incident date occurred outside the active coverage period. Section 1, Policy Period explicitly states that loss occurring before the policy period begins is not covered. Therefore, the claimant is not eligible for collision coverage for this loss.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-1.1\",\n      \"quote\": \"Loss that occurs before the policy period begins or after it ends is not covered, regardless of when the loss is reported to us.\"\n    }\n  ]\n}"
+}

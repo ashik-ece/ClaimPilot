@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000434,
+  "input_tokens": 805,
+  "latency_ms": 2048,
+  "model": "gemini-3.1-flash-lite",
+  "output_tokens": 885,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"claimant_name\": \"Victor Zimmerman\",\n  \"policy_number\": \"POL-PLUS-998801\",\n  \"incident_date\": \"2026-04-27\",\n  \"reported_date\": \"2026-05-06\",\n  \"incident_type\": \"Multi-vehicle Collision\",\n  \"incident_location\": \"6143 Oak Avenue, Fort Wayne, IN\",\n  \"vehicle_make\": \"Honda\",\n  \"vehicle_model\": \"CRV\",\n  \"vehicle_year\": 2022,\n  \"police_report_number\": null,\n  \"total_amount\": \"18230.00\",\n  \"itemized_damages\": [\n    {\n      \"description\": \"Rear door panel\",\n      \"amount\": \"1468.00\"\n    },\n    {\n      \"description\": \"Front door panel\",\n      \"amount\": \"5931.00\"\n    },\n    {\n      \"description\": \"Quarter panel\",\n      \"amount\": \"4013.00\"\n    },\n    {\n      \"description\": \"Door glass\",\n      \"amount\": \"3403.00\"\n    },\n    {\n      \"description\": \"Paint and materials\",\n      \"amount\": \"3415.00\"\n    }\n  ],\n  \"evidence\": [\n    {\n      \"field\": \"claimant_name\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Claimant name: Victor Zimmerman\"\n    },\n    {\n      \"field\": \"policy_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Policy number: POL-PLUS-998801\"\n    },\n    {\n      \"field\": \"incident_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date of loss: 04/27/2026\"\n    },\n    {\n      \"field\": \"reported_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date reported: 05/06/2026\"\n    },\n    {\n      \"field\": \"incident_type\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Type of incident: Multi-vehicle Collision\"\n    },\n    {\n      \"field\": \"incident_location\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Location of loss: 6143 Oak Avenue, Fort Wayne, IN\"\n    },\n    {\n      \"field\": \"vehicle_make\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2022 Honda CRV\"\n    },\n    {\n      \"field\": \"vehicle_model\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2022 Honda CRV\"\n    },\n    {\n      \"field\": \"vehicle_year\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2022 Honda CRV\"\n    },\n    {\n      \"field\": \"police_report_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"None filed\"\n    },\n    {\n      \"field\": \"total_amount\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Total amount claimed: $18,230.00\"\n    },\n    {\n      \"field\": \"itemized_damages\",\n      \"document\": \"repair_estimate.pdf\",\n      \"quote\": \"Rear door panel: $1,468.00\"\n    }\n  ]\n}"
+}

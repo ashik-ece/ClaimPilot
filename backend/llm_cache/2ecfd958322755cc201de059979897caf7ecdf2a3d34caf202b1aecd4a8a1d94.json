@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.001605,
+  "input_tokens": 824,
+  "latency_ms": 9835,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 543,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\":\"Hannah Dawson\",\"policy_number\":\"POL-STD-453684\",\"incident_date\":\"2026-02-13\",\"reported_date\":\"2026-02-22\",\"incident_type\":\"Multi-vehicle Collision\",\"incident_location\":\"1240 Park Avenue, Evansville, IN\",\"vehicle_make\":\"Ford\",\"vehicle_model\":\"Escape\",\"vehicle_year\":2013,\"police_report_number\":\"PR-IN-2026-38476\",\"total_amount\":\"10580.00\",\"itemized_damages\":[{\"description\":\"Rear body panel\",\"amount\":\"2780.00\"},{\"description\":\"Quarter panel\",\"amount\":\"3244.00\"},{\"description\":\"Body labor\",\"amount\":\"4556.00\"}],\"evidence\":[{\"field\":\"claimant_name\",\"document\":\"claim_form.pdf\",\"quote\":\"Claimant name: Hannah Dawson\"},{\"field\":\"policy_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Policy number: POL-STD-453684\"},{\"field\":\"incident_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date of loss: 2026-02-13\"},{\"field\":\"reported_date\",\"document\":\"claim_form.pdf\",\"quote\":\"Date reported: 2026-02-22\"},{\"field\":\"incident_type\",\"document\":\"claim_form.pdf\",\"quote\":\"Type of incident: Multi-vehicle Collision\"},{\"field\":\"incident_location\",\"document\":\"claim_form.pdf\",\"quote\":\"Location of loss: 1240 Park Avenue, Evansville, IN\"},{\"field\":\"vehicle_make\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2013 Ford Escape\"},{\"field\":\"vehicle_model\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2013 Ford Escape\"},{\"field\":\"vehicle_year\",\"document\":\"claim_form.pdf\",\"quote\":\"Vehicle: 2013 Ford Escape\"},{\"field\":\"police_report_number\",\"document\":\"claim_form.pdf\",\"quote\":\"Police report number: PR-IN-2026-38476\"},{\"field\":\"total_amount\",\"document\":\"claim_form.pdf\",\"quote\":\"Total amount claimed: $10,580.00\"},{\"field\":\"itemized_damages\",\"document\":\"repair_estimate.pdf\",\"quote\":\"Rear body panel: $2,780.00\"}]}"
+}

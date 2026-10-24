@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000164,
+  "input_tokens": 984,
+  "latency_ms": 4406,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 164,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"This claim must be denied because the claimant admitted to driving while over the legal alcohol limit, which directly triggers the impaired driving policy exclusion. Clause BASIC-4.6 governs this decision based on the stated fact that the driver's blood alcohol concentration exceeded the legal limit.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-4.6\",\n      \"quote\": \"We do not cover loss that occurs while the driver of the covered vehicle is under the influence of alcohol, a controlled substance or any drug that impairs driving ability, including any case in which the driver's measured blood alcohol concentration exceeds the legal limit of the state where the loss occurred.\"\n    }\n  ]\n}"
+}

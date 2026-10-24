@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 8.6e-05,
+  "input_tokens": 716,
+  "latency_ms": 4527,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 36,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"BASIC-6.2\",\"quote\":\"I may have sped up a little, though I am not sure whether you would call that racing.\"}]}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00015,
+  "input_tokens": 932,
+  "latency_ms": 2392,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 142,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny the claim because the notice of loss was provided after the required policy window and the late notice rule governs. The key fact is that notice was given on September 21, 2026, which exceeds the 60-day limit from the July 5, 2026 incident date.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-5.1\",\n      \"quote\": \"The insured person must notify us of a collision loss within 60 days after the date of loss.\"\n    }\n  ]\n}"
+}

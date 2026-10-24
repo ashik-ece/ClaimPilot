@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 9.2e-05,
+  "input_tokens": 690,
+  "latency_ms": 1147,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 57,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"BASIC-4.7\",\n      \"quote\": \"I had turned off the paved road onto a dirt trail through a field to take a shortcut.\"\n    }\n  ]\n}"
+}

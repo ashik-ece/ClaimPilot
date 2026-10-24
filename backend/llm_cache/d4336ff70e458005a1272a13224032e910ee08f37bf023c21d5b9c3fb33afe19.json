@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000168,
+  "input_tokens": 930,
+  "latency_ms": 4331,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 187,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because the automated findings indicate it is unclear whether an exclusion applies due to disputed or missing facts in the claimant's account. This decision is governed by clause PREM-6.2, which mandates escalation when documents do not allow the adjuster to determine coverage. The key fact triggering this is that the claimant described being stopped at a light while driving on a dirt trail through a field.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}

@@ -1,8 +1,13 @@
+from pathlib import Path
+
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+_ROOT = Path(__file__).resolve().parents[2]
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=(str(_ROOT / ".env"), ".env"), extra="ignore")
 
     database_url: str = (
         "postgresql+psycopg://claimpilot_app:claimpilot_app@localhost:5433/claimpilot"
@@ -20,6 +25,17 @@ class Settings(BaseSettings):
     jwt_secret: str = "dev-only-change-me-please-use-32-chars-min"
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 480
+
+    google_api_key: str = Field(default="", validation_alias="GOOGLE_API_KEY")
+    # live: call Gemini. record: call Gemini and save each response. replay: never call out.
+    llm_mode: str = "live"
+    llm_cache_dir: str = str(_ROOT / "backend" / "llm_cache")
+    llm_fast_model: str = "gemini-3.1-flash-lite"
+    llm_strong_model: str = "gemini-3.5-flash-lite"
+    qdrant_url: str = "http://localhost:6335"
+    embedding_model: str = "BAAI/bge-small-en-v1.5"
+    llm_timeout_seconds: float = 60.0
+    llm_max_retries: int = 4
 
 
 settings = Settings()

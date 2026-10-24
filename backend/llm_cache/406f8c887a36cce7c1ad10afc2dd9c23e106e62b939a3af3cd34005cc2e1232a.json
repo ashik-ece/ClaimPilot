@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.002027,
+  "input_tokens": 939,
+  "latency_ms": 15886,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 698,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\": \"Chloe Fischer\", \"policy_number\": \"POL-PREM-289470\", \"incident_date\": \"2026-09-29\", \"reported_date\": \"2026-10-04\", \"incident_type\": \"Multi-vehicle Collision\", \"incident_location\": \"4671 Park Avenue, Evansville, IN\", \"vehicle_make\": \"Ford\", \"vehicle_model\": \"F150\", \"vehicle_year\": 2011, \"police_report_number\": \"PR-IN-2026-16901\", \"total_amount\": \"6200.00\", \"itemized_damages\": [{\"description\": \"Rocker panel\", \"amount\": \"674.00\"}, {\"description\": \"Front door panel\", \"amount\": \"611.00\"}, {\"description\": \"Rear door panel\", \"amount\": \"2245.00\"}, {\"description\": \"Door glass\", \"amount\": \"2181.00\"}, {\"description\": \"Frame and alignment\", \"amount\": \"489.00\"}], \"evidence\": [{\"field\": \"claimant_name\", \"document\": \"claim_form.pdf\", \"quote\": \"Claimant name: Chloe Fischer\"}, {\"field\": \"policy_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Policy number: POL-PREM-289470\"}, {\"field\": \"incident_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date of loss: 2026-09-29\"}, {\"field\": \"reported_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date reported: 10/04/2026\"}, {\"field\": \"incident_type\", \"document\": \"claim_form.pdf\", \"quote\": \"Type of incident: Multi-vehicle Collision\"}, {\"field\": \"incident_location\", \"document\": \"claim_form.pdf\", \"quote\": \"Location of loss: 4671 Park Avenue, Evansville, IN\"}, {\"field\": \"vehicle_make\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2011 Ford F150\"}, {\"field\": \"vehicle_model\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2011 Ford F150\"}, {\"field\": \"vehicle_year\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2011 Ford F150\"}, {\"field\": \"police_report_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Police report number: PR-IN-2026-16901\"}, {\"field\": \"total_amount\", \"document\": \"claim_form.pdf\", \"quote\": \"Total amount claimed: $6,200.00\"}, {\"field\": \"itemized_damages\", \"document\": \"repair_estimate.pdf\", \"quote\": \"Rocker panel: $674.00\"}]}"
+}

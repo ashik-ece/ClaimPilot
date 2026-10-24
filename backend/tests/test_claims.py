@@ -33,7 +33,6 @@ def test_create_upload_and_audit_trail(
     assert [e["event_type"] for e in trail] == [
         "claim.created",
         "document.uploaded",
-        "pipeline.enqueue_requested",
     ]
     assert all(e["actor"].startswith("user:") and e["created_at"] for e in trail)
     assert [e["created_at"] for e in trail] == sorted(e["created_at"] for e in trail)

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000138,
+  "input_tokens": 832,
+  "latency_ms": 998,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 136,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because the automated findings show no exclusions, flags, or referral triggers, and the loss meets all coverage criteria. Section 2. Insuring Agreement governs this collision coverage. The key fact is that the direct and accidental loss to the covered vehicle occurred during the policy period and is reasonable to repair.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

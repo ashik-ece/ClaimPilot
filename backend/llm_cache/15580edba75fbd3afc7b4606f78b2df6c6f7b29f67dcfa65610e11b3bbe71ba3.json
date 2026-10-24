@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.000147,
+  "input_tokens": 824,
+  "latency_ms": 46896,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 162,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for Sofia Walker because automated findings confirmed the loss occurred during the policy period and no exclusions or flags were triggered. This decision is governed by Section 2, Collision Coverage, which provides payment for direct and accidental loss caused by collision. The key fact is that the vehicle struck a concrete barrier on March 15, 2026, resulting in verified repair costs of $6,810.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

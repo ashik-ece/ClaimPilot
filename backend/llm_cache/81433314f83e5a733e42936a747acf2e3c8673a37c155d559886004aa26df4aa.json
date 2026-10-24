@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000157,
+  "input_tokens": 987,
+  "latency_ms": 968,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 145,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny this claim because the loss date occurred before the policy period began. This decision is governed by Section 1, which states that loss occurring before the policy period is not covered. The key fact is that the incident occurred on December 15, 2025, which falls outside the active policy period.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-1.1\",\n      \"quote\": \"Loss that occurs before the policy period begins or after it ends is not covered, regardless of when the loss is reported to us.\"\n    }\n  ]\n}"
+}

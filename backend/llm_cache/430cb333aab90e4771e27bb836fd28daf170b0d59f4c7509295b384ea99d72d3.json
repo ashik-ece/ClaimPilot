@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000143,
+  "input_tokens": 866,
+  "latency_ms": 1141,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 140,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We recommend escalating this claim for investigation because the claimant states that some of the claimed damages are due to pre-existing rust and cracking from age rather than the collision. Section [BASIC-2.1] governs direct and accidental loss caused by collision, and further review is needed to separate the collision damage from pre-existing deterioration.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}
