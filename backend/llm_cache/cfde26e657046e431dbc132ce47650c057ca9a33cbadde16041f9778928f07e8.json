@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000131,
+  "input_tokens": 822,
+  "latency_ms": 994,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 121,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny this claim because the policy only covers direct and accidental loss, but the claimant explicitly admitted to deliberately steering her vehicle into a concrete barrier on purpose. This intentional act means the collision was not accidental, making the loss excluded under the governing collision coverage clause. Therefore, the damage does not qualify for payment.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"direct and accidental loss\"\n    }\n  ]\n}"
+}

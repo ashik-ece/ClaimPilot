@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000152,
+  "input_tokens": 959,
+  "latency_ms": 1081,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 140,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We are denying this claim because notice was provided 60 days after the incident, which exceeds the policy's required 45-day notice window. Section 5.1 governs this requirement and states that the insurer may deny the claim for late notice unless the delay was due to circumstances beyond the insured's control.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-5.1\",\n      \"quote\": \"The insured person must notify us of a collision loss within 45 days after the date of loss.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000137,
+  "input_tokens": 937,
+  "latency_ms": 1934,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 107,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"outcome\": \"escalate\", \"rationale\": \"We are escalating this claim because automated findings indicate that notice was given after the policy's 30-day notice window. The senior adjuster must determine if the insured person had a documented medical emergency or circumstance beyond their control that caused the delay under Section 5.\", \"citations\": [{\"clause_id\": \"STD-5.1\", \"quote\": \"The insured person must notify us of a collision loss within 30 days after the date of loss.\"}]}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.000161,
+  "input_tokens": 990,
+  "latency_ms": 45467,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 156,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We must escalate this claim because automated findings indicate it is unclear whether an exclusion applies due to disputed facts regarding how the collision occurred. This decision is governed by section BASIC-6.2 which mandates escalation when material facts are open to more than one reasonable reading.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000145,
+  "input_tokens": 909,
+  "latency_ms": 890,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 136,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim to a senior adjuster because the total amount of loss meets the referral threshold. According to Section 6, any claim where the amount of loss is at or above $45,000 requires senior adjuster review.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-6.1\",\n      \"quote\": \"Any claim where the amount of loss is at or above $45,000 must be escalated to a senior adjuster for review before any payment is authorized\"\n    }\n  ]\n}"
+}

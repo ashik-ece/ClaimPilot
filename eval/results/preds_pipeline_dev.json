@@ -3,7 +3,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.00021,
+  "cost_usd": 0.000261,
   "decision": "approve",
   "fields": {
    "claimant_name": "Megan Zimmerman",
@@ -51,7 +51,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.00022899999999999998,
+  "cost_usd": 0.000243,
   "decision": "approve",
   "fields": {
    "claimant_name": "Naomi Egan",
@@ -99,7 +99,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.000202,
+  "cost_usd": 0.000232,
   "decision": "approve",
   "fields": {
    "claimant_name": "Marcus Mitchell",
@@ -147,7 +147,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.000193,
+  "cost_usd": 0.00025299999999999997,
   "decision": "approve",
   "fields": {
    "claimant_name": "Brian Walker",
@@ -199,7 +199,7 @@
   "cited_clause_ids": [
    "STD-5.1"
   ],
-  "cost_usd": 0.00022400000000000002,
+  "cost_usd": 0.000255,
   "decision": "deny",
   "fields": {
    "claimant_name": "Robert Underwood",
@@ -253,7 +253,7 @@
   "cited_clause_ids": [
    "STD-2.1"
   ],
-  "cost_usd": 0.000212,
+  "cost_usd": 0.000249,
   "decision": "approve",
   "fields": {
    "claimant_name": "Hannah Dawson",
@@ -297,7 +297,7 @@
   "cited_clause_ids": [
    "BASIC-1.1"
   ],
-  "cost_usd": 0.000201,
+  "cost_usd": 0.000257,
   "decision": "deny",
   "fields": {
    "claimant_name": "Aisha Mitchell",
@@ -343,7 +343,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.00020600000000000002,
+  "cost_usd": 0.000257,
   "decision": "approve",
   "fields": {
    "claimant_name": "Leila Fischer",
@@ -399,7 +399,7 @@
   "cited_clause_ids": [
    "PLUS-4.5"
   ],
-  "cost_usd": 0.000259,
+  "cost_usd": 0.00029,
   "decision": "deny",
   "fields": {
    "claimant_name": "Megan Reyes",
@@ -447,7 +447,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.00021,
+  "cost_usd": 0.000241,
   "decision": "approve",
   "fields": {
    "claimant_name": "Chloe Fischer",
@@ -499,7 +499,7 @@
   "cited_clause_ids": [
    "PLUS-7.3"
   ],
-  "cost_usd": 0.000212,
+  "cost_usd": 0.00025699999999999996,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Priya Vasquez",
@@ -549,7 +549,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.000204,
+  "cost_usd": 0.000235,
   "decision": "approve",
   "fields": {
    "claimant_name": "Leila Thompson",
@@ -593,7 +593,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.000216,
+  "cost_usd": 0.000263,
   "decision": "approve",
   "fields": {
    "claimant_name": "Carlos Okafor",
@@ -638,7 +638,7 @@
    "PLUS-4.5",
    "PLUS-6.2"
   ],
-  "cost_usd": 0.000272,
+  "cost_usd": 0.000294,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Carlos Zimmerman",
@@ -686,7 +686,7 @@
   "cited_clause_ids": [
    "STD-2.1"
   ],
-  "cost_usd": 0.000205,
+  "cost_usd": 0.00024400000000000002,
   "decision": "approve",
   "fields": {
    "claimant_name": "Megan Brennan",
@@ -734,7 +734,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.000195,
+  "cost_usd": 0.00025299999999999997,
   "decision": "approve",
   "fields": {
    "claimant_name": "Omar Xu",
@@ -786,7 +786,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.00020700000000000002,
+  "cost_usd": 0.00023,
   "decision": "approve",
   "fields": {
    "claimant_name": "Rachel Fischer",
@@ -830,7 +830,7 @@
   "cited_clause_ids": [
    "STD-2.1"
   ],
-  "cost_usd": 0.000194,
+  "cost_usd": 0.00023999999999999998,
   "decision": "approve",
   "fields": {
    "claimant_name": "Daniel Alvarez",
@@ -878,7 +878,7 @@
   "cited_clause_ids": [
    "PREM-4.2"
   ],
-  "cost_usd": 0.000255,
+  "cost_usd": 0.000265,
   "decision": "deny",
   "fields": {
    "claimant_name": "Carlos Reyes",
@@ -926,7 +926,7 @@
   "cited_clause_ids": [
    "BASIC-6.2"
   ],
-  "cost_usd": 0.000274,
+  "cost_usd": 0.000295,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Aisha Chen",
@@ -974,7 +974,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.000212,
+  "cost_usd": 0.000243,
   "decision": "approve",
   "fields": {
    "claimant_name": "Ethan Chen",
@@ -1026,7 +1026,7 @@
   "cited_clause_ids": [
    "STD-6.1"
   ],
-  "cost_usd": 0.00022700000000000002,
+  "cost_usd": 0.000272,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Tariq Vasquez",
@@ -1078,7 +1078,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.000205,
+  "cost_usd": 0.000256,
   "decision": "approve",
   "fields": {
    "claimant_name": "Carlos Egan",
@@ -1126,7 +1126,7 @@
   "cited_clause_ids": [
    "STD-5.1"
   ],
-  "cost_usd": 0.000211,
+  "cost_usd": 0.000256,
   "decision": "deny",
   "fields": {
    "claimant_name": "Grace Okafor",
@@ -1170,7 +1170,7 @@
   "cited_clause_ids": [
    "BASIC-4.7"
   ],
-  "cost_usd": 0.000248,
+  "cost_usd": 0.000283,
   "decision": "deny",
   "fields": {
    "claimant_name": "Brian Fischer",
@@ -1226,7 +1226,7 @@
   "cited_clause_ids": [
    "STD-7.2"
   ],
-  "cost_usd": 0.000207,
+  "cost_usd": 0.000247,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Daniel Alvarez",
@@ -1276,7 +1276,7 @@
   "cited_clause_ids": [
    "STD-6.2"
   ],
-  "cost_usd": 0.000247,
+  "cost_usd": 0.000278,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Fatima Gupta",
@@ -1320,7 +1320,7 @@
   "cited_clause_ids": [
    "PLUS-2.1"
   ],
-  "cost_usd": 0.000212,
+  "cost_usd": 0.000258,
   "decision": "approve",
   "fields": {
    "claimant_name": "Priya Kowalski",
@@ -1368,7 +1368,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.000216,
+  "cost_usd": 0.00027,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Andre Ibrahim",
@@ -1422,7 +1422,7 @@
   "cited_clause_ids": [
    "BASIC-4.6"
   ],
-  "cost_usd": 0.00024,
+  "cost_usd": 0.000291,
   "decision": "deny",
   "fields": {
    "claimant_name": "Daniel Young",
@@ -1524,7 +1524,7 @@
   "cited_clause_ids": [
    "PLUS-7.3"
   ],
-  "cost_usd": 0.000221,
+  "cost_usd": 0.00026599999999999996,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Victor Zimmerman",
@@ -1578,7 +1578,7 @@
   "cited_clause_ids": [
    "PREM-2.1"
   ],
-  "cost_usd": 0.000209,
+  "cost_usd": 0.000238,
   "decision": "approve",
   "fields": {
    "claimant_name": "Priya Alvarez",
@@ -1630,7 +1630,7 @@
   "cited_clause_ids": [
    "PLUS-2.1"
   ],
-  "cost_usd": 0.00021999999999999998,
+  "cost_usd": 0.000259,
   "decision": "approve",
   "fields": {
    "claimant_name": "Grace Hayes",
@@ -1678,7 +1678,7 @@
   "cited_clause_ids": [
    "STD-2.1"
   ],
-  "cost_usd": 0.000194,
+  "cost_usd": 0.00023999999999999998,
   "decision": "approve",
   "fields": {
    "claimant_name": "Robert Dawson",
@@ -1722,7 +1722,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.00021,
+  "cost_usd": 0.00026199999999999997,
   "decision": "approve",
   "fields": {
    "claimant_name": "Grace Egan",
@@ -1770,7 +1770,7 @@
   "cited_clause_ids": [
    "PLUS-6.1"
   ],
-  "cost_usd": 0.00021500000000000002,
+  "cost_usd": 0.000262,
   "decision": "escalate",
   "fields": {
    "claimant_name": "Yuki Schmidt",
@@ -1826,7 +1826,7 @@
   "cited_clause_ids": [
    "BASIC-4.2"
   ],
-  "cost_usd": 0.000256,
+  "cost_usd": 0.000291,
   "decision": "deny",
   "fields": {
    "claimant_name": "Omar Young",
@@ -1878,7 +1878,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.00020400000000000003,
+  "cost_usd": 0.00025600000000000004,
   "decision": "approve",
   "fields": {
    "claimant_name": "Marcus Gupta",
@@ -1930,7 +1930,7 @@
   "cited_clause_ids": [
    "BASIC-2.1"
   ],
-  "cost_usd": 0.000208,
+  "cost_usd": 0.00025299999999999997,
   "decision": "approve",
   "fields": {
    "claimant_name": "Grace Fischer",

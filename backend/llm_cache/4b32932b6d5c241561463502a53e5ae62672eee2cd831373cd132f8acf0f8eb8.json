@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000141,
+  "input_tokens": 818,
+  "latency_ms": 1513,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 148,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving this claim because the automated findings indicate no exclusions or flags apply, and the loss occurred during the policy period. Policy clause [PLUS-2.1] governs collision coverage for direct and accidental loss caused by collision. The key fact is that the insured vehicle sustained rear-end damage totaling $6,640.00 while stopped at a light.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

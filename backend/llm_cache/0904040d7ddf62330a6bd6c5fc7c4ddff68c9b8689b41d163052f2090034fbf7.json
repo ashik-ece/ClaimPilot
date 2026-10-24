@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000176,
+  "input_tokens": 1108,
+  "latency_ms": 1099,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 163,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"It is recommended to escalate this claim because the total amount of loss is at or above the $30,000 threshold, requiring senior adjuster review. Section 6. Claim Handling governs this requirement for high-value claims. The key fact is the total estimated repair cost of $30,200.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-6.1\",\n      \"quote\": \"Any claim where the amount of loss is at or above $30,000 must be escalated to a senior adjuster for review before any payment is authorized, even if no exclusion appears to apply.\"\n    }\n  ]\n}"
+}

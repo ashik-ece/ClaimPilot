@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000152,
+  "input_tokens": 846,
+  "latency_ms": 1684,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 168,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve this claim because the automated findings indicate no exclusions, late notices, or fraud flags apply to the incident. Collision Coverage clause [PREM-2.1] governs direct and accidental loss to the covered vehicle caused by collision during the policy period. The key fact is that the vehicle sustained front-end collision damage totaling $7,480.00 on 2026-09-01, which is covered under the policy.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

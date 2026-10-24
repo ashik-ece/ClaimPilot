@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000132,
+  "input_tokens": 805,
+  "latency_ms": 1036,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 129,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving the claim because the loss occurred during the policy period and no automated flags or exclusions were triggered. Section 2 governs this collision coverage, and the key fact is that the vehicle suffered direct and accidental collision damage amounting to $9,000.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

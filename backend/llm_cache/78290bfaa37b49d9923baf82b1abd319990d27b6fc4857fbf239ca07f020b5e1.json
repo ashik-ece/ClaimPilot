@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000153,
+  "input_tokens": 954,
+  "latency_ms": 996,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 145,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because the total amount of loss reaches the high-value referral threshold. This decision is governed by clause STD-6.1, which mandates review for claims at or above $30,000.00.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-6.1\",\n      \"quote\": \"Any claim where the amount of loss is at or above $30,000 must be escalated to a senior adjuster for review before any payment is authorized, even if no exclusion appears to apply.\"\n    }\n  ]\n}"
+}

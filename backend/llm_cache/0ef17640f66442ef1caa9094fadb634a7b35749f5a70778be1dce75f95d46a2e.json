@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000137,
+  "input_tokens": 838,
+  "latency_ms": 929,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 133,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"This claim must be escalated because automated duplicate checks could not be run, creating uncertainty regarding a potential duplicate submission. Under policy clause PLUS-2.1, coverage applies to direct and accidental loss to the covered vehicle caused by collision during the policy period, but the unresolved check requires senior adjuster review.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

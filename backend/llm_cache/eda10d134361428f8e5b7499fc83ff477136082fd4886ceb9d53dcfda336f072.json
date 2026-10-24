@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000136,
+  "input_tokens": 841,
+  "latency_ms": 1227,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 130,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving the claim as there are no automated exclusions, referrals, or flags, and the loss falls within the insuring agreement for collision coverage. Section 2.1 governs this collision damage, and the key fact is that the loss occurred during the policy period with verifiable repair estimates.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

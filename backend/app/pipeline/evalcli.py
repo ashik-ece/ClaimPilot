@@ -103,6 +103,7 @@ def analyze_main(args: argparse.Namespace) -> None:
     llm = get_llm_client()
     preds: dict[str, dict[str, object]] = {}
     total_cost = 0.0
+    incomplete = False
     with SessionLocal() as session:
         for known in session.scalars(select(Policy)):
             rows = session.scalars(select(PolicyClause).where(PolicyClause.policy_id == known.id))
@@ -130,6 +131,18 @@ def analyze_main(args: argparse.Namespace) -> None:
                 )
                 break
             rec = a.recommendation
+            degraded = (
+                a.retrieval is not None and a.retrieval.selection == "similarity_fallback"
+            ) or any("model unavailable" in n for n in rec.notes)
+            if degraded:
+                # The safe fallback is right in production, but a score built on it would
+                # measure the outage, not the pipeline. Stop so the run can be resumed.
+                print(
+                    f"{claim_id}: model unavailable (quota or outage); stopping. Rerun to resume.",
+                    flush=True,
+                )
+                incomplete = True
+                break
             cost = sum(c.cost_usd for c in rec.calls)
             total_cost += cost
             preds[claim_id] = {
@@ -146,9 +159,15 @@ def analyze_main(args: argparse.Namespace) -> None:
                 "cost_usd": cost,
             }
             print(claim_id, rec.outcome, rec.cited_clause_ids, rec.notes or "", flush=True)
+    if incomplete:
+        args.out = args.out.with_suffix(".partial.json")
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(preds, indent=1, sort_keys=True))
-    print(f"wrote {args.out}; estimated cost ${total_cost:.4f}")
+    print(
+        f"wrote {args.out}{' (INCOMPLETE)' if incomplete else ''}; estimated cost ${total_cost:.4f}"
+    )
+    if incomplete:
+        raise SystemExit(2)
 
 
 def fraud_main(args: argparse.Namespace) -> None:

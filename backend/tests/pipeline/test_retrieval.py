@@ -118,10 +118,12 @@ class StubSelector:
 
     def __init__(self, picks: list[tuple[str, str]]) -> None:
         self.picks = picks
+        self.shown = ""
 
     def generate(
         self, request: LLMRequest, schema: type[Selections]
     ) -> tuple[Selections, LLMResult]:  # type: ignore[override]
+        self.shown = request.user
         parsed = Selections(selected=[Selection(clause_id=c, quote=q) for c, q in self.picks])
         return parsed, LLMResult(parsed, request.model, request.prompt_name, request.prompt_version)
 
@@ -166,3 +168,34 @@ def test_split_sentences_drops_fragments() -> None:
     assert split_sentences("Ok. This is a proper full sentence here. Hi!") == [
         "This is a proper full sentence here."
     ]
+
+
+def test_exclusion_is_shortlisted_even_when_other_clauses_outrank_it() -> None:
+    """Regression: the shortlist used to be the top 3 hits per sentence across the whole policy,
+    so an exclusion whose wording differs from the account never reached the model."""
+    crowd = [
+        Clause(
+            f"C-{i}",
+            "Section 2. Coverage > Vehicle damage",
+            "damage to the vehicle in a collision with a wall or barrier on the road",
+        )
+        for i in range(8)
+    ]
+    exclusion = Clause(
+        "C-4.3",
+        "Section 4. Exclusions > Intentional Acts",
+        "We do not cover loss caused intentionally by an insured person.",
+    )
+    idx = PolicyIndex(QdrantClient(":memory:"), HashEmbedder())
+    idx.index_policy("POL-C", "1", [*crowd, exclusion])
+    stub = StubSelector([("C-4.3", "steered the car into the barrier on purpose")])
+    res = retrieve(
+        idx,
+        policy_number="POL-C",
+        version="1",
+        facts={},
+        llm=stub,  # type: ignore[arg-type]
+        narrative="I was angry and steered the car into the barrier on purpose, damaging the vehicle in the collision.",
+    )
+    assert "[C-4.3]" in stub.shown
+    assert res.candidates[0].clause_id == "C-4.3" and res.candidates[0].role == "exclusion"

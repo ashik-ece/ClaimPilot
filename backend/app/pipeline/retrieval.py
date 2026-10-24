@@ -26,7 +26,8 @@ from app.pipeline.policy_index import Hit, PolicyIndex
 from app.pipeline.prompts import load_prompt
 from app.pipeline.terms import PolicyTerms, load_terms
 
-POOL_SIZE = 8  # exclusion clauses shown to the model
+POOL_SIZE = 12  # exclusion clauses shown to the model (more than any policy has)
+SEARCH_DEPTH = 100  # per-sentence search depth, so exclusions are not crowded out by other clauses
 FALLBACK_NARRATIVE_CANDIDATES = 2  # used if the model is unavailable
 
 COVERAGE_QUERY = (
@@ -193,7 +194,7 @@ def retrieve(
     rejected: list[str] = []
     selection = "none"
     if sentences:
-        per_sentence = index.search_many(sentences, policy_number, version, k=3)
+        per_sentence = index.search_many(sentences, policy_number, version, k=SEARCH_DEPTH)
         best: dict[str, Hit] = {}
         for sentence_hits in per_sentence:
             for hit in sentence_hits:

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000162,
+  "input_tokens": 930,
+  "latency_ms": 1087,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 173,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We recommend denying the claim because notice was provided after the required policy window. Section [BASIC-5.1] governs this decision, as the automated findings confirmed that late_notice is true. The insured gave notice after the 14-day requirement without showing a documented medical emergency or other circumstance beyond their control.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-5.1\",\n      \"quote\": \"The insured person must notify us of a collision loss within 14 days after the date of loss. If notice is given later than that, we may deny the claim unless the insured person shows that the delay was caused by a documented medical emergency or other circumstance beyond their control.\"\n    }\n  ]\n}"
+}

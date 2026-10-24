@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00013,
+  "input_tokens": 817,
+  "latency_ms": 1020,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 121,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving this claim because the automated findings show no exclusions, referral flags, or timeliness issues. The collision occurred during the policy period and is covered under the insuring agreement. Therefore, we will pay the reasonable cost to repair the vehicle.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000132,
+  "input_tokens": 1077,
+  "latency_ms": 917,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 62,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"PLUS-4.5\",\"quote\":\"thinks his license may have expired around last month, but he has not checked\"},{\"clause_id\":\"PLUS-6.2\",\"quote\":\"thinks his license may have expired around last month, but he has not checked\"}]}"
+}

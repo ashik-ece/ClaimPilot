@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000162,
+  "input_tokens": 968,
+  "latency_ms": 1201,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 164,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because automated findings indicate it is unclear whether an exclusion applies due to the claimant mentioning alcohol consumption and police questioning. Under Section 6, claims with unclear material facts must be escalated for further investigation. Therefore, we cannot approve or deny the claim based on the information currently available.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}

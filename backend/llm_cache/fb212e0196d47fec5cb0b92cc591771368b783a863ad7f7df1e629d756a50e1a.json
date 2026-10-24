@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00015,
+  "input_tokens": 873,
+  "latency_ms": 1121,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 158,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for Aisha Quinn because the automated findings indicate no exclusions, late notice, or fraud flags apply. Under the collision coverage insuring agreement, the insurer will pay for direct and accidental loss caused by collision during the policy period. The key fact is that the accident occurred on September 8, 2026, which is within the policy period and fully supported by the claimant's account and police report.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

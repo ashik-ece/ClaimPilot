@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000134,
+  "input_tokens": 857,
+  "latency_ms": 926,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 121,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for the collision loss because automated findings confirm no exclusions or red flags apply. Section 2 governs this direct and accidental loss to the covered vehicle during the policy period, and the reported facts align with the policy terms.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

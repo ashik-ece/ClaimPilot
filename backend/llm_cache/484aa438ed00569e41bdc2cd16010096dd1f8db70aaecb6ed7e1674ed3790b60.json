@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000164,
+  "input_tokens": 929,
+  "latency_ms": 1065,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 178,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"This claim is denied because the claimant admitted to participating in an impromptu race on a public road, which directly triggers the racing exclusion. Clause BASIC-4.2 specifically states that coverage is excluded when the vehicle is used in any impromptu race or informal contest of speed between drivers. Therefore, the loss is not covered.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-4.2\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is used in, or in practice or preparation for, any organized or impromptu race, speed contest, stunt driving or demonstration, whether on a public road or on a closed course. Informal contests of speed between drivers on public roads are included in this exclusion.\"\n    }\n  ]\n}"
+}
