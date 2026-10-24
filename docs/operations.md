@@ -58,7 +58,7 @@ retrieval, fraud rules and recommendation), scores it with `eval/harness`, and f
 any check in `eval/thresholds.json` is not met: extraction macro and worst field, decision
 accuracy, citation recall, and zero fraud claims approved. It runs inside the production image
 because OCR output differs slightly between macOS and Linux and the recorded responses are keyed on
-the exact prompt text; running elsewhere produced cache misses on 3 of 40 dev claims.
+the exact prompt text; running elsewhere produced cache misses on 3 of 40 dev claims. The same holds across CPU architectures: the responses were recorded on arm64, and an x86 runner missed the cache (OCR and embedding similarity differ slightly, which changes the prompts), so the gate job emulates arm64 with QEMU.
 
 What the gate does and does not catch:
 

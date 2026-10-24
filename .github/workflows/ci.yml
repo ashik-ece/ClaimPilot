@@ -81,8 +81,16 @@ jobs:
   evaluation-gate:
     name: Evaluation gate (replayed model responses)
     runs-on: ubuntu-latest
+    env:
+      # The model responses were recorded on arm64. OCR and embedding similarity are not
+      # bit-identical across CPU architectures, so the prompts (and so the replay keys) differ on
+      # x86. Emulating arm64 reproduces the recording environment exactly.
+      DOCKER_DEFAULT_PLATFORM: linux/arm64
     steps:
       - uses: actions/checkout@v4
+      - uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
