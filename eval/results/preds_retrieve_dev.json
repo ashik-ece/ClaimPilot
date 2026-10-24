@@ -19,7 +19,11 @@
   ],
   "cost_usd": 5.2e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0010": {
   "candidates": [
@@ -49,7 +53,11 @@
   ],
   "cost_usd": 8.3e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0020": {
   "candidates": [
@@ -71,7 +79,11 @@
   ],
   "cost_usd": 4.4e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0027": {
   "candidates": [
@@ -93,7 +105,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0029": {
   "candidates": [
@@ -123,7 +139,11 @@
   ],
   "cost_usd": 6.1e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0030": {
   "candidates": [
@@ -145,7 +165,11 @@
   ],
   "cost_usd": 5.3e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0031": {
   "candidates": [
@@ -175,7 +199,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0034": {
   "candidates": [
@@ -197,7 +225,11 @@
   ],
   "cost_usd": 5.1e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0042": {
   "candidates": [
@@ -227,7 +259,11 @@
   ],
   "cost_usd": 8.9e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0055": {
   "candidates": [
@@ -249,10 +285,21 @@
   ],
   "cost_usd": 4.6e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0057": {
   "candidates": [
+   {
+    "clause_id": "PLUS-7.3",
+    "reasons": [
+     "fraud flag: inflated_estimate"
+    ],
+    "score": 3.812
+   },
    {
     "clause_id": "PLUS-2.1",
     "reasons": [
@@ -267,11 +314,16 @@
    "outside_period": false
   },
   "cited_clause_ids": [
+   "PLUS-7.3",
    "PLUS-2.1"
   ],
   "cost_usd": 5.1e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0062": {
   "candidates": [
@@ -293,7 +345,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0063": {
   "candidates": [
@@ -315,7 +371,11 @@
   ],
   "cost_usd": 5.8e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0064": {
   "candidates": [
@@ -345,7 +405,11 @@
   ],
   "cost_usd": 8.1e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0066": {
   "candidates": [
@@ -367,7 +431,11 @@
   ],
   "cost_usd": 5.2e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0069": {
   "candidates": [
@@ -389,7 +457,11 @@
   ],
   "cost_usd": 4.2e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0072": {
   "candidates": [
@@ -419,7 +491,11 @@
   ],
   "cost_usd": 7.4e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0079": {
   "candidates": [
@@ -441,7 +517,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0083": {
   "candidates": [
@@ -471,7 +551,11 @@
   ],
   "cost_usd": 8.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0103": {
   "candidates": [
@@ -501,7 +585,11 @@
   ],
   "cost_usd": 8.6e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0108": {
   "candidates": [
@@ -523,7 +611,11 @@
   ],
   "cost_usd": 4.4e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0113": {
   "candidates": [
@@ -553,7 +645,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0119": {
   "candidates": [
@@ -575,7 +671,11 @@
   ],
   "cost_usd": 4.9e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0125": {
   "candidates": [
@@ -605,7 +705,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0130": {
   "candidates": [
@@ -635,10 +739,21 @@
   ],
   "cost_usd": 8.8e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0132": {
   "candidates": [
+   {
+    "clause_id": "STD-7.2",
+    "reasons": [
+     "fraud flag: duplicate_claim"
+    ],
+    "score": 3.819
+   },
    {
     "clause_id": "STD-2.1",
     "reasons": [
@@ -653,11 +768,16 @@
    "outside_period": false
   },
   "cited_clause_ids": [
+   "STD-7.2",
    "STD-2.1"
   ],
   "cost_usd": 5.3e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0141": {
   "candidates": [
@@ -687,7 +807,11 @@
   ],
   "cost_usd": 8.4e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0142": {
   "candidates": [
@@ -709,7 +833,11 @@
   ],
   "cost_usd": 5.2e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0143": {
   "candidates": [
@@ -731,7 +859,11 @@
   ],
   "cost_usd": 5.4e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0144": {
   "candidates": [
@@ -761,10 +893,21 @@
   ],
   "cost_usd": 7.8e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0150": {
   "candidates": [
+   {
+    "clause_id": "PLUS-7.3",
+    "reasons": [
+     "fraud flag: inflated_estimate"
+    ],
+    "score": 3.812
+   },
    {
     "clause_id": "PLUS-2.1",
     "reasons": [
@@ -779,11 +922,16 @@
    "outside_period": false
   },
   "cited_clause_ids": [
+   "PLUS-7.3",
    "PLUS-2.1"
   ],
   "cost_usd": 5.3e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0151": {
   "candidates": [
@@ -805,7 +953,11 @@
   ],
   "cost_usd": 4.5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "60000",
+   "notice_days": 60
+  }
  },
  "CLM-0154": {
   "candidates": [
@@ -827,7 +979,11 @@
   ],
   "cost_usd": 6e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0172": {
   "candidates": [
@@ -849,7 +1005,11 @@
   ],
   "cost_usd": 4.3e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "30000",
+   "notice_days": 30
+  }
  },
  "CLM-0175": {
   "candidates": [
@@ -871,7 +1031,11 @@
   ],
   "cost_usd": 5.1e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0182": {
   "candidates": [
@@ -901,7 +1065,11 @@
   ],
   "cost_usd": 5.3e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "45000",
+   "notice_days": 45
+  }
  },
  "CLM-0186": {
   "candidates": [
@@ -931,7 +1099,11 @@
   ],
   "cost_usd": 8.8e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0196": {
   "candidates": [
@@ -953,7 +1125,11 @@
   ],
   "cost_usd": 5e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  },
  "CLM-0197": {
   "candidates": [
@@ -975,6 +1151,10 @@
   ],
   "cost_usd": 5.8e-05,
   "rejected_picks": [],
-  "selection": "model"
+  "selection": "model",
+  "terms": {
+   "high_value_threshold": "15000",
+   "notice_days": 14
+  }
  }
 }

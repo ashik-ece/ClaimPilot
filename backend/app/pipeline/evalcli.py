@@ -50,7 +50,9 @@ def retrieve_main(args: argparse.Namespace) -> None:
                 print(claim_id, "UNKNOWN POLICY", facts.get("policy_number"), flush=True)
                 continue
             flags: list[str] = []
-            if args.flags == "oracle":
+            if args.flags == "fraud":
+                flags = json.loads(args.fraud.read_text())[claim_id]["fraud_flags"]
+            elif args.flags == "oracle":
                 meta = json.loads((DATA / "claims" / f"{claim_id}.json").read_text())
                 flags = [f if isinstance(f, str) else f["type"] for f in meta["fraud_flags"]]
             result = retrieve(
@@ -69,6 +71,12 @@ def retrieve_main(args: argparse.Namespace) -> None:
                     for c in result.candidates
                 ],
                 "checks": result.checks,
+                "terms": {
+                    "high_value_threshold": str(result.terms.high_value_threshold)
+                    if result.terms.high_value_threshold is not None
+                    else None,
+                    "notice_days": result.terms.notice_days,
+                },
                 "rejected_picks": result.rejected,
                 "selection": result.selection,
                 "cost_usd": sum(c.cost_usd for c in result.calls),
@@ -78,17 +86,50 @@ def retrieve_main(args: argparse.Namespace) -> None:
     print(f"wrote {args.out}")
 
 
+def fraud_main(args: argparse.Namespace) -> None:
+    from decimal import Decimal
+
+    from app.pipeline import fraud
+    from app.pipeline.terms import PolicyTerms
+
+    extractions = json.loads(args.extractions.read_text())
+    retrieval = json.loads(args.retrieval.read_text())
+    preds: dict[str, dict[str, object]] = {}
+    for claim_id in sorted(extractions):  # claim ids are in arrival order
+        if claim_id not in retrieval:
+            continue
+        threshold = retrieval[claim_id]["terms"]["high_value_threshold"]
+        terms = PolicyTerms(None, None, None, Decimal(threshold) if threshold else None, {})
+        earlier = [(i, extractions[i]["fields"]) for i in sorted(extractions) if i < claim_id]
+        result = fraud.evaluate(
+            extractions[claim_id]["fields"], terms, retrieval[claim_id]["checks"], earlier
+        )
+        preds[claim_id] = {
+            "fraud_flags": result.types,
+            "details": [f.detail for f in result.flags],
+            "unchecked": result.unchecked,
+        }
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(preds, indent=1, sort_keys=True))
+    print(f"wrote {args.out}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["extract", "retrieve"])
+    ap.add_argument("command", choices=["extract", "retrieve", "fraud"])
     ap.add_argument("--extractions", type=Path, help="predictions file from the extract command")
-    ap.add_argument("--flags", default="none", choices=["none", "oracle"])
+    ap.add_argument("--flags", default="none", choices=["none", "oracle", "fraud"])
+    ap.add_argument("--fraud", type=Path, help="predictions file from the fraud command")
+    ap.add_argument("--retrieval", type=Path, help="predictions file from the retrieve command")
     ap.add_argument("--split", default="dev")
     ap.add_argument("--vision", default="auto", choices=["auto", "never", "always"])
     ap.add_argument("--limit", type=int)
     ap.add_argument("--out", type=Path, required=True)
     args = ap.parse_args()
 
+    if args.command == "fraud":
+        fraud_main(args)
+        return
     if args.command == "retrieve":
         retrieve_main(args)
         return

@@ -1,0 +1,6 @@
+{
+  "median_usd": 6720.0,
+  "inflated_multiple": 2.0,
+  "source": "Median vehicle claim from the public Mendeley 'Insurance claims' dataset (DOI 10.17632/992mh7dk9y, CC BY 4.0), 44,800, scaled by 0.15 to the synthetic dataset's repair-cost range (eval/dataset/scenarios.py AMOUNT_SCALE).",
+  "note": "A single benchmark for all auto-collision claims. A production system would use a per-damage, per-region cost table; this is the dataset's stand-in."
+}
