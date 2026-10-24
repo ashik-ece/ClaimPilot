@@ -5,10 +5,11 @@ from typing import Annotated
 import jwt
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.db import get_session
-from app.models import Claim, User
+from app.models import Claim, PilotAssignment, User
 from app.security import decode_token
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
@@ -53,3 +54,18 @@ def get_claim_or_404(session: Session, claim_id: uuid.UUID) -> Claim:
     if claim is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "Claim not found")
     return claim
+
+
+def assigned_mode(session: Session, user: User, claim_id: uuid.UUID) -> str | None:
+    """The review mode a pilot tester must use for this claim, or None outside the pilot."""
+    return session.scalar(
+        select(PilotAssignment.mode).where(
+            PilotAssignment.user_id == user.id, PilotAssignment.claim_id == claim_id
+        )
+    )
+
+
+def forbid_in_manual_mode(session: Session, user: User, claim_id: uuid.UUID) -> None:
+    """Manual-baseline testers must not see AI output, whatever client they use."""
+    if assigned_mode(session, user, claim_id) == "manual":
+        raise HTTPException(status.HTTP_403_FORBIDDEN, "Not available in manual mode")

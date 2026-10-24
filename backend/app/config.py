@@ -26,6 +26,9 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 480
 
+    # Release label stamped on review sessions and feedback so pilot cycles stay separable.
+    release: str = "v1.0"
+
     # Origins allowed to call the API from a browser (the console). Comma separated.
     cors_origins: str = "http://localhost:5173,http://localhost:8080"
 

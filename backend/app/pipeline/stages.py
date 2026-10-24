@@ -23,7 +23,7 @@ from app.models import (
     PolicyClause,
     Recommendation,
 )
-from app.pipeline.analysis import analyze_claim
+from app.pipeline.analysis import Analysis, analyze_claim
 from app.pipeline.extraction import extract_claim
 from app.pipeline.jobs import Handler
 from app.pipeline.llm import LLMClient, LLMResult, record_model_call
@@ -159,6 +159,11 @@ def run_analysis(
         extraction_issues=extraction.meta.get("issues", []),
         earlier=earlier,
     )
+    persist_analysis(session, claim, analysis)
+
+
+def persist_analysis(session: Session, claim: Claim, analysis: Analysis) -> None:
+    """Store an analysis as the claim's recommendation and move it to adjudication."""
     rec = analysis.recommendation
     _calls(session, claim.id, ANALYSIS_ACTOR, rec.calls)
     if analysis.policy is not None:
@@ -249,4 +254,4 @@ def flag_for_review(session: Session, claim_id: uuid.UUID, stage: str, error: st
     )
 
 
-__all__ = ["build_handlers", "check_transition", "flag_for_review"]
+__all__ = ["build_handlers", "check_transition", "flag_for_review", "persist_analysis"]

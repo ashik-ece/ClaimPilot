@@ -106,3 +106,28 @@ export interface AuditEvent {
   payload: Record<string, unknown>;
   created_at: string;
 }
+
+export type ReviewMode = "assisted" | "manual";
+
+export interface ReviewSession {
+  id: string;
+  claim_id: string;
+  mode: ReviewMode;
+  started_at: string;
+}
+
+export interface PilotTask {
+  claim_id: string;
+  position: number;
+  round: number;
+  mode: ReviewMode;
+  status: ClaimStatus;
+  done: boolean;
+}
+
+export interface PolicyClause {
+  id: string;
+  clause_id: string;
+  section_path: string;
+  text: string;
+}

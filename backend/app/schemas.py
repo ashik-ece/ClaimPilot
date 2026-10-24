@@ -130,6 +130,9 @@ class DecisionCreate(BaseModel):
     note: str | None = None
     # Fields read only from a scan that the adjuster checked against the page image.
     confirmed_fields: list[str] = []
+    # Set when the claim was opened through a review session (see /review-sessions).
+    review_session_id: uuid.UUID | None = None
+    longest_idle_seconds: int | None = Field(default=None, ge=0)
 
 
 class DecisionOut(ORMModel):
@@ -142,6 +145,36 @@ class DecisionOut(ORMModel):
     reason_code: str | None
     note: str | None
     created_at: datetime
+    review_mode: str | None = None
+    review_seconds: float | None = None
+
+
+class ReviewMode(StrEnum):
+    assisted = "assisted"
+    manual = "manual"
+
+
+class ReviewSessionOut(ORMModel):
+    id: uuid.UUID
+    claim_id: uuid.UUID
+    mode: ReviewMode
+    started_at: datetime
+
+
+class PilotTaskOut(BaseModel):
+    claim_id: uuid.UUID
+    position: int
+    round: int
+    mode: ReviewMode
+    status: ClaimStatus
+    done: bool
+
+
+class FeedbackCreate(BaseModel):
+    usefulness: int = Field(ge=1, le=5)
+    trust: int = Field(ge=1, le=5)
+    top_complaint: str | None = Field(default=None, max_length=2000)
+    top_missing: str | None = Field(default=None, max_length=2000)
 
 
 class AuditEventOut(ORMModel):

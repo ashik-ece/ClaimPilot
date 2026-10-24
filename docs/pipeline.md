@@ -115,14 +115,14 @@ Scored with `eval/harness` against the labelled dataset. The dev set (40 claims)
 building, so its numbers are optimistic. The test set (160 claims, hash in `eval/README.md`) was run
 once, blind, with the code as committed before the run.
 
-| Metric | Target | Dev (40) | Test (160), first blind run |
-| --- | --- | --- | --- |
-| Field extraction, macro | 90%, no field under 80% | 99.6% | **100%** (every field 100%) |
-| Decision agreement with labels | 80% | 95.0% | **92.5%** (148/160) |
-| Fraud claims recommended `approve` | 0 | 0 | **0** |
-| Fraud flags: period / inflated / duplicate | n/a | 1/1, 2/2, 1/1 | **5/5, 8/8, 5/5**, no false flags |
-| Governing clause cited (any / all) | n/a | 97.5% / 92.5% | **95.0% / 92.5%** |
-| Cost per claim | under $0.25 | n/a | about $0.001 (estimated; see below) |
+| Metric | Target | Dev (40) | Test (160), first blind run | Test (160), post-fix re-run (post-hoc) |
+| --- | --- | --- | --- | --- |
+| Field extraction, macro | 90%, no field under 80% | 99.6% | **100%** (every field 100%) | 100% |
+| Decision agreement with labels | 80% | 95.0% | **92.5%** (148/160) | 95.6% (153/160) |
+| Fraud claims recommended `approve` | 0 | 0 | **0** | 0 |
+| Fraud flags: period / inflated / duplicate | n/a | 1/1, 2/2, 1/1 | **5/5, 8/8, 5/5**, no false flags | same |
+| Governing clause cited (any / all) | n/a | 97.5% / 92.5% | **95.0% / 92.5%** | 98.1% / 93.1% |
+| Cost per claim | under $0.25 | n/a | about $0.001 (estimated; see below) | same |
 
 Files: `eval/results/*_blind.json` hold the first-run test results; `pipeline_dev.json` and
 `extraction_dev_*.json` hold dev. Retrieval recall@5 on dev was 0.57 for the narrative-only
@@ -132,29 +132,29 @@ scanned claims; with the vision fallback it scored 100%.
 
 ### The 12 errors in the blind test run
 
-- **4 missed exclusions, wrongly approved.** All four were the *intentional damage* exclusion,
-  stated outright ("deliberately steered into the barrier on purpose"). Cause: the shortlist of
-  exclusions shown to the model was the top 3 hits per sentence across the whole policy, which
-  other clauses crowded out. The exclusion never reached the model. **Fixed** (the shortlist is now
-  every exclusion in the policy, ordered by similarity) with a regression test that fails on the
+Seven of the twelve share one cause. Details and claim IDs are in `docs/error-analysis.md`.
+
+- **7 from the exclusion shortlist.** The list of exclusions shown to the model was the top 3 hits
+  per sentence across the whole policy, which other clauses crowded out, so the governing clause
+  never reached the model. Four claims were wrongly approved (CLM-0065, 0067, 0094, 0105; all the
+  *intentional damage* exclusion, stated outright), one ambiguous claim was wrongly approved
+  (CLM-0131), and two denials were escalated instead (CLM-0135, 0152). **Fixed** (the shortlist is
+  now every exclusion in the policy, ordered by similarity) with a regression test that fails on the
   old behaviour; dev is unchanged at 95%.
-- **1 missed ambiguity, wrongly approved** (existing rust and scuffs, a wear-and-tear question).
-  Same shortlist cause.
-- **3 needless escalations** where the duplicate check could not run because the vehicle make or
-  model was missing from the documents. This is the designed behaviour (a check that cannot run
-  must not clear the claim) and is a real cost: roughly 2% of claims.
+- **3 needless escalations** where the duplicate check could not run because the vehicle model was
+  missing from the documents (CLM-0035, 0084, 0101). Designed behaviour: a check that cannot run
+  must not clear the claim. A real cost of roughly 2% of claims.
 - **1 needless escalation** because the extractor wrote the policy number as `POL-PREM 672961`
-  (a space instead of a hyphen), so the policy was not found. The format check caught it and the
-  claim was sent to a human. A deterministic normaliser for policy numbers is the obvious fix.
-- **2 denials escalated** and **1 approval escalated** by the model's extra caution.
+  (a space instead of a hyphen), so the policy was not found (CLM-0174). The format check caught it
+  and the claim went to a human. A deterministic normaliser is the obvious fix.
+- **1 approval escalated** by the model's extra caution (CLM-0179).
 
 ### Caveats
 
-- **The post-fix test number is not reported here.** The fix was found by reading the blind run's
-  errors, so a re-run of the same 160 claims is no longer blind for that change. A post-fix re-run
-  was started and stopped by the free-tier daily quota (the run is detected and refused rather than
-  scored; see `evalcli`). It needs to be repeated after the quota resets, and should be labelled
-  post-hoc. The 92.5% above is the honest first-run figure.
+- **The post-fix column is post-hoc.** The fix was found by reading the blind run's errors, so the
+  re-run of the same 160 claims is no longer blind for that change. It shows the fix works (6
+  repaired, 4 wrong approvals gone) and that it cost something (2 claims worse: `docs/error-analysis.md`).
+  The 92.5% first-run figure is the honest headline.
 - **Small positive counts.** Test has 18 fraud-flagged claims in total; 100% recall on 18 is
   encouraging but not tight.
 - **The data is synthetic and templated.** Documents and narratives come from a generator, so

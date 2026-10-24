@@ -6,7 +6,7 @@ from app.config import settings
 from app.db import SessionLocal
 from app.deps import SessionDep
 from app.obs import RequestMiddleware, configure_logging
-from app.routers import auth, claims, metrics, policies
+from app.routers import auth, claims, metrics, pilot, policies
 
 configure_logging()
 
@@ -27,6 +27,7 @@ app.include_router(auth.router)
 app.include_router(claims.router)
 app.include_router(policies.router)
 app.include_router(metrics.router)
+app.include_router(pilot.router)
 
 
 @app.get("/health", tags=["meta"])

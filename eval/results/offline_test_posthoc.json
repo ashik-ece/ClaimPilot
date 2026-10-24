@@ -1,0 +1,139 @@
+{
+  "citations": {
+    "claims": 160,
+    "precision": 0.9814814814814815,
+    "recall": 0.98125,
+    "recall_all": 0.93125
+  },
+  "claims": 160,
+  "cost_per_claim_usd": {
+    "mean": 0.000255,
+    "note": "estimated from assumed list prices; analysis stages only (extraction is separate)",
+    "p90": 0.000285
+  },
+  "dangerous_quadrant": {
+    "approved_but_should_not_be": [
+      "CLM-0131"
+    ],
+    "count": 1
+  },
+  "decision": {
+    "accuracy": 0.95625,
+    "claims": 160,
+    "confusion": {
+      "approve": {
+        "approve": 88,
+        "deny": 1,
+        "escalate": 4,
+        "none": 0
+      },
+      "deny": {
+        "approve": 0,
+        "deny": 34,
+        "escalate": 1,
+        "none": 0
+      },
+      "escalate": {
+        "approve": 1,
+        "deny": 0,
+        "escalate": 31,
+        "none": 0
+      }
+    }
+  },
+  "error_taxonomy": {
+    "extraction": {
+      "claims": [],
+      "count": 0
+    },
+    "reasoning": {
+      "claims": [
+        "CLM-0035",
+        "CLM-0049",
+        "CLM-0084",
+        "CLM-0179"
+      ],
+      "count": 4
+    },
+    "retrieval": {
+      "claims": [
+        "CLM-0101",
+        "CLM-0131",
+        "CLM-0174"
+      ],
+      "count": 3
+    }
+  },
+  "extraction": {
+    "claims": 160,
+    "macro": 1.0,
+    "min_field": 1.0,
+    "per_field": {
+      "claimant_name": 1.0,
+      "incident_date": 1.0,
+      "incident_location": 1.0,
+      "incident_type": 1.0,
+      "itemized_damages": 1.0,
+      "police_report_number": 1.0,
+      "policy_number": 1.0,
+      "reported_date": 1.0,
+      "total_amount": 1.0,
+      "vehicle_make": 1.0,
+      "vehicle_model": 1.0,
+      "vehicle_year": 1.0
+    }
+  },
+  "fraud": {
+    "fraud_claims_approved": [],
+    "per_flag": {
+      "date_outside_policy_period": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 5
+      },
+      "duplicate_claim": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 5
+      },
+      "inflated_estimate": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 8
+      }
+    }
+  },
+  "intervals_95": {
+    "decision_accuracy": [
+      0.925,
+      0.9875
+    ],
+    "extraction_macro": [
+      1.0,
+      1.0
+    ]
+  },
+  "note": "Post-hoc re-run after the shortlist fix (60bbddb); not blind.",
+  "predicted": 160,
+  "provenance": {
+    "commit": "c3d07b297b6b1425e2b2b377e03bfd3f44a3e3c0",
+    "frozen_test_set_unchanged": true,
+    "models": {
+      "llm_fast_model": "gemini-3.1-flash-lite",
+      "llm_strong_model": "gemini-3.5-flash-lite"
+    },
+    "prompt_versions": {
+      "clause_selection": "v2",
+      "extraction": "v2",
+      "recommendation": "v1"
+    },
+    "uncommitted_changes": true
+  },
+  "split": "test"
+}
