@@ -95,7 +95,7 @@ jobs:
 
       - name: Create an admin and load the policies
         run: |
-          docker compose exec -T api python -m app.cli create-user ci@example.com ci-password-123 admin
+          docker compose exec -T api uv run --no-dev python -m app.cli create-user ci@example.com ci-password-123 admin
           cd eval && uv sync && uv run python -m dataset.load \
             --email ci@example.com --password ci-password-123 --policies-only
 
@@ -137,7 +137,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker compose up -d --build --wait postgres qdrant s3 api console
       - run: |
-          docker compose exec -T api python -m app.cli create-user smoke@example.com smoke-password-123 admin
+          docker compose exec -T api uv run --no-dev python -m app.cli create-user smoke@example.com smoke-password-123 admin
           python3 scripts/smoke_test.py http://localhost:8080 \
             --email smoke@example.com --password smoke-password-123
       - if: failure()

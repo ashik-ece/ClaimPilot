@@ -26,7 +26,7 @@ jobs:
 
       - name: Smoke test
         run: |
-          docker compose exec -T api python -m app.cli create-user smoke@example.com smoke-password-123 admin
+          docker compose exec -T api uv run --no-dev python -m app.cli create-user smoke@example.com smoke-password-123 admin
           python3 scripts/smoke_test.py http://localhost:8080 \
             --email smoke@example.com --password smoke-password-123
 
