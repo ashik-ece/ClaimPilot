@@ -202,7 +202,7 @@ def retrieve(
                     hit.clause_id not in best or hit.score > best[hit.clause_id].score
                 ):
                     best[hit.clause_id] = hit
-        pool_hits = dict(sorted(best.items(), key=lambda kv: -kv[1].score)[:POOL_SIZE])
+        pool_hits = dict(sorted(best.items(), key=lambda kv: (-kv[1].score, kv[0]))[:POOL_SIZE])
         if standing[1]:
             pool_hits[standing[1][0].clause_id] = standing[1][0]
         picked: list[tuple[Hit, str]] = []
@@ -228,5 +228,5 @@ def retrieve(
     if standing[0]:
         add(standing[0][0], "coverage grant", 1.0, "coverage")
 
-    ordered = sorted(pool.values(), key=lambda c: -c.score)[:k]
+    ordered = sorted(pool.values(), key=lambda c: (-c.score, c.clause_id))[:k]
     return RetrievalResult(ordered, terms, checks, calls, rejected, selection)

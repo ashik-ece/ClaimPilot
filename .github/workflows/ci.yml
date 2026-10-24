@@ -83,14 +83,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # The model responses were recorded on arm64. OCR and embedding similarity are not
-      # bit-identical across CPU architectures, so the prompts (and so the replay keys) differ on
-      # x86. Emulating arm64 reproduces the recording environment. The platform is set only after
-      # emulation exists, so the setup action's own helper image still runs natively.
-      - uses: docker/setup-qemu-action@v3
-        with:
-          platforms: arm64
-      - run: echo "DOCKER_DEFAULT_PLATFORM=linux/arm64" >> "$GITHUB_ENV"
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -107,9 +99,10 @@ jobs:
           cd eval && uv sync && uv run python -m dataset.load \
             --email ci@example.com --password ci-password-123 --policies-only
 
-      # Extraction is not replayed here: re-reading the scanned pages means running Tesseract under
-      # CPU emulation, which took over 40 minutes. The analysis stage (retrieval, fraud rules,
-      # recommendation, citation checks) is replayed from the committed extraction results.
+      # Extraction is not replayed here: OCR output is not bit-identical across CPU architectures,
+      # so the scanned pages would produce different prompts than the ones recorded on arm64. The
+      # analysis stage (retrieval, fraud rules, recommendation, citation checks) is replayed from
+      # the committed extraction results; similarity scores are rounded so clause order is stable.
       - name: Replay the analysis stage on the dev split
         run: |
           # The image's non-root user must be able to write the results.
