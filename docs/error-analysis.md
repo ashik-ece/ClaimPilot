@@ -63,3 +63,30 @@ an approval but never soften a denial, so over-caution costs a review, never a w
   to confirm them before deciding.
 - The dataset is synthetic and templated; accuracy here says the pipeline handles this generator,
   not real paperwork.
+
+## After the fix (post-hoc re-run, not blind)
+
+Re-running the same 160 claims with the shortlist fix: **153 correct (95.6%, 95% interval 92.5% to
+98.8%)**, up from 148. The fix was found by reading the blind run's errors, so this is a repair
+check, not an unbiased estimate; the blind number stays the headline.
+
+- **Repaired (6):** CLM-0065, 0067, 0094, 0105 (wrongly approved) and CLM-0135, 0152 (denials that
+  had been escalated). None of the four wrong approvals remain. The dangerous quadrant fell from 5
+  claims to 1.
+- **Still wrong (7):**
+  - CLM-0131 (escalate labelled, approved): the ambiguity claim; the clauses that make it
+    ambiguous (PLUS-6.2, 4.7) are still not found. This is the one remaining dangerous approval.
+  - CLM-0035, 0084 (duplicate check could not run) and CLM-0174 (policy number with a space):
+    unchanged, as expected.
+  - CLM-0179: unchanged model caution.
+  - **CLM-0049 is newly wrong** (a deny now escalated): with every exclusion visible, the model also
+    picked a second, weaker clause (BASIC-6.2) and the rules read that as "unclear whether an
+    exclusion applies". It was correct in the blind run.
+  - **CLM-0101 is wrong in a worse way**: a clean approval that was escalated is now a *denial*,
+    because the model matched a distractor exclusion (BASIC-4.3). A wrong denial is reviewed by a
+    human like any other recommendation, but it is a harsher mistake than a needless escalation.
+- **What this says:** showing the model every exclusion fixes missed exclusions and costs some
+  over-matching on distractor claims. Net gain 5 claims, 2 of them offset. Tightening the
+  selection prompt against distractors is the obvious next experiment; it would need a fresh held-out
+  set to measure, because this test set is now spent for this purpose.
+

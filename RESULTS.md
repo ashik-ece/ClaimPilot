@@ -28,6 +28,28 @@ Decisions on the test set (rows are the label):
 
 Error taxonomy of the wrong decisions: Extraction 0, retrieval 8 (CLM-0065, CLM-0067, CLM-0094, CLM-0105, CLM-0131, CLM-0135, CLM-0152, CLM-0174), reasoning/rules 4 (CLM-0035, CLM-0084, CLM-0101, CLM-0179). See `docs/error-analysis.md`.
 
+### Post-hoc re-run after the shortlist fix
+
+The fix came from reading the blind run's errors, so this re-run is **not blind** and is reported separately; it must not replace the number above.
+
+| Metric | Target | Test, post-hoc (N=160) | Dev (N=40) |
+| --- | --- | --- | --- |
+| Field extraction, macro | 90%, no field under 80% | **100.0%** (95% CI 100.0% to 100.0%); worst field 100.0% | 99.6%; worst 95.0% |
+| Decision agreement | 80% | **95.6%** (95% CI 92.5% to 98.8%) | 95.0% |
+| Fraud-flagged claims recommended approve | 0 | **0** | 0 |
+| Fraud flags found (period / inflated / duplicate) | n/a | 5/5 / 8/8 / 5/5, false flags 0 | 1/1 / 2/2 / 1/1 |
+| Governing clause cited (any / all) | n/a | 98.1% / 93.1% | 97.5% / 92.5% |
+| Retrieval recall@5 | n/a | not measured on the test split | 100.0% |
+| Recommended approve but should not be | 0 | **1** (CLM-0131) | 0 |
+
+| label \ recommended | approve | deny | escalate |
+| --- | --- | --- | --- |
+| approve | 88 | 1 | 4 |
+| deny | 0 | 34 | 1 |
+| escalate | 1 | 0 | 31 |
+
+Error taxonomy: Extraction 0, retrieval 3 (CLM-0101, CLM-0131, CLM-0174), reasoning/rules 4 (CLM-0035, CLM-0049, CLM-0084, CLM-0179). See `docs/error-analysis.md`.
+
 ## Adjuster pilot
 
 **Real pilot: not run yet.** The headline numbers for adjuster time and override rate do not exist until testers have worked claims. Nothing below is a result.
