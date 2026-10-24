@@ -8,11 +8,13 @@ from sqlalchemy import (
     Boolean,
     Date,
     DateTime,
+    Float,
     ForeignKey,
     Identity,
     Index,
     Integer,
     Numeric,
+    SmallInteger,
     String,
     Text,
     UniqueConstraint,
@@ -139,6 +141,52 @@ class Decision(Base):
     overridden: Mapped[bool] = mapped_column(Boolean, default=False)
     reason_code: Mapped[str | None] = mapped_column(String(50))
     note: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = _now()
+    review_session_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("review_session.id"))
+    review_mode: Mapped[str | None] = mapped_column(String(10))
+    review_seconds: Mapped[float | None] = mapped_column(Float)
+    longest_idle_seconds: Mapped[int | None] = mapped_column(Integer)
+
+
+class ReviewSession(Base):
+    """First time a user opened a claim for review; the server clock for time per claim."""
+
+    __tablename__ = "review_session"
+    __table_args__ = (UniqueConstraint("claim_id", "user_id"),)
+
+    id: Mapped[uuid.UUID] = _uuid_pk()
+    claim_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("claim.id"))
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("user.id"))
+    mode: Mapped[str] = mapped_column(String(10))
+    release: Mapped[str] = mapped_column(String(20))
+    started_at: Mapped[datetime] = _now()
+
+
+class PilotAssignment(Base):
+    __tablename__ = "pilot_assignment"
+    __table_args__ = (UniqueConstraint("user_id", "claim_id"),)
+
+    id: Mapped[uuid.UUID] = _uuid_pk()
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("user.id"))
+    claim_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("claim.id"))
+    tester: Mapped[str] = mapped_column(String(20))
+    source_claim: Mapped[str] = mapped_column(String(20))
+    mode: Mapped[str] = mapped_column(String(10))
+    position: Mapped[int] = mapped_column(Integer)
+    round: Mapped[int] = mapped_column(Integer)
+    release: Mapped[str] = mapped_column(String(20))
+
+
+class PilotFeedback(Base):
+    __tablename__ = "pilot_feedback"
+
+    id: Mapped[uuid.UUID] = _uuid_pk()
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("user.id"))
+    release: Mapped[str] = mapped_column(String(20))
+    usefulness: Mapped[int] = mapped_column(SmallInteger)
+    trust: Mapped[int] = mapped_column(SmallInteger)
+    top_complaint: Mapped[str | None] = mapped_column(Text)
+    top_missing: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = _now()
 
 

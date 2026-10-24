@@ -18,11 +18,15 @@ export default function DecisionForm({
   claimId,
   recommendation,
   visionFields,
+  reviewSessionId,
+  idleSeconds,
   onDecided,
 }: {
   claimId: string;
   recommendation: Recommended | undefined;
   visionFields: string[];
+  reviewSessionId?: string;
+  idleSeconds?: () => number;
   onDecided: (d: Decision) => void;
 }) {
   const [choice, setChoice] = useState<Outcome | null>(null);
@@ -56,6 +60,8 @@ export default function DecisionForm({
           reason_code: override && reason !== "" ? reason : undefined,
           note: note.trim() || undefined,
           confirmed_fields: visionFields.filter((f) => confirmed.has(f)),
+          review_session_id: reviewSessionId,
+          longest_idle_seconds: idleSeconds?.(),
         }),
       );
     } catch (err) {

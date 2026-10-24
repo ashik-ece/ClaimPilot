@@ -132,21 +132,22 @@ scanned claims; with the vision fallback it scored 100%.
 
 ### The 12 errors in the blind test run
 
-- **4 missed exclusions, wrongly approved.** All four were the *intentional damage* exclusion,
-  stated outright ("deliberately steered into the barrier on purpose"). Cause: the shortlist of
-  exclusions shown to the model was the top 3 hits per sentence across the whole policy, which
-  other clauses crowded out. The exclusion never reached the model. **Fixed** (the shortlist is now
-  every exclusion in the policy, ordered by similarity) with a regression test that fails on the
+Seven of the twelve share one cause. Details and claim IDs are in `docs/error-analysis.md`.
+
+- **7 from the exclusion shortlist.** The list of exclusions shown to the model was the top 3 hits
+  per sentence across the whole policy, which other clauses crowded out, so the governing clause
+  never reached the model. Four claims were wrongly approved (CLM-0065, 0067, 0094, 0105; all the
+  *intentional damage* exclusion, stated outright), one ambiguous claim was wrongly approved
+  (CLM-0131), and two denials were escalated instead (CLM-0135, 0152). **Fixed** (the shortlist is
+  now every exclusion in the policy, ordered by similarity) with a regression test that fails on the
   old behaviour; dev is unchanged at 95%.
-- **1 missed ambiguity, wrongly approved** (existing rust and scuffs, a wear-and-tear question).
-  Same shortlist cause.
-- **3 needless escalations** where the duplicate check could not run because the vehicle make or
-  model was missing from the documents. This is the designed behaviour (a check that cannot run
-  must not clear the claim) and is a real cost: roughly 2% of claims.
+- **3 needless escalations** where the duplicate check could not run because the vehicle model was
+  missing from the documents (CLM-0035, 0084, 0101). Designed behaviour: a check that cannot run
+  must not clear the claim. A real cost of roughly 2% of claims.
 - **1 needless escalation** because the extractor wrote the policy number as `POL-PREM 672961`
-  (a space instead of a hyphen), so the policy was not found. The format check caught it and the
-  claim was sent to a human. A deterministic normaliser for policy numbers is the obvious fix.
-- **2 denials escalated** and **1 approval escalated** by the model's extra caution.
+  (a space instead of a hyphen), so the policy was not found (CLM-0174). The format check caught it
+  and the claim went to a human. A deterministic normaliser is the obvious fix.
+- **1 approval escalated** by the model's extra caution (CLM-0179).
 
 ### Caveats
 

@@ -1,13 +1,15 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { api } from "../api";
 import AuditTimeline from "../components/AuditTimeline";
 import DecisionForm from "../components/DecisionForm";
 import DocumentViewer from "../components/DocumentViewer";
 import ExtractionPanel from "../components/ExtractionPanel";
+import PolicyPanel from "../components/PolicyPanel";
 import RecommendationPanel from "../components/RecommendationPanel";
 import StatusBadge from "../components/StatusBadge";
 import { OUTCOME_LABELS, REASON_LABELS, fieldsToConfirm } from "../lib/decision";
+import { IdleTracker } from "../lib/idle";
 import { money, when } from "../lib/format";
 import type {
   AuditEvent,
@@ -17,6 +19,7 @@ import type {
   Extraction,
   PipelineJob,
   Recommendation,
+  ReviewSession,
 } from "../types";
 
 const IN_PROGRESS = new Set(["RECEIVED", "EXTRACTED", "ANALYZED"]);
@@ -33,27 +36,64 @@ interface Bundle {
   audit: AuditEvent[];
 }
 
-async function loadBundle(id: string): Promise<Bundle> {
+/** In manual mode the AI's output is not requested at all (the server refuses it too). */
+async function loadBundle(id: string, manual: boolean): Promise<Bundle> {
   const [claim, documents, jobs, extraction, recommendation, decision, audit] = await Promise.all([
     api.getClaim(id),
     api.documents(id),
     api.pipeline(id),
-    api.extraction(id),
-    api.recommendation(id),
+    manual ? null : api.extraction(id),
+    manual ? null : api.recommendation(id),
     api.decision(id),
-    api.audit(id),
+    manual ? [] : api.audit(id),
   ]);
   return { claim, documents, jobs, extraction, recommendation, decision, audit };
 }
 
+/** Keyed by claim, so moving between claims never carries a review session across. */
 export default function ClaimPage() {
   const { id = "" } = useParams();
+  return <ClaimReview key={id} id={id} />;
+}
+
+function ClaimReview({ id }: { id: string }) {
   const [data, setData] = useState<Bundle | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [review, setReview] = useState<ReviewSession | null>(null);
+  const reviewRef = useRef<ReviewSession | null>(null);
+
+  const idle = useMemo(() => {
+    let store: Storage | null = null;
+    try {
+      store = localStorage;
+    } catch {
+      /* blocked */
+    }
+    return new IdleTracker(`claimpilot.idle.${id}`, Date.now, store);
+  }, [id]);
+
+  useEffect(() => {
+    const touch = () => idle.activity();
+    const events = ["mousemove", "keydown", "scroll", "click", "touchstart"] as const;
+    events.forEach((e) => window.addEventListener(e, touch, { passive: true }));
+    document.addEventListener("visibilitychange", touch);
+    return () => {
+      events.forEach((e) => window.removeEventListener(e, touch));
+      document.removeEventListener("visibilitychange", touch);
+    };
+  }, [idle]);
 
   const refresh = useCallback(async () => {
     try {
-      setData(await loadBundle(id));
+      // The first visit to an undecided claim starts the review clock and fixes the mode.
+      if (!reviewRef.current) {
+        const claim = await api.getClaim(id);
+        if (CAN_DECIDE.has(claim.status)) {
+          reviewRef.current = await api.startReview(id);
+          setReview(reviewRef.current);
+        }
+      }
+      setData(await loadBundle(id, reviewRef.current?.mode === "manual"));
       setError(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Could not load the claim");
@@ -78,6 +118,7 @@ export default function ClaimPage() {
 
   const { claim, documents, jobs, extraction, recommendation, decision, audit } = data;
   const failedJob = jobs.find((j) => j.status === "failed");
+  const manual = review?.mode === "manual";
 
   return (
     <>
@@ -98,6 +139,11 @@ export default function ClaimPage() {
           <DocumentViewer key={claim.id} claimId={claim.id} documents={documents} />
         </div>
         <div className="stack">
+          {manual && (
+            <p className="card" role="note">
+              Manual review: use the documents and the policy. There is no AI panel for this claim.
+            </p>
+          )}
           {IN_PROGRESS.has(claim.status) && (
             <p className="card" role="status">
               {jobs.length === 0
@@ -112,6 +158,7 @@ export default function ClaimPage() {
               decide without a recommendation.
             </p>
           )}
+          {manual && <PolicyPanel policyId={claim.policy_id} />}
           {recommendation && <RecommendationPanel rec={recommendation} />}
           {extraction && <ExtractionPanel extraction={extraction} />}
 
@@ -123,11 +170,13 @@ export default function ClaimPage() {
                 claimId={claim.id}
                 recommendation={recommendation?.outcome}
                 visionFields={fieldsToConfirm(extraction?.meta.vision_sourced)}
+                reviewSessionId={review?.id}
+                idleSeconds={() => idle.longestIdleSeconds()}
                 onDecided={() => void refresh()}
               />
             )
           )}
-          <AuditTimeline events={audit} />
+          {!manual && <AuditTimeline events={audit} />}
         </div>
       </div>
     </>

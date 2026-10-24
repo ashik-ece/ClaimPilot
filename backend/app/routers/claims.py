@@ -1,21 +1,33 @@
 import hashlib
 import uuid
+from datetime import UTC, datetime
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Response, UploadFile, status
 from sqlalchemy import func, select
 
 from app import audit
-from app.deps import AdminUser, SessionDep, StaffUser, actor_of, get_claim_or_404
+from app.config import settings
+from app.deps import (
+    AdminUser,
+    SessionDep,
+    StaffUser,
+    actor_of,
+    assigned_mode,
+    forbid_in_manual_mode,
+    get_claim_or_404,
+)
 from app.models import (
     AuditEvent,
     Claim,
     Decision,
     Document,
     Extraction,
+    PilotAssignment,
     PipelineJob,
     PolicyClause,
     Recommendation,
+    ReviewSession,
 )
 from app.pipeline import jobs
 from app.schemas import (
@@ -30,6 +42,7 @@ from app.schemas import (
     ExtractionOut,
     PipelineJobOut,
     RecommendationOut,
+    ReviewSessionOut,
     TransitionRequest,
 )
 from app.states import TERMINAL, ClaimStatus, IllegalTransition, check_transition
@@ -83,6 +96,11 @@ def list_claims(
 ) -> ClaimPage:
     query = select(Claim)
     count = select(func.count()).select_from(Claim)
+    # A pilot tester sees only the claims assigned to them, never the other testers' copies.
+    assigned = select(PilotAssignment.claim_id).where(PilotAssignment.user_id == user.id)
+    if session.scalar(select(func.count()).select_from(assigned.subquery())):
+        query = query.where(Claim.id.in_(assigned))
+        count = count.where(Claim.id.in_(assigned))
     if status_filter is not None:
         query = query.where(Claim.status == status_filter.value)
         count = count.where(Claim.status == status_filter.value)
@@ -192,6 +210,45 @@ def download_document(
     )
 
 
+@router.post(
+    "/{claim_id}/review-sessions", response_model=ReviewSessionOut, status_code=status.HTTP_200_OK
+)
+def start_review(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> ReviewSession:
+    """Start (or resume) the caller's review of a claim.
+
+    The first call fixes the start time used for time per claim and the mode: the one a pilot
+    assignment dictates, otherwise AI-assisted. Later calls return the same session.
+    """
+    claim = get_claim_or_404(session, claim_id)
+    if claim.status in {s.value for s in TERMINAL}:
+        raise HTTPException(status.HTTP_409_CONFLICT, "Claim is already decided")
+    existing = session.scalar(
+        select(ReviewSession).where(
+            ReviewSession.claim_id == claim.id, ReviewSession.user_id == user.id
+        )
+    )
+    if existing is not None:
+        return existing
+    review = ReviewSession(
+        claim_id=claim.id,
+        user_id=user.id,
+        mode=assigned_mode(session, user, claim.id) or "assisted",
+        release=settings.release,
+    )
+    session.add(review)
+    session.flush()
+    audit.record(
+        session,
+        actor=actor_of(user),
+        event_type="review.started",
+        claim_id=claim.id,
+        payload={"session_id": str(review.id), "mode": review.mode, "release": review.release},
+    )
+    session.commit()
+    session.refresh(review)
+    return review
+
+
 @router.get("/{claim_id}/decision", response_model=DecisionOut)
 def get_decision(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> Decision:
     get_claim_or_404(session, claim_id)
@@ -211,9 +268,21 @@ def create_decision(
     recommendation = session.scalar(
         select(Recommendation).where(Recommendation.claim_id == claim.id)
     )
-    # A recommendation of approve/deny/escalate maps onto APPROVED/DENIED/ESCALATED.
-    overridden = recommendation is not None and recommendation.outcome != _as_recommendation(
-        body.outcome.value
+    review: ReviewSession | None = None
+    if body.review_session_id is not None:
+        review = session.get(ReviewSession, body.review_session_id)
+        if review is None or review.claim_id != claim.id or review.user_id != user.id:
+            raise HTTPException(status.HTTP_422_UNPROCESSABLE_CONTENT, "Unknown review session")
+    if assigned_mode(session, user, claim.id) == "manual" and review is None:
+        raise HTTPException(
+            status.HTTP_422_UNPROCESSABLE_CONTENT, "Open the claim through a review session first"
+        )
+    manual = review is not None and review.mode == "manual"
+    # A manual-baseline reviewer never saw the recommendation, so there is nothing to override.
+    overridden = (
+        not manual
+        and recommendation is not None
+        and recommendation.outcome != _as_recommendation(body.outcome.value)
     )
     if overridden and body.reason_code is None:
         raise HTTPException(
@@ -228,8 +297,12 @@ def create_decision(
         outcome=body.outcome.value,
         recommendation_id=recommendation.id if recommendation else None,
         overridden=overridden,
-        reason_code=body.reason_code.value if body.reason_code else None,
+        reason_code=body.reason_code.value if body.reason_code and not manual else None,
         note=body.note,
+        review_session_id=review.id if review else None,
+        review_mode=review.mode if review else None,
+        review_seconds=(datetime.now(UTC) - review.started_at).total_seconds() if review else None,
+        longest_idle_seconds=body.longest_idle_seconds,
     )
     session.add(decision)
     session.flush()
@@ -256,6 +329,7 @@ def _as_recommendation(outcome: str) -> str:
 @router.get("/{claim_id}/audit", response_model=list[AuditEventOut])
 def claim_audit(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> list[AuditEvent]:
     get_claim_or_404(session, claim_id)
+    forbid_in_manual_mode(session, user, claim_id)
     return list(
         session.scalars(
             select(AuditEvent).where(AuditEvent.claim_id == claim_id).order_by(AuditEvent.id)
@@ -298,6 +372,7 @@ def pipeline_status(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -
 @router.get("/{claim_id}/extraction", response_model=ExtractionOut)
 def get_extraction(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> Extraction:
     get_claim_or_404(session, claim_id)
+    forbid_in_manual_mode(session, user, claim_id)
     extraction = session.scalar(select(Extraction).where(Extraction.claim_id == claim_id))
     if extraction is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "No extraction yet")
@@ -310,6 +385,7 @@ def get_recommendation(
 ) -> RecommendationOut:
     """The recommendation with each cited clause quoted in full, for side-by-side review."""
     claim = get_claim_or_404(session, claim_id)
+    forbid_in_manual_mode(session, user, claim_id)
     rec = session.scalar(select(Recommendation).where(Recommendation.claim_id == claim_id))
     if rec is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, "No recommendation yet")

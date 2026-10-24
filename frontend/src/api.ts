@@ -7,9 +7,12 @@ import type {
   Decision,
   Extraction,
   Outcome,
+  PilotTask,
   PipelineJob,
+  PolicyClause,
   ReasonCode,
   Recommendation,
+  ReviewSession,
 } from "./types";
 
 const BASE = "/api";
@@ -138,6 +141,16 @@ export const api = {
   decision: (id: string) => optional<Decision>(`/claims/${id}/decision`),
   audit: (id: string) => json<AuditEvent[]>(`/claims/${id}/audit`),
 
+  startReview: (id: string) => post<ReviewSession>(`/claims/${id}/review-sessions`),
+  tasks: () => json<PilotTask[]>("/pilot/tasks"),
+  policyClauses: (policyId: string) => json<PolicyClause[]>(`/policies/${policyId}/clauses`),
+  feedback: (body: {
+    usefulness: number;
+    trust: number;
+    top_complaint?: string;
+    top_missing?: string;
+  }) => post<{ status: string }>("/pilot/feedback", body),
+
   decide: (
     id: string,
     body: {
@@ -145,6 +158,8 @@ export const api = {
       reason_code?: ReasonCode;
       note?: string;
       confirmed_fields: string[];
+      review_session_id?: string;
+      longest_idle_seconds?: number;
     },
   ) => post<Decision>(`/claims/${id}/decisions`, body),
 };
