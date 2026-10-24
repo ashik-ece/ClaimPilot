@@ -36,4 +36,4 @@ uv run ruff check . && uv run mypy app
 
 ## Layout
 
-`backend/` API and migrations · `frontend/` console (Phase 4) · `eval/` dataset and evaluation harness · `infra/` deployment (deferred) · `docs/`
+`backend/` API and migrations · `frontend/` adjuster console ([docs/console.md](docs/console.md)) · `eval/` dataset and evaluation harness · `infra/` deployment (deferred) · `docs/`

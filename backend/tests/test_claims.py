@@ -175,3 +175,48 @@ def test_override_requires_reason_code(
         for e in client.get(f"/claims/{claim['id']}/audit", headers=adjuster_headers).json()
     ]
     assert types[-1] == "decision.overridden"
+
+
+def test_document_content_roundtrip_and_scoping(
+    client: TestClient, adjuster_headers: dict[str, str]
+) -> None:
+    claim = _create_claim(client, adjuster_headers)
+    other = _create_claim(client, adjuster_headers)
+    up = client.post(
+        f"/claims/{claim['id']}/documents",
+        files={"file": ("form.pdf", b"%PDF-1.4 hello", "application/pdf")},
+        headers=adjuster_headers,
+    )
+    doc_id = up.json()["id"]
+
+    r = client.get(f"/claims/{claim['id']}/documents/{doc_id}/content", headers=adjuster_headers)
+    assert r.status_code == 200
+    assert r.content == b"%PDF-1.4 hello"
+    assert r.headers["content-type"] == "application/pdf"
+
+    wrong_claim = client.get(
+        f"/claims/{other['id']}/documents/{doc_id}/content", headers=adjuster_headers
+    )
+    assert wrong_claim.status_code == 404
+    assert client.get(f"/claims/{claim['id']}/documents/{doc_id}/content").status_code == 401
+
+
+def test_decision_is_readable_and_records_confirmed_fields(
+    client: TestClient, adjuster_headers: dict[str, str], admin_headers: dict[str, str]
+) -> None:
+    claim = _create_claim(client, adjuster_headers)
+    _advance_to_adjudication(client, admin_headers, claim["id"])
+    assert (
+        client.get(f"/claims/{claim['id']}/decision", headers=adjuster_headers).status_code == 404
+    )
+
+    client.post(
+        f"/claims/{claim['id']}/decisions",
+        json={"outcome": "APPROVED", "confirmed_fields": ["policy_number"]},
+        headers=adjuster_headers,
+    )
+    got = client.get(f"/claims/{claim['id']}/decision", headers=adjuster_headers)
+    assert got.status_code == 200 and got.json()["outcome"] == "APPROVED"
+
+    events = client.get(f"/claims/{claim['id']}/audit", headers=adjuster_headers).json()
+    assert events[-1]["payload"]["confirmed_fields"] == ["policy_number"]
