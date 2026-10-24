@@ -86,6 +86,71 @@ def retrieve_main(args: argparse.Namespace) -> None:
     print(f"wrote {args.out}")
 
 
+def analyze_main(args: argparse.Namespace) -> None:
+    from datetime import date  # noqa: F401
+
+    from qdrant_client import QdrantClient
+    from sqlalchemy import select
+
+    from app.config import settings
+    from app.db import SessionLocal
+    from app.models import Policy, PolicyClause
+    from app.pipeline.analysis import analyze_claim
+    from app.pipeline.policy_index import Clause, FastEmbedder, PolicyIndex
+
+    index = PolicyIndex(QdrantClient(url=settings.qdrant_url), FastEmbedder())
+    extractions = json.loads(args.extractions.read_text())
+    llm = get_llm_client()
+    preds: dict[str, dict[str, object]] = {}
+    total_cost = 0.0
+    with SessionLocal() as session:
+        for known in session.scalars(select(Policy)):
+            rows = session.scalars(select(PolicyClause).where(PolicyClause.policy_id == known.id))
+            index.index_policy(
+                known.policy_number,
+                known.version,
+                [Clause(r.clause_id, r.section_path, r.text) for r in rows],
+            )
+        for claim_id in sorted(extractions):
+            ext = extractions[claim_id]
+            earlier = [(i, extractions[i]["fields"]) for i in sorted(extractions) if i < claim_id]
+            try:
+                a = analyze_claim(
+                    session,
+                    index,
+                    llm,
+                    ext["fields"],
+                    extraction_ok=not ext["needs_review"],
+                    extraction_issues=ext["issues"],
+                    earlier=earlier,
+                )
+            except QuotaExhausted:
+                print(
+                    f"quota exhausted at {claim_id}; rerun later to resume from cache", flush=True
+                )
+                break
+            rec = a.recommendation
+            cost = sum(c.cost_usd for c in rec.calls)
+            total_cost += cost
+            preds[claim_id] = {
+                "fields": ext["fields"],
+                "decision": rec.outcome,
+                "fraud_flags": a.fraud.types if a.fraud else [],
+                "cited_clause_ids": rec.cited_clause_ids,
+                "rationale": rec.rationale,
+                "rules_outcome": rec.rules.outcome,
+                "rules_reasons": rec.rules.reasons,
+                "forced": rec.rules.forced,
+                "source": rec.source,
+                "notes": rec.notes,
+                "cost_usd": cost,
+            }
+            print(claim_id, rec.outcome, rec.cited_clause_ids, rec.notes or "", flush=True)
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(preds, indent=1, sort_keys=True))
+    print(f"wrote {args.out}; estimated cost ${total_cost:.4f}")
+
+
 def fraud_main(args: argparse.Namespace) -> None:
     from decimal import Decimal
 
@@ -116,7 +181,7 @@ def fraud_main(args: argparse.Namespace) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["extract", "retrieve", "fraud"])
+    ap.add_argument("command", choices=["extract", "retrieve", "fraud", "analyze"])
     ap.add_argument("--extractions", type=Path, help="predictions file from the extract command")
     ap.add_argument("--flags", default="none", choices=["none", "oracle", "fraud"])
     ap.add_argument("--fraud", type=Path, help="predictions file from the fraud command")
@@ -127,6 +192,9 @@ def main() -> None:
     ap.add_argument("--out", type=Path, required=True)
     args = ap.parse_args()
 
+    if args.command == "analyze":
+        analyze_main(args)
+        return
     if args.command == "fraud":
         fraud_main(args)
         return

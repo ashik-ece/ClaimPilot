@@ -58,6 +58,9 @@ class Candidate:
     text: str
     score: float
     reasons: list[str] = field(default_factory=list)
+    # period | notice | high_value | duplicate_claim | inflated_estimate | exclusion (model-selected,
+    # quote verified) | exclusion_candidate (similarity only) | unclear | coverage
+    role: str = ""
 
 
 @dataclass
@@ -144,15 +147,16 @@ def retrieve(
     checks = run_checks(facts, terms)
     pool: dict[str, Candidate] = {}
 
-    def add(hit: Hit, reason: str, priority: float) -> None:
+    def add(hit: Hit, reason: str, priority: float, role: str) -> None:
         cand = pool.get(hit.clause_id)
         if cand is None:
             pool[hit.clause_id] = Candidate(
-                hit.clause_id, hit.section_path, hit.text, priority + hit.score, [reason]
+                hit.clause_id, hit.section_path, hit.text, priority + hit.score, [reason], role
             )
         else:
             cand.reasons.append(reason)
-            cand.score = max(cand.score, priority + hit.score)
+            if priority + hit.score > cand.score:  # the strongest source decides the role
+                cand.score, cand.role = priority + hit.score, role
 
     # 1. Deterministic findings pull in their clause directly.
     wanted: list[tuple[str, str]] = []
@@ -168,9 +172,9 @@ def retrieve(
         found_terms = index.search_many(
             [QUERIES[n] for n, _ in wanted], policy_number, version, k=1
         )
-        for (_, reason), found in zip(wanted, found_terms, strict=True):
+        for (name, reason), found in zip(wanted, found_terms, strict=True):
             if found:
-                add(found[0], reason, 3.0)
+                add(found[0], reason, 3.0, name)
     flag_names = [f for f in flags if f in FLAG_QUERIES]
     if flag_names:
         found_flags = index.search_many(
@@ -178,12 +182,13 @@ def retrieve(
         )
         for name, found in zip(flag_names, found_flags, strict=True):
             if found:
-                add(found[0], f"fraud flag: {name}", 3.0)
+                add(found[0], f"fraud flag: {name}", 3.0, name)
 
     # 2. Narrative sentences find the exclusions worth a closer look; the model then picks
     #    which the facts really trigger, and code checks each pick against the account.
     sentences = split_sentences(narrative or "")
     standing = index.search_many([COVERAGE_QUERY, UNCLEAR_QUERY], policy_number, version, k=1)
+    unclear_id = standing[1][0].clause_id if standing[1] else None
     calls: list[LLMResult] = []
     rejected: list[str] = []
     selection = "none"
@@ -212,14 +217,15 @@ def retrieve(
                 pass  # fall back to similarity alone
         if used_llm:
             for hit, quote in picked:
-                add(hit, f"model-selected, quote verified: {quote[:120]}", 2.0)
+                role = "unclear" if hit.clause_id == unclear_id else "exclusion"
+                add(hit, f"model-selected, quote verified: {quote[:120]}", 2.0, role)
         else:
             for hit in list(pool_hits.values())[:FALLBACK_NARRATIVE_CANDIDATES]:
-                add(hit, "narrative similarity (no model selection)", 2.0)
+                add(hit, "narrative similarity (no model selection)", 2.0, "exclusion_candidate")
 
     # 3. Standing clause.
     if standing[0]:
-        add(standing[0][0], "coverage grant", 1.0)
+        add(standing[0][0], "coverage grant", 1.0, "coverage")
 
     ordered = sorted(pool.values(), key=lambda c: -c.score)[:k]
     return RetrievalResult(ordered, terms, checks, calls, rejected, selection)

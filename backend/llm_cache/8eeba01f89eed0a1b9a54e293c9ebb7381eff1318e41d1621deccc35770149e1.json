@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000162,
+  "input_tokens": 989,
+  "latency_ms": 1107,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 157,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because the automated findings indicate it is unclear whether an exclusion applies regarding the driver's license status. Under Section 6. Claim Handling, claims with material facts that are open to more than one reasonable reading must be escalated for further investigation.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}

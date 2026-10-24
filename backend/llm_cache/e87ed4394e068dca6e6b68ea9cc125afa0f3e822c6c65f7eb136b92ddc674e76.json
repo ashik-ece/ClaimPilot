@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000152,
+  "input_tokens": 967,
+  "latency_ms": 4154,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 139,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because the automated findings indicate that notice was given after the policy's notice window. Under clause STD-5.1, the insured must notify the insurer within 30 days, and late notice permits denial unless an excuse is shown. This requires further review by a senior adjuster or investigation.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-5.1\",\n      \"quote\": \"The insured person must notify us of a collision loss within 30 days after the date of loss.\"\n    }\n  ]\n}"
+}

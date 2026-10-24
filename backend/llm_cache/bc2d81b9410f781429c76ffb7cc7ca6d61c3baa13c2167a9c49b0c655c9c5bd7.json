@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000164,
+  "input_tokens": 927,
+  "latency_ms": 1190,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 178,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because automated findings indicate it is unclear whether an exclusion applies due to the claimant mentioning possible racing. Section [BASIC-6.2] governs this situation by requiring escalation when material facts are disputed, missing, or open to more than one reasonable reading. The key fact is that the claimant's account leaves uncertainty regarding whether a racing exclusion applies.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}
