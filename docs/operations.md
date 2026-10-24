@@ -74,6 +74,24 @@ What the gate does and does not catch:
 Unit tests for the gate itself (`eval/tests/test_gate.py`) show a lowered decision accuracy, one
 fraud claim approved, a missing metric and a partial run each fail it.
 
+**Thresholds equal the current dev scores.** Replay is deterministic, so there is no noise to
+allow for, and one flipped claim is 2.5 points on 40 claims. The first thresholds had a 5-point
+margin; a deliberately unsafe change then lowered accuracy from 95% to 92.5% and still passed. They
+were tightened (`eval/thresholds.json`) and the checks below repeated.
+
+**Demonstrated locally** (the CI commands, run in the production image):
+
+| Change | Outcome |
+| --- | --- |
+| none | passes |
+| let the model's outcome override the rules (can approve what the rules deny) | fails: decision accuracy 0.925 against 0.95 |
+| drop the rules' own citations from the result | fails: all-cited 0.900 against 0.925 |
+| inflated-estimate threshold 2x to 50x (changes what the model is shown) | fails: no recorded response, `analyze` exits 2 |
+| revert | passes |
+
+The last row is how a prompt change fails too: it is a build failure, not a score. Re-record
+(`LLM_MODE=record`), commit the new responses, and the thresholds judge them.
+
 ## Backup and rollback
 
 - `scripts/backup.sh backup` and `restore <file>`: tested by deleting rows, restoring, and

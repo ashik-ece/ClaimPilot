@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00012,
+  "input_tokens": 985,
+  "latency_ms": 748,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 54,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"STD-4.3\",\n      \"quote\": \"deliberately steered the front of my car into the retaining wall on purpose\"\n    }\n  ]\n}"
+}

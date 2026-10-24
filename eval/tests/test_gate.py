@@ -18,7 +18,7 @@ def test_current_dev_run_passes_the_gate() -> None:
 def test_a_regression_in_decisions_fails_the_gate() -> None:
     report = json.loads((RESULTS / "pipeline_dev.json").read_text())
     report["decision"]["accuracy"] = 0.80  # e.g. a bad prompt change
-    assert failures(report) == ["decision.accuracy >= 0.9"]
+    assert failures(report) == ["decision.accuracy >= 0.95"]
 
 
 def test_one_fraud_claim_approved_fails_the_gate() -> None:
@@ -30,7 +30,11 @@ def test_one_fraud_claim_approved_fails_the_gate() -> None:
 def test_a_missing_metric_fails_rather_than_passes() -> None:
     report = json.loads((RESULTS / "pipeline_dev.json").read_text())
     del report["citations"]
-    assert failures(report) == ["citations.recall >= 0.9"]
+    assert failures(report) == [
+        "citations.recall >= 0.975",
+        "citations.recall_all >= 0.925",
+        "citations.precision >= 1.0",
+    ]
 
 
 def test_a_partial_run_fails_the_gate() -> None:

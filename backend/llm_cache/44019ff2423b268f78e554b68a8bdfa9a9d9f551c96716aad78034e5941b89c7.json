@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.000119,
+  "input_tokens": 1018,
+  "latency_ms": 37570,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 43,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"STD-4.6\",\"quote\":\"I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit.\"}]}"
+}

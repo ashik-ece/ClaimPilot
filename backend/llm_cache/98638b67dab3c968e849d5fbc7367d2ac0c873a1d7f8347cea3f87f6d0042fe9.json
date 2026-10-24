@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000124,
+  "input_tokens": 1091,
+  "latency_ms": 676,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 38,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"PLUS-4.4\",\"quote\":\"I was in the middle of a paid rideshare trip with a passenger in the back seat when this happened.\"}]}"
+}
