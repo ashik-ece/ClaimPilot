@@ -53,14 +53,21 @@ average (max $0.0010), against a target of $0.25.
 
 Every pull request runs `.github/workflows/ci.yml`.
 
-**The evaluation gate** replays the recorded model responses over the dev split (extraction, then
-retrieval, fraud rules and recommendation), scores it with `eval/harness`, and fails the build if
+**The evaluation gate** replays the recorded model responses over the dev split (retrieval, fraud
+rules and recommendation, from the committed extraction results; see below for why extraction is not
+replayed in CI), scores it with `eval/harness`, and fails the build if
 any check in `eval/thresholds.json` is not met: extraction macro and worst field, decision
 accuracy, citation recall, and zero fraud claims approved. It runs inside the production image
 because OCR output differs slightly between macOS and Linux and the recorded responses are keyed on
 the exact prompt text; running elsewhere produced cache misses on 3 of 40 dev claims. The same holds across CPU architectures: the responses were recorded on arm64, and an x86 runner missed the cache (OCR and embedding similarity differ slightly, which changes the prompts), so the gate job emulates arm64 with QEMU.
 
 What the gate does and does not catch:
+
+- It does **not** re-run extraction. Replaying it means running Tesseract under the CPU emulation
+  the gate needs (an x86 runner misses the recorded responses), which took over 40 minutes. The
+  extraction scores in the gate are therefore those of the committed extraction results. Extraction
+  is covered by the offline evaluation and by a replay unit test that runs where Tesseract is
+  installed (it skips in the CI unit-test job).
 
 - It catches changes to the **deterministic code** (rules, retrieval, fraud, verification) that
   lower the scores, because the recorded model outputs are fixed.

@@ -107,18 +107,18 @@ jobs:
           cd eval && uv sync && uv run python -m dataset.load \
             --email ci@example.com --password ci-password-123 --policies-only
 
-      - name: Replay extraction and analysis on the dev split
+      # Extraction is not replayed here: re-reading the scanned pages means running Tesseract under
+      # CPU emulation, which took over 40 minutes. The analysis stage (retrieval, fraud rules,
+      # recommendation, citation checks) is replayed from the committed extraction results.
+      - name: Replay the analysis stage on the dev split
         run: |
           # The image's non-root user must be able to write the results.
           chmod -R a+rwX eval/results
-          run_in_image() {
-            docker compose run --rm --no-deps \
-              -v "$PWD/eval:/eval" -v "$PWD/backend/llm_cache:/cache:ro" \
-              -e LLM_MODE=replay -e LLM_CACHE_DIR=/cache -e GOOGLE_API_KEY= \
-              worker uv run --no-dev python -W ignore -m app.pipeline.evalcli "$@"
-          }
-          run_in_image extract --split dev --out /eval/results/ci_preds_extract.json
-          run_in_image analyze --extractions /eval/results/ci_preds_extract.json \
+          docker compose run --rm --no-deps \
+            -v "$PWD/eval:/eval" -v "$PWD/backend/llm_cache:/cache:ro" \
+            -e LLM_MODE=replay -e LLM_CACHE_DIR=/cache -e GOOGLE_API_KEY= \
+            worker uv run --no-dev python -W ignore -m app.pipeline.evalcli analyze \
+            --extractions /eval/results/preds_extract_dev_auto.json \
             --out /eval/results/ci_preds_pipeline.json
 
       - name: Score and apply the thresholds
