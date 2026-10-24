@@ -1,0 +1,13 @@
+{
+  "_note": "CI replays recorded model responses inside the production image, so a run is deterministic and needs no noise allowance: the thresholds equal the current dev scores (extraction macro 0.9958, worst field 0.95, decision 0.95, citation recall 0.975 and all-cited 0.925, precision 1.0). One flipped claim is 2.5 points, so any drop is a real change. If a deliberate improvement or re-recording moves the scores, update this file in the same pull request and say why.",
+  "checks": [
+    {"path": "extraction.macro", "op": ">=", "value": 0.99},
+    {"path": "extraction.min_field", "op": ">=", "value": 0.95},
+    {"path": "decision.accuracy", "op": ">=", "value": 0.95},
+    {"path": "citations.recall", "op": ">=", "value": 0.975},
+    {"path": "citations.recall_all", "op": ">=", "value": 0.925},
+    {"path": "citations.precision", "op": ">=", "value": 1.0},
+    {"path": "fraud.fraud_claims_approved", "op": "len<=", "value": 0},
+    {"path": "predicted", "op": ">=", "value": 40}
+  ]
+}

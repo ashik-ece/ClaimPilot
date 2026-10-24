@@ -5,6 +5,8 @@ run a stage twice. Workers claim rows with `FOR UPDATE SKIP LOCKED`, so several 
 run safely. A stage handler returns the next stage to enqueue, or None when the chain ends.
 """
 
+import logging
+import time
 import uuid
 from collections.abc import Callable
 from datetime import UTC, datetime
@@ -16,6 +18,9 @@ from sqlalchemy.orm import Session
 
 from app import audit
 from app.models import PipelineJob
+from app.obs import bind
+
+log = logging.getLogger("claimpilot.jobs")
 
 STAGES = ("extract", "analyze")
 QUEUED, RUNNING, SUCCEEDED, FAILED = "queued", "running", "succeeded", "failed"
@@ -104,25 +109,50 @@ def run_once(
         if job is None:
             return False
         job_id, claim_id, stage = job.id, job.claim_id, job.stage
-        try:
-            next_stage = handlers[stage](session, job)
-            job.status, job.finished_at, job.last_error = SUCCEEDED, datetime.now(UTC), None
-            audit.record(
-                session,
-                actor="system:pipeline",
-                event_type="pipeline.stage_succeeded",
-                claim_id=claim_id,
-                payload={"stage": stage, "attempt": job.attempts},
+        with bind(claim_id=claim_id, stage=stage):
+            return _run_job(
+                session, job, handlers, job_id, claim_id, stage, max_attempts, on_exhausted
             )
-            if next_stage:
-                enqueue(session, claim_id, next_stage)
-            session.commit()
-            return True
-        except Exception as exc:  # noqa: BLE001 - any handler failure is recorded and retried
-            session.rollback()
-            error = f"{type(exc).__name__}: {exc}"[:2000]
-        _record_failure(session, job_id, claim_id, stage, error, max_attempts, on_exhausted)
+
+
+def _run_job(
+    session: Session,
+    job: PipelineJob,
+    handlers: dict[str, Handler],
+    job_id: uuid.UUID,
+    claim_id: uuid.UUID,
+    stage: str,
+    max_attempts: int,
+    on_exhausted: ExhaustedHook | None,
+) -> bool:
+    started = time.perf_counter()
+    log.info("stage started", extra={"attempt": job.attempts})
+    try:
+        next_stage = handlers[stage](session, job)
+        job.status, job.finished_at, job.last_error = SUCCEEDED, datetime.now(UTC), None
+        audit.record(
+            session,
+            actor="system:pipeline",
+            event_type="pipeline.stage_succeeded",
+            claim_id=claim_id,
+            payload={"stage": stage, "attempt": job.attempts},
+        )
+        if next_stage:
+            enqueue(session, claim_id, next_stage)
+        session.commit()
+        log.info(
+            "stage succeeded", extra={"duration_ms": round((time.perf_counter() - started) * 1000)}
+        )
         return True
+    except Exception as exc:  # noqa: BLE001 - any handler failure is recorded and retried
+        session.rollback()
+        error = f"{type(exc).__name__}: {exc}"[:2000]
+    log.warning(
+        "stage failed",
+        extra={"duration_ms": round((time.perf_counter() - started) * 1000), "error": error[:300]},
+    )
+    _record_failure(session, job_id, claim_id, stage, error, max_attempts, on_exhausted)
+    return True
 
 
 def _record_failure(

@@ -106,5 +106,12 @@ class PolicyIndex:
         return self.search_many([query], policy_number, version, k)[0]
 
 
+# Similarity is float32 arithmetic whose last digits differ between CPU architectures. Rounding
+# here keeps the ordering of clauses (and so the prompts built from it) the same everywhere.
+SCORE_DECIMALS = 3
+
+
 def _hit(payload: dict[str, Any], score: float) -> Hit:
-    return Hit(payload["clause_id"], payload["section_path"], payload["text"], score)
+    return Hit(
+        payload["clause_id"], payload["section_path"], payload["text"], round(score, SCORE_DECIMALS)
+    )

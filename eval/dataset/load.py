@@ -87,6 +87,7 @@ def main() -> None:
     ap.add_argument("--password", required=True)
     ap.add_argument("--split", choices=["dev", "test", "all"], default="all")
     ap.add_argument("--limit", type=int, default=0, help="load only the first N claims")
+    ap.add_argument("--policies-only", action="store_true", help="create policies, load no claims")
     args = ap.parse_args()
 
     splits = json.loads((DATA / "splits.json").read_text())
@@ -98,6 +99,9 @@ def main() -> None:
     with httpx.Client(base_url=args.base_url, timeout=60) as client:
         login(client, args.email, args.password)
         policy_ids = ensure_policies(client)
+        if args.policies_only:
+            print(f"{len(policy_ids)} policies ready")
+            return
         started, new = time.time(), 0
         for cid in wanted:
             if cid in loaded:

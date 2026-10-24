@@ -1,0 +1,34 @@
+name: CD
+
+# Runs when a change lands on main. Everything up to and including the smoke test is automatic.
+# Pushing images and updating a hosted environment is deliberately not here yet: AWS is deferred
+# (see docs/architecture.md). When it is enabled, those steps go between "build" and "smoke".
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Build images, migrate, smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the production images
+        run: docker compose build api worker console
+
+      # The API container applies migrations (alembic upgrade head) before it starts serving,
+      # so starting it against an empty database proves the migrations from scratch.
+      - name: Start the stack
+        run: docker compose up -d --wait postgres qdrant s3 api worker console
+
+      - name: Smoke test
+        run: |
+          docker compose exec -T api uv run --no-dev python -m app.cli create-user smoke@example.com smoke-password-123 admin
+          python3 scripts/smoke_test.py http://localhost:8080 \
+            --email smoke@example.com --password smoke-password-123
+
+      - if: failure()
+        run: docker compose logs --tail 100

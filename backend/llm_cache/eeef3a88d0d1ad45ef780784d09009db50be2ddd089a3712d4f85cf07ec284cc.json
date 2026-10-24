@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00014,
+  "input_tokens": 1145,
+  "latency_ms": 861,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 63,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"BASIC-4.2\",\"quote\":\"another driver pulled alongside me and we began racing each other down the road\"},{\"clause_id\":\"BASIC-6.2\",\"quote\":\"I was stopped at a light when another driver failed to brake and hit the rear of my car\"}]}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00012,
+  "input_tokens": 980,
+  "latency_ms": 827,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 54,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"STD-4.3\",\n      \"quote\": \"deliberately steered the front of my car into the concrete barrier on purpose\"\n    }\n  ]\n}"
+}

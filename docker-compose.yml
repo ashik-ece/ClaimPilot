@@ -32,6 +32,7 @@ services:
 
   api:
     build: ./backend
+    image: claimpilot/backend:${IMAGE_TAG:-local}
     depends_on:
       postgres:
         condition: service_healthy
@@ -46,11 +47,28 @@ services:
       S3_SECRET_KEY: minioadmin
       S3_BUCKET: claimpilot-documents
       JWT_SECRET: dev-only-change-me-please-use-32-chars-min
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8080
     ports:
       - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://localhost:8000/ready', timeout=2)"]
+      interval: 5s
+      timeout: 5s
+      retries: 90 # CI runs this under CPU emulation, where start-up takes several minutes
+      start_period: 20s
+
+  console:
+    build: ./frontend
+    image: claimpilot/console:${IMAGE_TAG:-local}
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
 
   worker:
     build: ./backend
+    image: claimpilot/backend:${IMAGE_TAG:-local}
     command: ["uv", "run", "--no-dev", "python", "-m", "app.pipeline.worker"]
     depends_on:
       api:
@@ -67,9 +85,12 @@ services:
       S3_SECRET_KEY: minioadmin
       S3_BUCKET: claimpilot-documents
       QDRANT_URL: http://qdrant:6333
-      LLM_MODE: live
+      LLM_MODE: ${LLM_MODE:-live}
+      LLM_CACHE_DIR: /srv/llm_cache
     volumes:
       - fastembed:/home/appuser/fastembed
+    healthcheck:
+      disable: true # the image's check targets the API port
 
 volumes:
   fastembed:
