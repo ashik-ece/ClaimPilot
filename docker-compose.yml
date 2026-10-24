@@ -53,8 +53,8 @@ services:
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://localhost:8000/ready', timeout=2)"]
       interval: 5s
-      timeout: 3s
-      retries: 20
+      timeout: 5s
+      retries: 90 # CI runs this under CPU emulation, where start-up takes several minutes
       start_period: 20s
 
   console:
