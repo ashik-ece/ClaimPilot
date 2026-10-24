@@ -59,7 +59,7 @@ replayed in CI), scores it with `eval/harness`, and fails the build if
 any check in `eval/thresholds.json` is not met: extraction macro and worst field, decision
 accuracy, citation recall, and zero fraud claims approved. It runs inside the production image
 because OCR output differs slightly between macOS and Linux and the recorded responses are keyed on
-the exact prompt text; running elsewhere produced cache misses on 3 of 40 dev claims. The same holds across CPU architectures: the responses were recorded on arm64, and an x86 runner missed the cache (OCR and embedding similarity differ slightly, which changes the prompts), so the gate job emulates arm64 with QEMU.
+the exact prompt text; running elsewhere produced cache misses on 3 of 40 dev claims. The same holds across CPU architectures: the responses were recorded on arm64, and a GitHub x86 runner still misses the cache (CLM-0001 onward) even after similarity scores were rounded and ties broken. Emulating arm64 with QEMU worked in principle but took over 40 minutes. **So the gate is a required local check, and its CI job is advisory** (`continue-on-error`): run `scripts/gate.sh` on an arm64 machine (Apple Silicon) before merging changes to prompts, retrieval or rules. Making it blocking in CI needs native arm64 runners or responses re-recorded on the runner's architecture.
 
 What the gate does and does not catch:
 

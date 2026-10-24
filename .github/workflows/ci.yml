@@ -81,6 +81,9 @@ jobs:
   evaluation-gate:
     name: Evaluation gate (replayed model responses)
     runs-on: ubuntu-latest
+    # Advisory: the recorded responses are keyed on arm64 prompts and x86 runners miss them.
+    # The blocking check is scripts/gate.sh on arm64 (see docs/operations.md).
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
