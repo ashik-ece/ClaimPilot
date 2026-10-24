@@ -26,6 +26,9 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 480
 
+    # Origins allowed to call the API from a browser (the console). Comma separated.
+    cors_origins: str = "http://localhost:5173,http://localhost:8080"
+
     google_api_key: str = Field(default="", validation_alias="GOOGLE_API_KEY")
     # live: call Gemini. record: call Gemini and save each response. replay: never call out.
     llm_mode: str = "live"

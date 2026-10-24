@@ -7,3 +7,4 @@ node_modules/
 dist/
 .pytest_cache/
 .mypy_cache/
+backups/

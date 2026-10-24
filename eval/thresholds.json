@@ -1,0 +1,11 @@
+{
+  "_note": "CI fails if the replayed dev-split run scores below any of these. They sit a little under the current dev scores (extraction macro 0.996, min field 0.95, decision 0.95, citation recall 0.975) so noise does not fail the build but a real regression does. Raise them when the pipeline improves.",
+  "checks": [
+    {"path": "extraction.macro", "op": ">=", "value": 0.97},
+    {"path": "extraction.min_field", "op": ">=", "value": 0.90},
+    {"path": "decision.accuracy", "op": ">=", "value": 0.90},
+    {"path": "citations.recall", "op": ">=", "value": 0.90},
+    {"path": "fraud.fraud_claims_approved", "op": "len<=", "value": 0},
+    {"path": "predicted", "op": ">=", "value": 40}
+  ]
+}

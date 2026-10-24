@@ -225,6 +225,18 @@ def record_model_call(
     session: Session, *, claim_id: uuid.UUID, actor: str, result: LLMResult
 ) -> None:
     """Write the `model.call` audit event for one LLM call (in the caller's transaction)."""
+    log.info(
+        "model call",
+        extra={
+            "model": result.model,
+            "prompt": f"{result.prompt_name}@{result.prompt_version}",
+            "input_tokens": result.input_tokens,
+            "output_tokens": result.output_tokens,
+            "cost_usd": result.cost_usd,
+            "latency_ms": result.latency_ms,
+            "replayed": result.replayed,
+        },
+    )
     audit.record(
         session,
         actor=actor,

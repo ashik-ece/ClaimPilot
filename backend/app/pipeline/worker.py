@@ -8,6 +8,7 @@ from qdrant_client import QdrantClient
 
 from app.config import settings
 from app.db import SessionLocal
+from app.obs import configure_logging
 from app.pipeline import jobs
 from app.pipeline.llm import get_llm_client
 from app.pipeline.policy_index import FastEmbedder, PolicyIndex
@@ -18,7 +19,7 @@ log = logging.getLogger("claimpilot.worker")
 
 
 def main() -> None:
-    logging.basicConfig(level=logging.INFO)
+    configure_logging()
     ap = argparse.ArgumentParser()
     ap.add_argument("--once", action="store_true", help="drain the queue, then exit")
     args = ap.parse_args()

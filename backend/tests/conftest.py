@@ -81,8 +81,11 @@ def client(app_sessionmaker: sessionmaker[Session], storage: FakeStorage) -> Ite
 
     app.dependency_overrides[get_session] = override_session
     app.dependency_overrides[get_storage] = lambda: storage
+    original_factory = app.state.session_factory
+    app.state.session_factory = app_sessionmaker
     with TestClient(app) as c:
         yield c
+    app.state.session_factory = original_factory
     app.dependency_overrides.clear()
 
 
