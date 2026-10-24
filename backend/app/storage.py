@@ -9,6 +9,8 @@ from app.config import settings
 class Storage(Protocol):
     def put(self, key: str, data: bytes, content_type: str) -> None: ...
 
+    def get(self, key: str) -> bytes: ...
+
 
 class S3Storage:
     def __init__(self) -> None:
@@ -25,6 +27,10 @@ class S3Storage:
         self._client.put_object(
             Bucket=settings.s3_bucket, Key=key, Body=data, ContentType=content_type
         )
+
+    def get(self, key: str) -> bytes:
+        obj = self._client.get_object(Bucket=settings.s3_bucket, Key=key)
+        return bytes(obj["Body"].read())
 
 
 def get_storage() -> Storage:

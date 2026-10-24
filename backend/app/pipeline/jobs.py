@@ -17,10 +17,12 @@ from sqlalchemy.orm import Session
 from app import audit
 from app.models import PipelineJob
 
-STAGES = ("extract", "retrieve", "fraud", "recommend")
+STAGES = ("extract", "analyze")
 QUEUED, RUNNING, SUCCEEDED, FAILED = "queued", "running", "succeeded", "failed"
 
 Handler = Callable[[Session, PipelineJob], str | None]
+# Called inside the failure transaction when a stage has used its last attempt.
+ExhaustedHook = Callable[[Session, uuid.UUID, str, str], None]
 
 
 def enqueue(
@@ -85,7 +87,11 @@ def claim_next(session: Session) -> PipelineJob | None:
 
 
 def run_once(
-    session_factory: Callable[[], Session], handlers: dict[str, Handler], *, max_attempts: int = 3
+    session_factory: Callable[[], Session],
+    handlers: dict[str, Handler],
+    *,
+    max_attempts: int = 3,
+    on_exhausted: ExhaustedHook | None = None,
 ) -> bool:
     """Run one queued job. Returns False when the queue is empty.
 
@@ -115,12 +121,18 @@ def run_once(
         except Exception as exc:  # noqa: BLE001 - any handler failure is recorded and retried
             session.rollback()
             error = f"{type(exc).__name__}: {exc}"[:2000]
-        _record_failure(session, job_id, claim_id, stage, error, max_attempts)
+        _record_failure(session, job_id, claim_id, stage, error, max_attempts, on_exhausted)
         return True
 
 
 def _record_failure(
-    session: Session, job_id: uuid.UUID, claim_id: uuid.UUID, stage: str, error: str, limit: int
+    session: Session,
+    job_id: uuid.UUID,
+    claim_id: uuid.UUID,
+    stage: str,
+    error: str,
+    limit: int,
+    on_exhausted: ExhaustedHook | None,
 ) -> None:
     job = session.get(PipelineJob, job_id, with_for_update=True)
     assert job is not None
@@ -142,4 +154,6 @@ def _record_failure(
         claim_id=claim_id,
         payload=payload,
     )
+    if exhausted and on_exhausted is not None:
+        on_exhausted(session, claim_id, stage, error)
     session.commit()

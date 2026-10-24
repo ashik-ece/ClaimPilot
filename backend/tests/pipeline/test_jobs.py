@@ -70,12 +70,12 @@ def test_chain_runs_each_stage_once(
 
         return handler
 
-    handlers = {"extract": make("extract", "retrieve"), "retrieve": make("retrieve", None)}
+    handlers = {"extract": make("extract", "analyze"), "analyze": make("analyze", None)}
     with app_sessionmaker() as s:
         jobs.enqueue(s, claim_id, "extract")
         s.commit()
     _drain(app_sessionmaker, handlers)
-    assert ran == ["extract", "retrieve"]
+    assert ran == ["extract", "analyze"]
     assert _events(app_sessionmaker, claim_id, "pipeline.stage_succeeded") == 2
     # Re-enqueueing a finished stage does nothing, so a stage can never double-run.
     with app_sessionmaker() as s:

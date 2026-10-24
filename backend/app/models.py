@@ -100,12 +100,13 @@ class Document(Base):
 
 class Extraction(Base):
     __tablename__ = "extraction"
-    __table_args__ = (UniqueConstraint("claim_id", "document_id"),)
+    __table_args__ = (UniqueConstraint("claim_id"),)
 
     id: Mapped[uuid.UUID] = _uuid_pk()
     claim_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("claim.id"), index=True)
-    document_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("document.id"))
+    document_id: Mapped[uuid.UUID | None] = mapped_column(ForeignKey("document.id"))
     fields: Mapped[dict[str, Any]] = mapped_column(JSONB)
+    meta: Mapped[dict[str, Any]] = mapped_column(JSONB, default=dict)
     prompt_version: Mapped[str | None] = mapped_column(String(50))
     created_at: Mapped[datetime] = _now()
 
@@ -120,6 +121,7 @@ class Recommendation(Base):
     rationale: Mapped[str] = mapped_column(Text)
     cited_clause_ids: Mapped[list[str]] = mapped_column(JSONB)
     fraud_flags: Mapped[list[dict[str, Any]]] = mapped_column(JSONB, default=list)
+    meta: Mapped[dict[str, Any]] = mapped_column(JSONB, default=dict)
     model_name: Mapped[str | None] = mapped_column(String(100))
     prompt_version: Mapped[str | None] = mapped_column(String(50))
     created_at: Mapped[datetime] = _now()

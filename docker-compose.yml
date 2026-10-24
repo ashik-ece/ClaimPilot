@@ -49,6 +49,29 @@ services:
     ports:
       - "8000:8000"
 
+  worker:
+    build: ./backend
+    command: ["uv", "run", "--no-dev", "python", "-m", "app.pipeline.worker"]
+    depends_on:
+      api:
+        condition: service_started
+      qdrant:
+        condition: service_started
+    env_file:
+      - path: .env # holds GOOGLE_API_KEY; never committed
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://claimpilot_app:claimpilot_app@postgres:5432/claimpilot
+      S3_ENDPOINT_URL: http://s3:9090
+      S3_ACCESS_KEY: minioadmin
+      S3_SECRET_KEY: minioadmin
+      S3_BUCKET: claimpilot-documents
+      QDRANT_URL: http://qdrant:6333
+      LLM_MODE: live
+    volumes:
+      - fastembed:/home/appuser/fastembed
+
 volumes:
+  fastembed:
   pgdata:
   qdrantdata:

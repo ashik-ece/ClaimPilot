@@ -26,6 +26,9 @@ class FakeStorage:
     def put(self, key: str, data: bytes, content_type: str) -> None:
         self.objects[key] = data
 
+    def get(self, key: str) -> bytes:
+        return self.objects[key]
+
 
 @pytest.fixture(scope="session")
 def test_db_urls() -> Iterator[tuple[str, str]]:
