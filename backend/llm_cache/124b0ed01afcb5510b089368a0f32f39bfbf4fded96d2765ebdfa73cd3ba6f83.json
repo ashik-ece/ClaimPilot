@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 8.9e-05,
+  "input_tokens": 618,
+  "latency_ms": 736,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 67,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"STD-4.5\",\"quote\":\"My cousin was driving and thinks his license may have expired around last month, but he has not checked.\"},{\"clause_id\":\"STD-6.2\",\"quote\":\"thinks his license may have expired around last month, but he has not checked.\"}]}"
+}

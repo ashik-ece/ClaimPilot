@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000109,
+  "input_tokens": 870,
+  "latency_ms": 779,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 54,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"PREM-4.2\",\n      \"quote\": \"another driver pulled alongside me and we began racing each other down the road\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000147,
+  "input_tokens": 866,
+  "latency_ms": 1314,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 152,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for Sofia Gupta because automated checks confirm no exclusions or flags apply, and the damage occurred during the policy period. Clause PREM-2.1 governs this collision coverage, obligating us to pay the reasonable cost to repair the vehicle. The key fact is that the insured vehicle sustained accidental collision damage totaling $5,750.00 while stopped in traffic.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

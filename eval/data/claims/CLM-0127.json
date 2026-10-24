@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0127",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Hannah Quinn",
+    "incident_date": "2026-07-03",
+    "incident_location": "4538 Lake Boulevard, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1227.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "624.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "972.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "1428.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "429.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-880694",
+    "reported_date": "2026-07-06",
+    "total_amount": "4680.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Highlander",
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "large tree",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 07/03/2026, at about 21:05, I was driving my 2008 Toyota Highlander on 4538 Lake Boulevard, Toledo, OH. The weather was clear and dry. I swerved to avoid a deer and the left side of my vehicle scraped a large tree. No one was hurt and I did not call the police. The main damage is to the rear door panel, quarter panel, door glass. I took the car to Precision Auto Body and they estimated the repair at $4,680.00.",
+  "pair_id": "CLM-0127",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

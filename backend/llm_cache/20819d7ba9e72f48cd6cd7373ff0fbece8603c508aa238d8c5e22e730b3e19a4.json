@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000135,
+  "input_tokens": 816,
+  "latency_ms": 1092,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 134,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"This claim must be escalated for senior review because the claimant admitted to intentionally steering the vehicle into a concrete barrier, creating a significant coverage question regarding whether the loss was accidental. Collision coverage specifically requires an accidental loss under the insuring agreement. When in doubt between approving and escalating, the claim must be escalated.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

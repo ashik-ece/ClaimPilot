@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.002339,
+  "input_tokens": 840,
+  "latency_ms": 7109,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 835,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"claimant_name\": \"Marcus Mitchell\",\n  \"policy_number\": \"POL-PREM-818725\",\n  \"incident_date\": \"2026-06-03\",\n  \"reported_date\": \"2026-06-05\",\n  \"incident_type\": \"Multi-vehicle Collision\",\n  \"incident_location\": \"8761 Maple Street, Bloomington, IN\",\n  \"vehicle_make\": \"Honda\",\n  \"vehicle_model\": \"Accord\",\n  \"vehicle_year\": 2012,\n  \"police_report_number\": \"PR-IN-2026-27949\",\n  \"total_amount\": \"6050.00\",\n  \"itemized_damages\": [\n    {\n      \"description\": \"Tail lamp assembly\",\n      \"amount\": \"1561.00\"\n    },\n    {\n      \"description\": \"Rear reinforcement bar\",\n      \"amount\": \"1432.00\"\n    },\n    {\n      \"description\": \"Trunk lid\",\n      \"amount\": \"1250.00\"\n    },\n    {\n      \"description\": \"Shop supplies\",\n      \"amount\": \"1807.00\"\n    }\n  ],\n  \"evidence\": [\n    {\n      \"field\": \"claimant_name\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Marcus Mitchell\"\n    },\n    {\n      \"field\": \"policy_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"POL-PREM-818725\"\n    },\n    {\n      \"field\": \"incident_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"June 3, 2026\"\n    },\n    {\n      \"field\": \"reported_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"06/05/2026\"\n    },\n    {\n      \"field\": \"incident_type\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Multi-vehicle Collision\"\n    },\n    {\n      \"field\": \"incident_location\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"8761 Maple Street, Bloomington, IN\"\n    },\n    {\n      \"field\": \"vehicle_make\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Honda Accord\"\n    },\n    {\n      \"field\": \"vehicle_model\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Honda Accord\"\n    },\n    {\n      \"field\": \"vehicle_year\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"2012 Honda\"\n    },\n    {\n      \"field\": \"police_report_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"PR-IN-2026-27949\"\n    },\n    {\n      \"field\": \"total_amount\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"$6,050.00\"\n    },\n    {\n      \"field\": \"itemized_damages\",\n      \"document\": \"repair_estimate.pdf\",\n      \"quote\": \"Tail lamp assembly: $1,561.00\"\n    }\n  ]\n}"
+}

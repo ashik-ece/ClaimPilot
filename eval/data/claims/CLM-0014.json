@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0014",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Victor Mitchell",
+    "incident_date": "2026-07-16",
+    "incident_location": "2598 Elm Drive, Springfield, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2324.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1208.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2710.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2738.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-29703",
+    "policy_number": "POL-PLUS-464873",
+    "reported_date": "2026-07-25",
+    "total_amount": "8980.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.2"
+  ],
+  "narrative_text": "On 2026-07-16, at about 11:05, I was driving my 2011 Saab 95 on 2598 Elm Drive, Springfield, IL. Traffic was light. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, trunk lid, rear reinforcement bar. I took the car to Lakeside Autoworks and they estimated the repair at $8,980.00.",
+  "pair_id": "CLM-0014",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "racing",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0183",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Samuel Walker",
+    "incident_date": "2026-05-15",
+    "incident_location": "9099 Lake Boulevard, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1500.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "759.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "3503.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "1258.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-98213",
+    "policy_number": "POL-PLUS-509250",
+    "reported_date": "2026-05-20",
+    "total_amount": "7020.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Wrangler",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "right",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 05/15/2026, at about 19:35, I was driving my 2011 Jeep Wrangler on 9099 Lake Boulevard, Evansville, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the radiator support, fender, front bumper cover. I took the car to Heartland Repair Group and they estimated the repair at $7,020.00.",
+  "pair_id": "CLM-0183",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

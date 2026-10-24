@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0088",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Naomi Okafor",
+    "incident_date": "2026-06-07",
+    "incident_location": "5586 Cedar Road, Springfield, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1131.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "2373.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1158.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "2838.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-91371",
+    "policy_number": "POL-STD-521013",
+    "reported_date": "2026-06-09",
+    "total_amount": "7500.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Malibu",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 2026-06-07, at about 10:05, I was driving my 2010 Chevrolet Malibu on 5586 Cedar Road, Springfield, IL. The weather was clear and dry. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front bumper cover, front grille. I took the car to Summit Collision and they estimated the repair at $7,500.00.",
+  "pair_id": "CLM-0088",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0001",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Megan Zimmerman",
+    "incident_date": "2026-02-04",
+    "incident_location": "5619 River Road, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2888.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1498.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1480.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1184.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-70558",
+    "policy_number": "POL-BASIC-897132",
+    "reported_date": "2026-02-10",
+    "total_amount": "7050.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 02/04/2026, at about 11:35, I was driving my 2008 Honda CRV on 5619 River Road, Naperville, IL. The road was dry. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, rocker panel. I took the car to Precision Auto Body and they estimated the repair at $7,050.00.",
+  "pair_id": "CLM-0001",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

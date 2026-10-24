@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000164,
+  "input_tokens": 981,
+  "latency_ms": 1126,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 165,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We deny this claim because the automated findings and the claimant's account confirm that the damage is due to preexisting deterioration rather than a covered collision, as the claimant stated the panels had been rusting and cracking from age for years. Clause BASIC-2.1 governs this coverage by limiting payments to direct and accidental loss caused by collision during the policy period, and the loss is excluded based on the claimant's admission that they submitted a claim for age-related deterioration.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-2.1\",\n      \"quote\": \"We do not cover loss caused intentionally by, or at the direction of, an insured person.\"\n    }\n  ]\n}"
+}

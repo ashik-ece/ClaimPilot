@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0032",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Chen",
+    "incident_date": "2026-02-07",
+    "incident_location": "6654 Mill Road, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2334.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1886.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "5260.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-84099",
+    "policy_number": "POL-BASIC-567662",
+    "reported_date": "2026-02-08",
+    "total_amount": "9480.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Camry",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "right",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On February 7, 2026, at about 17:50, I was driving my 2017 Toyota Camry on 6654 Mill Road, Rockford, IL. The road was dry. I had renewed my driver's license the previous month and it was valid. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the hood panel, headlamp assembly. I took the car to Lakeside Autoworks and they estimated the repair at $9,480.00.",
+  "pair_id": "CLM-0032",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "benign_context",
+    "exclusion": null,
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

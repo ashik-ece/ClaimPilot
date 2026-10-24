@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0077",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Okafor",
+    "incident_date": "2026-07-12",
+    "incident_location": "9027 Sunset Drive, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2448.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "3563.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1085.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1664.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-73121",
+    "policy_number": "POL-PLUS-757055",
+    "reported_date": "2026-07-19",
+    "total_amount": "8760.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "C300",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 07/12/2026, at about 6:05, I was driving my 2009 Mercedes C300 on 9027 Sunset Drive, Rockford, IL. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the tail lamp assembly, trunk lid, rear body panel. I took the car to Eagle Body & Paint and they estimated the repair at $8,760.00.",
+  "pair_id": "CLM-0077",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

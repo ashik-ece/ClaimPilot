@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000143,
+  "input_tokens": 895,
+  "latency_ms": 969,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 134,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for the multi-vehicle collision because automated findings confirmed no exclusions, late notice, or fraud flags apply, and the loss occurred during the policy period. Clause PREM-2.1 governs this decision by establishing coverage for direct and accidental loss to the covered vehicle caused by collision.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

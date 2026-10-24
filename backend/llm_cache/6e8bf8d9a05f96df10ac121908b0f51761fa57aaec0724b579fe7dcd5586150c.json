@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000158,
+  "input_tokens": 989,
+  "latency_ms": 1158,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 147,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving this claim as the loss falls within the collision coverage and automated checks found no issues regarding timeliness or policy periods. The governing clause is Section 2 Insuring Agreement Collision Coverage, which provides payment for direct and accidental loss. The key fact is that the vehicle suffered accidental collision damage totaling $6,630.00 during the policy period.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

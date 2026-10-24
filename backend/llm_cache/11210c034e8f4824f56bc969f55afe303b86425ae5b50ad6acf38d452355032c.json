@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000139,
+  "input_tokens": 861,
+  "latency_ms": 3632,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 131,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because all automated checks are clean and no exclusions apply to the incident. Section 2. Insuring Agreement governs this collision coverage for direct and accidental loss. The key fact is that the accident occurred during the policy period and damages are supported by the claimant's account.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

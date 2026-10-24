@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0053",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Xu",
+    "incident_date": "2026-01-18",
+    "incident_location": "9695 River Road, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "866.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1695.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "533.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1664.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "642.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-768401",
+    "reported_date": "2026-01-25",
+    "total_amount": "5400.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Silverado",
+    "vehicle_year": 2019
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "large tree",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On January 18, 2026, at about 18:50, I was driving my 2019 Chevrolet Silverado on 9695 River Road, Indianapolis, IN. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear door panel, side mirror, front door panel. I took the car to Eagle Body & Paint and they estimated the repair at $5,400.00.",
+  "pair_id": "CLM-0053",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

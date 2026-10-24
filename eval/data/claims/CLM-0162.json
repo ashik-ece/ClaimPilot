@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0162",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Ethan Egan",
+    "incident_date": "2026-06-20",
+    "incident_location": "3136 River Road, Columbus, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2435.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "2538.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1788.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "3019.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-300184",
+    "reported_date": "2026-06-28",
+    "total_amount": "9780.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "E400",
+    "vehicle_year": 2021
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On June 20, 2026, at about 7:35, I was driving my 2021 Mercedes E400 on 3136 River Road, Columbus, OH. The weather was clear and dry. While reversing out of a parking area, the rear of my vehicle struck a steel pole. No one was hurt and I did not call the police. The main damage is to the trunk lid, rear reinforcement bar, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $9,780.00.",
+  "pair_id": "CLM-0162",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0030",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Hannah Dawson",
+    "incident_date": "2026-02-13",
+    "incident_location": "1240 Park Avenue, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2780.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "3244.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "4556.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-38476",
+    "policy_number": "POL-STD-453684",
+    "reported_date": "2026-02-22",
+    "total_amount": "10580.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Escape",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On 02/13/2026, at about 6:35, I was driving my 2013 Ford Escape on 1240 Park Avenue, Evansville, IN. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear body panel, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $10,580.00.",
+  "pair_id": "CLM-0030",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

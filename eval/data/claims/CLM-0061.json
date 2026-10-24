@@ -1,0 +1,78 @@
+{
+  "claim_id": "CLM-0061",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Victor Patel",
+    "incident_date": "2026-07-02",
+    "incident_location": "2709 Elm Drive, Springfield, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2662.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "3271.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "3341.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1536.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-571743",
+    "reported_date": "2026-07-08",
+    "total_amount": "10810.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "right",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On July 2, 2026, at about 16:20, I was driving my 2025 Honda Accord on 2709 Elm Drive, Springfield, IL. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the side mirror, door glass, rocker panel. I took the car to Precision Auto Body and they estimated the repair at $10,810.00.",
+  "pair_id": "CLM-0061",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

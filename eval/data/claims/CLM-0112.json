@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0112",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "rotated",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Jordan Young",
+    "incident_date": "2026-03-21",
+    "incident_location": "5398 Lake Boulevard, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2057.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1372.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1155.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "816.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-11560",
+    "policy_number": "POL-PLUS-186628",
+    "reported_date": "2026-03-30",
+    "total_amount": "5400.00",
+    "vehicle_make": "Nissan",
+    "vehicle_model": "Ultima",
+    "vehicle_year": 2013
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IL",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 2026-03-21, at about 13:20, I was driving my 2013 Nissan Ultima on 5398 Lake Boulevard, Rockford, IL. The road was dry. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the radiator support, headlamp assembly. I took the car to Summit Collision and they estimated the repair at $5,400.00.",
+  "pair_id": "CLM-0112",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

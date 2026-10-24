@@ -1,0 +1,310 @@
+{
+  "code": "PREM",
+  "policy_number": "POL-PREM",
+  "version": "2026.1",
+  "name": "Premium Auto Policy",
+  "effective_date": "2026-06-01",
+  "expiry_date": "2027-05-31",
+  "collision_limit": 100000,
+  "deductible": 250,
+  "notice_days": 60,
+  "high_value_threshold": 60000,
+  "exclusions": [
+    "racing",
+    "intentional",
+    "dui"
+  ],
+  "roles": {
+    "period": "PREM-1.1",
+    "coverage_grant": "PREM-2.1",
+    "limit": "PREM-3.1",
+    "deductible": "PREM-3.2",
+    "excl_racing": "PREM-4.2",
+    "excl_intentional": "PREM-4.3",
+    "excl_dui": "PREM-4.4",
+    "notice": "PREM-5.1",
+    "high_value": "PREM-6.1",
+    "unclear": "PREM-6.2",
+    "fraud": "PREM-7.1",
+    "duplicate": "PREM-7.2",
+    "inflated": "PREM-7.3"
+  },
+  "clauses": [
+    {
+      "clause_id": "PREM-1.1",
+      "section_path": "Section 1. Definitions > Policy Period",
+      "title": "Policy Period",
+      "text": "This policy applies only to loss that occurs on or after June 1, 2026 and on or before May 31, 2027 (the policy period). Loss that occurs before the policy period begins or after it ends is not covered, regardless of when the loss is reported to us."
+    },
+    {
+      "clause_id": "PREM-1.2",
+      "section_path": "Section 1. Definitions > Named Insured",
+      "title": "Named Insured",
+      "text": "Named insured means the person or persons shown as such in the declarations. The named insured is the only person who may change, cancel or assign this policy, and is responsible for the accuracy of the information given to us when applying for it."
+    },
+    {
+      "clause_id": "PREM-1.3",
+      "section_path": "Section 1. Definitions > Covered Vehicle",
+      "title": "Covered Vehicle",
+      "text": "Covered vehicle means the private passenger auto described in the declarations, including its permanently attached equipment, and any replacement vehicle that we have agreed in writing to insure."
+    },
+    {
+      "clause_id": "PREM-1.4",
+      "section_path": "Section 1. Definitions > Insured Person",
+      "title": "Insured Person",
+      "text": "Insured person means the named insured, resident family members, and any other person who uses the covered vehicle with the named insured's permission and within the scope of that permission."
+    },
+    {
+      "clause_id": "PREM-1.5",
+      "section_path": "Section 1. Definitions > Actual Cash Value",
+      "title": "Actual Cash Value",
+      "text": "Actual cash value means the replacement cost of the covered vehicle or part, less a deduction for physical depreciation and prior condition, as determined by us from market data for comparable vehicles in the area where the loss occurred."
+    },
+    {
+      "clause_id": "PREM-1.6",
+      "section_path": "Section 1. Definitions > Collision",
+      "title": "Collision",
+      "text": "Collision means the upset of the covered vehicle or its impact with another vehicle or object. Loss caused by fire, theft, flood or vandalism is not a collision."
+    },
+    {
+      "clause_id": "PREM-2.1",
+      "section_path": "Section 2. Insuring Agreement > Collision Coverage",
+      "title": "Collision Coverage",
+      "text": "Subject to the limit, the deductible and the exclusions in this policy, we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period. We will pay the reasonable cost to repair the vehicle to its pre-loss condition, or its actual cash value if the vehicle is a total loss, whichever is less."
+    },
+    {
+      "clause_id": "PREM-2.2",
+      "section_path": "Section 2. Insuring Agreement > Coverage Territory",
+      "title": "Coverage Territory",
+      "text": "This coverage applies to loss that occurs within the United States, its territories and possessions, and Canada, and to loss during transit between those places."
+    },
+    {
+      "clause_id": "PREM-2.3",
+      "section_path": "Section 2. Insuring Agreement > Replacement Parts",
+      "title": "Replacement Parts",
+      "text": "We may specify the use of new, used, reconditioned or non-original-equipment parts when they are of like kind and quality. Where an original-equipment part is required by law, we will pay for it."
+    },
+    {
+      "clause_id": "PREM-2.4",
+      "section_path": "Section 2. Insuring Agreement > Rental Reimbursement",
+      "title": "Rental Reimbursement",
+      "text": "If the covered vehicle cannot be driven after a covered collision loss, we will reimburse the cost of a comparable rental vehicle for up to 30 days, to a maximum of $40 per day. Rental reimbursement ends when the covered vehicle is repaired or when we pay the claim for a total loss, whichever happens first."
+    },
+    {
+      "clause_id": "PREM-2.5",
+      "section_path": "Section 2. Insuring Agreement > Towing and Storage",
+      "title": "Towing and Storage",
+      "text": "We will pay reasonable towing charges from the scene of a covered collision loss to the nearest qualified repair facility, and reasonable storage charges for up to 10 days after we have been notified of the loss."
+    },
+    {
+      "clause_id": "PREM-2.6",
+      "section_path": "Section 2. Insuring Agreement > Glass Repair Benefit",
+      "title": "Glass Repair Benefit",
+      "text": "Windshield and window glass damaged in a covered collision loss is repaired or replaced without application of the deductible if the glass can be repaired rather than replaced."
+    },
+    {
+      "clause_id": "PREM-2.7",
+      "section_path": "Section 2. Insuring Agreement > Roadside Assistance",
+      "title": "Roadside Assistance",
+      "text": "We provide roadside assistance following a covered collision loss, including emergency towing, battery service, lockout service and fuel delivery, up to $150 per occurrence."
+    },
+    {
+      "clause_id": "PREM-2.8",
+      "section_path": "Section 2. Insuring Agreement > New Vehicle Replacement",
+      "title": "New Vehicle Replacement",
+      "text": "If the covered vehicle is less than 12 months old and a covered collision loss exceeds 75% of its manufacturer's suggested retail price, we will replace it with a new vehicle of the same make and model instead of paying actual cash value."
+    },
+    {
+      "clause_id": "PREM-3.1",
+      "section_path": "Section 3. Limit of Coverage and Deductible > Collision Limit",
+      "title": "Collision Limit",
+      "text": "The most we will pay for any one collision loss is $100,000, or the actual cash value of the covered vehicle at the time of loss, whichever is less. The limit does not increase because more than one vehicle, person or claim is involved."
+    },
+    {
+      "clause_id": "PREM-3.2",
+      "section_path": "Section 3. Limit of Coverage and Deductible > Deductible",
+      "title": "Deductible",
+      "text": "Our payment for each collision loss is reduced by the deductible of $250. The deductible applies once per loss, after the amount of loss has been determined and before the limit is applied."
+    },
+    {
+      "clause_id": "PREM-3.3",
+      "section_path": "Section 3. Limit of Coverage and Deductible > Total Loss Settlement",
+      "title": "Total Loss Settlement",
+      "text": "If the cost to repair the covered vehicle exceeds its actual cash value, or if repair is not practical, we may treat the loss as a total loss and pay actual cash value less the deductible, in which case ownership of the salvage passes to us."
+    },
+    {
+      "clause_id": "PREM-3.4",
+      "section_path": "Section 3. Limit of Coverage and Deductible > Salvage",
+      "title": "Salvage",
+      "text": "If we pay for a total loss, we are entitled to the salvage. The insured person must sign over title and must not dispose of the vehicle until we have inspected it."
+    },
+    {
+      "clause_id": "PREM-3.5",
+      "section_path": "Section 3. Limit of Coverage and Deductible > Other Insurance",
+      "title": "Other Insurance",
+      "text": "If other insurance applies to the same loss, we will pay only our share of the loss. Our share is the proportion that our limit bears to the total of all applicable limits."
+    },
+    {
+      "clause_id": "PREM-4.1",
+      "section_path": "Section 4. Exclusions > Application of Exclusions",
+      "title": "Application of Exclusions",
+      "text": "The exclusions in this section apply to every claim under this policy. If an exclusion applies to a loss, we will not pay any part of that loss, even if another cause also contributed to it. An insured person who relies on an exception to an exclusion has the burden of showing that the exception applies."
+    },
+    {
+      "clause_id": "PREM-4.2",
+      "section_path": "Section 4. Exclusions > Racing and Speed Contests",
+      "title": "Racing and Speed Contests",
+      "text": "We do not cover loss that occurs while the covered vehicle is used in, or in practice or preparation for, any organized or impromptu race, speed contest, stunt driving or demonstration, whether on a public road or on a closed course. Informal contests of speed between drivers on public roads are included in this exclusion."
+    },
+    {
+      "clause_id": "PREM-4.3",
+      "section_path": "Section 4. Exclusions > Intentional Acts",
+      "title": "Intentional Acts",
+      "text": "We do not cover loss caused intentionally by, or at the direction of, an insured person. This exclusion applies even if the resulting damage is different from, or greater than, what the insured person expected or intended."
+    },
+    {
+      "clause_id": "PREM-4.4",
+      "section_path": "Section 4. Exclusions > Impaired Driving",
+      "title": "Impaired Driving",
+      "text": "We do not cover loss that occurs while the driver of the covered vehicle is under the influence of alcohol, a controlled substance or any drug that impairs driving ability, including any case in which the driver's measured blood alcohol concentration exceeds the legal limit of the state where the loss occurred."
+    },
+    {
+      "clause_id": "PREM-5.1",
+      "section_path": "Section 5. Duties After a Loss > Notice of Loss",
+      "title": "Notice of Loss",
+      "text": "The insured person must notify us of a collision loss within 60 days after the date of loss. If notice is given later than that, we may deny the claim unless the insured person shows that the delay was caused by a documented medical emergency or other circumstance beyond their control."
+    },
+    {
+      "clause_id": "PREM-5.2",
+      "section_path": "Section 5. Duties After a Loss > Police Report",
+      "title": "Police Report",
+      "text": "When a collision involves injury, a second vehicle or damage over $2,500, the insured person should report it to the police and give us the report number as soon as it is available. Failure to obtain a report does not by itself void coverage."
+    },
+    {
+      "clause_id": "PREM-5.3",
+      "section_path": "Section 5. Duties After a Loss > Documentation",
+      "title": "Documentation",
+      "text": "The insured person must send us a completed claim form, a repair estimate from a licensed repair facility, and a written description of how the loss happened, including the date, time and place of the loss."
+    },
+    {
+      "clause_id": "PREM-5.4",
+      "section_path": "Section 5. Duties After a Loss > Inspection",
+      "title": "Inspection",
+      "text": "We may inspect the covered vehicle and the repair facility's records at any reasonable time before repairs are made. The insured person must not authorize repairs beyond those needed to protect the vehicle from further damage until we have inspected it."
+    },
+    {
+      "clause_id": "PREM-5.5",
+      "section_path": "Section 5. Duties After a Loss > Cooperation",
+      "title": "Cooperation",
+      "text": "The insured person must cooperate with us in the investigation and settlement of the claim, including answering questions under oath if we ask and providing records that we reasonably request."
+    },
+    {
+      "clause_id": "PREM-5.6",
+      "section_path": "Section 5. Duties After a Loss > Proof of Loss",
+      "title": "Proof of Loss",
+      "text": "We may require a sworn proof of loss within 60 days of our request. The proof of loss must state the time, place and cause of the loss, the interest of all persons in the vehicle, and the amount claimed."
+    },
+    {
+      "clause_id": "PREM-6.1",
+      "section_path": "Section 6. Claim Handling > Adjuster Authority and Referral of High-Value Claims",
+      "title": "Adjuster Authority and Referral of High-Value Claims",
+      "text": "A claims adjuster may approve or deny a claim within the limit of this policy. Any claim where the amount of loss is at or above $60,000 must be escalated to a senior adjuster for review before any payment is authorized, even if no exclusion appears to apply."
+    },
+    {
+      "clause_id": "PREM-6.2",
+      "section_path": "Section 6. Claim Handling > Referral of Unclear Coverage",
+      "title": "Referral of Unclear Coverage",
+      "text": "If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available."
+    },
+    {
+      "clause_id": "PREM-6.3",
+      "section_path": "Section 6. Claim Handling > Payment",
+      "title": "Payment",
+      "text": "We will pay an approved claim within 30 days after we receive proof of loss and complete our investigation. Payment may be made to the insured person, the repair facility, or any lienholder named in the declarations."
+    },
+    {
+      "clause_id": "PREM-6.4",
+      "section_path": "Section 6. Claim Handling > Appraisal",
+      "title": "Appraisal",
+      "text": "If the insured person and we disagree on the amount of loss, either may demand appraisal. Each party selects a competent appraiser, and the two appraisers select an umpire. A written agreement of any two is binding as to the amount of loss only."
+    },
+    {
+      "clause_id": "PREM-6.5",
+      "section_path": "Section 6. Claim Handling > Subrogation",
+      "title": "Subrogation",
+      "text": "If we make a payment, we are entitled to recover it from any person who caused the loss. The insured person must do nothing to impair this right and must help us enforce it."
+    },
+    {
+      "clause_id": "PREM-7.1",
+      "section_path": "Section 7. Fraud and Misrepresentation > Concealment or Fraud",
+      "title": "Concealment or Fraud",
+      "text": "We do not provide coverage to any insured person who has intentionally concealed or misrepresented a material fact, engaged in fraudulent conduct, or made false statements relating to this insurance, whether before or after a loss."
+    },
+    {
+      "clause_id": "PREM-7.2",
+      "section_path": "Section 7. Fraud and Misrepresentation > Duplicate Claims",
+      "title": "Duplicate Claims",
+      "text": "A claim for a loss that has already been reported to us, or paid, under this policy or any other policy, must be escalated to the special investigation unit. The same loss may be paid only once."
+    },
+    {
+      "clause_id": "PREM-7.3",
+      "section_path": "Section 7. Fraud and Misrepresentation > Inflated or Unsupported Estimates",
+      "title": "Inflated or Unsupported Estimates",
+      "text": "If the amount claimed is substantially higher than the usual cost of repairing the damage described, or is not supported by the itemized estimate, the claim must be escalated for review. We may base payment on the lower of the estimate and our own assessment of reasonable repair cost."
+    },
+    {
+      "clause_id": "PREM-7.4",
+      "section_path": "Section 7. Fraud and Misrepresentation > Special Investigation",
+      "title": "Special Investigation",
+      "text": "We may refer any claim to our special investigation unit. A referral is not a finding of wrongdoing and does not by itself delay payment of any undisputed portion of the claim."
+    },
+    {
+      "clause_id": "PREM-8.1",
+      "section_path": "Section 8. General Conditions > Changes",
+      "title": "Changes",
+      "text": "This policy contains all the agreements between the named insured and us. Its terms may be changed only by an endorsement issued by us."
+    },
+    {
+      "clause_id": "PREM-8.2",
+      "section_path": "Section 8. General Conditions > Cancellation",
+      "title": "Cancellation",
+      "text": "The named insured may cancel this policy at any time by notifying us. We may cancel for non-payment of premium on ten days' notice, and for any other reason allowed by state law on thirty days' notice."
+    },
+    {
+      "clause_id": "PREM-8.3",
+      "section_path": "Section 8. General Conditions > Legal Action Against Us",
+      "title": "Legal Action Against Us",
+      "text": "No legal action may be brought against us until there has been full compliance with all the terms of this policy, and not later than two years after the date of loss."
+    },
+    {
+      "clause_id": "PREM-8.4",
+      "section_path": "Section 8. General Conditions > Governing Law",
+      "title": "Governing Law",
+      "text": "This policy is governed by the law of the state in which the named insured resides on the effective date of the policy."
+    },
+    {
+      "clause_id": "PREM-8.5",
+      "section_path": "Section 8. General Conditions > Premium",
+      "title": "Premium",
+      "text": "The premium is shown in the declarations. It is due on or before the effective date and on each installment date shown there. Failure to pay when due may result in cancellation."
+    },
+    {
+      "clause_id": "PREM-8.6",
+      "section_path": "Section 8. General Conditions > Assignment",
+      "title": "Assignment",
+      "text": "The named insured's interest in this policy may not be assigned without our written consent. If the named insured dies, the policy covers the legal representative as the named insured while acting within the scope of their duties."
+    },
+    {
+      "clause_id": "PREM-8.7",
+      "section_path": "Section 8. General Conditions > Severability",
+      "title": "Severability",
+      "text": "If any provision of this policy is found to be invalid or unenforceable, the remaining provisions continue in full force and effect."
+    },
+    {
+      "clause_id": "PREM-8.8",
+      "section_path": "Section 8. General Conditions > Entire Agreement",
+      "title": "Entire Agreement",
+      "text": "The declarations, this policy form and any endorsements issued by us make up the entire contract between the named insured and us."
+    }
+  ]
+}

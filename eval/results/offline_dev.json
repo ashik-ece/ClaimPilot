@@ -1,0 +1,136 @@
+{
+  "citations": {
+    "claims": 40,
+    "precision": 1.0,
+    "recall": 0.975,
+    "recall_all": 0.925
+  },
+  "claims": 40,
+  "cost_per_claim_usd": {
+    "mean": 0.000252,
+    "note": "estimated from assumed list prices; analysis stages only (extraction is separate)",
+    "p90": 0.00029
+  },
+  "dangerous_quadrant": {
+    "approved_but_should_not_be": [],
+    "count": 0
+  },
+  "decision": {
+    "accuracy": 0.95,
+    "claims": 40,
+    "confusion": {
+      "approve": {
+        "approve": 22,
+        "deny": 0,
+        "escalate": 1,
+        "none": 0
+      },
+      "deny": {
+        "approve": 0,
+        "deny": 8,
+        "escalate": 1,
+        "none": 0
+      },
+      "escalate": {
+        "approve": 0,
+        "deny": 0,
+        "escalate": 8,
+        "none": 0
+      }
+    }
+  },
+  "error_taxonomy": {
+    "extraction": {
+      "claims": [
+        "CLM-0147"
+      ],
+      "count": 1
+    },
+    "reasoning": {
+      "claims": [
+        "CLM-0143"
+      ],
+      "count": 1
+    },
+    "retrieval": {
+      "claims": [],
+      "count": 0
+    }
+  },
+  "extraction": {
+    "claims": 40,
+    "macro": 0.9958333333333332,
+    "min_field": 0.95,
+    "per_field": {
+      "claimant_name": 1.0,
+      "incident_date": 1.0,
+      "incident_location": 1.0,
+      "incident_type": 1.0,
+      "itemized_damages": 1.0,
+      "police_report_number": 1.0,
+      "policy_number": 0.95,
+      "reported_date": 1.0,
+      "total_amount": 1.0,
+      "vehicle_make": 1.0,
+      "vehicle_model": 1.0,
+      "vehicle_year": 1.0
+    }
+  },
+  "fraud": {
+    "fraud_claims_approved": [],
+    "per_flag": {
+      "date_outside_policy_period": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "duplicate_claim": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 1
+      },
+      "inflated_estimate": {
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 2
+      }
+    }
+  },
+  "intervals_95": {
+    "decision_accuracy": [
+      0.875,
+      1.0
+    ],
+    "extraction_macro": [
+      0.9896,
+      1.0
+    ]
+  },
+  "note": "Dev split; used while building, so optimistic",
+  "predicted": 40,
+  "provenance": {
+    "commit": "f986f39334d5dae5732f8d51c376bd88eb303e13",
+    "frozen_test_set_unchanged": true,
+    "models": {
+      "llm_fast_model": "gemini-3.1-flash-lite",
+      "llm_strong_model": "gemini-3.5-flash-lite"
+    },
+    "prompt_versions": {
+      "clause_selection": "v2",
+      "extraction": "v2",
+      "recommendation": "v1"
+    },
+    "uncommitted_changes": true
+  },
+  "retrieval_recall_at_5": {
+    "claims": 39,
+    "value": 1.0
+  },
+  "split": "dev"
+}

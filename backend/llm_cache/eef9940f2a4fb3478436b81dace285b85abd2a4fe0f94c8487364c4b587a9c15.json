@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 8.3e-05,
+  "input_tokens": 597,
+  "latency_ms": 4427,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 59,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"PREM-6.2\",\n      \"quote\": \"I was stopped at a light when another driver failed to brake and hit the rear of my car.\"\n    }\n  ]\n}"
+}

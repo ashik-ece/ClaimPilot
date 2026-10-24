@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000163,
+  "input_tokens": 981,
+  "latency_ms": 4484,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 162,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"The claim is denied because the claimant admitted to driving while over the legal alcohol limit, which directly triggers the policy's impaired driving exclusion. The governing clause is Section 4, which states that losses occurring while the driver is under the influence are not covered.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-4.6\",\n      \"quote\": \"We do not cover loss that occurs while the driver of the covered vehicle is under the influence of alcohol, a controlled substance or any drug that impairs driving ability, including any case in which the driver's measured blood alcohol concentration exceeds the legal limit of the state where the loss occurred.\"\n    }\n  ]\n}"
+}

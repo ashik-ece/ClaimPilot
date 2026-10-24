@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000133,
+  "input_tokens": 798,
+  "latency_ms": 2021,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 132,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving the claim because no exclusions, referrals, or fraud flags apply to the loss. Section 2 governs this collision coverage, and the incident occurred during the policy period with timely notice. The key fact is that the single vehicle collision caused direct and accidental damage to the covered vehicle.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

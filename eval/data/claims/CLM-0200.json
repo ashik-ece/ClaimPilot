@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0200",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Omar Fischer",
+    "incident_date": "2026-09-02",
+    "incident_location": "4741 Mill Road, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "839.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "537.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1605.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1691.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1346.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "602.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-STD-469802",
+    "reported_date": "2026-09-07",
+    "total_amount": "6620.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Camry",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "STD-2.1"
+  ],
+  "narrative_text": "On September 2, 2026, at about 19:20, I was driving my 2011 Toyota Camry on 4741 Mill Road, Bloomington, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the front bumper cover, radiator support, fender. I took the car to Lakeside Autoworks and they estimated the repair at $6,620.00.",
+  "pair_id": "CLM-0200",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

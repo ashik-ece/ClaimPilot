@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0135",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Robert Kowalski",
+    "incident_date": "2026-09-19",
+    "incident_location": "7873 River Road, Peoria, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2997.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "3410.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "3143.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-71160",
+    "policy_number": "POL-PLUS-194581",
+    "reported_date": "2026-09-25",
+    "total_amount": "9550.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2023
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-4.3"
+  ],
+  "narrative_text": "On 2026-09-19, at about 19:50, I was driving my 2023 Honda CRV on 7873 River Road, Peoria, IL. The road was dry. I was furious after an argument and deliberately steered the front of my car into the concrete barrier on purpose. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the side mirror, door glass. I took the car to Heartland Repair Group and they estimated the repair at $9,550.00.",
+  "pair_id": "CLM-0135",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "intentional",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

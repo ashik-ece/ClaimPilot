@@ -1,0 +1,80 @@
+{
+  "claim_id": "CLM-0171",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Lopez",
+    "incident_date": "2026-05-11",
+    "incident_location": "7415 Cedar Road, Columbus, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1262.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "940.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "2688.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-26669",
+    "policy_number": "POL-PLUS-785533",
+    "reported_date": "2026-05-16",
+    "total_amount": "4890.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.2",
+    "PLUS-4.4"
+  ],
+  "narrative_text": "On May 11, 2026, at about 8:50, I was driving my 2022 Saab 95 on 7415 Cedar Road, Columbus, OH. The weather was clear and dry. I was carrying some boxes to a friend's shop and he said he might give me gas money, I am not sure if that counts as work. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear reinforcement bar. I took the car to Heartland Repair Group and they estimated the repair at $4,890.00.",
+  "pair_id": "CLM-0171",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": "commercial_use",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

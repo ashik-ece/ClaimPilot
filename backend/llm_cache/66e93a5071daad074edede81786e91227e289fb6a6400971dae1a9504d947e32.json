@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00169,
+  "input_tokens": 808,
+  "latency_ms": 8921,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 579,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\": \"Priya Vasquez\", \"policy_number\": \"POL-PLUS-657847\", \"incident_date\": \"2026-06-03\", \"reported_date\": \"2026-06-12\", \"incident_type\": \"Multi-vehicle Collision\", \"incident_location\": \"6510 Maple Street, Toledo, OH\", \"vehicle_make\": \"Toyota\", \"vehicle_model\": null, \"vehicle_year\": 2011, \"police_report_number\": null, \"total_amount\": \"23200.00\", \"itemized_damages\": [{\"description\": \"Quarter panel\", \"amount\": \"4305.00\"}, {\"description\": \"Rear body panel\", \"amount\": \"6634.00\"}, {\"description\": \"Rear bumper cover\", \"amount\": \"6918.00\"}, {\"description\": \"Frame and alignment\", \"amount\": \"5343.00\"}], \"evidence\": [{\"field\": \"claimant_name\", \"document\": \"claim_form.pdf\", \"quote\": \"Claimant name: Priya Vasquez\"}, {\"field\": \"policy_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Policy number: POL-PLUS-657847\"}, {\"field\": \"incident_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date of loss: 2026-06-03\"}, {\"field\": \"reported_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date reported: 06/12/2026\"}, {\"field\": \"incident_type\", \"document\": \"claim_form.pdf\", \"quote\": \"Type of incident: Multi-vehicle Collision\"}, {\"field\": \"incident_location\", \"document\": \"claim_form.pdf\", \"quote\": \"Location of loss: 6510 Maple Street, Toledo, OH\"}, {\"field\": \"vehicle_make\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2011 Toyota\"}, {\"field\": \"vehicle_year\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2011 Toyota\"}, {\"field\": \"total_amount\", \"document\": \"claim_form.pdf\", \"quote\": \"Total amount claimed: $23,200.00\"}, {\"field\": \"itemized_damages\", \"document\": \"repair_estimate.pdf\", \"quote\": \"Quarter panel: $4,305.00\"}]}"
+}

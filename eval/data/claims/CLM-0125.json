@@ -1,0 +1,84 @@
+{
+  "claim_id": "CLM-0125",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Okafor",
+    "incident_date": "2026-06-24",
+    "incident_location": "6613 Elm Drive, Fort Wayne, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "5666.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "3926.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1088.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-41386",
+    "policy_number": "POL-STD-355314",
+    "reported_date": "2026-08-09",
+    "total_amount": "10680.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-5.1"
+  ],
+  "narrative_text": "On 2026-06-24, at about 18:05, I was driving my 2014 Ford Fusion on 6613 Elm Drive, Fort Wayne, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear body panel, tail lamp assembly. I took the car to Eagle Body & Paint and they estimated the repair at $10,680.00.",
+  "pair_id": "CLM-0125",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_late_notice"
+  },
+  "split": "dev"
+}

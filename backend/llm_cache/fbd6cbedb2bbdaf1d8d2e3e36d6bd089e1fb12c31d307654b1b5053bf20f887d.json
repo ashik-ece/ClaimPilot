@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 3,
+  "cost_usd": 0.000156,
+  "input_tokens": 981,
+  "latency_ms": 95955,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 145,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We recommend denying this claim because the automated findings and claimant account establish that the loss occurred during an impromptu race. This brings the incident under the racing exclusion in the policy. The governing clause is Section 4, Exclusions.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-4.2\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is used in, or in practice or preparation for, any organized or impromptu race, speed contest, stunt driving or demonstration, whether on a public road or on a closed course.\"\n    }\n  ]\n}"
+}

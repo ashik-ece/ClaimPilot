@@ -1,0 +1,93 @@
+{
+  "claim_id": "CLM-0128",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "James Patel",
+    "incident_date": "2026-08-08",
+    "incident_location": "2224 Oak Avenue, Peoria, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3779.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "3389.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "3902.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "2754.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2043.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1973.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-15871",
+    "policy_number": "POL-PLUS-798881",
+    "reported_date": "2026-08-11",
+    "total_amount": "17840.00",
+    "vehicle_make": "Jeep",
+    "vehicle_model": "Wrangler",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-7.3"
+  ],
+  "narrative_text": "On August 8, 2026, at about 14:50, I was driving my 2016 Jeep Wrangler on 2224 Oak Avenue, Peoria, IL. Traffic was light. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the trunk lid, quarter panel, rear body panel. I took the car to Lakeside Autoworks and they estimated the repair at $17,840.00.",
+  "pair_id": "CLM-0128",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "test"
+}

@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0049",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Jordan Walker",
+    "incident_date": "2026-05-05",
+    "incident_location": "7120 Oak Avenue, Rockford, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3811.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1585.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1527.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1937.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-88420",
+    "policy_number": "POL-BASIC-861973",
+    "reported_date": "2026-05-09",
+    "total_amount": "8860.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "steel pole",
+    "side": "left",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.2"
+  ],
+  "narrative_text": "On 05/05/2026, at about 11:50, I was driving my 2016 Saab 95 on 7120 Oak Avenue, Rockford, IL. Traffic was light. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear reinforcement bar, rear bumper cover. I took the car to Precision Auto Body and they estimated the repair at $8,860.00.",
+  "pair_id": "CLM-0049",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "racing",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000164,
+  "input_tokens": 1018,
+  "latency_ms": 1103,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 156,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We must escalate this claim because it is unclear whether the commercial use exclusion applies to the claimant's transportation of property. Under Section 6, ambiguous material facts require further investigation rather than approval or denial. This is governed by the referral of unclear coverage clause.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}

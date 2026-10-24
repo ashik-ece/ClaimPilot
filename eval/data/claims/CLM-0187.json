@@ -1,0 +1,86 @@
+{
+  "claim_id": "CLM-0187",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Jordan Walker",
+    "incident_date": "2026-09-30",
+    "incident_location": "2849 Washington Street, Fort Wayne, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1906.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "419.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "706.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1390.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1338.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "1451.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-509384",
+    "reported_date": "2026-10-06",
+    "total_amount": "7210.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "95",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-09-30, at about 12:50, I was driving my 2012 Saab 95 on 2849 Washington Street, Fort Wayne, IN. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the door glass, front door panel, side mirror. I took the car to Precision Auto Body and they estimated the repair at $7,210.00.",
+  "pair_id": "CLM-0187",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

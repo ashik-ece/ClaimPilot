@@ -1,0 +1,84 @@
+{
+  "claim_id": "CLM-0095",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Vasquez",
+    "incident_date": "2025-12-06",
+    "incident_location": "7114 Washington Street, Indianapolis, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1221.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1771.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1466.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "438.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2174.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-146398",
+    "reported_date": "2025-12-15",
+    "total_amount": "7070.00",
+    "vehicle_make": "Chevrolet",
+    "vehicle_model": "Silverado",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [
+    "date_outside_policy_period"
+  ],
+  "generator": {
+    "has_police": false,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-1.1"
+  ],
+  "narrative_text": "On December 6, 2025, at about 13:50, I was driving my 2022 Chevrolet Silverado on 7114 Washington Street, Indianapolis, IN. It was dusk and visibility was reduced. While reversing out of a parking area, the rear of my vehicle struck a fence post. No one was hurt and I did not call the police. The main damage is to the tail lamp assembly, trunk lid, rear body panel. I took the car to Eagle Body & Paint and they estimated the repair at $7,070.00.",
+  "pair_id": "CLM-0095",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_outside_period"
+  },
+  "split": "test"
+}

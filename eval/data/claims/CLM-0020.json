@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0020",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Mitchell",
+    "incident_date": "2026-06-03",
+    "incident_location": "8761 Maple Street, Bloomington, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1561.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1432.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1250.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "1807.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-27949",
+    "policy_number": "POL-PREM-818725",
+    "reported_date": "2026-06-05",
+    "total_amount": "6050.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "left",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 06/03/2026, at about 19:50, I was driving my 2012 Honda Accord on 8761 Maple Street, Bloomington, IN. Traffic was light. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the tail lamp assembly, rear reinforcement bar, trunk lid. I took the car to Lakeside Autoworks and they estimated the repair at $6,050.00.",
+  "pair_id": "CLM-0020",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

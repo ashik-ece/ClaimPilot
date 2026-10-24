@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0175",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Egan",
+    "incident_date": "2026-08-19",
+    "incident_location": "2046 Highland Avenue, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1179.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "2037.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1435.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "2019.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-78811",
+    "policy_number": "POL-BASIC-729365",
+    "reported_date": "2026-08-22",
+    "total_amount": "6670.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "E400",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On August 19, 2026, at about 17:35, I was driving my 2014 Mercedes E400 on 2046 Highland Avenue, Toledo, OH. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the door glass, quarter panel, front door panel. I took the car to Precision Auto Body and they estimated the repair at $6,670.00.",
+  "pair_id": "CLM-0175",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

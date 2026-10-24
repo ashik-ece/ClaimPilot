@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0197",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Grace Fischer",
+    "incident_date": "2026-03-14",
+    "incident_location": "1749 Sunset Drive, Toledo, OH",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1623.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1242.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1714.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1440.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "678.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1683.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-65581",
+    "policy_number": "POL-BASIC-794962",
+    "reported_date": "2026-03-19",
+    "total_amount": "8380.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On March 14, 2026, at about 9:35, I was driving my 2022 Honda Accord on 1749 Sunset Drive, Toledo, OH. The weather was clear and dry. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, rocker panel, side mirror. I took the car to Eagle Body & Paint and they estimated the repair at $8,380.00.",
+  "pair_id": "CLM-0197",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

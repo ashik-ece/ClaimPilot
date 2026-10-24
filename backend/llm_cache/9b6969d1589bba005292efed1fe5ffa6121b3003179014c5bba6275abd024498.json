@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00016,
+  "input_tokens": 936,
+  "latency_ms": 1256,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 165,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim because the total damage amount of $21,020.00 meets or exceeds the high-value referral threshold of $15,000. Under policy clause BASIC-6.1, any claim at or above this amount must be escalated to a senior adjuster for review before any payment is authorized.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-6.1\",\n      \"quote\": \"Any claim where the amount of loss is at or above $15,000 must be escalated to a senior adjuster for review before any payment is authorized, even if no exclusion appears to apply.\"\n    }\n  ]\n}"
+}

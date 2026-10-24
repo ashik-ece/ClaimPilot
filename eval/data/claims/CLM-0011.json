@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0011",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "James Alvarez",
+    "incident_date": "2026-03-04",
+    "incident_location": "6377 Highland Avenue, Peoria, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2707.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1974.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1926.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1911.00",
+        "description": "Body labor"
+      },
+      {
+        "amount": "1642.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-63028",
+    "policy_number": "POL-PLUS-152083",
+    "reported_date": "2026-03-10",
+    "total_amount": "10160.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": "RSX",
+    "vehicle_year": 2025
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.2",
+    "PLUS-4.6"
+  ],
+  "narrative_text": "On March 4, 2026, at about 12:35, I was driving my 2025 Accura RSX on 6377 Highland Avenue, Peoria, IL. It was dusk and visibility was reduced. I had one drink with dinner a few hours earlier and I felt fine, but the officer asked me a few questions about it. I swerved to avoid a deer and the left side of my vehicle scraped a concrete barrier. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, quarter panel, front door panel. I took the car to Eagle Body & Paint and they estimated the repair at $10,160.00.",
+  "pair_id": "CLM-0011",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": "dui",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

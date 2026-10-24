@@ -1,0 +1,96 @@
+{
+  "claim_id": "CLM-0130",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Brian Fischer",
+    "incident_date": "2026-05-07",
+    "incident_location": "6212 Washington Street, Evansville, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "923.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1029.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "374.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1009.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "426.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "709.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-55376",
+    "policy_number": "POL-BASIC-430886",
+    "reported_date": "2026-05-11",
+    "total_amount": "4470.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "ML350",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.7"
+  ],
+  "narrative_text": "On 2026-05-07, at about 6:35, I was driving my 2014 Mercedes ML350 on 6212 Washington Street, Evansville, IN. Traffic was light. I had turned off the paved road onto a dirt trail through a field to take a shortcut. I swerved to avoid a deer and the right side of my vehicle scraped a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, rear door panel, side mirror. I took the car to Summit Collision and they estimated the repair at $4,470.00.",
+  "pair_id": "CLM-0130",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "off_road",
+    "type": "deny_exclusion"
+  },
+  "split": "dev"
+}

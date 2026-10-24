@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 9.3e-05,
+  "input_tokens": 791,
+  "latency_ms": 733,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 35,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\"selected\":[{\"clause_id\":\"PLUS-6.2\",\"quote\":\"he said he might give me gas money, I am not sure if that counts as work\"}]}"
+}

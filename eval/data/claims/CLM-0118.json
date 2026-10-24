@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0118",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Samuel Hayes",
+    "incident_date": "2026-09-14",
+    "incident_location": "6443 Church Street, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3105.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "908.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "2613.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "2192.00",
+        "description": "Front bumper cover"
+      },
+      {
+        "amount": "2051.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "4171.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-616266",
+    "reported_date": "2026-09-18",
+    "total_amount": "15040.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "Accord",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "large tree",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.1"
+  ],
+  "narrative_text": "On September 14, 2026, at about 16:20, I was driving my 2016 Honda Accord on 6443 Church Street, Toledo, OH. It was dusk and visibility was reduced. I lost traction on a patch of gravel and the front of my vehicle struck a large tree. No one was hurt and I did not call the police. The main damage is to the fender, headlamp assembly, radiator support. I took the car to Summit Collision and they estimated the repair at $15,040.00.",
+  "pair_id": "CLM-0118",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "test"
+}

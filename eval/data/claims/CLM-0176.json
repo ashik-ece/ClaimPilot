@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0176",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Chloe Kowalski",
+    "incident_date": "2026-06-28",
+    "incident_location": "9049 Lake Boulevard, Rockford, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "535.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1377.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "796.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1538.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2433.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "861.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-58068",
+    "policy_number": "POL-STD-265300",
+    "reported_date": "2026-07-04",
+    "total_amount": "7540.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "large tree",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-4.2"
+  ],
+  "narrative_text": "On June 28, 2026, at about 11:50, I was driving my 2012 Honda CRV on 9049 Lake Boulevard, Rockford, IL. It was dusk and visibility was reduced. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. I swerved to avoid a deer and the left side of my vehicle scraped a large tree. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, front door panel, side mirror. I took the car to Lakeside Autoworks and they estimated the repair at $7,540.00.",
+  "pair_id": "CLM-0176",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "racing",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

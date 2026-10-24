@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000166,
+  "input_tokens": 1011,
+  "latency_ms": 1037,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 162,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We have escalated this claim for further investigation because the automated findings indicate it is unclear whether an exclusion applies due to the claimant transporting property while potentially receiving compensation. This decision is governed by Section 6, which mandates escalation when material facts regarding potential exclusions are open to more than one reasonable reading.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-6.2\",\n      \"quote\": \"If the documents submitted do not allow the adjuster to determine whether an exclusion applies, because material facts are disputed, missing or open to more than one reasonable reading, the claim must be escalated for further investigation rather than approved or denied on the information available.\"\n    }\n  ]\n}"
+}

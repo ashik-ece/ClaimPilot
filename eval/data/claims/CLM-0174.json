@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0174",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Andre Vasquez",
+    "incident_date": "2026-07-31",
+    "incident_location": "9030 Oak Avenue, Akron, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1215.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2350.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1774.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "739.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "3292.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-672961",
+    "reported_date": "2026-08-02",
+    "total_amount": "9370.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Forrestor",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "fence post",
+    "side": "left",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 07/31/2026, at about 20:05, I was driving my 2012 Suburu Forrestor on 9030 Oak Avenue, Akron, OH. The weather was clear and dry. I had just left the grocery store and was heading home. While reversing out of a parking area, the rear of my vehicle struck a fence post. No one was hurt and I did not call the police. The main damage is to the rear bumper cover, rear reinforcement bar, quarter panel. I took the car to Midwest Collision Center and they estimated the repair at $9,370.00.",
+  "pair_id": "CLM-0174",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "benign_context",
+    "exclusion": null,
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

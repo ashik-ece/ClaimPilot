@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 3,
+  "cost_usd": 0.001918,
+  "input_tokens": 727,
+  "latency_ms": 16766,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 680,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\": \"Carlos Zimmerman\", \"policy_number\": \"POL-PLUS-893801\", \"incident_date\": \"2026-06-28\", \"reported_date\": \"2026-07-03\", \"incident_type\": \"Single Vehicle Collision\", \"incident_location\": \"4407 Park Avenue, Naperville, IL\", \"vehicle_make\": \"Nissan\", \"vehicle_model\": \"Maxima\", \"vehicle_year\": 2022, \"police_report_number\": null, \"total_amount\": \"8740.00\", \"itemized_damages\": [{\"description\": \"Rear door panel\", \"amount\": \"2602.00\"}, {\"description\": \"Front door panel\", \"amount\": \"2333.00\"}, {\"description\": \"Paint and materials\", \"amount\": \"2290.00\"}, {\"description\": \"Body labor\", \"amount\": \"1515.00\"}], \"evidence\": [{\"field\": \"claimant_name\", \"document\": \"claim_form.pdf\", \"quote\": \"Claimant name: Carlos Zimmerman\"}, {\"field\": \"policy_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Policy number: POL-PLUS-893801\"}, {\"field\": \"incident_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date of loss: 06/28/2026\"}, {\"field\": \"reported_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date reported: July 3, 2026\"}, {\"field\": \"incident_type\", \"document\": \"claim_form.pdf\", \"quote\": \"Type of incident: Single Vehicle Collision\"}, {\"field\": \"incident_location\", \"document\": \"claim_form.pdf\", \"quote\": \"Location of loss: 4407 Park Avenue, Naperville, IL\"}, {\"field\": \"vehicle_make\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2022 Nissan Maxima\"}, {\"field\": \"vehicle_model\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2022 Nissan Maxima\"}, {\"field\": \"vehicle_year\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2022 Nissan Maxima\"}, {\"field\": \"police_report_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Police report number: None filed\"}, {\"field\": \"total_amount\", \"document\": \"claim_form.pdf\", \"quote\": \"Total amount claimed: $8,740.00\"}, {\"field\": \"itemized_damages\", \"document\": \"repair_estimate.pdf\", \"quote\": \"Rear door panel: $2,602.00 Front door panel: $2,333.00 Paint and materials: $2,290.00 Body labor: $1,515.00\"}]}"
+}

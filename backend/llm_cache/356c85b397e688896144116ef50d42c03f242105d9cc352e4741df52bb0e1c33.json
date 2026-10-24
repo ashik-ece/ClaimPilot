@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000159,
+  "input_tokens": 976,
+  "latency_ms": 1037,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 153,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We deny this claim because the automated findings and the claimant's account confirm that the driver was operating the vehicle while over the legal limit of alcohol. This brings the loss under the impaired driving exclusion of the policy.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-4.6\",\n      \"quote\": \"We do not cover loss that occurs while the driver of the covered vehicle is under the influence of alcohol, a controlled substance or any drug that impairs driving ability, including any case in which the driver's measured blood alcohol concentration exceeds the legal limit of the state where the loss occurred.\"\n    }\n  ]\n}"
+}

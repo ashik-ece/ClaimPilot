@@ -1,0 +1,139 @@
+{
+  "decisions": {
+    "agreement_with_label_assisted": {
+      "correct": 18,
+      "n": 24
+    },
+    "agreement_with_label_manual": {
+      "correct": 22,
+      "n": 24
+    },
+    "ai_agreement_with_label_same_claims": {
+      "correct": 44,
+      "n": 48
+    },
+    "assisted_decisions": 24,
+    "labelled_non_approve_but_approved": [
+      "SIM-T2:CLM-0118:assisted",
+      "SIM-T2:CLM-0099:assisted"
+    ],
+    "override_notes": [
+      "SIMULATED note",
+      "SIMULATED note",
+      "SIMULATED note",
+      "SIMULATED note"
+    ],
+    "override_rate": 0.1667,
+    "override_reasons": {
+      "coverage_interpretation": 2,
+      "missed_fraud_signal": 1,
+      "wrong_clause": 1
+    },
+    "overrides": 4
+  },
+  "decisions_total": 48,
+  "feedback": {
+    "mean_trust": 3,
+    "mean_usefulness": 4.25,
+    "n": 4,
+    "top_complaints": [
+      "SIMULATED",
+      "SIMULATED",
+      "SIMULATED",
+      "SIMULATED"
+    ],
+    "top_missing": [
+      "SIMULATED",
+      "SIMULATED",
+      "SIMULATED",
+      "SIMULATED"
+    ],
+    "trust": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "usefulness": [
+      4,
+      5,
+      3,
+      5
+    ]
+  },
+  "rules": {
+    "interruption": "sessions with a longest idle gap over 300s are dropped",
+    "learning_claim": "position 1 of each tester in each round is dropped",
+    "override_rate": "AI-assisted decisions only",
+    "statistic": "median seconds per mode; 95% bootstrap interval over claims"
+  },
+  "simulated": true,
+  "testers": [
+    "SIM-T1",
+    "SIM-T2",
+    "SIM-T3",
+    "SIM-T4"
+  ],
+  "timing": {
+    "dropped": {
+      "interrupted_or_idle_unknown": 4,
+      "learning_claim": 4
+    },
+    "median_s": {
+      "assisted": 173.5,
+      "manual": 289.0
+    },
+    "n": {
+      "assisted": 19,
+      "manual": 21
+    },
+    "per_tester": {
+      "SIM-T1": {
+        "assisted": {
+          "median_s": 168.5,
+          "n": 4
+        },
+        "manual": {
+          "median_s": 245.3,
+          "n": 5
+        }
+      },
+      "SIM-T2": {
+        "assisted": {
+          "median_s": 180.4,
+          "n": 6
+        },
+        "manual": {
+          "median_s": 321.7,
+          "n": 5
+        }
+      },
+      "SIM-T3": {
+        "assisted": {
+          "median_s": 172.9,
+          "n": 5
+        },
+        "manual": {
+          "median_s": 263.1,
+          "n": 6
+        }
+      },
+      "SIM-T4": {
+        "assisted": {
+          "median_s": 198.1,
+          "n": 4
+        },
+        "manual": {
+          "median_s": 289.0,
+          "n": 5
+        }
+      }
+    },
+    "relative_reduction": 0.3997,
+    "relative_reduction_ci95": [
+      0.1818,
+      0.4671
+    ]
+  },
+  "warning": "SIMULATED DATA. Times and choices were drawn from assumed distributions, so these numbers describe the assumptions, not the tool or any adjuster."
+}

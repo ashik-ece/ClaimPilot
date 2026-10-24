@@ -1,0 +1,92 @@
+{
+  "claim_id": "CLM-0055",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Chloe Fischer",
+    "incident_date": "2026-09-29",
+    "incident_location": "4671 Park Avenue, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "674.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "611.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "2245.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "2181.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "489.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-16901",
+    "policy_number": "POL-PREM-289470",
+    "reported_date": "2026-10-04",
+    "total_amount": "6200.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "F150",
+    "vehicle_year": 2011
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "guardrail",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-09-29, at about 15:20, I was driving my 2011 Ford F150 on 4671 Park Avenue, Evansville, IN. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rocker panel, front door panel, rear door panel. I took the car to Precision Auto Body and they estimated the repair at $6,200.00.",
+  "pair_id": "CLM-0055",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "dev"
+}

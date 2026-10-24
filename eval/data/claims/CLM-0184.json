@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0184",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Jensen",
+    "incident_date": "2026-05-26",
+    "incident_location": "6258 Maple Street, Rockford, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1101.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1296.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "954.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "917.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "892.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-46806",
+    "policy_number": "POL-STD-352943",
+    "reported_date": "2026-06-01",
+    "total_amount": "5160.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Legacy",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "STD-4.6"
+  ],
+  "narrative_text": "On 05/26/2026, at about 17:50, I was driving my 2010 Suburu Legacy on 6258 Maple Street, Rockford, IL. The road was dry. I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit. I swerved to avoid a deer and the left side of my vehicle scraped a retaining wall. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, side mirror, door glass. I took the car to Summit Collision and they estimated the repair at $5,160.00.",
+  "pair_id": "CLM-0184",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "dui",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

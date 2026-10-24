@@ -1,0 +1,88 @@
+{
+  "claim_id": "CLM-0157",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Marcus Gupta",
+    "incident_date": "2026-04-07",
+    "incident_location": "472 Sunset Drive, Dayton, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "935.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "2214.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "463.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1268.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-62290",
+    "policy_number": "POL-STD-650840",
+    "reported_date": "2026-04-09",
+    "total_amount": "4880.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "X6",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "OH",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "STD-4.6"
+  ],
+  "narrative_text": "On April 7, 2026, at about 17:20, I was driving my 2009 BMW X6 on 472 Sunset Drive, Dayton, OH. Traffic was light. I had been drinking at a bar for a couple of hours before I decided to drive home, and I was over the legal limit. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear bumper cover, rear reinforcement bar. I took the car to Precision Auto Body and they estimated the repair at $4,880.00.",
+  "pair_id": "CLM-0157",
+  "policy_code": "STD",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "dui",
+    "type": "deny_exclusion"
+  },
+  "split": "test"
+}

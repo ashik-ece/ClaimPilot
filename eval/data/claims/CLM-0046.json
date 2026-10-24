@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0046",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Sofia Okafor",
+    "incident_date": "2026-07-21",
+    "incident_location": "9173 Washington Street, Peoria, IL",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2061.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2141.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1463.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "1135.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "1070.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-40487",
+    "policy_number": "POL-PLUS-336851",
+    "reported_date": "2026-07-27",
+    "total_amount": "7870.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "M5",
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "fence post",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On July 21, 2026, at about 16:05, I was driving my 2008 BMW M5 on 9173 Washington Street, Peoria, IL. The road was dry. While reversing out of a parking area, the rear of my vehicle struck a fence post. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear reinforcement bar, rear bumper cover. I took the car to Summit Collision and they estimated the repair at $7,870.00.",
+  "pair_id": "CLM-0046",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000138,
+  "input_tokens": 868,
+  "latency_ms": 1023,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 128,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim because all automated checks are clear and the single-vehicle collision is covered under the policy insuring agreement. Clause STD-2.1 governs collisions during the policy period, and the key fact is that the loss was direct, accidental, and reported without flags.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

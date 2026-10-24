@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0081",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Samuel Nguyen",
+    "incident_date": "2026-09-08",
+    "incident_location": "979 Cedar Road, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "364.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "512.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1243.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1249.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1372.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-524807",
+    "reported_date": "2026-09-13",
+    "total_amount": "4740.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "F150",
+    "vehicle_year": 2014
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 09/08/2026, at about 7:20, I was driving my 2014 Ford F150 on 979 Cedar Road, Indianapolis, IN. Traffic was light. The vehicle ahead stopped suddenly and the front of my car hit its rear bumper. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the hood panel, headlamp assembly, fender. I took the car to Heartland Repair Group and they estimated the repair at $4,740.00.",
+  "pair_id": "CLM-0081",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

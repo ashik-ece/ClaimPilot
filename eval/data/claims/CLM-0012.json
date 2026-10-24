@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0012",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Kevin Egan",
+    "incident_date": "2026-07-05",
+    "incident_location": "1655 Cedar Road, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2200.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "411.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "1226.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "952.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1811.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IL-2026-32666",
+    "policy_number": "POL-PREM-850886",
+    "reported_date": "2026-07-14",
+    "total_amount": "6600.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2017
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IL",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-07-05, at about 13:35, I was driving my 2017 Ford Fusion on 1655 Cedar Road, Naperville, IL. The weather was clear and dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear reinforcement bar, tail lamp assembly. I took the car to Midwest Collision Center and they estimated the repair at $6,600.00.",
+  "pair_id": "CLM-0012",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000143,
+  "input_tokens": 859,
+  "latency_ms": 4694,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 142,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"outcome\": \"approve\", \"rationale\": \"We approve the claim because the automated findings show no exclusions or fraud flags, and the loss occurred during the policy period. Section 2. Insuring Agreement governs this collision coverage for direct and accidental loss. The key fact is that the vehicle sustained damage in a rear-end collision on 05/24/2026, which is covered under the policy terms.\", \"citations\": [{\"clause_id\": \"STD-2.1\", \"quote\": \"Subject to the limit, the deductible and the exclusions in this policy, we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"}]}"
+}

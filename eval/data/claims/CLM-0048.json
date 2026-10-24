@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0048",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Daniel Hayes",
+    "incident_date": "2026-09-01",
+    "incident_location": "124 Sunset Drive, Toledo, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2387.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "2025.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "866.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "2202.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-33507",
+    "policy_number": "POL-PREM-126871",
+    "reported_date": "2026-09-09",
+    "total_amount": "7480.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "F150",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "OH",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-09-01, at about 13:20, I was driving my 2009 Ford F150 on 124 Sunset Drive, Toledo, OH. Traffic was light. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front grille, fender, hood panel. I took the car to Midwest Collision Center and they estimated the repair at $7,480.00.",
+  "pair_id": "CLM-0048",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

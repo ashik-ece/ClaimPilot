@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000133,
+  "input_tokens": 828,
+  "latency_ms": 826,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 125,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for the collision loss since automated checks confirm no exclusions or flags apply and the incident occurred during the policy period. The governing clause is PLUS-2.1, which provides coverage for direct and accidental loss to the covered vehicle caused by collision.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

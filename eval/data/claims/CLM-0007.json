@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0007",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Leila Reyes",
+    "incident_date": "2026-07-11",
+    "incident_location": "3716 Sunset Drive, Fort Wayne, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1767.00",
+        "description": "Radiator support"
+      },
+      {
+        "amount": "1366.00",
+        "description": "Front grille"
+      },
+      {
+        "amount": "1225.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "984.00",
+        "description": "Fender"
+      },
+      {
+        "amount": "1219.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "1629.00",
+        "description": "Frame and alignment"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-32410",
+    "policy_number": "POL-PLUS-422495",
+    "reported_date": "2026-07-13",
+    "total_amount": "8190.00",
+    "vehicle_make": "Ford",
+    "vehicle_model": "Fusion",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-2.1"
+  ],
+  "narrative_text": "On 2026-07-11, at about 19:50, I was driving my 2010 Ford Fusion on 3716 Sunset Drive, Fort Wayne, IN. The weather was clear and dry. I lost traction on a patch of gravel and the front of my vehicle struck a retaining wall. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the radiator support, front grille, headlamp assembly. I took the car to Precision Auto Body and they estimated the repair at $8,190.00.",
+  "pair_id": "CLM-0007",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

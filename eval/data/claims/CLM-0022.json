@@ -1,0 +1,91 @@
+{
+  "claim_id": "CLM-0022",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Patrick Egan",
+    "incident_date": "2026-08-04",
+    "incident_location": "1505 Oak Avenue, Evansville, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "408.00",
+        "description": "Rear reinforcement bar"
+      },
+      {
+        "amount": "405.00",
+        "description": "Tail lamp assembly"
+      },
+      {
+        "amount": "2029.00",
+        "description": "Rear body panel"
+      },
+      {
+        "amount": "1239.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1419.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "2210.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-629217",
+    "reported_date": "2026-08-07",
+    "total_amount": "7710.00",
+    "vehicle_make": "Honda",
+    "vehicle_model": "CRV",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "concrete bollard",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On 2026-08-04, at about 9:05, I was driving my 2010 Honda CRV on 1505 Oak Avenue, Evansville, IN. It was dusk and visibility was reduced. I had renewed my driver's license the previous month and it was valid. While reversing out of a parking area, the rear of my vehicle struck a concrete bollard. No one was hurt and I did not call the police. The main damage is to the rear reinforcement bar, tail lamp assembly, rear body panel. I took the car to Summit Collision and they estimated the repair at $7,710.00.",
+  "pair_id": "CLM-0022",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": "benign_context",
+    "exclusion": null,
+    "type": "approve_distractor"
+  },
+  "split": "test"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000135,
+  "input_tokens": 843,
+  "latency_ms": 838,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 126,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We recommend denying the claim because the claimant stated she deliberately steered her car into a retaining wall, meaning the loss was not accidental. Under Section 2, Collision Coverage, the policy only covers direct and accidental loss. Therefore, this intentional collision is excluded from coverage.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

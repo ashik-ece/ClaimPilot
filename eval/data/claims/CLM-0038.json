@@ -1,0 +1,83 @@
+{
+  "claim_id": "CLM-0038",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Fatima Underwood",
+    "incident_date": "2026-06-16",
+    "incident_location": "816 Sunset Drive, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2840.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "4112.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "5142.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "4626.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-31736",
+    "policy_number": "POL-BASIC-734113",
+    "reported_date": "2026-06-26",
+    "total_amount": "16720.00",
+    "vehicle_make": "Toyota",
+    "vehicle_model": "Camry",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "large tree",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-6.1"
+  ],
+  "narrative_text": "On 06/16/2026, at about 14:50, I was driving my 2012 Toyota Camry on 816 Sunset Drive, Indianapolis, IN. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the rear door panel, rocker panel. I took the car to Lakeside Autoworks and they estimated the repair at $16,720.00.",
+  "pair_id": "CLM-0038",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_high_value"
+  },
+  "split": "test"
+}

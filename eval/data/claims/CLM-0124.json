@@ -1,0 +1,87 @@
+{
+  "claim_id": "CLM-0124",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Quinn",
+    "incident_date": "2026-09-08",
+    "incident_location": "5806 Cedar Road, Indianapolis, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2596.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1650.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1274.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "659.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "1861.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-47347",
+    "policy_number": "POL-BASIC-176618",
+    "reported_date": "2026-09-16",
+    "total_amount": "8040.00",
+    "vehicle_make": "Volkswagen",
+    "vehicle_model": "Jetta",
+    "vehicle_year": 2016
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-2.1"
+  ],
+  "narrative_text": "On September 8, 2026, at about 16:20, I was driving my 2016 Volkswagen Jetta on 5806 Cedar Road, Indianapolis, IN. The road was dry. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the side mirror, front door panel, quarter panel. I took the car to Summit Collision and they estimated the repair at $8,040.00.",
+  "pair_id": "CLM-0124",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

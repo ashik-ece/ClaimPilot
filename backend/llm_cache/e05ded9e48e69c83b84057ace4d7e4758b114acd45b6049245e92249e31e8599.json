@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.000145,
+  "input_tokens": 858,
+  "latency_ms": 45051,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 147,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We approve the claim for Linh Mitchell because automated checks confirmed no exclusions, late notice, or fraud flags apply. Under the governing collision coverage clause, the insurer pays for direct and accidental loss caused by collision during the policy period. The key fact is that the incident occurred on May 16, 2026, and the damages are fully documented and supported.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PLUS-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,82 @@
+{
+  "claim_id": "CLM-0173",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Rachel Chen",
+    "incident_date": "2026-08-09",
+    "incident_location": "1859 Washington Street, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "2127.00",
+        "description": "Side mirror"
+      },
+      {
+        "amount": "1645.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "738.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1517.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "413.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-757848",
+    "reported_date": "2026-08-13",
+    "total_amount": "6440.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "X6",
+    "vehicle_year": 2023
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "retaining wall",
+    "side": "right",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On August 9, 2026, at about 19:05, I was driving my 2023 BMW X6 on 1859 Washington Street, Naperville, IL. It was dusk and visibility was reduced. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the side mirror, rear door panel, front door panel. I took the car to Eagle Body & Paint and they estimated the repair at $6,440.00.",
+  "pair_id": "CLM-0173",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

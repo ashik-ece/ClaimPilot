@@ -1,0 +1,74 @@
+{
+  "claim_id": "CLM-0050",
+  "decision": "approve",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Kevin Hayes",
+    "incident_date": "2026-09-04",
+    "incident_location": "5750 Park Avenue, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "927.00",
+        "description": "Rear bumper cover"
+      },
+      {
+        "amount": "765.00",
+        "description": "Trunk lid"
+      },
+      {
+        "amount": "3278.00",
+        "description": "Body labor"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PREM-873340",
+    "reported_date": "2026-09-07",
+    "total_amount": "4970.00",
+    "vehicle_make": "BMW",
+    "vehicle_model": "3 Series",
+    "vehicle_year": 2009
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "steel pole",
+    "side": "right",
+    "state": "IN",
+    "zone": "Rear Collision"
+  },
+  "governing_clause_ids": [
+    "PREM-2.1"
+  ],
+  "narrative_text": "On 2026-09-04, at about 7:35, I was driving my 2009 BMW 3 Series on 5750 Park Avenue, Evansville, IN. The road was dry. I was stopped at a light when another driver failed to brake and hit the rear of my car. No one was hurt and we exchanged insurance information; the police did not attend. The main damage is to the rear bumper cover, trunk lid. I took the car to Lakeside Autoworks and they estimated the repair at $4,970.00.",
+  "pair_id": "CLM-0050",
+  "policy_code": "PREM",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "approve_clean"
+  },
+  "split": "test"
+}

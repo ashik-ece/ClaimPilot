@@ -1,0 +1,892 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "dev_10": {
+    "k": 5,
+    "claims": 10,
+    "recall_at_k_any": 0.7,
+    "recall_at_k_all": 0.7,
+    "mean_fraction_found": 0.7,
+    "any_hit_by_scenario": {
+      "approve_clean": 1.0,
+      "approve_distractor": 1.0,
+      "deny_exclusion": 0.0,
+      "deny_late_notice": 0.0,
+      "deny_outside_period": 0.0
+    },
+    "per_claim": [
+      {
+        "claim_id": "CLM-0001",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-2.1",
+          "BASIC-5.2",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0010",
+        "scenario": "approve_distractor",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-2.1",
+          "PREM-5.2",
+          "PREM-2.8",
+          "PREM-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0020",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-5.2",
+          "PREM-2.1",
+          "PREM-2.8",
+          "PREM-2.6"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0027",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0029",
+        "scenario": "deny_late_notice",
+        "gold": [
+          "STD-5.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-2.1",
+          "STD-5.2",
+          "STD-3.2",
+          "STD-3.3"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0030",
+        "scenario": "approve_clean",
+        "gold": [
+          "STD-2.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-1.6",
+          "STD-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0031",
+        "scenario": "deny_outside_period",
+        "gold": [
+          "BASIC-1.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-5.1",
+          "BASIC-3.2"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0034",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0042",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "PLUS-4.5"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-5.2",
+          "PLUS-2.1",
+          "PLUS-2.4",
+          "PLUS-2.5"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0055",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-5.2",
+          "PREM-2.1",
+          "PREM-1.6",
+          "PREM-2.8"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      }
+    ]
+  },
+  "dev_all": {
+    "k": 5,
+    "claims": 40,
+    "recall_at_k_any": 0.575,
+    "recall_at_k_all": 0.575,
+    "mean_fraction_found": 0.575,
+    "any_hit_by_scenario": {
+      "approve_clean": 1.0,
+      "approve_distractor": 1.0,
+      "deny_exclusion": 0.0,
+      "deny_late_notice": 0.0,
+      "deny_outside_period": 0.0,
+      "escalate_ambiguous": 0.0,
+      "escalate_high_value": 0.0,
+      "fraud_duplicate": 0.0,
+      "fraud_inflated": 0.0
+    },
+    "per_claim": [
+      {
+        "claim_id": "CLM-0001",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-2.1",
+          "BASIC-5.2",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0010",
+        "scenario": "approve_distractor",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-2.1",
+          "PREM-5.2",
+          "PREM-2.8",
+          "PREM-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0020",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-5.2",
+          "PREM-2.1",
+          "PREM-2.8",
+          "PREM-2.6"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0027",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0029",
+        "scenario": "deny_late_notice",
+        "gold": [
+          "STD-5.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-2.1",
+          "STD-5.2",
+          "STD-3.2",
+          "STD-3.3"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0030",
+        "scenario": "approve_clean",
+        "gold": [
+          "STD-2.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-1.6",
+          "STD-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0031",
+        "scenario": "deny_outside_period",
+        "gold": [
+          "BASIC-1.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-5.1",
+          "BASIC-3.2"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0034",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0042",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "PLUS-4.5"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-5.2",
+          "PLUS-2.1",
+          "PLUS-2.4",
+          "PLUS-2.5"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0055",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-5.2",
+          "PREM-2.1",
+          "PREM-1.6",
+          "PREM-2.8"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0057",
+        "scenario": "fraud_inflated",
+        "gold": [
+          "PLUS-7.3"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-5.2",
+          "PLUS-2.1",
+          "PLUS-2.5",
+          "PLUS-1.6"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0062",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-2.8",
+          "PREM-3.1",
+          "PREM-2.7",
+          "PREM-2.1",
+          "PREM-5.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0063",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-5.2",
+          "BASIC-3.1",
+          "BASIC-2.1",
+          "BASIC-3.2",
+          "BASIC-5.1"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0064",
+        "scenario": "escalate_ambiguous",
+        "gold": [
+          "PLUS-6.2",
+          "PLUS-4.5"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-2.1",
+          "PLUS-5.2",
+          "PLUS-2.4",
+          "PLUS-3.2"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0066",
+        "scenario": "approve_clean",
+        "gold": [
+          "STD-2.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-1.6",
+          "STD-3.3"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0069",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.3"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0072",
+        "scenario": "approve_distractor",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-5.2",
+          "PREM-2.1",
+          "PREM-2.8",
+          "PREM-2.4"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0079",
+        "scenario": "approve_clean",
+        "gold": [
+          "STD-2.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-5.1",
+          "STD-1.6"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0083",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "PREM-4.2"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-2.1",
+          "PREM-5.2",
+          "PREM-2.8",
+          "PREM-2.4"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0103",
+        "scenario": "escalate_ambiguous",
+        "gold": [
+          "BASIC-6.2",
+          "BASIC-4.2"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0108",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-2.7",
+          "PREM-3.1",
+          "PREM-5.2",
+          "PREM-2.8",
+          "PREM-2.1"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0113",
+        "scenario": "escalate_high_value",
+        "gold": [
+          "STD-6.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-1.6",
+          "STD-3.3"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0119",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-2.1",
+          "BASIC-5.2",
+          "BASIC-3.3",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0125",
+        "scenario": "deny_late_notice",
+        "gold": [
+          "STD-5.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-1.6",
+          "STD-3.2"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0130",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "BASIC-4.7"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-2.1",
+          "BASIC-5.2",
+          "BASIC-3.2",
+          "BASIC-5.1"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0132",
+        "scenario": "fraud_duplicate",
+        "gold": [
+          "STD-7.2"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-5.1",
+          "STD-1.6"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0141",
+        "scenario": "escalate_ambiguous",
+        "gold": [
+          "STD-6.2",
+          "STD-4.6"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-1.6",
+          "STD-3.3"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0142",
+        "scenario": "approve_clean",
+        "gold": [
+          "PLUS-2.1"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-2.1",
+          "PLUS-5.2",
+          "PLUS-2.4",
+          "PLUS-2.5"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0143",
+        "scenario": "approve_distractor",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-2.1",
+          "BASIC-5.2",
+          "BASIC-1.6",
+          "BASIC-3.3"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0144",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "BASIC-4.6"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.3"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0147",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "PLUS-4.5"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-5.2",
+          "PLUS-2.1",
+          "PLUS-2.5",
+          "PLUS-2.4"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0150",
+        "scenario": "fraud_inflated",
+        "gold": [
+          "PLUS-7.3"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-5.2",
+          "PLUS-2.1",
+          "PLUS-2.4",
+          "PLUS-1.6"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0151",
+        "scenario": "approve_clean",
+        "gold": [
+          "PREM-2.1"
+        ],
+        "top_k": [
+          "PREM-3.1",
+          "PREM-2.8",
+          "PREM-5.2",
+          "PREM-2.1",
+          "PREM-2.7"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0154",
+        "scenario": "approve_clean",
+        "gold": [
+          "PLUS-2.1"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-2.1",
+          "PLUS-5.2",
+          "PLUS-2.4",
+          "PLUS-2.5"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0172",
+        "scenario": "approve_clean",
+        "gold": [
+          "STD-2.1"
+        ],
+        "top_k": [
+          "STD-3.1",
+          "STD-5.2",
+          "STD-2.1",
+          "STD-3.2",
+          "STD-5.1"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0175",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-1.6",
+          "BASIC-2.1",
+          "BASIC-5.1"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0182",
+        "scenario": "escalate_high_value",
+        "gold": [
+          "PLUS-6.1"
+        ],
+        "top_k": [
+          "PLUS-3.1",
+          "PLUS-2.1",
+          "PLUS-5.2",
+          "PLUS-1.6",
+          "PLUS-2.4"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0186",
+        "scenario": "deny_exclusion",
+        "gold": [
+          "BASIC-4.2"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-5.1"
+        ],
+        "any_hit": false,
+        "all_hit": false,
+        "fraction_found": 0.0
+      },
+      {
+        "claim_id": "CLM-0196",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-3.2",
+          "BASIC-1.6"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      },
+      {
+        "claim_id": "CLM-0197",
+        "scenario": "approve_clean",
+        "gold": [
+          "BASIC-2.1"
+        ],
+        "top_k": [
+          "BASIC-3.1",
+          "BASIC-5.2",
+          "BASIC-2.1",
+          "BASIC-1.6",
+          "BASIC-3.2"
+        ],
+        "any_hit": true,
+        "all_hit": true,
+        "fraction_found": 1.0
+      }
+    ]
+  }
+}

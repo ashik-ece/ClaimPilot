@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000106,
+  "input_tokens": 799,
+  "latency_ms": 817,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 66,
+  "prompt_name": "clause_selection",
+  "prompt_version": "v2",
+  "replayed": false
+ },
+ "text": "{\n  \"selected\": [\n    {\n      \"clause_id\": \"PLUS-4.2\",\n      \"quote\": \"another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control\"\n    }\n  ]\n}"
+}

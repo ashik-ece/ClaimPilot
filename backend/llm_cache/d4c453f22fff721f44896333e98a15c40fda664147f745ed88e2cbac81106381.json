@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000156,
+  "input_tokens": 968,
+  "latency_ms": 1207,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 147,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We deny this claim because the claimant's account of racing triggers the policy exclusion for impromptu street racing. Section PREM-4.2 specifically excludes coverage for any loss that occurs while the vehicle is used in an impromptu race.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-4.2\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is used in, or in practice or preparation for, any organized or impromptu race, speed contest, stunt driving or demonstration, whether on a public road or on a closed course.\"\n    }\n  ]\n}"
+}

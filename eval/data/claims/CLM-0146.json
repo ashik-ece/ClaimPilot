@@ -1,0 +1,84 @@
+{
+  "claim_id": "CLM-0146",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Patrick Ibrahim",
+    "incident_date": "2026-04-30",
+    "incident_location": "1729 Highland Avenue, Bloomington, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1101.00",
+        "description": "Hood panel"
+      },
+      {
+        "amount": "1085.00",
+        "description": "Headlamp assembly"
+      },
+      {
+        "amount": "1278.00",
+        "description": "Shop supplies"
+      },
+      {
+        "amount": "1376.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-PLUS-433952",
+    "reported_date": "2026-05-08",
+    "total_amount": "4840.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "92x",
+    "vehicle_year": 2012
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": false,
+    "other_object": "utility pole",
+    "side": "left",
+    "state": "IN",
+    "zone": "Front Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-6.2",
+    "PLUS-4.4"
+  ],
+  "narrative_text": "On 04/30/2026, at about 18:35, I was driving my 2012 Saab 92x on 1729 Highland Avenue, Bloomington, IN. It was dusk and visibility was reduced. I was carrying some boxes to a friend's shop and he said he might give me gas money, I am not sure if that counts as work. I lost traction on a patch of gravel and the front of my vehicle struck a utility pole. No one was hurt and I did not call the police. The main damage is to the hood panel, headlamp assembly. I took the car to Lakeside Autoworks and they estimated the repair at $4,840.00.",
+  "pair_id": "CLM-0146",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": "commercial_use",
+    "distractor": null,
+    "exclusion": null,
+    "type": "escalate_ambiguous"
+  },
+  "split": "test"
+}

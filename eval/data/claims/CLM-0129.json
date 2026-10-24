@@ -1,0 +1,89 @@
+{
+  "claim_id": "CLM-0129",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": "scan_noise",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "image_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "image_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Tariq Nguyen",
+    "incident_date": "2026-01-23",
+    "incident_location": "5700 Highland Avenue, Indianapolis, IN",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1843.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2159.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "2262.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "878.00",
+        "description": "Paint and materials"
+      },
+      {
+        "amount": "2008.00",
+        "description": "Shop supplies"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-86294",
+    "policy_number": "POL-BASIC-677013",
+    "reported_date": "2026-01-27",
+    "total_amount": "9150.00",
+    "vehicle_make": "Suburu",
+    "vehicle_model": "Legacy",
+    "vehicle_year": 2010
+  },
+  "fraud_flags": [
+    "date_outside_policy_period"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-1.1"
+  ],
+  "narrative_text": "On January 23, 2026, at about 7:35, I was driving my 2010 Suburu Legacy on 5700 Highland Avenue, Indianapolis, IN. Traffic was light. I swerved to avoid a deer and the left side of my vehicle scraped a concrete barrier. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear door panel, rocker panel. I took the car to Heartland Repair Group and they estimated the repair at $9,150.00.",
+  "pair_id": "CLM-0129",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_outside_period"
+  },
+  "split": "test"
+}

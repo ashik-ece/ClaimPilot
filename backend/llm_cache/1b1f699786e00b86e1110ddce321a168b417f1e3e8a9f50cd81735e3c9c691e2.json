@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000151,
+  "input_tokens": 961,
+  "latency_ms": 1174,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 137,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We recommend denying this claim because the loss occurred outside the policy period. Clause STD-1.1 states that loss occurring before the policy period begins is not covered, and automated findings confirm the loss date of November 15, 2025, is outside the active term.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"STD-1.1\",\n      \"quote\": \"Loss that occurs before the policy period begins or after it ends is not covered, regardless of when the loss is reported to us.\"\n    }\n  ]\n}"
+}

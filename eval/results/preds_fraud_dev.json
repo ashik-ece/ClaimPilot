@@ -1,0 +1,217 @@
+{
+ "CLM-0001": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0010": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0020": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0027": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0029": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0030": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0031": {
+  "details": [
+   "the loss date falls outside the policy period"
+  ],
+  "fraud_flags": [
+   "date_outside_policy_period"
+  ],
+  "unchecked": []
+ },
+ "CLM-0034": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0042": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0055": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0057": {
+  "details": [
+   "claimed 23200.00 is more than 2.0x the typical repair cost of 6720.0"
+  ],
+  "fraud_flags": [
+   "inflated_estimate"
+  ],
+  "unchecked": [
+   "duplicate_claim"
+  ]
+ },
+ "CLM-0062": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0063": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0064": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0066": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0069": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0072": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0079": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0083": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0103": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0108": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0113": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0119": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0125": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0130": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0132": {
+  "details": [
+   "matches earlier claim CLM-0079"
+  ],
+  "fraud_flags": [
+   "duplicate_claim"
+  ],
+  "unchecked": []
+ },
+ "CLM-0141": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0142": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0143": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0144": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0150": {
+  "details": [
+   "claimed 18230.00 is more than 2.0x the typical repair cost of 6720.0"
+  ],
+  "fraud_flags": [
+   "inflated_estimate"
+  ],
+  "unchecked": []
+ },
+ "CLM-0151": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0154": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0172": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0175": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0182": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0186": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": [
+   "duplicate_claim"
+  ]
+ },
+ "CLM-0196": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ },
+ "CLM-0197": {
+  "details": [],
+  "fraud_flags": [],
+  "unchecked": []
+ }
+}

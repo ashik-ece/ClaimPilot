@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000156,
+  "input_tokens": 899,
+  "latency_ms": 1142,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 165,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We must deny the claim because the notice was given after the policy's required 14-day notice window without showing a circumstance beyond the insured's control. Section [BASIC-5.1] governs the duties after a loss and notice requirements. The key fact is that the incident occurred on 2026-05-01, but notice was not reported until 2026-06-03.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-5.1\",\n      \"quote\": \"The insured person must notify us of a collision loss within 14 days after the date of loss.\"\n    }\n  ]\n}"
+}

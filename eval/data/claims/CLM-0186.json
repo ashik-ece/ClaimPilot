@@ -1,0 +1,92 @@
+{
+  "claim_id": "CLM-0186",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": "missing_fields",
+    "tier": "degraded"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    },
+    {
+      "filename": "photo_captions.pdf",
+      "format": "text_pdf",
+      "type": "photo_captions"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Omar Young",
+    "incident_date": "2026-03-07",
+    "incident_location": "8589 Washington Street, Naperville, IL",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "1593.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "2442.00",
+        "description": "Door glass"
+      },
+      {
+        "amount": "879.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "1803.00",
+        "description": "Rocker panel"
+      },
+      {
+        "amount": "1763.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": null,
+    "policy_number": "POL-BASIC-256721",
+    "reported_date": "2026-03-13",
+    "total_amount": "8480.00",
+    "vehicle_make": "Accura",
+    "vehicle_model": null,
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "utility pole",
+    "side": "right",
+    "state": "IL",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-4.2"
+  ],
+  "narrative_text": "On March 7, 2026, at about 9:50, I was driving my 2008 Accura on 8589 Washington Street, Naperville, IL. Traffic was light. Earlier, another driver pulled alongside me and we began racing each other down the road, and I was well over the speed limit when I lost control. Another driver changed lanes without signaling and our vehicles collided along the right side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, door glass, front door panel. I took the car to Midwest Collision Center and they estimated the repair at $8,480.00.",
+  "pair_id": "CLM-0186",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": "racing",
+    "type": "deny_exclusion"
+  },
+  "split": "dev"
+}

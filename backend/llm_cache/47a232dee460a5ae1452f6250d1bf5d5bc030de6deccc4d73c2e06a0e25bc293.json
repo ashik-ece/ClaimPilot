@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.001889,
+  "input_tokens": 823,
+  "latency_ms": 13320,
+  "model": "gemini-3.5-flash",
+  "output_tokens": 657,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\"claimant_name\": \"Aisha Mitchell\", \"policy_number\": \"POL-BASIC-440514\", \"incident_date\": \"2026-01-24\", \"reported_date\": \"2026-01-27\", \"incident_type\": \"Single Vehicle Collision\", \"incident_location\": \"3136 Cedar Road, Springfield, IL\", \"vehicle_make\": \"Mercedes\", \"vehicle_model\": \"E400\", \"vehicle_year\": 2009, \"police_report_number\": \"PR-IL-2026-50211\", \"total_amount\": \"9280.00\", \"itemized_damages\": [{\"description\": \"Fender\", \"amount\": \"2426.00\"}, {\"description\": \"Headlamp assembly\", \"amount\": \"1529.00\"}, {\"description\": \"Paint and materials\", \"amount\": \"5325.00\"}], \"evidence\": [{\"field\": \"claimant_name\", \"document\": \"claim_form.pdf\", \"quote\": \"Claimant name: Aisha Mitchell\"}, {\"field\": \"policy_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Policy number: POL-BASIC-440514\"}, {\"field\": \"incident_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date of loss: 2026-01-24\"}, {\"field\": \"reported_date\", \"document\": \"claim_form.pdf\", \"quote\": \"Date reported: 2026-01-27\"}, {\"field\": \"incident_type\", \"document\": \"claim_form.pdf\", \"quote\": \"Type of incident: Single Vehicle Collision\"}, {\"field\": \"incident_location\", \"document\": \"claim_form.pdf\", \"quote\": \"Location of loss: 3136 Cedar Road, Springfield, IL\"}, {\"field\": \"vehicle_make\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2009 Mercedes E400\"}, {\"field\": \"vehicle_model\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2009 Mercedes E400\"}, {\"field\": \"vehicle_year\", \"document\": \"claim_form.pdf\", \"quote\": \"Vehicle: 2009 Mercedes E400\"}, {\"field\": \"police_report_number\", \"document\": \"claim_form.pdf\", \"quote\": \"Police report number: PR-IL-2026-50211\"}, {\"field\": \"total_amount\", \"document\": \"claim_form.pdf\", \"quote\": \"Total amount claimed: $9,280.00\"}, {\"field\": \"itemized_damages\", \"document\": \"repair_estimate.pdf\", \"quote\": \"Fender: $2,426.00\"}]}"
+}

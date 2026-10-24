@@ -1,0 +1,89 @@
+{
+  "claim_id": "CLM-0025",
+  "decision": "escalate",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Aisha Fischer",
+    "incident_date": "2026-05-20",
+    "incident_location": "4458 Lake Boulevard, Akron, OH",
+    "incident_type": "Single Vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3752.00",
+        "description": "Front door panel"
+      },
+      {
+        "amount": "4436.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "5175.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "5304.00",
+        "description": "Frame and alignment"
+      },
+      {
+        "amount": "3853.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-OH-2026-30471",
+    "policy_number": "POL-PLUS-629319",
+    "reported_date": "2026-05-23",
+    "total_amount": "22520.00",
+    "vehicle_make": "Saab",
+    "vehicle_model": "93",
+    "vehicle_year": 2008
+  },
+  "fraud_flags": [
+    "inflated_estimate"
+  ],
+  "generator": {
+    "has_police": true,
+    "other_object": "concrete barrier",
+    "side": "right",
+    "state": "OH",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "PLUS-7.3"
+  ],
+  "narrative_text": "On May 20, 2026, at about 18:50, I was driving my 2008 Saab 93 on 4458 Lake Boulevard, Akron, OH. The road was dry. I swerved to avoid a deer and the right side of my vehicle scraped a concrete barrier. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the front door panel, rear door panel, quarter panel. I took the car to Precision Auto Body and they estimated the repair at $22,520.00.",
+  "pair_id": "CLM-0025",
+  "policy_code": "PLUS",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "fraud_inflated"
+  },
+  "split": "test"
+}

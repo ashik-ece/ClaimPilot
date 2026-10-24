@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00015,
+  "input_tokens": 937,
+  "latency_ms": 910,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 141,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"escalate\",\n  \"rationale\": \"We are escalating this claim to a senior adjuster because the total amount of loss meets or exceeds the high-value referral threshold. This decision is governed by policy section BASIC-6.1, which mandates review for claims at or above $15,000.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-6.1\",\n      \"quote\": \"Any claim where the amount of loss is at or above $15,000 must be escalated to a senior adjuster for review before any payment is authorized\"\n    }\n  ]\n}"
+}

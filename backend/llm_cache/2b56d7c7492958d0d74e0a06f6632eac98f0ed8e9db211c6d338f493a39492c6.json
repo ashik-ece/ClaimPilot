@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.000148,
+  "input_tokens": 816,
+  "latency_ms": 1149,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 166,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving this claim because automated findings confirm no exclusions, fraud flags, or timeliness issues apply, and the loss meets the criteria for collision coverage. Clause PREM-2.1 governs this decision by providing payment for direct and accidental loss caused by collision during the policy period. The key fact is that the insured vehicle sustained $5,550.00 in damages from a multi-vehicle collision within the coverage period and was reported without complications.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

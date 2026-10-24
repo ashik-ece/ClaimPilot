@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.00015,
+  "input_tokens": 878,
+  "latency_ms": 1026,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 155,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"approve\",\n  \"rationale\": \"We recommend approving the claim because the automated findings confirm no exclusions or flags apply and the loss falls within the coverage terms. This decision is governed by the collision coverage insuring agreement which provides payment for direct and accidental loss caused by collision during the policy period. The key fact is that the claimant's vehicle suffered accidental collision damage totaling $6,600.00 while operating under a valid policy.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"PREM-2.1\",\n      \"quote\": \"we will pay for direct and accidental loss to the covered vehicle caused by collision during the policy period\"\n    }\n  ]\n}"
+}

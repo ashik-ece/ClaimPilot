@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 1,
+  "cost_usd": 0.002683,
+  "input_tokens": 1527,
+  "latency_ms": 14578,
+  "model": "gemini-2.5-flash",
+  "output_tokens": 890,
+  "prompt_name": "extraction",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"claimant_name\": \"Megan Zimmerman\",\n  \"policy_number\": \"POL-BASIC-897132\",\n  \"incident_date\": \"2026-02-04\",\n  \"reported_date\": \"2026-02-10\",\n  \"incident_type\": \"Multi-vehicle Collision\",\n  \"incident_location\": \"5619 River Road, Naperville, IL\",\n  \"vehicle_make\": \"Honda\",\n  \"vehicle_model\": \"CRV\",\n  \"vehicle_year\": 2008,\n  \"police_report_number\": \"PR-IL-2026-70558\",\n  \"total_amount\": \"7050.00\",\n  \"itemized_damages\": [\n    {\n      \"description\": \"Front door panel\",\n      \"amount\": \"2888.00\"\n    },\n    {\n      \"description\": \"Rocker panel\",\n      \"amount\": \"1498.00\"\n    },\n    {\n      \"description\": \"Paint and materials\",\n      \"amount\": \"1480.00\"\n    },\n    {\n      \"description\": \"Shop supplies\",\n      \"amount\": \"1184.00\"\n    }\n  ],\n  \"evidence\": [\n    {\n      \"field\": \"claimant_name\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Claimant name: Megan Zimmerman\"\n    },\n    {\n      \"field\": \"policy_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Policy number: POL-BASIC-897132\"\n    },\n    {\n      \"field\": \"incident_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date of loss: February 4, 2026\"\n    },\n    {\n      \"field\": \"reported_date\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Date reported: 2026-02-10\"\n    },\n    {\n      \"field\": \"incident_type\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Type of incident: Multi-vehicle Collision\"\n    },\n    {\n      \"field\": \"incident_location\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Location of loss: 5619 River Road, Naperville, IL\"\n    },\n    {\n      \"field\": \"vehicle_make\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Vehicle: 2008 Honda CRV\"\n    },\n    {\n      \"field\": \"vehicle_model\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Vehicle: 2008 Honda CRV\"\n    },\n    {\n      \"field\": \"vehicle_year\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Vehicle: 2008 Honda CRV\"\n    },\n    {\n      \"field\": \"police_report_number\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Police report number: PR-IL-2026-70558\"\n    },\n    {\n      \"field\": \"total_amount\",\n      \"document\": \"claim_form.pdf\",\n      \"quote\": \"Total amount claimed: $7,050.00\"\n    },\n    {\n      \"field\": \"itemized_damages\",\n      \"document\": \"repair_estimate.pdf\",\n      \"quote\": \"Front door panel: $2,888.00\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+ "result": {
+  "attempts": 2,
+  "cost_usd": 0.000148,
+  "input_tokens": 881,
+  "latency_ms": 47099,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 150,
+  "prompt_name": "recommendation",
+  "prompt_version": "v1",
+  "replayed": false
+ },
+ "text": "{\n  \"outcome\": \"deny\",\n  \"rationale\": \"We recommend denying this claim because the automated findings and claimant's account confirm the vehicle was being driven off a maintained public or private road in a field at the time of the collision, which triggers the policy exclusion for off-road use. Clause [BASIC-4.7] governs this exclusion.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"BASIC-4.7\",\n      \"quote\": \"We do not cover loss that occurs while the covered vehicle is being driven off a maintained public or private road, including on trails, fields, beaches, dunes or other unimproved terrain.\"\n    }\n  ]\n}"
+}

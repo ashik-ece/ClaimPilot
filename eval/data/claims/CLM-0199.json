@@ -1,0 +1,79 @@
+{
+  "claim_id": "CLM-0199",
+  "decision": "deny",
+  "doc_quality": {
+    "degradation": null,
+    "tier": "clean"
+  },
+  "documents": [
+    {
+      "filename": "claim_form.pdf",
+      "format": "text_pdf",
+      "type": "claim_form"
+    },
+    {
+      "filename": "repair_estimate.pdf",
+      "format": "text_pdf",
+      "type": "repair_estimate"
+    },
+    {
+      "filename": "incident_narrative.pdf",
+      "format": "text_pdf",
+      "type": "incident_narrative"
+    },
+    {
+      "filename": "police_report.pdf",
+      "format": "text_pdf",
+      "type": "police_report"
+    }
+  ],
+  "duplicate_of": null,
+  "fields": {
+    "claimant_name": "Maria Young",
+    "incident_date": "2026-05-01",
+    "incident_location": "1141 Washington Street, Evansville, IN",
+    "incident_type": "Multi-vehicle Collision",
+    "itemized_damages": [
+      {
+        "amount": "3141.00",
+        "description": "Quarter panel"
+      },
+      {
+        "amount": "1232.00",
+        "description": "Rear door panel"
+      },
+      {
+        "amount": "3217.00",
+        "description": "Paint and materials"
+      }
+    ],
+    "police_report_number": "PR-IN-2026-95873",
+    "policy_number": "POL-BASIC-258428",
+    "reported_date": "2026-06-03",
+    "total_amount": "7590.00",
+    "vehicle_make": "Mercedes",
+    "vehicle_model": "C300",
+    "vehicle_year": 2022
+  },
+  "fraud_flags": [],
+  "generator": {
+    "has_police": true,
+    "other_object": "guardrail",
+    "side": "left",
+    "state": "IN",
+    "zone": "Side Collision"
+  },
+  "governing_clause_ids": [
+    "BASIC-5.1"
+  ],
+  "narrative_text": "On 2026-05-01, at about 8:20, I was driving my 2022 Mercedes C300 on 1141 Washington Street, Evansville, IN. Traffic was light. Another driver changed lanes without signaling and our vehicles collided along the left side of my car. I called the police and an officer attended and filed a report. No one was injured. The main damage is to the quarter panel, rear door panel. I took the car to Precision Auto Body and they estimated the repair at $7,590.00.",
+  "pair_id": "CLM-0199",
+  "policy_code": "BASIC",
+  "scenario": {
+    "ambiguity": null,
+    "distractor": null,
+    "exclusion": null,
+    "type": "deny_late_notice"
+  },
+  "split": "test"
+}
