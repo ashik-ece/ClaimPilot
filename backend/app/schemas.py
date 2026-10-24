@@ -128,6 +128,8 @@ class DecisionCreate(BaseModel):
     outcome: Outcome
     reason_code: ReasonCode | None = None
     note: str | None = None
+    # Fields read only from a scan that the adjuster checked against the page image.
+    confirmed_fields: list[str] = []
 
 
 class DecisionOut(ORMModel):

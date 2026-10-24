@@ -2,7 +2,7 @@ import hashlib
 import uuid
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, HTTPException, Query, UploadFile, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Response, UploadFile, status
 from sqlalchemy import func, select
 
 from app import audit
@@ -172,6 +172,35 @@ def list_documents(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) ->
     )
 
 
+@router.get("/{claim_id}/documents/{document_id}/content")
+def download_document(
+    claim_id: uuid.UUID,
+    document_id: uuid.UUID,
+    session: SessionDep,
+    user: StaffUser,
+    storage: Annotated[Storage, Depends(get_storage)],
+) -> Response:
+    """The original file, for viewing next to the recommendation."""
+    get_claim_or_404(session, claim_id)
+    doc = session.get(Document, document_id)
+    if doc is None or doc.claim_id != claim_id:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "Document not found")
+    return Response(
+        content=storage.get(doc.s3_key),
+        media_type=doc.content_type,
+        headers={"Content-Disposition": f'inline; filename="{doc.filename}"'},
+    )
+
+
+@router.get("/{claim_id}/decision", response_model=DecisionOut)
+def get_decision(claim_id: uuid.UUID, session: SessionDep, user: StaffUser) -> Decision:
+    get_claim_or_404(session, claim_id)
+    decision = session.scalar(select(Decision).where(Decision.claim_id == claim_id))
+    if decision is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, "No decision yet")
+    return decision
+
+
 @router.post(
     "/{claim_id}/decisions", response_model=DecisionOut, status_code=status.HTTP_201_CREATED
 )
@@ -213,6 +242,7 @@ def create_decision(
             "decision_id": str(decision.id),
             "outcome": decision.outcome,
             "reason_code": decision.reason_code,
+            "confirmed_fields": body.confirmed_fields,
         },
     )
     session.commit()
