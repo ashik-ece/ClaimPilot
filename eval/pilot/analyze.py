@@ -141,7 +141,15 @@ def feedback(path: Path | None) -> dict[str, Any] | None:
 
 
 def analyze(rows: list[dict[str, Any]], feedback_path: Path | None = None) -> dict[str, Any]:
+    simulated = any(r["tester"].startswith("SIM-") or r["release"] == "SIMULATED" for r in rows)
     return {
+        "simulated": simulated,
+        "warning": (
+            "SIMULATED DATA. Times and choices were drawn from assumed distributions, so these "
+            "numbers describe the assumptions, not the tool or any adjuster."
+            if simulated
+            else None
+        ),
         "rules": {
             "learning_claim": "position 1 of each tester in each round is dropped",
             "interruption": f"sessions with a longest idle gap over {IDLE_LIMIT_SECONDS}s are dropped",
@@ -166,6 +174,8 @@ def main() -> None:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, indent=2, sort_keys=True))
     t = report["timing"]
+    if report["simulated"]:
+        print("*** " + report["warning"] + " ***")
     print(f"testers {len(report['testers'])}, decisions {report['decisions_total']}, dropped {t['dropped']}")
     print(f"N assisted {t['n']['assisted']}, manual {t['n']['manual']}; median s {t['median_s']}")
     if "relative_reduction" in t:

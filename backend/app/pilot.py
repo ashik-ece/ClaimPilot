@@ -315,6 +315,94 @@ def export_feedback(session: Session, out: Path) -> None:
     print(f"wrote {out} ({len(rows)} responses)")
 
 
+# Assumptions for the dry run. They are stated so nobody mistakes the output for a finding: the
+# simulated times and choices are drawn from these numbers, so the results only echo them.
+SIM = {
+    "manual_median_seconds": 300,
+    "assisted_time_factor": 0.6,
+    "time_sigma": 0.35,
+    "interruption_rate": 0.05,
+    "follow_ai_rate": 0.88,
+    "manual_correct_rate": 0.9,
+    "assisted_override_correct_rate": 0.7,
+}
+
+
+def simulate(args: argparse.Namespace) -> None:
+    """Write a SIMULATED sessions file in the real export format, to dry-run the analysis.
+
+    Real pool and assignment plan, real AI predictions; the human behaviour is invented from the
+    assumptions in SIM. Tester labels start with SIM- and the release is SIMULATED, so downstream
+    tools can never mistake it for real data.
+    """
+    import math
+
+    labels = _load_labels("test")
+    preds = json.loads(args.predictions.read_text())
+    labels = {i: v for i, v in labels.items() if i in preds}
+    pool = choose_pool(labels, args.seed + 1)
+    schedule = plan(pool, args.testers, args.seed + 1)
+    rng = random.Random(args.seed)
+    outcome_of = {"approve": "APPROVED", "deny": "DENIED", "escalate": "ESCALATED"}
+    reasons = ["wrong_clause", "coverage_interpretation", "missed_fraud_signal", "misread_document"]
+    rows = []
+    for t, tasks in enumerate(schedule, start=1):
+        for position, (claim_id, mode) in enumerate(tasks, start=1):
+            gold, ai = labels[claim_id]["decision"], preds[claim_id]["decision"]
+            seconds = SIM["manual_median_seconds"] * math.exp(rng.gauss(0, SIM["time_sigma"]))
+            if mode == "assisted":
+                seconds *= SIM["assisted_time_factor"]
+            if position == 1:
+                seconds *= 1.5  # warm-up claim
+            idle = 400 if rng.random() < SIM["interruption_rate"] else rng.randint(2, 60)
+            overridden, reason, note = False, "", ""
+            if mode == "assisted":
+                if rng.random() < SIM["follow_ai_rate"]:
+                    decision = ai
+                else:
+                    # An override is by definition a different answer from the AI's.
+                    others = [d for d in ("approve", "deny", "escalate") if d != ai]
+                    right = gold != ai and rng.random() < SIM["assisted_override_correct_rate"]
+                    decision = gold if right else rng.choice(others)
+                overridden = decision != ai
+                if overridden:
+                    reason, note = rng.choice(reasons), "SIMULATED note"
+            else:
+                decision = (
+                    gold
+                    if rng.random() < SIM["manual_correct_rate"]
+                    else rng.choice(["approve", "deny", "escalate"])
+                )
+            rows.append({
+                "release": "SIMULATED", "round": 1, "tester": f"SIM-T{t}", "position": position,
+                "source_claim": claim_id, "mode": mode, "review_seconds": round(seconds, 1),
+                "longest_idle_seconds": idle, "outcome": outcome_of[decision], "reason_code": reason,
+                "overridden": int(overridden), "note": note, "ai_recommendation": ai,
+                "gold_decision": gold, "started_at": "", "decided_at": "",
+            })  # fmt: skip
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    with args.out.open("w", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer.writeheader()
+        writer.writerows(rows)
+    feedback = args.out.with_name(args.out.stem + "_feedback.csv")
+    with feedback.open("w", newline="") as handle:
+        plain = csv.writer(handle)
+        plain.writerow(["release", "tester", "usefulness", "trust", "top_complaint", "top_missing"])
+        for t in range(1, args.testers + 1):
+            plain.writerow(
+                [
+                    "SIMULATED",
+                    f"SIM-T{t}",
+                    rng.randint(3, 5),
+                    rng.randint(3, 4),
+                    "SIMULATED",
+                    "SIMULATED",
+                ]
+            )
+    print(f"wrote {args.out} and {feedback.name}: SIMULATED, assumptions {SIM}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     sub = ap.add_subparsers(dest="command", required=True)
@@ -332,6 +420,12 @@ def main() -> None:
     e.add_argument("--out", type=Path, required=True)
     e.add_argument("--feedback-out", type=Path)
     e.set_defaults(func=export)
+    m = sub.add_parser("simulate", help="write a clearly labelled SIMULATED sessions file")
+    m.add_argument("--predictions", type=Path, required=True)
+    m.add_argument("--testers", type=int, default=4)
+    m.add_argument("--seed", type=int, default=11, help="arbitrary; nothing was tuned to it")
+    m.add_argument("--out", type=Path, required=True)
+    m.set_defaults(func=simulate)
     args = ap.parse_args()
     args.func(args)
 

@@ -99,3 +99,10 @@ def test_too_few_samples_gives_no_interval() -> None:
 def test_one_mode_only_does_not_invent_a_reduction(tmp_path: Path) -> None:
     timing = analyze(load(tmp_path, [row("T1", 2, "assisted", 60)]))["timing"]
     assert "relative_reduction" not in timing
+
+
+def test_simulated_data_is_flagged_in_the_report(tmp_path: Path) -> None:
+    rows = load(tmp_path, [row("SIM-T1", 2, "assisted", 60, release="SIMULATED")])
+    report = analyze(rows)
+    assert report["simulated"] is True and "SIMULATED" in report["warning"]
+    assert analyze(load(tmp_path, [row("T1", 2, "assisted", 60)]))["simulated"] is False
